@@ -18,6 +18,28 @@ The aim is to keep Fluxer's familiar interface while making day-to-day community
 
 Event logging and AutoMod are functional. The other modules shown in Application settings are design previews and do not perform automation yet. Two event types without upstream producers are visibly disabled.
 
+## Screenshots
+
+### AutoMod overview
+
+Choose an action for each of the 14 moderation rules and open its settings from the community's Application settings panel.
+
+![Fluxcol AutoMod panel showing all 14 moderation rules and their action selectors](docs/screenshots/automod-overview.jpg)
+
+### Rule configuration
+
+The bad-word filter supports separate lists for whole-word and partial matches, with examples explaining the difference. Each rule can inherit shared permissions or use its own user, role, channel, and category scope.
+
+![Bad-word filter settings with exact and partial word lists and matching examples](docs/screenshots/bad-words-settings.jpg)
+
+### Event logs in chat
+
+Community activity is delivered to the configured channel as readable embeds from **Netrcol SYSTEM**, with its own logo. This example shows presence changes and a member-join test message.
+
+![Netrcol SYSTEM event-log embeds with the Netrcol logo in a Fluxcol channel](docs/netrcol/system-message-identity.png)
+
+The settings screenshots are in English; the event messages are in Turkish, one of the 34 supported languages.
+
 ## Run locally on Windows
 
 Requirements: Git, Node.js, and Docker Desktop with its Linux container engine running. Source builds run inside Docker.
