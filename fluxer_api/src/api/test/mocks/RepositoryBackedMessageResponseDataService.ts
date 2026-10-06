@@ -285,7 +285,7 @@ export class RepositoryBackedMessageResponseDataService extends MessageResponseD
 	}
 
 	private async resolveAuthor(message: Message): Promise<UserPartialResponse> {
-		if (message.authorId) {
+		if (message.authorId != null) {
 			return this.resolveUserPartial(message.authorId);
 		}
 		return {

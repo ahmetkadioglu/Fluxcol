@@ -40603,3 +40603,2395 @@ msgstr "Přiblížit"
 #: src/features/user/components/settings_utils/search_index/KeybindsIndex.ts:86
 msgid "Zoom out"
 msgstr "Oddálit"
+
+#. Built-in community application settings.
+msgid "Application settings"
+msgstr "Nastavení aplikací"
+
+#. Built-in community application settings.
+msgid "Welcome and automatic roles"
+msgstr "Welcome and automatic roles"
+
+#. Built-in community application settings.
+msgid "Welcome new members with a message and assign their starting roles."
+msgstr "Welcome new members with a message and assign their starting roles."
+
+#. Built-in community application settings.
+msgid "Event logs"
+msgstr "Event logs"
+
+#. Built-in community application settings.
+msgid "Keep track of important events in your community."
+msgstr "Keep track of important events in your community."
+
+#. Built-in community application settings.
+msgid "AutoMod"
+msgstr "AutoMod"
+
+#. Built-in community application settings.
+msgid "Manage automatic moderation rules for your community."
+msgstr "Manage automatic moderation rules for your community."
+
+#. Built-in community application settings.
+msgid "Back to community"
+msgstr "Zpět do komunity"
+
+#. Built-in community application settings.
+msgid "Built-in community features for {communityName}."
+msgstr "Vestavěné komunitní funkce pro {communityName}."
+
+#. Built-in community application settings.
+msgid "Not available yet"
+msgstr "Zatím není dostupné"
+
+#. Built-in community application settings.
+msgid "Application settings are only available to the community owner on a self-hosted instance."
+msgstr "Nastavení aplikací je dostupné pouze vlastníkovi komunity na vlastní hostované instanci."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.overview"
+msgstr "Přehled"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.previewNotice"
+msgstr "Prohlédněte si plánované obrazovky modulů. Moduly zatím nejsou aktivní a tato nastavení se neukládají."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configuration"
+msgstr "Konfigurace"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configurationDescription"
+msgstr "Náhled možností plánovaných pro tento modul."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enable"
+msgstr "Zapnout modul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enableDescription"
+msgstr "Modul bude dostupný po dokončení jeho vývoje."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.general"
+msgstr "Obecné"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.essentials"
+msgstr "Základní funkce"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.management"
+msgstr "Správa serveru"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.games"
+msgstr "Hry a zábava"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.utilities"
+msgstr "Nástroje"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.social"
+msgstr "Oznámení ze sociálních sítí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.channel"
+msgstr "Kanál zpráv"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.channel"
+msgstr "Není vybrán žádný kanál"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.role"
+msgstr "Role člena"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.role"
+msgstr "Není vybrána žádná role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.roles"
+msgstr "Povolené role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.roles"
+msgstr "Nejsou vybrány žádné role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.message"
+msgstr "Šablona zprávy"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.message"
+msgstr "Vítej, {member}!"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.goodbye"
+msgstr "Zpráva při odchodu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.goodbye"
+msgstr "Na viděnou, {member}."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.response"
+msgstr "Šablona odpovědi"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.response"
+msgstr "Zde se zobrazí zpráva vaší komunity."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.period"
+msgstr "Období žebříčku"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.period"
+msgstr "Týdně"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.members"
+msgstr "Zobrazení členové"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.members"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.scope"
+msgstr "Rozsah statistik"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.scope"
+msgstr "Zprávy a aktivita členů"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.frequency"
+msgstr "Interval aktualizace"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.frequency"
+msgstr "Každých 15 minut"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.limit"
+msgstr "Limit používání"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.limit"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.language"
+msgstr "Jazyk komunity"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.language"
+msgstr "Turečtina"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.timezone"
+msgstr "Časové pásmo"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.timezone"
+msgstr "Europe/Istanbul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.reaction"
+msgstr "Pravidla rolí podle reakcí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.reaction"
+msgstr "Emoji → role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.selection"
+msgstr "Výběr rolí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.selection"
+msgstr "Více rolí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.xp"
+msgstr "XP za zprávu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.xp"
+msgstr "15"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rewards"
+msgstr "Odměny v podobě rolí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rewards"
+msgstr "Nejsou nastavené odměny"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rules"
+msgstr "Pravidla moderování"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rules"
+msgstr "Nejsou nastavená pravidla"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.exempt"
+msgstr "Role s výjimkou"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.exempt"
+msgstr "Nejsou vybrány žádné role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.joinlimit"
+msgstr "Limit připojování"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.joinlimit"
+msgstr "10 členů / minutu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.delay"
+msgstr "Zpoždění přiřazení"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.delay"
+msgstr "Okamžitě"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.threshold"
+msgstr "Práh reakcí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.threshold"
+msgstr "5"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.emoji"
+msgstr "Reakční emoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.emoji"
+msgstr "⭐"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.words"
+msgstr "Blokovaná slova"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.words"
+msgstr "Nejsou nastavená slova"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.links"
+msgstr "Pravidla odkazů"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.links"
+msgstr "Povolit schválené domény"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.spam"
+msgstr "Práh spamu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.spam"
+msgstr "5 zpráv / 10 sekund"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.events"
+msgstr "Sledované události"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.events"
+msgstr "Změny členů, zpráv a rolí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.invites"
+msgstr "Existující pozvánky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.invites"
+msgstr "Zahrnout existující pozvánky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.category"
+msgstr "Kategorie kanálů"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.category"
+msgstr "Není vybrána žádná kategorie"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.support"
+msgstr "Role podpory"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.support"
+msgstr "Nejsou vybrány žádné role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.questions"
+msgstr "Registrační otázky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.questions"
+msgstr "Představte se komunitě."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.trigger"
+msgstr "Spouštěč příkazu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.trigger"
+msgstr "/community"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.duration"
+msgstr "Doba trvání"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.duration"
+msgstr "24 hodin"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.winners"
+msgstr "Počet výherců"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.winners"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.wordlength"
+msgstr "Minimální délka slova"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.wordlength"
+msgstr "3"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.repeated"
+msgstr "Opakovaná slova"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.repeated"
+msgstr "Nepovolit opakování"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.start"
+msgstr "Počáteční číslo"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.start"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.mistake"
+msgstr "Při nesprávném čísle"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.mistake"
+msgstr "Začít počítání znovu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.statname"
+msgstr "Šablona názvu kanálu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.statname"
+msgstr "Členové: {count}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.feed"
+msgstr "URL zdroje"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.feed"
+msgstr "https://example.com/feed.xml"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.choices"
+msgstr "Možnosti ankety"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.choices"
+msgstr "Možnost A / Možnost B"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.voice"
+msgstr "Zdrojový hlasový kanál"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.voice"
+msgstr "Není vybrán hlasový kanál"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.birthday"
+msgstr "Čas oslavy"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.birthday"
+msgstr "09:00"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.account"
+msgstr "URL účtu nebo kanálu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.account"
+msgstr "Není připojen žádný účet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.announcement"
+msgstr "Šablona oznámení"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.announcement"
+msgstr "{creator} sdílí novinku: {url}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.actor"
+msgstr "Autor akce"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.actor"
+msgstr "Všichni členové"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.daterange"
+msgstr "Rozmezí dat"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.daterange"
+msgstr "Posledních 7 dní"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.title"
+msgstr "Žebříček"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.description"
+msgstr "Zobrazte nejaktivnější členy a jejich pořadí v komunitě."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.title"
+msgstr "Statistiky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.description"
+msgstr "Sledujte zprávy, růst počtu členů a trendy komunity."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.title"
+msgstr "Emoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.description"
+msgstr "Uspořádejte nástroje pro emoji a pravidla jejich používání."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.title"
+msgstr "Nastavení modulů"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.description"
+msgstr "Nastavte společné preference vestavěných modulů."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.title"
+msgstr "Uvítání a rozloučení"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.description"
+msgstr "Přivítejte nové členy a upravte zprávy při odchodu."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.title"
+msgstr "Role podle reakcí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.description"
+msgstr "Umožněte výběr rolí pomocí reakcí a nabídek."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.title"
+msgstr "Úrovně"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.description"
+msgstr "Odměňujte účast pomocí XP, úrovní a rolí."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.title"
+msgstr "Moderování"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.description"
+msgstr "Spravujte varování a moderátorské akce na jednom místě."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.title"
+msgstr "Zabezpečení"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.description"
+msgstr "Naplánujte ochranu proti nájezdům a neobvyklé aktivitě."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.title"
+msgstr "Automatické role"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.description"
+msgstr "Automaticky přiřazujte počáteční role novým členům."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.title"
+msgstr "Nástěnka oblíbených zpráv"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.description"
+msgstr "Shromažďujte zprávy s reakcemi v samostatném kanálu."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.title"
+msgstr "AutoMod"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.description"
+msgstr "Spravujte automatická pravidla pro spam, odkazy a nežádoucí obsah."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.title"
+msgstr "Záznamy událostí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.description"
+msgstr "Sledujte důležité události členů, zpráv a kanálů."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.title"
+msgstr "Sledování pozvánek"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.description"
+msgstr "Zjistěte, které pozvánky přivádějí nové členy."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.title"
+msgstr "Požadavky podpory"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.description"
+msgstr "Poskytněte soukromý prostor pro kontaktování podpory."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.title"
+msgstr "Registrace"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.description"
+msgstr "Navrhněte registraci a ověřování nových členů."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.title"
+msgstr "Vlastní příkazy"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.description"
+msgstr "Vytvářejte vlastní příkazy a šablony odpovědí."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.title"
+msgstr "Soutěže o ceny"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.description"
+msgstr "Pořádejte soutěže s pravidly účasti a výběrem výherců."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.title"
+msgstr "Slovní hra"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.description"
+msgstr "Vytvořte společný kanál pro slovní hry."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.title"
+msgstr "Počítání"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.description"
+msgstr "Umožněte členům společně budovat řadu čísel."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.title"
+msgstr "Statistické kanály"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.description"
+msgstr "Zobrazujte aktuální počty komunity v názvech kanálů."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.title"
+msgstr "RSS zdroje"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.description"
+msgstr "Sdílejte aktualizace vybraných zdrojů v kanálech."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.title"
+msgstr "Ankety"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.description"
+msgstr "Zjišťujte názory členů pomocí anket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.title"
+msgstr "Dočasné kanály"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.description"
+msgstr "Vytvářejte hlasové místnosti podle potřeby a odstraňujte prázdné."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.title"
+msgstr "Narozeniny"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.description"
+msgstr "Oslavujte narozeniny zprávami a rolemi."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.title"
+msgstr "YouTube"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.description"
+msgstr "Sdílejte nová videa a přenosy vybraných kanálů YouTube."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.title"
+msgstr "Twitch"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.description"
+msgstr "Oznamte, když vybraní tvůrci Twitch zahájí přenos."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.title"
+msgstr "Bluesky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.description"
+msgstr "Sdílejte příspěvky vybraných účtů Bluesky."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.title"
+msgstr "Kick"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.description"
+msgstr "Upozorněte členy, když vybraní tvůrci Kick začnou vysílat."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.title"
+msgstr "X"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.description"
+msgstr "Sdílejte příspěvky vybraných účtů X s komunitou."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.title"
+msgstr "Historie akcí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.description"
+msgstr "Prohlížejte změny nastavení modulů a automatické akce."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.available"
+msgstr "Záznamy událostí jsou dostupné. Ostatní moduly jsou náhledy návrhu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.scope"
+msgstr "Zaznamenávejte příchody a odchody členů do vybraného textového kanálu. Boti a obsah zpráv jsou vyloučeni."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberJoin"
+msgstr "Člen se připojil"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberLeave"
+msgstr "Člen odešel"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.test"
+msgstr "Odeslat testovací zprávu"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.testQueued"
+msgstr "Test zařazen do fronty. Zkontrolujte vybraný kanál a historii akcí."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.loadError"
+msgstr "Záznamy nelze načíst. Zkontrolujte přístup a zkuste to znovu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saveError"
+msgstr "Nelze uložit. Vyberte platný kanál a alespoň jednu událost a zkuste to znovu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.conflict"
+msgstr "Nastavení se změnilo jinde. Před uložením je načtěte znovu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ownerChanged"
+msgstr "Pozastaveno po změně vlastníka. Uložením schválíte nastavení."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.channelMissing"
+msgstr "Uložený kanál není dostupný. Vyberte jiný kanál a uložte."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.stopped"
+msgstr "Automatizace zastavil správce instance."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.emptyHistory"
+msgstr "Zatím žádné akce modulů."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.historyInfo"
+msgstr "Posledních 50 akcí. Záznamy doručení se uchovávají 30 dní a změny nastavení 90 dní."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.policyChanged"
+msgstr "Přeskočeno kvůli změně nastavení nebo vlastníka modulu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.deliveryFailed"
+msgstr "Doručení selhalo. Zkontrolujte kanál a službu worker a odešlete test."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.botSkipped"
+msgstr "Účet bota nebo systému vyloučen."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.enabled"
+msgstr "Zapnuto"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.disabled"
+msgstr "Vypnuto"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.pending"
+msgstr "Čekající"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.running"
+msgstr "Probíhá"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.sent"
+msgstr "Odesláno"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.skipped"
+msgstr "Přeskočeno"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.failed"
+msgstr "Selhalo"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saved"
+msgstr "Uloženo"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.configUpdated"
+msgstr "Nastavení záznamů událostí aktualizováno"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.save"
+msgstr "Uložit změny"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.reset"
+msgstr "Resetovat"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.refresh"
+msgstr "Obnovit"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.system"
+msgstr "Systém"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.user"
+msgstr "Uživatel"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ready"
+msgstr "K dispozici"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_join"
+msgstr "Člen se připojil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_leave"
+msgstr "Člen odešel"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.bot_add"
+msgstr "Bot přidán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_update"
+msgstr "Komunita · Profil · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.user_profile_update"
+msgstr "Uživatel · Profil · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_kick"
+msgstr "Člen vyhozen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_prune"
+msgstr "Hromadné odebrání členů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_add"
+msgstr "Člen zabanován"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_remove"
+msgstr "Ban člena zrušen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_timeout"
+msgstr "Členové · Dočasné omezení · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_mute"
+msgstr "Komunita · Ztlumit mikrofon · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_deaf"
+msgstr "Komunita · Vypnout zvuk · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_move"
+msgstr "Člen přesunut moderátorem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_disconnect"
+msgstr "Člen odpojen moderátorem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_create"
+msgstr "Odeslat zprávu · Vytvořit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_update"
+msgstr "Odeslat zprávu · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_delete"
+msgstr "Zpráva smazána"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_bulk_delete"
+msgstr "Hromadně smazané zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_pin"
+msgstr "Zpráva připnuta"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_unpin"
+msgstr "Zpráva odepnuta"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_publish"
+msgstr "Zprávy · Publikovat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_add"
+msgstr "Reakce · Přidat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_remove"
+msgstr "Reakce · Odebrat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear"
+msgstr "Reakce · Vymazat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear_emoji"
+msgstr "Emoji · Reakce · Vymazat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_create"
+msgstr "Kanál vytvořen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_update"
+msgstr "Kanál · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_delete"
+msgstr "Kanál smazán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_create"
+msgstr "Kanál · Oprávnění · Přidat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_update"
+msgstr "Kanál · Oprávnění · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_delete"
+msgstr "Kanál · Oprávnění · Odebrat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_create"
+msgstr "Role vytvořena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_update"
+msgstr "Role · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_delete"
+msgstr "Role smazána"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_role_update"
+msgstr "Členové · Role · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_create"
+msgstr "Pozvánka vytvořena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_update"
+msgstr "Pozvánky · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_delete"
+msgstr "Pozvánka smazána"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_use"
+msgstr "Pozvánky · Připojit se"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_create"
+msgstr "Webhook vytvořen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_update"
+msgstr "Webhooky · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_delete"
+msgstr "Webhook smazán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_create"
+msgstr "Emoji vytvořeno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_update"
+msgstr "Emoji · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_delete"
+msgstr "Emoji smazáno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_create"
+msgstr "Samolepka vytvořena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_update"
+msgstr "Samolepky · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_delete"
+msgstr "Samolepka smazána"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.guild_update"
+msgstr "Komunita · Nastavení · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_join"
+msgstr "Hlas · Připojit se"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_leave"
+msgstr "Hlas · Opustit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_move"
+msgstr "Hlas · Přesunout"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_mute"
+msgstr "Změna vlastního ztlumení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_deaf"
+msgstr "Změna vlastního vypnutí zvuku"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_video"
+msgstr "Video · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_stream"
+msgstr "Sdílení obrazovky · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_suppress"
+msgstr "Změna potlačení hlasu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.entrance_sound_play"
+msgstr "Zvuky při vstupu · Přehrát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_status"
+msgstr "Změna viditelného stavu připojení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_custom_status"
+msgstr "Vlastní stav · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_members"
+msgstr "Členové · Profil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_moderation"
+msgstr "Moderování"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_messages"
+msgstr "Zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_reactions"
+msgstr "Reakce"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_channels"
+msgstr "Kanály · Kategorie"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_permissions"
+msgstr "Oprávnění kanálu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_roles"
+msgstr "Role"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_invites"
+msgstr "Pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_integrations"
+msgstr "Webhooky · Emoji · Samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_guild"
+msgstr "Komunita"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_voice"
+msgstr "Hlas · Stav"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.search"
+msgstr "Hledat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.selectAll"
+msgstr "Vybrat vše"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.clear"
+msgstr "Zrušit výběr"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.inherit"
+msgstr "Dědit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.defaultChannel"
+msgstr "Výchozí · Kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.capture"
+msgstr "Zaznamenávat text zpráv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.preview"
+msgstr "Náhled"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.test"
+msgstr "Odeslat testovací zprávu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.time"
+msgstr "Čas"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.actor"
+msgstr "Provedl"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.target"
+msgstr "Cíl"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.source"
+msgstr "Kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reason"
+msgstr "Důvod"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unknown"
+msgstr "Neznámý"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.before"
+msgstr "Před"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.after"
+msgstr "Po"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changes"
+msgstr "Nastavení · Upravit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.attachments"
+msgstr "Přílohy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.count"
+msgstr "Zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.fileType"
+msgstr "Soubor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.size"
+msgstr "Velikost"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.enabled"
+msgstr "Zapnuto"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.disabled"
+msgstr "Vypnuto"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.system"
+msgstr "Systém"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.testMark"
+msgstr "Testovací zpráva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.logTitle"
+msgstr "Event logs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.none"
+msgstr "Žádné"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message"
+msgstr "Zpráva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_text"
+msgstr "Textový kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_voice"
+msgstr "Hlasový kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_category"
+msgstr "Kategorie"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_announcement"
+msgstr "Kanál s oznámeními"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_link"
+msgstr "Kanál · Odkaz"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADMINISTRATOR"
+msgstr "Administrátor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_AUDIT_LOG"
+msgstr "Zobrazit protokol aktivit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_GUILD"
+msgstr "Spravovat komunitu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_ROLES"
+msgstr "Spravovat role"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_CHANNELS"
+msgstr "Spravovat kanály"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_KICK_MEMBERS"
+msgstr "Vyhazovat členy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BAN_MEMBERS"
+msgstr "Banovat členy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_INSTANT_INVITE"
+msgstr "Vytvářet odkazy na pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CHANGE_NICKNAME"
+msgstr "Změnit vlastní přezdívku"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_NICKNAMES"
+msgstr "Spravovat přezdívky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_EXPRESSIONS"
+msgstr "Vytvářet emoji a samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_EXPRESSIONS"
+msgstr "Spravovat emoji a samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_WEBHOOKS"
+msgstr "Spravovat webhooky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_MESSAGES"
+msgstr "Odesílat zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_TTS_MESSAGES"
+msgstr "Odesílat zprávy převodem textu na řeč"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_MESSAGES"
+msgstr "Spravovat zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PIN_MESSAGES"
+msgstr "Připínat zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_EMBED_LINKS"
+msgstr "Zobrazovat náhledy odkazů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ATTACH_FILES"
+msgstr "Připojit soubory"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_READ_MESSAGE_HISTORY"
+msgstr "Číst historii zpráv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_EMOJIS"
+msgstr "Používat externí emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_STICKERS"
+msgstr "Používat externí samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADD_REACTIONS"
+msgstr "Přidávat reakce"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BYPASS_SLOWMODE"
+msgstr "Obejít pomalý režim"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MODERATE_MEMBERS"
+msgstr "Dočasně omezit členy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL"
+msgstr "Zobrazit kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL_MEMBERS"
+msgstr "Zobrazit členy kanálu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CONNECT"
+msgstr "Připojit se k hlasovému hovoru"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SPEAK"
+msgstr "Mluvit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_STREAM"
+msgstr "Streamovat video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_VAD"
+msgstr "Používat hlasovou aktivitu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PRIORITY_SPEAKER"
+msgstr "Prioritní mluvčí"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MUTE_MEMBERS"
+msgstr "Ztlumovat mikrofony členům"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_DEAFEN_MEMBERS"
+msgstr "Vypínat zvuk členům"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MOVE_MEMBERS"
+msgstr "Přesouvat členy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_UPDATE_RTC_REGION"
+msgstr "Nastavit hlasový region"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MENTION_EVERYONE"
+msgstr "Používat {everyoneMention}/{hereMention} a {rolesMention}"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.destination"
+msgstr "Kanál záznamů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_online"
+msgstr "Online"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_idle"
+msgstr "Neaktivní"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_dnd"
+msgstr "Nerušit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_offline"
+msgstr "Offline"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_name"
+msgstr "Název"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nick"
+msgstr "Přezdívka"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_username"
+msgstr "Uživatelské jméno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_discriminator"
+msgstr "Čtyřmístný identifikátor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_global_name"
+msgstr "Zobrazované jméno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_avatar_hash"
+msgstr "Avatar"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_hash"
+msgstr "Banner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bio"
+msgstr "Popis"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_pronouns"
+msgstr "Zájmena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_accent_color"
+msgstr "Barva zvýraznění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_roles"
+msgstr "Role"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$add"
+msgstr "Přidat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$remove"
+msgstr "Odebrat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permissions"
+msgstr "Oprávnění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_color"
+msgstr "Barva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist"
+msgstr "Zobrazit tuto roli odděleně"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mentionable"
+msgstr "Povolit zmínky pro tuto roli"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_position"
+msgstr "Pozice"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist_position"
+msgstr "Pozice"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon"
+msgstr "Ikona"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon_hash"
+msgstr "Ikona"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_unicode_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_topic"
+msgstr "Téma"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_type"
+msgstr "Typ kanálu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_parent_id"
+msgstr "Kategorie"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw"
+msgstr "Obsah pro dospělé"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rate_limit_per_user"
+msgstr "Pomalý režim"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bitrate"
+msgstr "Přenosová rychlost"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_limit"
+msgstr "Limit připojení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_voice_connection_limit"
+msgstr "Limit připojení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rtc_region"
+msgstr "Hlasový region"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permission_overwrites"
+msgstr "Oprávnění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_allow"
+msgstr "Povolit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deny"
+msgstr "Odepřít"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_id"
+msgstr "ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_owner_id"
+msgstr "Vlastník komunity"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_verification_level"
+msgstr "Ověření"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_default_message_notifications"
+msgstr "Nastavení oznámení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_explicit_content_filter"
+msgstr "Filtr obsahu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_channel_id"
+msgstr "Kanál pro neaktivní uživatele (AFK)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_timeout"
+msgstr "Časový limit neaktivity"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_id"
+msgstr "Systém a uvítání"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_flags"
+msgstr "Systém a uvítání"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_hash"
+msgstr "Pozadí pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_hash"
+msgstr "Pozadí pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_description"
+msgstr "Popis"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_features"
+msgstr "Funkce"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_vanity_url_code"
+msgstr "Pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_disabled_operations"
+msgstr "Vypnuto"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_age"
+msgstr "Vyprší po"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_uses"
+msgstr "Použití"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_uses"
+msgstr "Použití"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_temporary"
+msgstr "Dočasné členství"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel_id"
+msgstr "Kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_inviter_id"
+msgstr "Uživatel"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_creator_id"
+msgstr "Uživatel"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_guild_id"
+msgstr "Komunita"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_available"
+msgstr "K dispozici"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mute"
+msgstr "Ztlumit mikrofon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deaf"
+msgstr "Vypnout zvuk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_communication_disabled_until"
+msgstr "Dočasné omezení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_url"
+msgstr "URL"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_format_type"
+msgstr "Soubor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_tags"
+msgstr "Štítky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_flags"
+msgstr "Vlajky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_animated"
+msgstr "Animované emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content"
+msgstr "Zpráva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_attachments"
+msgstr "Přílohy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embeds"
+msgstr "Vložený obsah"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_items"
+msgstr "Samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_status"
+msgstr "Stav"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_custom_status"
+msgstr "Vlastní stav"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_mute"
+msgstr "Ztlumit mikrofon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_deaf"
+msgstr "Vypnout zvuk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_video"
+msgstr "Video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_stream"
+msgstr "Sdílení obrazovky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_suppress"
+msgstr "Hlas potlačen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_count"
+msgstr "Zprávy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel"
+msgstr "Kanál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_author_id"
+msgstr "Autor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_id"
+msgstr "Uživatel"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_code"
+msgstr "Kód"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_duration_ms"
+msgstr "Čas"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_type"
+msgstr "Soubor"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_test"
+msgstr "Testovací zpráva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_width"
+msgstr "Šířka"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_height"
+msgstr "Výška"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_width"
+msgstr "Šířka"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_height"
+msgstr "Výška"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_card_alignment"
+msgstr "Zarovnání karty pozvánky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_width"
+msgstr "Šířka"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_height"
+msgstr "Výška"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mfa_level"
+msgstr "Dvoufaktorové ověřování"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw_level"
+msgstr "Obsah pro dospělé"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_level"
+msgstr "Obsah pro dospělé"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_text"
+msgstr "Obsah pro dospělé"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rules_channel_id"
+msgstr "Kanál s pravidly"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_member_count"
+msgstr "Členové"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_message_history_cutoff"
+msgstr "Hranice historie zpráv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji_id"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_id"
+msgstr "Samolepky"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_previous_attachments"
+msgstr "Přílohy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unavailable"
+msgstr "Fluxer tuto událost zatím nevytváří."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.scope"
+msgstr "Zahrnuje boty a soukromé kanály komunity."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.privacy"
+msgstr "Zkopírovaný text zprávy vidí všichni, kdo mohou číst kanál záznamů. Původní soubory se nearchivují."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changed"
+msgstr "Změněno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.bad_words"
+msgstr "Zakázaná slova"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeated_text"
+msgstr "Opakovaný text"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.server_invites"
+msgstr "Pozvánky na servery"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.external_links"
+msgstr "Externí odkazy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_caps"
+msgstr "Nadměrné velké písmo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_emojis"
+msgstr "Příliš mnoho emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_spoilers"
+msgstr "Příliš mnoho spoilerů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_mentions"
+msgstr "Příliš mnoho zmínek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.zalgo"
+msgstr "Text Zalgo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_spam"
+msgstr "Ochrana proti spamu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.character_limit"
+msgstr "Limit znaků"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.media_spam"
+msgstr "Mediální spam"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_raid"
+msgstr "Ochrana proti nájezdům"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_nuke"
+msgstr "Ochrana proti ničení serveru"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.observe"
+msgstr "Pouze zaznamenat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.warn"
+msgstr "Varovat člena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.lockdown"
+msgstr "Dočasné uzamčení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.ignoreBots"
+msgstr "Ignorovat boty"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.window"
+msgstr "Časové okno (s)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.minimumLength"
+msgstr "Minimální počet písmen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.domains"
+msgstr "Povolené domény"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.loadError"
+msgstr "AutoMod se nepodařilo načíst. Zkuste to znovu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveError"
+msgstr "Zkontrolujte pravidla a zkuste je znovu uložit."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exemptChannels"
+msgstr "Vyloučené kanály"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.configUpdated"
+msgstr "Nastavení AutoMod bylo aktualizováno"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.scope"
+msgstr "Zprávy se kontrolují po odeslání. Vlastník a systémové zprávy jsou vynecháni."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.sharedPermissions"
+msgstr "Společná oprávnění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.inherited"
+msgstr "Toto pravidlo používá rozsah uživatelů, rolí, kanálů a kategorií nastavený na stránce AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.separate"
+msgstr "Použít pro toto pravidlo samostatná oprávnění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.allExcept"
+msgstr "Použít na všechny kromě vybraných"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.onlySelected"
+msgstr "Použít pouze na vybrané"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userPriority"
+msgstr "Výslovný výběr uživatele má přednost před rolemi. Omezení kanálů a kategorií stále platí."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userId"
+msgstr "ID uživatele"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.discard"
+msgstr "Zahodit změny"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveClose"
+msgstr "Uložit a zavřít"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.additional"
+msgstr "Další nastavení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.wordHint"
+msgstr "Po každém slově stiskněte Enter nebo napište čárku. Nejvýše 200 položek na seznam, každá do 100 znaků."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exactWords"
+msgstr "Zakázaná slova (přesná shoda)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.partialWords"
+msgstr "Zakázaná slova (shoda libovolné části)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.addWord"
+msgstr "Přidat slovo…"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.howWorks"
+msgstr "Jak to funguje?"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.matchingHint"
+msgstr "Velikost písmen se nerozlišuje. Přesná shoda kontroluje celá slova; částečná shoda hledá text i uvnitř slova."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatThreshold"
+msgstr "Počet opakovaných zpráv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatCountHint"
+msgstr "Pravidlo se spustí, když stejný člen odešle totožný text tolikrát během časového okna."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatWindowHint"
+msgstr "Zprávy se počítají společně napříč kanály zahrnutými do tohoto pravidla. Velikost písmen, mezery a neviditelné znaky se normalizují. Úpravy zpráv se nepočítají jako nové zprávy."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkWhitelist"
+msgstr "Seznam povolených odkazů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkHint"
+msgstr "Zadejte předponu URL a stiskněte Enter nebo čárku. Odpovídající odkazy obcházejí filtry pozvánek i externích odkazů. Shoda rozlišuje velikost písmen a zahrnuje protokol i cestu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkInvalid"
+msgstr "Zadejte předponu URL HTTP nebo HTTPS bez mezer a přihlašovacích údajů. Nejvýše 100 položek, každá do 2048 znaků."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMinimumCharacters"
+msgstr "Minimální počet znaků"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMaximumPercentage"
+msgstr "Maximální podíl velkých písmen (%)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsHint"
+msgstr "Do minimálního počtu a procenta se počítají pouze písmena s velkou i malou podobou. Pravidlo se spustí pouze při překročení procentního limitu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimit"
+msgstr "Limit emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimitHint"
+msgstr "Pravidlo se spustí, když počet emoji překročí tento limit. Počítají se Unicode i vlastní emoji; spojené sekvence emoji se počítají jako jedno emoji."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimit"
+msgstr "Limit značek spoilerů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimitHint"
+msgstr "Každá část uzavřená mezi značkami || se počítá jako jedna, i když obsahuje více řádků. Pravidlo se spustí pouze při překročení tohoto limitu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimit"
+msgstr "Limit zmínek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimitHint"
+msgstr "Počítají se různé značky zmínek uživatelů a rolí, @everyone a @here. Opakování stejné značky se počítá jen jednou. Pravidlo se spustí pouze při překročení tohoto limitu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.messageLimit"
+msgstr "Limit zpráv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spamHint"
+msgstr "Počítají se nové zprávy stejného člena v kanálech zahrnutých do tohoto pravidla. Pravidlo se spustí při dosažení limitu v časovém okně; úpravy se nepočítají."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.maximumCharacters"
+msgstr "Maximální počet znaků"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.characterLimitHint"
+msgstr "Počítá text zprávy včetně mezer a konců řádků. Složené emoji nebo písmena s diakritikou se mohou počítat jako více znaků. Pravidlo se spustí pouze při překročení tohoto limitu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaLimit"
+msgstr "Limit médií"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaSpamHint"
+msgstr "Počítá přílohy a nálepky odeslané stejným členem v kanálech zahrnutých do tohoto pravidla. Pravidlo se spustí, když celkový počet dosáhne limitu v časovém intervalu; úpravy, odkazy a emoji se nepočítají."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.joinLimit"
+msgstr "Limit připojení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.actionLimit"
+msgstr "Limit akcí"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.newAccountDays"
+msgstr "Stáří nových účtů (dny)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.raidHint"
+msgstr "Počítá připojení účtů mladších než tento počet dní. 0 počítá všechny účty. Dosažení limitu v časovém okně spustí vybranou akci."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.nukeHint"
+msgstr "Počítá potenciálně ničivé správní akce stejného člena: komunita, kanály, role, zákazy, vyhození, boti a webhooky."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnly"
+msgstr "Spustit v režimu pouze záznamů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnlyHint"
+msgstr "Zaznamenává shody bez omezení člena. Vypněte pro použití akce zvolené na stránce AutoMod. Vypnutá pravidla zůstanou vypnutá."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.protectionHint"
+msgstr "Tato pravidla fungují nezávisle na modulu Zabezpečení, když jsou AutoMod a pravidlo zapnuté a uložené. Uzamčení používá dobu nastavenou na stránce AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.permissions"
+msgstr "Oprávnění"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.users"
+msgstr "Uživatelé"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.roles"
+msgstr "Role"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.channels"
+msgstr "Kanály"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.categories"
+msgstr "Kategorie"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.add"
+msgstr "Přidat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.remove"
+msgstr "Odebrat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.back"
+msgstr "Zpět"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.disabled"
+msgstr "Vypnuto"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete"
+msgstr "Smazat zprávu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.timeout"
+msgstr "Dočasné omezení"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_warn"
+msgstr "Smazat zprávu + Varovat člena"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_timeout"
+msgstr "Smazat zprávu + Dočasné omezení"

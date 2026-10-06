@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import {createUserID, type UserID} from '@app/api/BrandedTypes';
-import {isSyntheticUserId} from '@app/api/constants/Core';
+import {isSyntheticUserId, SYSTEM_USER_ID} from '@app/api/constants/Core';
 import {executeConditional, fetchMany, fetchOne, fetchPage, upsertOne} from '@app/api/database/CassandraQueryExecution';
 import {Db, type DbOp, nextVersion} from '@app/api/database/CassandraTypes';
 import {applyPatchToRow, buildPatchFromData, executeVersionedUpdate} from '@app/api/database/CassandraVersionedUpdate';
@@ -9,6 +9,7 @@ import type {UserRow} from '@app/api/database/types/UserTypes';
 import {EMPTY_USER_ROW, USER_COLUMNS} from '@app/api/database/types/UserTypes';
 import {emitAccountChangedIfRelevant} from '@app/api/infrastructure/activity/AccountChangeEvents';
 import {User} from '@app/api/models/User';
+import {prepareUserProfileChange} from '@app/api/netrcol/EventLogSources';
 import {Users} from '@app/api/Tables';
 import {isPendingDeletionBlocked} from '@app/api/user/services/PendingDeletionCoordinator';
 import {APIErrorCodes} from '@fluxer/constants/src/ApiErrorCodes';
@@ -17,7 +18,6 @@ import {ConflictError} from '@fluxer/errors/src/domains/core/ConflictError';
 import {UnknownUserError} from '@fluxer/errors/src/domains/user/UnknownUserError';
 import {BACKGROUND_READ_TIMEOUT_MS} from '@pkgs/cassandra/src/Client';
 
-const FLUXER_BOT_USER_ID = 0n;
 const FETCH_USERS_BY_IDS_CQL = Users.selectCql({
 	where: Users.where.in('user_id', 'user_ids'),
 });
@@ -62,11 +62,11 @@ function assertWritableUserId(userId: UserID): void {
 
 export class UserDataRepository {
 	async findUnique(userId: UserID): Promise<User | null> {
-		if (userId === FLUXER_BOT_USER_ID) {
+		if (userId === SYSTEM_USER_ID) {
 			return new User({
 				...EMPTY_USER_ROW,
-				user_id: createUserID(FLUXER_BOT_USER_ID),
-				username: 'Fluxer',
+				user_id: SYSTEM_USER_ID,
+				username: 'Netrcol',
 				discriminator: 0,
 				bot: true,
 				system: true,
@@ -151,7 +151,7 @@ export class UserDataRepository {
 				return {pk: {user_id: userId}, patch};
 			},
 			Users,
-			{initialData: oldData},
+			{initialData: oldData, additionalStatements: (current) => prepareUserProfileChange(current, data)},
 		);
 		const updatedData = {...data, version: result.finalVersion ?? data.version};
 		await emitAccountChangedIfRelevant(result.previousData, updatedData);
@@ -178,7 +178,11 @@ export class UserDataRepository {
 				patch,
 			}),
 			Users,
-			{initialData: oldData},
+			{
+				initialData: oldData,
+				additionalStatements: (current) =>
+					prepareUserProfileChange(current, {...applyPatchToRow<UserRow>(current, patch), user_id: userId} as UserRow),
+			},
 		);
 		const previousData = result.previousData;
 		const updatedData = {

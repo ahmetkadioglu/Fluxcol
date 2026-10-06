@@ -40603,3 +40603,2395 @@ msgstr "Збільшити масштаб"
 #: src/features/user/components/settings_utils/search_index/KeybindsIndex.ts:86
 msgid "Zoom out"
 msgstr "Зменшити масштаб"
+
+#. Built-in community application settings.
+msgid "Application settings"
+msgstr "Налаштування застосунків"
+
+#. Built-in community application settings.
+msgid "Welcome and automatic roles"
+msgstr "Welcome and automatic roles"
+
+#. Built-in community application settings.
+msgid "Welcome new members with a message and assign their starting roles."
+msgstr "Welcome new members with a message and assign their starting roles."
+
+#. Built-in community application settings.
+msgid "Event logs"
+msgstr "Event logs"
+
+#. Built-in community application settings.
+msgid "Keep track of important events in your community."
+msgstr "Keep track of important events in your community."
+
+#. Built-in community application settings.
+msgid "AutoMod"
+msgstr "AutoMod"
+
+#. Built-in community application settings.
+msgid "Manage automatic moderation rules for your community."
+msgstr "Manage automatic moderation rules for your community."
+
+#. Built-in community application settings.
+msgid "Back to community"
+msgstr "Повернутися до спільноти"
+
+#. Built-in community application settings.
+msgid "Built-in community features for {communityName}."
+msgstr "Вбудовані функції спільноти {communityName}."
+
+#. Built-in community application settings.
+msgid "Not available yet"
+msgstr "Ще недоступно"
+
+#. Built-in community application settings.
+msgid "Application settings are only available to the community owner on a self-hosted instance."
+msgstr "Налаштування застосунків доступні лише власнику спільноти на самостійно розміщеному екземплярі."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.overview"
+msgstr "Огляд"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.previewNotice"
+msgstr "Перегляньте заплановані екрани модулів. Модулі ще не активні, а ці налаштування не зберігаються."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configuration"
+msgstr "Налаштування"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configurationDescription"
+msgstr "Попередній перегляд запланованих параметрів модуля."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enable"
+msgstr "Увімкнути модуль"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enableDescription"
+msgstr "Модуль стане доступним після завершення розробки."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.general"
+msgstr "Загальне"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.essentials"
+msgstr "Основні функції"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.management"
+msgstr "Керування сервером"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.games"
+msgstr "Ігри та розваги"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.utilities"
+msgstr "Інструменти"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.social"
+msgstr "Сповіщення соцмереж"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.channel"
+msgstr "Канал повідомлень"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.channel"
+msgstr "Канал не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.role"
+msgstr "Роль учасника"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.role"
+msgstr "Роль не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.roles"
+msgstr "Дозволені ролі"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.roles"
+msgstr "Ролі не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.message"
+msgstr "Шаблон повідомлення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.message"
+msgstr "Ласкаво просимо, {member}!"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.goodbye"
+msgstr "Прощальне повідомлення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.goodbye"
+msgstr "До зустрічі, {member}."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.response"
+msgstr "Шаблон відповіді"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.response"
+msgstr "Тут буде повідомлення вашої спільноти."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.period"
+msgstr "Період рейтингу"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.period"
+msgstr "Щотижня"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.members"
+msgstr "Показані учасники"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.members"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.scope"
+msgstr "Обсяг статистики"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.scope"
+msgstr "Повідомлення та активність учасників"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.frequency"
+msgstr "Інтервал оновлення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.frequency"
+msgstr "Кожні 15 хвилин"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.limit"
+msgstr "Ліміт використання"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.limit"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.language"
+msgstr "Мова спільноти"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.language"
+msgstr "Турецька"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.timezone"
+msgstr "Часовий пояс"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.timezone"
+msgstr "Europe/Istanbul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.reaction"
+msgstr "Правила ролей за реакції"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.reaction"
+msgstr "Емодзі → роль"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.selection"
+msgstr "Вибір ролей"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.selection"
+msgstr "Кілька ролей"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.xp"
+msgstr "XP за повідомлення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.xp"
+msgstr "15"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rewards"
+msgstr "Нагороди ролями"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rewards"
+msgstr "Нагороди не налаштовано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rules"
+msgstr "Правила модерації"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rules"
+msgstr "Правила не налаштовано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.exempt"
+msgstr "Виняткові ролі"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.exempt"
+msgstr "Ролі не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.joinlimit"
+msgstr "Ліміт приєднань"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.joinlimit"
+msgstr "10 учасників / хвилину"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.delay"
+msgstr "Затримка призначення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.delay"
+msgstr "Одразу"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.threshold"
+msgstr "Поріг реакцій"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.threshold"
+msgstr "5"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.emoji"
+msgstr "Емодзі реакції"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.emoji"
+msgstr "⭐"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.words"
+msgstr "Заблоковані слова"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.words"
+msgstr "Слова не задано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.links"
+msgstr "Правила посилань"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.links"
+msgstr "Дозволяти схвалені домени"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.spam"
+msgstr "Поріг спаму"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.spam"
+msgstr "5 повідомлень / 10 секунд"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.events"
+msgstr "Відстежувані події"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.events"
+msgstr "Зміни учасників, повідомлень і ролей"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.invites"
+msgstr "Наявні запрошення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.invites"
+msgstr "Враховувати наявні запрошення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.category"
+msgstr "Категорія каналів"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.category"
+msgstr "Категорію не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.support"
+msgstr "Ролі підтримки"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.support"
+msgstr "Ролі не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.questions"
+msgstr "Запитання реєстрації"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.questions"
+msgstr "Представтеся спільноті."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.trigger"
+msgstr "Тригер команди"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.trigger"
+msgstr "/community"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.duration"
+msgstr "Тривалість"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.duration"
+msgstr "24 години"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.winners"
+msgstr "Кількість переможців"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.winners"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.wordlength"
+msgstr "Мінімальна довжина слова"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.wordlength"
+msgstr "3"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.repeated"
+msgstr "Повторені слова"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.repeated"
+msgstr "Не дозволяти повторення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.start"
+msgstr "Початкове число"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.start"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.mistake"
+msgstr "У разі неправильного числа"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.mistake"
+msgstr "Почати лічбу заново"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.statname"
+msgstr "Шаблон назви каналу"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.statname"
+msgstr "Учасники: {count}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.feed"
+msgstr "URL стрічки"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.feed"
+msgstr "https://example.com/feed.xml"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.choices"
+msgstr "Варіанти опитування"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.choices"
+msgstr "Варіант A / Варіант B"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.voice"
+msgstr "Початковий голосовий канал"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.voice"
+msgstr "Голосовий канал не вибрано"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.birthday"
+msgstr "Час привітання"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.birthday"
+msgstr "09:00"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.account"
+msgstr "URL облікового запису або каналу"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.account"
+msgstr "Обліковий запис не підключено"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.announcement"
+msgstr "Шаблон оголошення"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.announcement"
+msgstr "{creator} поділився новиною: {url}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.actor"
+msgstr "Автор дії"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.actor"
+msgstr "Усі учасники"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.daterange"
+msgstr "Діапазон дат"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.daterange"
+msgstr "Останні 7 днів"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.title"
+msgstr "Таблиця лідерів"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.description"
+msgstr "Показуйте найактивніших учасників і їхні місця в рейтингу."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.title"
+msgstr "Статистика"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.description"
+msgstr "Стежте за повідомленнями, зростанням спільноти та тенденціями."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.title"
+msgstr "Емодзі"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.description"
+msgstr "Упорядкуйте інструменти емодзі та правила використання."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.title"
+msgstr "Налаштування модулів"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.description"
+msgstr "Задайте спільні параметри вбудованих модулів."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.title"
+msgstr "Привітання та прощання"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.description"
+msgstr "Вітайте нових учасників і змінюйте повідомлення про вихід."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.title"
+msgstr "Ролі за реакції"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.description"
+msgstr "Дозвольте вибір ролей через реакції та меню."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.title"
+msgstr "Рівні"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.description"
+msgstr "Нагороджуйте участь XP, рівнями та ролями."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.title"
+msgstr "Модерація"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.description"
+msgstr "Зберіть попередження та дії модерації в одному місці."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.title"
+msgstr "Безпека"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.description"
+msgstr "Підготуйте захист від рейдів і незвичної активності."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.title"
+msgstr "Автоматичні ролі"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.description"
+msgstr "Автоматично призначайте початкові ролі новим учасникам."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.title"
+msgstr "Дошка улюблених повідомлень"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.description"
+msgstr "Збирайте повідомлення з реакціями в окремому каналі."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.title"
+msgstr "AutoMod"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.description"
+msgstr "Керуйте автоматичними правилами для спаму, посилань і небажаного вмісту."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.title"
+msgstr "Журнали подій"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.description"
+msgstr "Відстежуйте важливі події учасників, повідомлень і каналів."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.title"
+msgstr "Відстеження запрошень"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.description"
+msgstr "Дізнайтеся, які запрошення приводять нових учасників."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.title"
+msgstr "Звернення до підтримки"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.description"
+msgstr "Надайте приватний простір для звернень до підтримки."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.title"
+msgstr "Реєстрація"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.description"
+msgstr "Сплануйте реєстрацію та перевірку нових учасників."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.title"
+msgstr "Власні команди"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.description"
+msgstr "Створюйте власні команди й шаблони відповідей."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.title"
+msgstr "Розіграші"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.description"
+msgstr "Проводьте розіграші з правилами участі та вибором переможців."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.title"
+msgstr "Гра в слова"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.description"
+msgstr "Створіть спільний канал для ігор у слова."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.title"
+msgstr "Лічба"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.description"
+msgstr "Дозвольте учасникам спільно будувати числову послідовність."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.title"
+msgstr "Канали статистики"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.description"
+msgstr "Показуйте поточні показники спільноти в назвах каналів."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.title"
+msgstr "RSS-стрічки"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.description"
+msgstr "Діліться оновленнями вибраних стрічок у каналах."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.title"
+msgstr "Опитування"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.description"
+msgstr "Збирайте думки учасників через опитування."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.title"
+msgstr "Тимчасові канали"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.description"
+msgstr "Створюйте голосові кімнати за потреби й видаляйте порожні."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.title"
+msgstr "Дні народження"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.description"
+msgstr "Вітайте з днем народження повідомленнями та ролями."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.title"
+msgstr "YouTube"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.description"
+msgstr "Діліться новими відео й трансляціями вибраних YouTube-каналів."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.title"
+msgstr "Twitch"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.description"
+msgstr "Сповіщайте про початок трансляцій вибраних авторів Twitch."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.title"
+msgstr "Bluesky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.description"
+msgstr "Діліться дописами вибраних облікових записів Bluesky."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.title"
+msgstr "Kick"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.description"
+msgstr "Сповіщайте про початок трансляцій вибраних авторів Kick."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.title"
+msgstr "X"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.description"
+msgstr "Діліться зі спільнотою дописами вибраних облікових записів X."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.title"
+msgstr "Історія дій"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.description"
+msgstr "Переглядайте зміни налаштувань модулів і автоматичні дії."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.available"
+msgstr "Журнал подій доступний. Решта модулів представлені макетами."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.scope"
+msgstr "Записуйте приєднання та виходи учасників у вибраний текстовий канал. Боти та вміст повідомлень виключені."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberJoin"
+msgstr "Учасник приєднався"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberLeave"
+msgstr "Учасник вийшов"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.test"
+msgstr "Надіслати тестове повідомлення"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.testQueued"
+msgstr "Тест у черзі. Перевірте вибраний канал та історію дій."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.loadError"
+msgstr "Не вдалося завантажити журнал. Перевірте доступ і спробуйте знову."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saveError"
+msgstr "Не вдалося зберегти. Виберіть дійсний канал і принаймні одну подію та спробуйте знову."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.conflict"
+msgstr "Налаштування змінено в іншому місці. Оновіть перед збереженням."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ownerChanged"
+msgstr "Призупинено після зміни власника. Збережіть, щоб підтвердити налаштування."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.channelMissing"
+msgstr "Збережений канал недоступний. Виберіть інший канал і збережіть."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.stopped"
+msgstr "Автоматизації зупинено адміністратором інстансу."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.emptyHistory"
+msgstr "Дій модулів ще немає."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.historyInfo"
+msgstr "Останні 50 дій. Записи доставки зберігаються 30 днів, зміни налаштувань — 90 днів."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.policyChanged"
+msgstr "Пропущено через зміну налаштувань або власника модуля."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.deliveryFailed"
+msgstr "Доставка не вдалася. Перевірте канал і службу worker, потім надішліть тест."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.botSkipped"
+msgstr "Обліковий запис бота або системи виключено."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.enabled"
+msgstr "Увімкнено"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.disabled"
+msgstr "Вимкнено"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.pending"
+msgstr "Очікує"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.running"
+msgstr "Виконується"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.sent"
+msgstr "Надіслано"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.skipped"
+msgstr "Пропущено"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.failed"
+msgstr "Помилка"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saved"
+msgstr "Збережено"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.configUpdated"
+msgstr "Налаштування журналу подій оновлено"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.save"
+msgstr "Зберегти зміни"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.reset"
+msgstr "Скинути"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.refresh"
+msgstr "Оновити"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.system"
+msgstr "Система"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.user"
+msgstr "Користувач"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ready"
+msgstr "Доступно"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_join"
+msgstr "Учасник приєднався"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_leave"
+msgstr "Учасник вийшов"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.bot_add"
+msgstr "Додано бота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_update"
+msgstr "Спільнота · Профіль · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.user_profile_update"
+msgstr "Користувач · Профіль · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_kick"
+msgstr "Учасника вигнано"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_prune"
+msgstr "Масове очищення учасників"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_add"
+msgstr "Учасника заблоковано"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_remove"
+msgstr "Учасника розблоковано"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_timeout"
+msgstr "Учасники · Тайм-аут · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_mute"
+msgstr "Спільнота · Вимкнути мікрофон · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_deaf"
+msgstr "Спільнота · Вимкнути звук · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_move"
+msgstr "Учасника перемістив модератор"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_disconnect"
+msgstr "Учасника від’єднав модератор"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_create"
+msgstr "Надіслати повідомлення · Створити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_update"
+msgstr "Надіслати повідомлення · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_delete"
+msgstr "Повідомлення видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_bulk_delete"
+msgstr "Повідомлення видалено масово"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_pin"
+msgstr "Повідомлення закріплено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_unpin"
+msgstr "Повідомлення відкріплено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_publish"
+msgstr "Повідомлення · Опублікувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_add"
+msgstr "Реакції · Додати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_remove"
+msgstr "Реакції · Видалити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear"
+msgstr "Реакції · Очистити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear_emoji"
+msgstr "Емоджі · Реакції · Очистити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_create"
+msgstr "Канал створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_update"
+msgstr "Канал · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_delete"
+msgstr "Канал видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_create"
+msgstr "Канал · Дозволи · Додати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_update"
+msgstr "Канал · Дозволи · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_delete"
+msgstr "Канал · Дозволи · Видалити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_create"
+msgstr "Роль створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_update"
+msgstr "Ролі · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_delete"
+msgstr "Роль видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_role_update"
+msgstr "Учасники · Ролі · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_create"
+msgstr "Запрошення створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_update"
+msgstr "Запрошення · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_delete"
+msgstr "Запрошення видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_use"
+msgstr "Запрошення · Приєднатися"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_create"
+msgstr "Вебхук створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_update"
+msgstr "Вебхуки · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_delete"
+msgstr "Вебхук видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_create"
+msgstr "Емодзі створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_update"
+msgstr "Емоджі · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_delete"
+msgstr "Емоджі видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_create"
+msgstr "Стікер створено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_update"
+msgstr "Стікери · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_delete"
+msgstr "Стікер видалено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.guild_update"
+msgstr "Спільнота · Налаштування · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_join"
+msgstr "Голосовий · Приєднатися"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_leave"
+msgstr "Голосовий · Вийти"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_move"
+msgstr "Голосовий · Перемістити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_mute"
+msgstr "Змінено власне вимкнення мікрофона"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_deaf"
+msgstr "Змінено власне вимкнення звуку"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_video"
+msgstr "Відео · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_stream"
+msgstr "Демонстрація екрана · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_suppress"
+msgstr "Обмеження мовлення змінено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.entrance_sound_play"
+msgstr "Звуки входу · Відтворити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_status"
+msgstr "Змінено видимий статус у мережі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_custom_status"
+msgstr "Власний статус · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_members"
+msgstr "Учасники · Профіль"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_moderation"
+msgstr "Модерація"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_messages"
+msgstr "Повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_reactions"
+msgstr "Реакції"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_channels"
+msgstr "Канали · Категорії"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_permissions"
+msgstr "Дозволи каналу"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_roles"
+msgstr "Ролі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_invites"
+msgstr "Запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_integrations"
+msgstr "Вебхуки · Емоджі · Стікери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_guild"
+msgstr "Спільнота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_voice"
+msgstr "Голосовий · Статус"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.search"
+msgstr "Пошук"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.selectAll"
+msgstr "Виділити все"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.clear"
+msgstr "Очистити вибір"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.inherit"
+msgstr "Успадкувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.defaultChannel"
+msgstr "За замовчуванням · Канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.capture"
+msgstr "Записувати текст повідомлень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.preview"
+msgstr "Попередній перегляд"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.test"
+msgstr "Надіслати тестове повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.time"
+msgstr "Час"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.actor"
+msgstr "Виконавець"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.target"
+msgstr "Ціль"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.source"
+msgstr "Канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reason"
+msgstr "Причина"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unknown"
+msgstr "Невідомо"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.before"
+msgstr "До"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.after"
+msgstr "Після"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changes"
+msgstr "Налаштування · Редагувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.attachments"
+msgstr "Вкладення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.count"
+msgstr "Повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.fileType"
+msgstr "Файл"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.size"
+msgstr "Розмір"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.enabled"
+msgstr "Увімкнено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.disabled"
+msgstr "Вимкнено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.system"
+msgstr "Система"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.testMark"
+msgstr "Тестове повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.logTitle"
+msgstr "Event logs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.none"
+msgstr "Немає"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message"
+msgstr "Повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_text"
+msgstr "Текстовий канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_voice"
+msgstr "Голосовий канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_category"
+msgstr "Категорія"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_announcement"
+msgstr "Канал оголошень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_link"
+msgstr "Канал · Посилання"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADMINISTRATOR"
+msgstr "Адміністратор"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_AUDIT_LOG"
+msgstr "Переглядати журнал дій"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_GUILD"
+msgstr "Керувати спільнотою"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_ROLES"
+msgstr "Керувати ролями"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_CHANNELS"
+msgstr "Керувати каналами"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_KICK_MEMBERS"
+msgstr "Виганяти учасників"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BAN_MEMBERS"
+msgstr "Блокувати учасників"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_INSTANT_INVITE"
+msgstr "Створювати посилання-запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CHANGE_NICKNAME"
+msgstr "Змінити власний псевдонім"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_NICKNAMES"
+msgstr "Керувати псевдонімами"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_EXPRESSIONS"
+msgstr "Створювати емоджі та стікери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_EXPRESSIONS"
+msgstr "Керувати емодзі та стікерами"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_WEBHOOKS"
+msgstr "Керувати вебхуками"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_MESSAGES"
+msgstr "Надсилати повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_TTS_MESSAGES"
+msgstr "Надсилати TTS-повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_MESSAGES"
+msgstr "Керувати повідомленнями"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PIN_MESSAGES"
+msgstr "Закріплювати повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_EMBED_LINKS"
+msgstr "Вбудовувати посилання"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ATTACH_FILES"
+msgstr "Додавати файли"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_READ_MESSAGE_HISTORY"
+msgstr "Читати історію повідомлень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_EMOJIS"
+msgstr "Використовувати зовнішні емоджі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_STICKERS"
+msgstr "Використовувати зовнішні стікери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADD_REACTIONS"
+msgstr "Додавати реакції"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BYPASS_SLOWMODE"
+msgstr "Обхід повільного режиму"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MODERATE_MEMBERS"
+msgstr "Застосовувати тайм-аут до учасників"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL"
+msgstr "Переглядати канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL_MEMBERS"
+msgstr "Переглядати учасників каналу"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CONNECT"
+msgstr "Підключитися до голосового чату"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SPEAK"
+msgstr "Говорити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_STREAM"
+msgstr "Транслювати відео"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_VAD"
+msgstr "Використовувати голосову активність"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PRIORITY_SPEAKER"
+msgstr "Пріоритетний мовець"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MUTE_MEMBERS"
+msgstr "Вимикати мікрофон учасникам"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_DEAFEN_MEMBERS"
+msgstr "Вимикати звук учасникам"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MOVE_MEMBERS"
+msgstr "Переміщувати учасників"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_UPDATE_RTC_REGION"
+msgstr "Змінювати голосовий регіон"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MENTION_EVERYONE"
+msgstr "Використовувати {everyoneMention}/{hereMention} та {rolesMention}"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.destination"
+msgstr "Канал журналів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_online"
+msgstr "Онлайн"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_idle"
+msgstr "Неактивний"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_dnd"
+msgstr "Не турбувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_offline"
+msgstr "Не в мережі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_name"
+msgstr "Назва"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nick"
+msgstr "Псевдонім"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_username"
+msgstr "Ім'я користувача"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_discriminator"
+msgstr "Дискримінатор"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_global_name"
+msgstr "Ім'я для відображення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_avatar_hash"
+msgstr "Аватар"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_hash"
+msgstr "Банер"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bio"
+msgstr "Біографія"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_pronouns"
+msgstr "Займенники"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_accent_color"
+msgstr "Колір акценту"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_roles"
+msgstr "Ролі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$add"
+msgstr "Додати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$remove"
+msgstr "Видалити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permissions"
+msgstr "Дозволи"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_color"
+msgstr "Колір"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist"
+msgstr "Показувати цю роль окремо"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mentionable"
+msgstr "Дозволити згадки для цієї ролі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_position"
+msgstr "Позиція"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist_position"
+msgstr "Позиція"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon"
+msgstr "Іконка"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon_hash"
+msgstr "Іконка"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_unicode_emoji"
+msgstr "Емоджі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_topic"
+msgstr "Тема"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_type"
+msgstr "Тип каналу"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_parent_id"
+msgstr "Категорія"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw"
+msgstr "Контент для дорослих"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rate_limit_per_user"
+msgstr "Повільний режим"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bitrate"
+msgstr "Бітрейт"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_limit"
+msgstr "Ліміт підключень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_voice_connection_limit"
+msgstr "Ліміт підключень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rtc_region"
+msgstr "Голосовий регіон"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permission_overwrites"
+msgstr "Дозволи"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_allow"
+msgstr "Дозволити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deny"
+msgstr "Заборонити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_id"
+msgstr "ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_owner_id"
+msgstr "Власник спільноти"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_verification_level"
+msgstr "Верифікація"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_default_message_notifications"
+msgstr "Налаштування сповіщень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_explicit_content_filter"
+msgstr "Фільтр вмісту"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_channel_id"
+msgstr "Канал AFK / неактивних"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_timeout"
+msgstr "Час очікування неактивності"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_id"
+msgstr "Система та привітання"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_flags"
+msgstr "Система та привітання"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_hash"
+msgstr "Фон запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_hash"
+msgstr "Фон запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_description"
+msgstr "Опис"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_features"
+msgstr "Функції"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_vanity_url_code"
+msgstr "Запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_disabled_operations"
+msgstr "Вимкнено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_age"
+msgstr "Термін дії"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_uses"
+msgstr "Використань"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_uses"
+msgstr "Використань"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_temporary"
+msgstr "Тимчасове членство"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel_id"
+msgstr "Канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_inviter_id"
+msgstr "Користувач"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_creator_id"
+msgstr "Користувач"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_guild_id"
+msgstr "Спільнота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_available"
+msgstr "Доступно"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mute"
+msgstr "Вимкнути мікрофон"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deaf"
+msgstr "Вимкнути звук"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_communication_disabled_until"
+msgstr "Тайм-аут"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_url"
+msgstr "URL"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_format_type"
+msgstr "Файл"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_tags"
+msgstr "Теги"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_flags"
+msgstr "Прапори"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_animated"
+msgstr "Анімовані емоджі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content"
+msgstr "Повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_attachments"
+msgstr "Вкладення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embeds"
+msgstr "Вбудований вміст"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_items"
+msgstr "Стікери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_status"
+msgstr "Статус"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_custom_status"
+msgstr "Власний статус"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_mute"
+msgstr "Вимкнути мікрофон"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_deaf"
+msgstr "Вимкнути звук"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_video"
+msgstr "Відео"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_stream"
+msgstr "Демонстрація екрана"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_suppress"
+msgstr "Мовлення обмежено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_count"
+msgstr "Повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel"
+msgstr "Канал"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_author_id"
+msgstr "Автор"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_id"
+msgstr "Користувач"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji"
+msgstr "Емоджі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_code"
+msgstr "Код"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_duration_ms"
+msgstr "Час"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_type"
+msgstr "Файл"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_test"
+msgstr "Тестове повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_width"
+msgstr "Ширина"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_height"
+msgstr "Висота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_width"
+msgstr "Ширина"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_height"
+msgstr "Висота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_card_alignment"
+msgstr "Вирівнювання картки запрошення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_width"
+msgstr "Ширина"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_height"
+msgstr "Висота"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mfa_level"
+msgstr "Двофакторна автентифікація"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw_level"
+msgstr "Контент для дорослих"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_level"
+msgstr "Контент для дорослих"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_text"
+msgstr "Контент для дорослих"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rules_channel_id"
+msgstr "Канал правил"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_member_count"
+msgstr "Учасники"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_message_history_cutoff"
+msgstr "Межа історії повідомлень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji_id"
+msgstr "Емоджі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_id"
+msgstr "Стікери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_previous_attachments"
+msgstr "Вкладення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unavailable"
+msgstr "Fluxer поки не створює цю подію."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.scope"
+msgstr "Охоплює ботів і приватні канали спільноти."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.privacy"
+msgstr "Скопійований текст бачать усі, хто може читати канал журналів. Початкові файли не архівуються."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changed"
+msgstr "Змінено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.bad_words"
+msgstr "Заборонені слова"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeated_text"
+msgstr "Повторюваний текст"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.server_invites"
+msgstr "Запрошення на сервери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.external_links"
+msgstr "Зовнішні посилання"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_caps"
+msgstr "Надмірні великі літери"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_emojis"
+msgstr "Забагато емодзі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_spoilers"
+msgstr "Забагато спойлерів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_mentions"
+msgstr "Забагато згадок"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.zalgo"
+msgstr "Текст Zalgo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_spam"
+msgstr "Захист від спаму"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.character_limit"
+msgstr "Обмеження символів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.media_spam"
+msgstr "Медіаспам"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_raid"
+msgstr "Захист від рейдів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_nuke"
+msgstr "Захист від знищення сервера"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.observe"
+msgstr "Лише записувати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.warn"
+msgstr "Попередити учасника"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.lockdown"
+msgstr "Тимчасове блокування"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.ignoreBots"
+msgstr "Ігнорувати ботів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.window"
+msgstr "Часовий інтервал (с)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.minimumLength"
+msgstr "Мінімум літер"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.domains"
+msgstr "Дозволені домени"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.loadError"
+msgstr "Не вдалося завантажити AutoMod. Спробуйте ще раз."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveError"
+msgstr "Перевірте правила та спробуйте зберегти ще раз."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exemptChannels"
+msgstr "Виключені канали"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.configUpdated"
+msgstr "Налаштування AutoMod оновлено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.scope"
+msgstr "Повідомлення перевіряються після надсилання. Власник і системні повідомлення виключені."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.sharedPermissions"
+msgstr "Спільні дозволи"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.inherited"
+msgstr "Це правило використовує область користувачів, ролей, каналів і категорій зі сторінки AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.separate"
+msgstr "Використовувати окремі дозволи для цього правила"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.allExcept"
+msgstr "Застосовувати до всіх, крім вибраних"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.onlySelected"
+msgstr "Застосовувати лише до вибраних"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userPriority"
+msgstr "Явний вибір користувача має пріоритет над ролями. Обмеження каналів і категорій залишаються чинними."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userId"
+msgstr "ID користувача"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.discard"
+msgstr "Відхилити зміни"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveClose"
+msgstr "Зберегти й закрити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.additional"
+msgstr "Додаткові налаштування"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.wordHint"
+msgstr "Після кожного слова натисніть Enter або введіть кому. До 200 записів у списку, до 100 символів у кожному."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exactWords"
+msgstr "Заборонені слова (точний збіг)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.partialWords"
+msgstr "Заборонені слова (частковий збіг)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.addWord"
+msgstr "Додайте слово…"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.howWorks"
+msgstr "Як це працює?"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.matchingHint"
+msgstr "Регістр літер не враховується. Точний збіг перевіряє цілі слова; частковий знаходить текст і всередині слова."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatThreshold"
+msgstr "Кількість повторюваних повідомлень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatCountHint"
+msgstr "Правило спрацьовує, коли той самий учасник надсилає однаковий текст стільки разів за визначений період."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatWindowHint"
+msgstr "Повідомлення рахуються разом у всіх каналах, охоплених правилом. Регістр, пробіли та невидимі символи нормалізуються. Редагування не рахуються як нові повідомлення."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkWhitelist"
+msgstr "Список дозволених посилань"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkHint"
+msgstr "Введіть префікс URL і натисніть Enter або кому. Відповідні посилання обходять фільтри запрошень і зовнішніх посилань. Зіставлення враховує регістр, протокол і шлях."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkInvalid"
+msgstr "Введіть префікс URL HTTP або HTTPS без пробілів і даних для входу. До 100 записів, кожен до 2048 символів."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMinimumCharacters"
+msgstr "Мінімальна кількість символів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMaximumPercentage"
+msgstr "Максимальна частка великих літер (%)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsHint"
+msgstr "До мінімальної кількості та відсотка входять лише літери з великою та малою формами. Правило спрацьовує лише тоді, коли відсоток перевищує межу."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimit"
+msgstr "Ліміт емодзі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimitHint"
+msgstr "Правило спрацьовує, коли кількість емодзі перевищує цей ліміт. Враховуються емодзі Unicode і власні емодзі; з’єднані послідовності рахуються як одне емодзі."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimit"
+msgstr "Ліміт тегів спойлера"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimitHint"
+msgstr "Кожен фрагмент між позначками || рахується як один, навіть якщо займає кілька рядків. Правило спрацьовує лише тоді, коли кількість перевищує цей ліміт."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimit"
+msgstr "Ліміт згадок"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimitHint"
+msgstr "Рахує різні теги згадок користувачів і ролей, @everyone та @here. Повторення одного тегу рахуються один раз. Правило спрацьовує лише тоді, коли кількість перевищує цей ліміт."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.messageLimit"
+msgstr "Ліміт повідомлень"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spamHint"
+msgstr "Рахує нові повідомлення того самого учасника в каналах, охоплених цим правилом. Правило спрацьовує при досягненні ліміту за заданий проміжок часу; редагування не враховуються."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.maximumCharacters"
+msgstr "Максимальна кількість символів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.characterLimitHint"
+msgstr "Рахує текст повідомлення, включно з пробілами та переносами рядків. Складені емодзі або літери з діакритичними знаками можуть рахуватися як кілька символів. Правило спрацьовує лише після перевищення цього ліміту."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaLimit"
+msgstr "Ліміт медіа"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaSpamHint"
+msgstr "Рахує вкладення й наліпки, надіслані одним учасником у каналах цього правила. Правило спрацьовує, коли загальна кількість досягає ліміту за заданий проміжок часу; редагування, посилання й емодзі не враховуються."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.joinLimit"
+msgstr "Ліміт вступів"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.actionLimit"
+msgstr "Ліміт дій"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.newAccountDays"
+msgstr "Вік нових облікових записів (дні)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.raidHint"
+msgstr "Рахує вступи облікових записів, молодших за вказану кількість днів. 0 враховує всі записи. Досягнення ліміту за інтервал запускає вибрану дію."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.nukeHint"
+msgstr "Рахує потенційно руйнівні адміністративні дії одного учасника: зміни спільноти, каналів, ролей, блокування, виключення, боти й вебхуки."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnly"
+msgstr "Почати в режимі лише журналу"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnlyHint"
+msgstr "Записує спрацювання без обмеження учасника. Вимкніть, щоб застосувати дію зі сторінки AutoMod. Вимкнені правила залишаються вимкненими."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.protectionHint"
+msgstr "Ці правила працюють незалежно від модуля Безпека, коли AutoMod і правило ввімкнені та збережені. Блокування використовує тривалість зі сторінки AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.permissions"
+msgstr "Дозволи"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.users"
+msgstr "Користувачі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.roles"
+msgstr "Ролі"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.channels"
+msgstr "Канали"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.categories"
+msgstr "Категорії"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.add"
+msgstr "Додати"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.remove"
+msgstr "Видалити"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.back"
+msgstr "Назад"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.disabled"
+msgstr "Вимкнено"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete"
+msgstr "Видалити повідомлення"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.timeout"
+msgstr "Тайм-аут"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_warn"
+msgstr "Видалити повідомлення + Попередити учасника"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_timeout"
+msgstr "Видалити повідомлення + Тайм-аут"

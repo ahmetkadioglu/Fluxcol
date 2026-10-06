@@ -40603,3 +40603,2395 @@ msgstr "Nagyítás"
 #: src/features/user/components/settings_utils/search_index/KeybindsIndex.ts:86
 msgid "Zoom out"
 msgstr "Kicsinyítés"
+
+#. Built-in community application settings.
+msgid "Application settings"
+msgstr "Alkalmazásbeállítások"
+
+#. Built-in community application settings.
+msgid "Welcome and automatic roles"
+msgstr "Welcome and automatic roles"
+
+#. Built-in community application settings.
+msgid "Welcome new members with a message and assign their starting roles."
+msgstr "Welcome new members with a message and assign their starting roles."
+
+#. Built-in community application settings.
+msgid "Event logs"
+msgstr "Event logs"
+
+#. Built-in community application settings.
+msgid "Keep track of important events in your community."
+msgstr "Keep track of important events in your community."
+
+#. Built-in community application settings.
+msgid "AutoMod"
+msgstr "AutoMod"
+
+#. Built-in community application settings.
+msgid "Manage automatic moderation rules for your community."
+msgstr "Manage automatic moderation rules for your community."
+
+#. Built-in community application settings.
+msgid "Back to community"
+msgstr "Vissza a közösséghez"
+
+#. Built-in community application settings.
+msgid "Built-in community features for {communityName}."
+msgstr "Beépített közösségi funkciók a(z) {communityName} számára."
+
+#. Built-in community application settings.
+msgid "Not available yet"
+msgstr "Még nem érhető el"
+
+#. Built-in community application settings.
+msgid "Application settings are only available to the community owner on a self-hosted instance."
+msgstr "Az alkalmazásbeállítások csak a közösség tulajdonosának érhetők el saját üzemeltetésű példányon."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.overview"
+msgstr "Áttekintés"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.previewNotice"
+msgstr "Tekintsd meg a tervezett modulnézeteket. A modulok még nem aktívak, és ezek a beállítások nem lesznek mentve."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configuration"
+msgstr "Konfiguráció"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configurationDescription"
+msgstr "A modulhoz tervezett lehetőségek előnézete."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enable"
+msgstr "Modul engedélyezése"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enableDescription"
+msgstr "A modul a fejlesztés befejezése után lesz elérhető."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.general"
+msgstr "Általános"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.essentials"
+msgstr "Alapfunkciók"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.management"
+msgstr "Szerverkezelés"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.games"
+msgstr "Játékok és szórakozás"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.utilities"
+msgstr "Segédeszközök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.social"
+msgstr "Közösségimédia-értesítések"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.channel"
+msgstr "Üzenetcsatorna"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.channel"
+msgstr "Nincs kiválasztott csatorna"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.role"
+msgstr "Tagszerepkör"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.role"
+msgstr "Nincs kiválasztott szerepkör"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.roles"
+msgstr "Engedélyezett szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.roles"
+msgstr "Nincsenek kiválasztott szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.message"
+msgstr "Üzenetsablon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.message"
+msgstr "Üdvözlünk, {member}!"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.goodbye"
+msgstr "Búcsúüzenet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.goodbye"
+msgstr "Viszlát, {member}."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.response"
+msgstr "Válaszsablon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.response"
+msgstr "Itt jelenik meg a közösség üzenete."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.period"
+msgstr "Rangsorolási időszak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.period"
+msgstr "Hetente"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.members"
+msgstr "Látható tagok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.members"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.scope"
+msgstr "Statisztikák köre"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.scope"
+msgstr "Üzenetek és tagok aktivitása"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.frequency"
+msgstr "Frissítési időköz"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.frequency"
+msgstr "15 percenként"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.limit"
+msgstr "Használati korlát"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.limit"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.language"
+msgstr "Közösség nyelve"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.language"
+msgstr "Török"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.timezone"
+msgstr "Időzóna"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.timezone"
+msgstr "Europe/Istanbul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.reaction"
+msgstr "Reakciószerepkörök szabályai"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.reaction"
+msgstr "Emoji → szerepkör"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.selection"
+msgstr "Szerepkörválasztás"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.selection"
+msgstr "Több szerepkör"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.xp"
+msgstr "XP üzenetenként"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.xp"
+msgstr "15"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rewards"
+msgstr "Szerepkörjutalmak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rewards"
+msgstr "Nincsenek beállított jutalmak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rules"
+msgstr "Moderálási szabályok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rules"
+msgstr "Nincsenek beállított szabályok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.exempt"
+msgstr "Mentesített szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.exempt"
+msgstr "Nincsenek kiválasztott szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.joinlimit"
+msgstr "Csatlakozási korlát"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.joinlimit"
+msgstr "10 tag / perc"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.delay"
+msgstr "Kiosztási késleltetés"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.delay"
+msgstr "Azonnal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.threshold"
+msgstr "Reakcióküszöb"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.threshold"
+msgstr "5"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.emoji"
+msgstr "Reakcióemoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.emoji"
+msgstr "⭐"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.words"
+msgstr "Tiltott szavak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.words"
+msgstr "Nincsenek megadott szavak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.links"
+msgstr "Hivatkozási szabályzat"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.links"
+msgstr "Jóváhagyott domainek engedélyezése"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.spam"
+msgstr "Spamküszöb"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.spam"
+msgstr "5 üzenet / 10 másodperc"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.events"
+msgstr "Követett események"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.events"
+msgstr "Tag-, üzenet- és szerepkörváltozások"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.invites"
+msgstr "Meglévő meghívók"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.invites"
+msgstr "Meglévő meghívók belefoglalása"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.category"
+msgstr "Csatornakategória"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.category"
+msgstr "Nincs kiválasztott kategória"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.support"
+msgstr "Támogatói szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.support"
+msgstr "Nincsenek kiválasztott szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.questions"
+msgstr "Regisztrációs kérdések"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.questions"
+msgstr "Mutatkozz be a közösségnek."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.trigger"
+msgstr "Parancsindító"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.trigger"
+msgstr "/community"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.duration"
+msgstr "Időtartam"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.duration"
+msgstr "24 óra"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.winners"
+msgstr "Nyertesek száma"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.winners"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.wordlength"
+msgstr "Minimális szóhossz"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.wordlength"
+msgstr "3"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.repeated"
+msgstr "Ismételt szavak"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.repeated"
+msgstr "Ismétlések tiltása"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.start"
+msgstr "Kezdő szám"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.start"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.mistake"
+msgstr "Hibás szám esetén"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.mistake"
+msgstr "Számlálás újrakezdése"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.statname"
+msgstr "Csatornanév-sablon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.statname"
+msgstr "Tagok: {count}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.feed"
+msgstr "Hírfolyam URL-je"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.feed"
+msgstr "https://example.com/feed.xml"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.choices"
+msgstr "Szavazási lehetőségek"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.choices"
+msgstr "A lehetőség / B lehetőség"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.voice"
+msgstr "Forrás hangcsatorna"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.voice"
+msgstr "Nincs kiválasztott hangcsatorna"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.birthday"
+msgstr "Ünneplés időpontja"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.birthday"
+msgstr "09:00"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.account"
+msgstr "Fiók vagy csatorna URL-je"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.account"
+msgstr "Nincs csatlakoztatott fiók"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.announcement"
+msgstr "Bejelentéssablon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.announcement"
+msgstr "{creator} új bejegyzést osztott meg: {url}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.actor"
+msgstr "Művelet végrehajtója"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.actor"
+msgstr "Minden tag"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.daterange"
+msgstr "Dátumtartomány"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.daterange"
+msgstr "Elmúlt 7 nap"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.title"
+msgstr "Ranglista"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.description"
+msgstr "Mutasd meg a legaktívabb tagokat és helyezésüket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.title"
+msgstr "Statisztikák"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.description"
+msgstr "Kövesd az üzeneteket, a taglétszámot és a közösségi trendeket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.title"
+msgstr "Emoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.description"
+msgstr "Rendszerezd az emojieszközöket és használati szabályaikat."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.title"
+msgstr "Modulbeállítások"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.description"
+msgstr "Állítsd be a beépített modulok közös beállításait."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.title"
+msgstr "Üdvözlés és búcsú"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.description"
+msgstr "Üdvözöld az új tagokat, és alakítsd a búcsúüzeneteket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.title"
+msgstr "Reakciószerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.description"
+msgstr "Engedd a szerepkörválasztást reakciókkal és menükkel."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.title"
+msgstr "Szintek"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.description"
+msgstr "Jutalmazd a részvételt XP-vel, szintekkel és szerepkörökkel."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.title"
+msgstr "Moderálás"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.description"
+msgstr "Kezeld egy helyen a figyelmeztetéseket és moderálási műveleteket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.title"
+msgstr "Biztonság"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.description"
+msgstr "Tervezz védelmet a szervezett támadások és szokatlan aktivitás ellen."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.title"
+msgstr "Automatikus szerepkörök"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.description"
+msgstr "Oszd ki automatikusan az új tagok kezdő szerepköreit."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.title"
+msgstr "Csillagtábla"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.description"
+msgstr "Gyűjtsd külön csatornába a reakciókat kapó üzeneteket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.title"
+msgstr "AutoMod"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.description"
+msgstr "Kezeld a spam, hivatkozások és nem kívánt tartalom automatikus szabályait."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.title"
+msgstr "Eseménynaplók"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.description"
+msgstr "Kövesd a fontos tag-, üzenet- és csatornaeseményeket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.title"
+msgstr "Meghívókövetés"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.description"
+msgstr "Derítsd ki, mely meghívók hoznak új tagokat."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.title"
+msgstr "Támogatási jegyek"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.description"
+msgstr "Adj privát helyet a támogatói csapat eléréséhez."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.title"
+msgstr "Regisztráció"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.description"
+msgstr "Tervezd meg az új tagok regisztrációját és ellenőrzését."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.title"
+msgstr "Egyéni parancsok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.description"
+msgstr "Készíts közösségi parancsokat és válaszsablonokat."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.title"
+msgstr "Nyereményjátékok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.description"
+msgstr "Szervezz nyereményjátékokat részvételi szabályokkal és nyertesválasztással."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.title"
+msgstr "Szójáték"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.description"
+msgstr "Hozz létre közös csatornát szójátékokhoz."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.title"
+msgstr "Számlálás"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.description"
+msgstr "Építsetek közösen egy folyamatos számsort."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.title"
+msgstr "Statisztikai csatornák"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.description"
+msgstr "Jelenítsd meg az aktuális közösségi számokat a csatornanevekben."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.title"
+msgstr "RSS-hírfolyamok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.description"
+msgstr "Oszd meg a kiválasztott hírfolyamok frissítéseit."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.title"
+msgstr "Szavazások"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.description"
+msgstr "Gyűjtsd össze a tagok véleményét szavazásokkal."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.title"
+msgstr "Ideiglenes csatornák"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.description"
+msgstr "Hozz létre hangszobákat igény szerint, és töröld az üreseket."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.title"
+msgstr "Születésnapok"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.description"
+msgstr "Ünnepeld a születésnapokat üzenetekkel és szerepkörökkel."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.title"
+msgstr "YouTube"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.description"
+msgstr "Oszd meg a választott YouTube-csatornák új videóit és élő adásait."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.title"
+msgstr "Twitch"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.description"
+msgstr "Értesítsd a közösséget a választott Twitch-készítők élő adásairól."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.title"
+msgstr "Bluesky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.description"
+msgstr "Oszd meg a választott Bluesky-fiókok bejegyzéseit."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.title"
+msgstr "Kick"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.description"
+msgstr "Értesítsd a tagokat a választott Kick-készítők közvetítéseiről."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.title"
+msgstr "X"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.description"
+msgstr "Oszd meg a választott X-fiókok bejegyzéseit."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.title"
+msgstr "Műveleti előzmények"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.description"
+msgstr "Tekintsd át a modulbeállítások változásait és az automatikus műveleteket."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.available"
+msgstr "Az eseménynaplók elérhetők. A többi modul tervezési előnézet."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.scope"
+msgstr "Naplózza a tagok csatlakozását és távozását a kiválasztott szöveges csatornában. A botok és az üzenetek tartalma kimarad."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberJoin"
+msgstr "Tag csatlakozott"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberLeave"
+msgstr "Tag távozott"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.test"
+msgstr "Tesztüzenet küldése"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.testQueued"
+msgstr "Teszt sorba állítva. Ellenőrizze a kiválasztott csatornát és a műveleti előzményeket."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.loadError"
+msgstr "A naplók betöltése sikertelen. Ellenőrizze a hozzáférést, és próbálja újra."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saveError"
+msgstr "A mentés sikertelen. Válasszon érvényes csatornát és legalább egy eseményt, majd próbálja újra."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.conflict"
+msgstr "A beállításokat máshol módosították. Mentés előtt töltse be újra."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ownerChanged"
+msgstr "Tulajdonosváltás miatt szünetel. Mentéssel hagyja jóvá a beállításokat."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.channelMissing"
+msgstr "A mentett csatorna nem érhető el. Válasszon másikat, és mentse."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.stopped"
+msgstr "Az automatizálásokat a példány üzemeltetője leállította."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.emptyHistory"
+msgstr "Még nincsenek modulműveletek."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.historyInfo"
+msgstr "Az utolsó 50 művelet. A kézbesítési naplók 30, a beállításmódosítások 90 napig maradnak meg."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.policyChanged"
+msgstr "Kihagyva a modul beállításainak vagy tulajdonosának változása miatt."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.deliveryFailed"
+msgstr "A kézbesítés sikertelen. Ellenőrizze a csatornát és a worker szolgáltatást, majd küldjön tesztet."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.botSkipped"
+msgstr "Bot- vagy rendszerfiók kizárva."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.enabled"
+msgstr "Engedélyezve"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.disabled"
+msgstr "Letiltva"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.pending"
+msgstr "Függőben"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.running"
+msgstr "Folyamatban"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.sent"
+msgstr "Elküldve"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.skipped"
+msgstr "Kihagyva"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.failed"
+msgstr "Sikertelen"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saved"
+msgstr "Mentve"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.configUpdated"
+msgstr "Eseménynapló-beállítások frissítve"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.save"
+msgstr "Változtatások mentése"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.reset"
+msgstr "Visszaállítás"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.refresh"
+msgstr "Frissítés"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.system"
+msgstr "Rendszer"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.user"
+msgstr "Felhasználó"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ready"
+msgstr "Elérhető"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_join"
+msgstr "Tag csatlakozott"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_leave"
+msgstr "Tag távozott"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.bot_add"
+msgstr "Bot hozzáadva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_update"
+msgstr "Közösség · Profil · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.user_profile_update"
+msgstr "Felhasználó · Profil · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_kick"
+msgstr "Tag kirúgva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_prune"
+msgstr "Tagok tömeges eltávolítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_add"
+msgstr "Tag kitiltva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_remove"
+msgstr "Tag kitiltása feloldva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_timeout"
+msgstr "Tagok · Ideiglenes korlátozás · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_mute"
+msgstr "Közösség · Mikrofon némítása · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_deaf"
+msgstr "Közösség · Hang kikapcsolása · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_move"
+msgstr "Moderátor áthelyezett egy tagot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_disconnect"
+msgstr "Moderátor bontotta egy tag kapcsolatát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_create"
+msgstr "Üzenet küldése · Létrehozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_update"
+msgstr "Üzenet küldése · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_delete"
+msgstr "Üzenet törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_bulk_delete"
+msgstr "Üzenetek tömeges törlése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_pin"
+msgstr "Üzenet rögzítve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_unpin"
+msgstr "Üzenet rögzítése feloldva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_publish"
+msgstr "Üzenetek · Közzététel"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_add"
+msgstr "Reakciók · Hozzáadás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_remove"
+msgstr "Reakciók · Eltávolítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear"
+msgstr "Reakciók · Törlés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear_emoji"
+msgstr "Emoji · Reakciók · Törlés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_create"
+msgstr "Csatorna létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_update"
+msgstr "Csatorna · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_delete"
+msgstr "Csatorna törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_create"
+msgstr "Csatorna · Jogosultságok · Hozzáadás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_update"
+msgstr "Csatorna · Jogosultságok · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_delete"
+msgstr "Csatorna · Jogosultságok · Eltávolítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_create"
+msgstr "Szerepkör létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_update"
+msgstr "Szerepkörök · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_delete"
+msgstr "Szerepkör törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_role_update"
+msgstr "Tagok · Szerepkörök · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_create"
+msgstr "Meghívó létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_update"
+msgstr "Meghívók · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_delete"
+msgstr "Meghívó törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_use"
+msgstr "Meghívók · Csatlakozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_create"
+msgstr "Webhook létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_update"
+msgstr "Webhookok · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_delete"
+msgstr "Webhook törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_create"
+msgstr "Emoji létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_update"
+msgstr "Emoji · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_delete"
+msgstr "Emoji törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_create"
+msgstr "Matrica létrehozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_update"
+msgstr "Matricák · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_delete"
+msgstr "Matrica törölve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.guild_update"
+msgstr "Közösség · Beállítások · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_join"
+msgstr "Hang · Csatlakozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_leave"
+msgstr "Hang · Kilépés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_move"
+msgstr "Hang · Áthelyezés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_mute"
+msgstr "Saját mikrofon némítása megváltozott"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_deaf"
+msgstr "Saját hangkimenet némítása megváltozott"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_video"
+msgstr "Videó · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_stream"
+msgstr "Képernyőmegosztás · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_suppress"
+msgstr "Beszédkorlátozás módosult"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.entrance_sound_play"
+msgstr "Belépési hangok · Lejátszás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_status"
+msgstr "Látható online állapot megváltozott"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_custom_status"
+msgstr "Egyéni állapot · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_members"
+msgstr "Tagok · Profil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_moderation"
+msgstr "Moderálás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_messages"
+msgstr "Üzenetek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_reactions"
+msgstr "Reakciók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_channels"
+msgstr "Csatornák · Kategóriák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_permissions"
+msgstr "Csatornajogosultságok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_roles"
+msgstr "Szerepkörök"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_invites"
+msgstr "Meghívók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_integrations"
+msgstr "Webhookok · Emoji · Matricák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_guild"
+msgstr "Közösség"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_voice"
+msgstr "Hang · Állapot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.search"
+msgstr "Keresés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.selectAll"
+msgstr "Összes kijelölése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.clear"
+msgstr "Kijelölés törlése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.inherit"
+msgstr "Öröklés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.defaultChannel"
+msgstr "Alapértelmezett · Csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.capture"
+msgstr "Üzenetszöveg naplózása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.preview"
+msgstr "Előnézet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.test"
+msgstr "Tesztüzenet küldése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.time"
+msgstr "Idő"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.actor"
+msgstr "Végrehajtó"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.target"
+msgstr "Cél"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.source"
+msgstr "Csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reason"
+msgstr "Ok (indoklás)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unknown"
+msgstr "Ismeretlen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.before"
+msgstr "Előtte"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.after"
+msgstr "Utána"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changes"
+msgstr "Beállítások · Szerkesztés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.attachments"
+msgstr "Mellékletek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.count"
+msgstr "Üzenetek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.fileType"
+msgstr "Fájl"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.size"
+msgstr "Méret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.enabled"
+msgstr "Engedélyezve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.disabled"
+msgstr "Letiltva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.system"
+msgstr "Rendszer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.testMark"
+msgstr "Tesztüzenet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.logTitle"
+msgstr "Event logs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.none"
+msgstr "Nincs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message"
+msgstr "Üzenet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_text"
+msgstr "Szöveges csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_voice"
+msgstr "Hangcsatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_category"
+msgstr "Kategória"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_announcement"
+msgstr "Hirdetési csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_link"
+msgstr "Csatorna · Link"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADMINISTRATOR"
+msgstr "Rendszergazda"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_AUDIT_LOG"
+msgstr "Tevékenységnapló megtekintése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_GUILD"
+msgstr "Közösség kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_ROLES"
+msgstr "Szerepkörök kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_CHANNELS"
+msgstr "Csatornák kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_KICK_MEMBERS"
+msgstr "Tagok kirúgása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BAN_MEMBERS"
+msgstr "Tagok kitiltása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_INSTANT_INVITE"
+msgstr "Meghívólinkek létrehozása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CHANGE_NICKNAME"
+msgstr "Saját becenév módosítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_NICKNAMES"
+msgstr "Becenevek kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_EXPRESSIONS"
+msgstr "Emojik és matricák létrehozása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_EXPRESSIONS"
+msgstr "Emojik és matricák kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_WEBHOOKS"
+msgstr "Webhookok kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_MESSAGES"
+msgstr "Üzenetek küldése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_TTS_MESSAGES"
+msgstr "TTS-üzenetek küldése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_MESSAGES"
+msgstr "Üzenetek kezelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PIN_MESSAGES"
+msgstr "Üzenetek rögzítése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_EMBED_LINKS"
+msgstr "Hivatkozások beágyazása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ATTACH_FILES"
+msgstr "Fájlok csatolása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_READ_MESSAGE_HISTORY"
+msgstr "Üzenetelőzmények olvasása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_EMOJIS"
+msgstr "Külső emojik használata"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_STICKERS"
+msgstr "Külső matricák használata"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADD_REACTIONS"
+msgstr "Reakciók hozzáadása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BYPASS_SLOWMODE"
+msgstr "Lassú mód megkerülése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MODERATE_MEMBERS"
+msgstr "Tagok ideiglenes korlátozása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL"
+msgstr "Csatorna megtekintése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL_MEMBERS"
+msgstr "Csatornatagok megtekintése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CONNECT"
+msgstr "Csatlakozás hangcsatornához"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SPEAK"
+msgstr "Beszéd"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_STREAM"
+msgstr "Videó streamelése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_VAD"
+msgstr "Beszédérzékelés használata"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PRIORITY_SPEAKER"
+msgstr "Elsőbbségi beszélő"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MUTE_MEMBERS"
+msgstr "Tagok mikrofonjának némítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_DEAFEN_MEMBERS"
+msgstr "Hang kikapcsolása a tagoknál"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MOVE_MEMBERS"
+msgstr "Tagok áthelyezése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_UPDATE_RTC_REGION"
+msgstr "Hangrégió beállítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MENTION_EVERYONE"
+msgstr "{everyoneMention}/{hereMention} és {rolesMention} használata"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.destination"
+msgstr "Naplócsatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_online"
+msgstr "Online"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_idle"
+msgstr "Inaktív"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_dnd"
+msgstr "Ne zavarj"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_offline"
+msgstr "Offline"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_name"
+msgstr "Név"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nick"
+msgstr "Becenév"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_username"
+msgstr "Felhasználónév"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_discriminator"
+msgstr "Számazonosító"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_global_name"
+msgstr "Megjelenítendő név"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_avatar_hash"
+msgstr "Profilkép"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_hash"
+msgstr "Borítókép"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bio"
+msgstr "Bemutatkozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_pronouns"
+msgstr "Névmások"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_accent_color"
+msgstr "Kiemelőszín"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_roles"
+msgstr "Szerepkörök"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$add"
+msgstr "Hozzáadás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$remove"
+msgstr "Eltávolítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permissions"
+msgstr "Jogosultságok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_color"
+msgstr "Szín"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist"
+msgstr "Szerepkör külön megjelenítése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mentionable"
+msgstr "Említések engedélyezése ehhez a szerepkörhöz"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_position"
+msgstr "Pozíció"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist_position"
+msgstr "Pozíció"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon"
+msgstr "Ikon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon_hash"
+msgstr "Ikon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_unicode_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_topic"
+msgstr "Téma"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_type"
+msgstr "Csatornatípus"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_parent_id"
+msgstr "Kategória"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw"
+msgstr "Felnőtt tartalom"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rate_limit_per_user"
+msgstr "Lassú mód"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bitrate"
+msgstr "Bitráta"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_limit"
+msgstr "Kapcsolatkorlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_voice_connection_limit"
+msgstr "Kapcsolatkorlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rtc_region"
+msgstr "Hangrégió"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permission_overwrites"
+msgstr "Jogosultságok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_allow"
+msgstr "Engedélyezés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deny"
+msgstr "Elutasítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_id"
+msgstr "ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_owner_id"
+msgstr "Közösség tulajdonosa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_verification_level"
+msgstr "Ellenőrzés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_default_message_notifications"
+msgstr "Értesítési beállítások"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_explicit_content_filter"
+msgstr "Tartalomszűrő"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_channel_id"
+msgstr "AFK-csatorna / inaktív tagok csatornája"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_timeout"
+msgstr "AFK-időkorlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_id"
+msgstr "Rendszer és üdvözlés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_flags"
+msgstr "Rendszer és üdvözlés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_hash"
+msgstr "Meghívó háttere"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_hash"
+msgstr "Meghívó háttere"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_description"
+msgstr "Leírás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_features"
+msgstr "Funkciók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_vanity_url_code"
+msgstr "Meghívók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_disabled_operations"
+msgstr "Letiltva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_age"
+msgstr "Lejárati idő"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_uses"
+msgstr "Használatok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_uses"
+msgstr "Használatok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_temporary"
+msgstr "Ideiglenes tagság"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel_id"
+msgstr "Csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_inviter_id"
+msgstr "Felhasználó"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_creator_id"
+msgstr "Felhasználó"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_guild_id"
+msgstr "Közösség"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_available"
+msgstr "Elérhető"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mute"
+msgstr "Mikrofon némítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deaf"
+msgstr "Hang kikapcsolása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_communication_disabled_until"
+msgstr "Ideiglenes korlátozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_url"
+msgstr "URL"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_format_type"
+msgstr "Fájl"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_tags"
+msgstr "Címkék"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_flags"
+msgstr "Zászlók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_animated"
+msgstr "Animált emojik"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content"
+msgstr "Üzenet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_attachments"
+msgstr "Mellékletek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embeds"
+msgstr "Beágyazott tartalmak"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_items"
+msgstr "Matricák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_status"
+msgstr "Állapot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_custom_status"
+msgstr "Egyéni állapot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_mute"
+msgstr "Mikrofon némítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_deaf"
+msgstr "Hang kikapcsolása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_video"
+msgstr "Videó"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_stream"
+msgstr "Képernyőmegosztás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_suppress"
+msgstr "Beszéd korlátozva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_count"
+msgstr "Üzenetek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel"
+msgstr "Csatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_author_id"
+msgstr "Szerző"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_id"
+msgstr "Felhasználó"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_code"
+msgstr "Kód"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_duration_ms"
+msgstr "Idő"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_type"
+msgstr "Fájl"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_test"
+msgstr "Tesztüzenet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_width"
+msgstr "Szélesség"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_height"
+msgstr "Magasság"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_width"
+msgstr "Szélesség"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_height"
+msgstr "Magasság"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_card_alignment"
+msgstr "Meghívókártya igazítása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_width"
+msgstr "Szélesség"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_height"
+msgstr "Magasság"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mfa_level"
+msgstr "Kétlépcsős azonosítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw_level"
+msgstr "Felnőtt tartalom"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_level"
+msgstr "Felnőtt tartalom"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_text"
+msgstr "Felnőtt tartalom"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rules_channel_id"
+msgstr "Szabálycsatorna"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_member_count"
+msgstr "Tagok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_message_history_cutoff"
+msgstr "Üzenetelőzmények határa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji_id"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_id"
+msgstr "Matricák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_previous_attachments"
+msgstr "Mellékletek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unavailable"
+msgstr "A Fluxer még nem hozza létre ezt az eseményt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.scope"
+msgstr "A botokat és a közösség privát csatornáit is tartalmazza."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.privacy"
+msgstr "A másolt üzenetszöveget mindenki láthatja, aki olvashatja a naplócsatornát. A forrásfájlok nem kerülnek archiválásra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changed"
+msgstr "Módosítva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.bad_words"
+msgstr "Tiltott szavak"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeated_text"
+msgstr "Ismétlődő szöveg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.server_invites"
+msgstr "Szervermeghívók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.external_links"
+msgstr "Külső hivatkozások"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_caps"
+msgstr "Túl sok nagybetű"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_emojis"
+msgstr "Túl sok emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_spoilers"
+msgstr "Túl sok spoiler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_mentions"
+msgstr "Túl sok említés"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.zalgo"
+msgstr "Zalgo-szöveg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_spam"
+msgstr "Spamvédelem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.character_limit"
+msgstr "Karakterkorlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.media_spam"
+msgstr "Médiaspam"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_raid"
+msgstr "Rajtaütés elleni védelem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_nuke"
+msgstr "Szerverrombolás elleni védelem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.observe"
+msgstr "Csak naplózás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.warn"
+msgstr "Tag figyelmeztetése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.lockdown"
+msgstr "Ideiglenes zárolás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.ignoreBots"
+msgstr "Botok figyelmen kívül hagyása"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.window"
+msgstr "Időablak (mp)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.minimumLength"
+msgstr "Minimális betűszám"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.domains"
+msgstr "Engedélyezett domainek"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.loadError"
+msgstr "Az AutoMod nem tölthető be. Próbáld újra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveError"
+msgstr "Ellenőrizd a szabályokat, és próbáld újra a mentést."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exemptChannels"
+msgstr "Kivételt képező csatornák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.configUpdated"
+msgstr "AutoMod-beállítások frissítve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.scope"
+msgstr "Az üzenetek ellenőrzése elküldés után történik. A tulajdonos és a rendszerüzenetek kivételt képeznek."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.sharedPermissions"
+msgstr "Közös jogosultságok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.inherited"
+msgstr "Ez a szabály az AutoMod oldalon beállított felhasználói, szerepkör-, csatorna- és kategóriakört használja."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.separate"
+msgstr "Külön jogosultságok használata ehhez a szabályhoz"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.allExcept"
+msgstr "Alkalmazás mindenkire a kiválasztottak kivételével"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.onlySelected"
+msgstr "Alkalmazás csak a kiválasztottakra"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userPriority"
+msgstr "A kifejezett felhasználóválasztás elsőbbséget élvez a szerepkörökkel szemben. A csatorna- és kategóriakorlátok továbbra is érvényesek."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userId"
+msgstr "Felhasználóazonosító"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.discard"
+msgstr "Módosítások elvetése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveClose"
+msgstr "Mentés és bezárás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.additional"
+msgstr "További beállítások"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.wordHint"
+msgstr "Minden szó után nyomj Entert vagy írj vesszőt. Listánként legfeljebb 200 elem, elemenként 100 karakter."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exactWords"
+msgstr "Tiltott szavak (pontos egyezés)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.partialWords"
+msgstr "Tiltott szavak (részleges egyezés)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.addWord"
+msgstr "Szó hozzáadása…"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.howWorks"
+msgstr "Hogyan működik?"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.matchingHint"
+msgstr "A kis- és nagybetűk nem számítanak. A pontos egyezés egész szavakat vizsgál; a részleges egyezés a szavakon belül is keres."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatThreshold"
+msgstr "Ismétlődő üzenetek száma"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatCountHint"
+msgstr "A szabály akkor lép működésbe, ha ugyanaz a tag az időablakon belül ennyiszer küld azonos szöveget."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatWindowHint"
+msgstr "A szabály hatókörébe tartozó csatornák üzenetei együtt számítanak. A kis- és nagybetűk, szóközök és láthatatlan karakterek különbségei normalizálódnak. A szerkesztések nem számítanak új üzenetnek."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkWhitelist"
+msgstr "Engedélyezett hivatkozások"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkHint"
+msgstr "Írj be egy URL-előtagot, majd nyomj Entert vagy vesszőt. Az egyező hivatkozások mentesülnek a meghívó- és külsőhivatkozás-szűrők alól. Az egyezés megkülönbözteti a kis- és nagybetűket, és tartalmazza a protokollt és az útvonalat."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkInvalid"
+msgstr "Adj meg egy HTTP- vagy HTTPS-URL-előtagot szóközök és bejelentkezési adatok nélkül. Legfeljebb 100 bejegyzés, egyenként 2048 karakter."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMinimumCharacters"
+msgstr "Karakterek minimális száma"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMaximumPercentage"
+msgstr "Nagybetűk maximális aránya (%)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsHint"
+msgstr "A minimumba és a százalékba csak a kis- és nagybetűs alakkal rendelkező betűk számítanak bele. A szabály csak akkor lép működésbe, ha az arány meghaladja a határt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimit"
+msgstr "Emojik számának korlátja"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimitHint"
+msgstr "A szabály akkor lép működésbe, ha az emojik száma meghaladja ezt a korlátot. A Unicode és az egyéni emojik is beleszámítanak; az összekapcsolt emojisorozatok egy emojinak számítanak."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimit"
+msgstr "Spoilerjelölések számának korlátja"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimitHint"
+msgstr "Minden || jelek közé zárt rész egynek számít, akkor is, ha több sorból áll. A szabály csak akkor lép működésbe, ha a darabszám meghaladja ezt a korlátot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimit"
+msgstr "Említések számának korlátja"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimitHint"
+msgstr "A különböző felhasználó- és szerepemlítési címkéket, valamint az @everyone és @here említéseket számolja. Ugyanazon címke ismétlései egyszer számítanak. A szabály csak akkor lép működésbe, ha a darabszám meghaladja ezt a korlátot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.messageLimit"
+msgstr "Üzenetkorlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spamHint"
+msgstr "Ugyanazon tag új üzeneteit számolja a szabály által érintett csatornákban. A szabály akkor lép működésbe, ha a megadott időablakon belül eléri a korlátot; a szerkesztések nem számítanak."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.maximumCharacters"
+msgstr "Karakterek maximális száma"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.characterLimitHint"
+msgstr "Az üzenet szövegét számolja, a szóközökkel és sortörésekkel együtt. Az összetett emojik vagy ékezetes betűk több karakternek is számíthatnak. A szabály csak a korlát túllépésekor lép működésbe."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaLimit"
+msgstr "Médiaelemek korlátja"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaSpamHint"
+msgstr "Az ugyanazon tag által a szabályhoz tartozó csatornákban küldött mellékleteket és matricákat számolja. A szabály akkor lép működésbe, ha az összes darabszám eléri a korlátot az időablakban; a szerkesztések, hivatkozások és emojik nem számítanak."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.joinLimit"
+msgstr "Belépési korlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.actionLimit"
+msgstr "Műveleti korlát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.newAccountDays"
+msgstr "Új fiókok kora (nap)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.raidHint"
+msgstr "Az ennél fiatalabb fiókok belépéseit számolja. A 0 minden fiókot számol. Az időablakon belüli korlát elérése kiváltja a kiválasztott műveletet."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.nukeHint"
+msgstr "Ugyanazon tag potenciálisan romboló adminisztrációs műveleteit számolja: közösség, csatorna, szerepkör, kitiltás, eltávolítás, bot és webhook."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnly"
+msgstr "Indítás csak naplózó módban"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnlyHint"
+msgstr "A találatokat a tag korlátozása nélkül naplózza. Kikapcsolva az AutoMod oldalon kiválasztott műveletet használja. A kikapcsolt szabályok kikapcsolva maradnak."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.protectionHint"
+msgstr "Ezek a szabályok a Biztonság modultól függetlenül működnek az AutoMod és a szabály bekapcsolása és mentése után. A lezárás az AutoMod oldalon megadott időtartamot használja."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.permissions"
+msgstr "Jogosultságok"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.users"
+msgstr "Felhasználók"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.roles"
+msgstr "Szerepkörök"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.channels"
+msgstr "Csatornák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.categories"
+msgstr "Kategóriák"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.add"
+msgstr "Hozzáadás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.remove"
+msgstr "Eltávolítás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.back"
+msgstr "Vissza"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.disabled"
+msgstr "Letiltva"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete"
+msgstr "Üzenet törlése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.timeout"
+msgstr "Ideiglenes korlátozás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_warn"
+msgstr "Üzenet törlése + Tag figyelmeztetése"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_timeout"
+msgstr "Üzenet törlése + Ideiglenes korlátozás"

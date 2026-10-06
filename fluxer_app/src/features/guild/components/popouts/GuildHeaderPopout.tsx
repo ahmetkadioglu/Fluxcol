@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+import {Routes} from '@app/app/Routes';
 import {useRovingFocusList} from '@app/features/app/hooks/useRovingFocusList';
+import {canAccessApplicationSettings} from '@app/features/application_settings/ApplicationSettingsAccess';
+import {APPLICATION_SETTINGS_DESCRIPTOR} from '@app/features/application_settings/ApplicationSettingsMessages';
 import Authentication from '@app/features/auth/state/Authentication';
 import {CategoryCreateModal} from '@app/features/channel/components/modals/CategoryCreateModal';
 import {ChannelCreateModal} from '@app/features/channel/components/modals/ChannelCreateModal';
@@ -24,6 +27,7 @@ import {
 import {isKeyboardActivationKey} from '@app/features/input/utils/KeyboardUtils';
 import {InviteModal} from '@app/features/invite/components/modals/InviteModal';
 import * as InviteUtils from '@app/features/invite/utils/InviteUtils';
+import * as RouterUtils from '@app/features/navigation/utils/RouterUtils';
 import Permission from '@app/features/permissions/state/Permission';
 import {Checkbox} from '@app/features/ui/checkbox/Checkbox';
 import * as ModalCommands from '@app/features/ui/commands/ModalCommands';
@@ -42,6 +46,7 @@ import {
 	BellIcon,
 	FolderPlusIcon,
 	GearIcon,
+	GridFourIcon,
 	type Icon,
 	PlusCircleIcon,
 	ShieldIcon,
@@ -231,6 +236,14 @@ export const GuildHeaderPopout = observer(({guild}: {guild: Guild}) => {
 						)
 					}
 					data-flx="guild.guild-header-popout.guild-header-popout-item.push--2"
+				/>
+			)}
+			{canAccessApplicationSettings(guild) && (
+				<GuildHeaderPopoutItem
+					icon={GridFourIcon}
+					title={i18n._(APPLICATION_SETTINGS_DESCRIPTOR)}
+					onClick={() => RouterUtils.transitionTo(Routes.guildApplicationSettings(guild.id))}
+					data-flx="guild.guild-header-popout.application-settings"
 				/>
 			)}
 			{canManageChannels && (

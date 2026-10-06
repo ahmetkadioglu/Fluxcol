@@ -128,6 +128,11 @@ maybe_update_cached_user_data(_, _, State) ->
     State.
 
 -spec maybe_update_author_data(map(), guild_state()) -> guild_state().
+%% The reserved system account authors messages but is not a guild member.
+maybe_update_author_data(#{<<"id">> := AuthorId}, State) when
+    AuthorId =:= 0; AuthorId =:= <<"0">>
+->
+    State;
 maybe_update_author_data(AuthorData, State) ->
     case snowflake_id:parse_optional(maps:get(<<"id">>, AuthorData, undefined)) of
         undefined ->

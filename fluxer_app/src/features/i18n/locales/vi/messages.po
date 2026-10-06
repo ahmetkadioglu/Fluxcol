@@ -40603,3 +40603,2395 @@ msgstr "Phóng to"
 #: src/features/user/components/settings_utils/search_index/KeybindsIndex.ts:86
 msgid "Zoom out"
 msgstr "Thu nhỏ"
+
+#. Built-in community application settings.
+msgid "Application settings"
+msgstr "Cài đặt ứng dụng"
+
+#. Built-in community application settings.
+msgid "Welcome and automatic roles"
+msgstr "Welcome and automatic roles"
+
+#. Built-in community application settings.
+msgid "Welcome new members with a message and assign their starting roles."
+msgstr "Welcome new members with a message and assign their starting roles."
+
+#. Built-in community application settings.
+msgid "Event logs"
+msgstr "Event logs"
+
+#. Built-in community application settings.
+msgid "Keep track of important events in your community."
+msgstr "Keep track of important events in your community."
+
+#. Built-in community application settings.
+msgid "AutoMod"
+msgstr "AutoMod"
+
+#. Built-in community application settings.
+msgid "Manage automatic moderation rules for your community."
+msgstr "Manage automatic moderation rules for your community."
+
+#. Built-in community application settings.
+msgid "Back to community"
+msgstr "Quay lại cộng đồng"
+
+#. Built-in community application settings.
+msgid "Built-in community features for {communityName}."
+msgstr "Tính năng cộng đồng tích hợp sẵn cho {communityName}."
+
+#. Built-in community application settings.
+msgid "Not available yet"
+msgstr "Chưa khả dụng"
+
+#. Built-in community application settings.
+msgid "Application settings are only available to the community owner on a self-hosted instance."
+msgstr "Cài đặt ứng dụng chỉ dành cho chủ cộng đồng trên phiên bản tự lưu trữ."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.overview"
+msgstr "Tổng quan"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.previewNotice"
+msgstr "Khám phá các màn hình mô-đun dự kiến. Các mô-đun chưa hoạt động và những cài đặt này không được lưu."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configuration"
+msgstr "Cấu hình"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configurationDescription"
+msgstr "Bản xem trước các tùy chọn dự kiến cho mô-đun này."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enable"
+msgstr "Bật mô-đun"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enableDescription"
+msgstr "Mô-đun này sẽ khả dụng sau khi hoàn tất triển khai."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.general"
+msgstr "Chung"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.essentials"
+msgstr "Tính năng thiết yếu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.management"
+msgstr "Quản lý máy chủ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.games"
+msgstr "Trò chơi và giải trí"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.utilities"
+msgstr "Tiện ích"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.social"
+msgstr "Thông báo mạng xã hội"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.channel"
+msgstr "Kênh tin nhắn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.channel"
+msgstr "Chưa chọn kênh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.role"
+msgstr "Vai trò thành viên"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.role"
+msgstr "Chưa chọn vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.roles"
+msgstr "Vai trò được phép"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.roles"
+msgstr "Chưa chọn vai trò nào"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.message"
+msgstr "Mẫu tin nhắn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.message"
+msgstr "Chào mừng, {member}!"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.goodbye"
+msgstr "Tin nhắn tạm biệt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.goodbye"
+msgstr "Hẹn gặp lại, {member}."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.response"
+msgstr "Mẫu phản hồi"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.response"
+msgstr "Tin nhắn cộng đồng của bạn sẽ xuất hiện ở đây."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.period"
+msgstr "Chu kỳ xếp hạng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.period"
+msgstr "Hằng tuần"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.members"
+msgstr "Thành viên được hiển thị"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.members"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.scope"
+msgstr "Phạm vi thống kê"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.scope"
+msgstr "Tin nhắn và hoạt động thành viên"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.frequency"
+msgstr "Khoảng thời gian cập nhật"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.frequency"
+msgstr "Mỗi 15 phút"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.limit"
+msgstr "Giới hạn sử dụng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.limit"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.language"
+msgstr "Ngôn ngữ cộng đồng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.language"
+msgstr "Tiếng Thổ Nhĩ Kỳ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.timezone"
+msgstr "Múi giờ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.timezone"
+msgstr "Europe/Istanbul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.reaction"
+msgstr "Quy tắc vai trò qua phản ứng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.reaction"
+msgstr "Biểu tượng cảm xúc → vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.selection"
+msgstr "Lựa chọn vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.selection"
+msgstr "Nhiều vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.xp"
+msgstr "XP mỗi tin nhắn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.xp"
+msgstr "15"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rewards"
+msgstr "Phần thưởng vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rewards"
+msgstr "Chưa cấu hình phần thưởng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rules"
+msgstr "Quy tắc kiểm duyệt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rules"
+msgstr "Chưa cấu hình quy tắc"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.exempt"
+msgstr "Vai trò được miễn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.exempt"
+msgstr "Chưa chọn vai trò nào"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.joinlimit"
+msgstr "Giới hạn tốc độ tham gia"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.joinlimit"
+msgstr "10 thành viên / phút"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.delay"
+msgstr "Thời gian chờ gán vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.delay"
+msgstr "Ngay lập tức"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.threshold"
+msgstr "Ngưỡng phản ứng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.threshold"
+msgstr "5"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.emoji"
+msgstr "Biểu tượng cảm xúc phản ứng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.emoji"
+msgstr "⭐"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.words"
+msgstr "Từ bị chặn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.words"
+msgstr "Chưa thiết lập từ nào"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.links"
+msgstr "Chính sách liên kết"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.links"
+msgstr "Cho phép tên miền được phê duyệt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.spam"
+msgstr "Ngưỡng tin nhắn rác"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.spam"
+msgstr "5 tin nhắn / 10 giây"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.events"
+msgstr "Sự kiện được theo dõi"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.events"
+msgstr "Thay đổi về thành viên, tin nhắn và vai trò"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.invites"
+msgstr "Lời mời hiện có"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.invites"
+msgstr "Bao gồm lời mời hiện có"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.category"
+msgstr "Danh mục kênh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.category"
+msgstr "Chưa chọn danh mục"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.support"
+msgstr "Vai trò hỗ trợ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.support"
+msgstr "Chưa chọn vai trò nào"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.questions"
+msgstr "Câu hỏi đăng ký"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.questions"
+msgstr "Giới thiệu bản thân với cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.trigger"
+msgstr "Tác nhân kích hoạt lệnh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.trigger"
+msgstr "/community"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.duration"
+msgstr "Thời lượng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.duration"
+msgstr "24 giờ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.winners"
+msgstr "Số người thắng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.winners"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.wordlength"
+msgstr "Độ dài từ tối thiểu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.wordlength"
+msgstr "3"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.repeated"
+msgstr "Từ lặp lại"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.repeated"
+msgstr "Không cho phép lặp lại"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.start"
+msgstr "Số bắt đầu"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.start"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.mistake"
+msgstr "Khi có số không đúng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.mistake"
+msgstr "Bắt đầu đếm lại"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.statname"
+msgstr "Mẫu tên kênh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.statname"
+msgstr "Thành viên: {count}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.feed"
+msgstr "URL nguồn tin"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.feed"
+msgstr "https://example.com/feed.xml"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.choices"
+msgstr "Lựa chọn bình chọn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.choices"
+msgstr "Lựa chọn A / Lựa chọn B"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.voice"
+msgstr "Kênh thoại nguồn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.voice"
+msgstr "Chưa chọn kênh thoại"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.birthday"
+msgstr "Thời điểm chúc mừng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.birthday"
+msgstr "09:00"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.account"
+msgstr "URL tài khoản hoặc kênh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.account"
+msgstr "Chưa kết nối tài khoản"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.announcement"
+msgstr "Mẫu thông báo"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.announcement"
+msgstr "{creator} đã chia sẻ cập nhật mới: {url}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.actor"
+msgstr "Người thực hiện"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.actor"
+msgstr "Tất cả thành viên"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.daterange"
+msgstr "Khoảng ngày"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.daterange"
+msgstr "7 ngày qua"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.title"
+msgstr "Bảng xếp hạng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.description"
+msgstr "Hiển thị các thành viên tích cực nhất và thứ hạng của họ trong cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.title"
+msgstr "Thống kê"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.description"
+msgstr "Theo dõi hoạt động tin nhắn, tăng trưởng thành viên và xu hướng cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.title"
+msgstr "Biểu tượng cảm xúc"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.description"
+msgstr "Sắp xếp các công cụ biểu tượng cảm xúc và quy tắc sử dụng của cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.title"
+msgstr "Cài đặt mô-đun"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.description"
+msgstr "Đặt các tùy chọn chung cho mô-đun cộng đồng tích hợp sẵn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.title"
+msgstr "Chào mừng và tạm biệt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.description"
+msgstr "Chào đón thành viên mới và tùy chỉnh tin nhắn khi ai đó rời đi."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.title"
+msgstr "Vai trò qua phản ứng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.description"
+msgstr "Cho phép thành viên chọn vai trò qua phản ứng và menu vai trò."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.title"
+msgstr "Cấp độ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.description"
+msgstr "Thưởng XP, cấp độ và vai trò cho việc tham gia cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.title"
+msgstr "Kiểm duyệt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.description"
+msgstr "Tập hợp cảnh báo thành viên và thao tác kiểm duyệt vào một nơi."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.title"
+msgstr "Bảo mật"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.description"
+msgstr "Lên kế hoạch bảo vệ trước các cuộc tấn công hàng loạt và hoạt động bất thường."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.title"
+msgstr "Vai trò tự động"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.description"
+msgstr "Tự động gán vai trò ban đầu cho thành viên mới."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.title"
+msgstr "Bảng tin nhắn nổi bật"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.description"
+msgstr "Thu thập tin nhắn nhận được phản ứng từ cộng đồng vào một kênh riêng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.title"
+msgstr "AutoMod"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.description"
+msgstr "Quản lý quy tắc tự động cho tin nhắn rác, liên kết và nội dung không mong muốn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.title"
+msgstr "Nhật ký sự kiện"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.description"
+msgstr "Theo dõi các sự kiện quan trọng về thành viên, tin nhắn và kênh."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.title"
+msgstr "Theo dõi lời mời"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.description"
+msgstr "Tìm hiểu lời mời nào mang thành viên mới đến cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.title"
+msgstr "Yêu cầu hỗ trợ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.description"
+msgstr "Cung cấp nơi riêng tư để thành viên liên hệ đội hỗ trợ."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.title"
+msgstr "Đăng ký"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.description"
+msgstr "Thiết kế quy trình đăng ký và xác minh cho thành viên mới."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.title"
+msgstr "Lệnh tùy chỉnh"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.description"
+msgstr "Tạo lệnh và mẫu phản hồi dành riêng cho cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.title"
+msgstr "Bốc thăm quà tặng"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.description"
+msgstr "Tổ chức bốc thăm quà tặng với quy tắc tham gia và lựa chọn người thắng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.title"
+msgstr "Trò chơi từ ngữ"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.description"
+msgstr "Tạo kênh chung cho các trò chơi từ ngữ của cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.title"
+msgstr "Đếm số"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.description"
+msgstr "Cho phép thành viên cùng xây dựng một chuỗi đếm số."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.title"
+msgstr "Kênh thống kê"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.description"
+msgstr "Hiển thị số liệu cộng đồng theo thời gian thực trong tên kênh."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.title"
+msgstr "Nguồn tin RSS"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.description"
+msgstr "Chia sẻ cập nhật từ nguồn tin đã chọn trong các kênh cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.title"
+msgstr "Bình chọn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.description"
+msgstr "Thu thập ý kiến thành viên qua các cuộc bình chọn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.title"
+msgstr "Kênh tạm thời"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.description"
+msgstr "Tạo phòng thoại theo nhu cầu và xóa khi không còn người."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.title"
+msgstr "Sinh nhật"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.description"
+msgstr "Mừng sinh nhật thành viên bằng tin nhắn và vai trò."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.title"
+msgstr "YouTube"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.description"
+msgstr "Chia sẻ video mới và buổi phát trực tiếp từ các kênh YouTube đã chọn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.title"
+msgstr "Twitch"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.description"
+msgstr "Thông báo cho cộng đồng khi người sáng tạo Twitch đã chọn bắt đầu phát trực tiếp."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.title"
+msgstr "Bluesky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.description"
+msgstr "Chia sẻ cập nhật từ các tài khoản Bluesky đã chọn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.title"
+msgstr "Kick"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.description"
+msgstr "Thông báo cho thành viên khi người sáng tạo Kick đã chọn bắt đầu phát sóng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.title"
+msgstr "X"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.description"
+msgstr "Chia sẻ cập nhật từ các tài khoản X đã chọn với cộng đồng."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.title"
+msgstr "Lịch sử thao tác"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.description"
+msgstr "Xem lại thay đổi cấu hình mô-đun và thao tác tự động."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.available"
+msgstr "Nhật ký sự kiện đã khả dụng. Các mô-đun khác là bản xem trước thiết kế."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.scope"
+msgstr "Ghi nhận thành viên tham gia và rời đi trong kênh văn bản đã chọn. Không bao gồm bot và nội dung tin nhắn."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberJoin"
+msgstr "Thành viên tham gia"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberLeave"
+msgstr "Thành viên rời đi"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.test"
+msgstr "Gửi tin nhắn thử nghiệm"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.testQueued"
+msgstr "Đã xếp hàng thử nghiệm. Kiểm tra kênh đã chọn và lịch sử thao tác."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.loadError"
+msgstr "Không thể tải nhật ký. Kiểm tra quyền truy cập rồi thử lại."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saveError"
+msgstr "Không thể lưu. Chọn kênh hợp lệ và ít nhất một sự kiện rồi thử lại."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.conflict"
+msgstr "Cài đặt đã thay đổi ở nơi khác. Tải lại trước khi lưu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ownerChanged"
+msgstr "Tạm dừng sau khi đổi chủ sở hữu. Lưu để phê duyệt cài đặt."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.channelMissing"
+msgstr "Kênh đã lưu không khả dụng. Chọn kênh khác rồi lưu."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.stopped"
+msgstr "Quản trị viên phiên bản đã dừng tự động hóa."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.emptyHistory"
+msgstr "Chưa có thao tác mô-đun."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.historyInfo"
+msgstr "50 thao tác gần nhất. Nhật ký gửi được giữ 30 ngày và thay đổi cài đặt 90 ngày."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.policyChanged"
+msgstr "Đã bỏ qua vì cài đặt hoặc chủ sở hữu mô-đun thay đổi."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.deliveryFailed"
+msgstr "Gửi thất bại. Kiểm tra kênh và dịch vụ worker rồi gửi thử nghiệm."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.botSkipped"
+msgstr "Đã loại trừ tài khoản bot hoặc hệ thống."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.enabled"
+msgstr "Đã bật"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.disabled"
+msgstr "Đã tắt"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.pending"
+msgstr "Đang chờ"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.running"
+msgstr "Đang chạy"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.sent"
+msgstr "Đã gửi"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.skipped"
+msgstr "Đã bỏ qua"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.failed"
+msgstr "Thất bại"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saved"
+msgstr "Đã lưu"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.configUpdated"
+msgstr "Đã cập nhật cài đặt nhật ký sự kiện"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.save"
+msgstr "Lưu thay đổi"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.reset"
+msgstr "Đặt lại"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.refresh"
+msgstr "Làm mới"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.system"
+msgstr "Hệ thống"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.user"
+msgstr "Người dùng"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ready"
+msgstr "Khả dụng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_join"
+msgstr "Thành viên tham gia"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_leave"
+msgstr "Thành viên rời đi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.bot_add"
+msgstr "Đã thêm bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_update"
+msgstr "Cộng đồng · Hồ sơ · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.user_profile_update"
+msgstr "Người dùng · Hồ sơ · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_kick"
+msgstr "Đã đuổi thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_prune"
+msgstr "Dọn dẹp hàng loạt thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_add"
+msgstr "Đã cấm thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_remove"
+msgstr "Đã bỏ cấm thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_timeout"
+msgstr "Thành viên · Tạm dừng · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_mute"
+msgstr "Cộng đồng · Tắt micrô · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_deaf"
+msgstr "Cộng đồng · Tắt tiếng nghe · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_move"
+msgstr "Thành viên được kiểm duyệt viên di chuyển"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_disconnect"
+msgstr "Thành viên bị kiểm duyệt viên ngắt kết nối"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_create"
+msgstr "Gửi tin nhắn · Tạo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_update"
+msgstr "Gửi tin nhắn · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_delete"
+msgstr "Đã xóa tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_bulk_delete"
+msgstr "Tin nhắn bị xóa hàng loạt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_pin"
+msgstr "Đã ghim tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_unpin"
+msgstr "Đã bỏ ghim tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_publish"
+msgstr "Tin nhắn · Xuất bản"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_add"
+msgstr "Cảm xúc · Thêm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_remove"
+msgstr "Cảm xúc · Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear"
+msgstr "Cảm xúc · Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear_emoji"
+msgstr "Biểu tượng cảm xúc · Cảm xúc · Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_create"
+msgstr "Đã tạo kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_update"
+msgstr "Kênh · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_delete"
+msgstr "Đã xóa kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_create"
+msgstr "Kênh · Quyền · Thêm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_update"
+msgstr "Kênh · Quyền · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_delete"
+msgstr "Kênh · Quyền · Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_create"
+msgstr "Đã tạo vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_update"
+msgstr "Vai trò · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_delete"
+msgstr "Đã xóa vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_role_update"
+msgstr "Thành viên · Vai trò · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_create"
+msgstr "Đã tạo lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_update"
+msgstr "Lời mời · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_delete"
+msgstr "Đã xóa lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_use"
+msgstr "Lời mời · Tham gia"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_create"
+msgstr "Đã tạo webhook"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_update"
+msgstr "Webhook · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_delete"
+msgstr "Đã xóa webhook"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_create"
+msgstr "Đã tạo biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_update"
+msgstr "Biểu tượng cảm xúc · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_delete"
+msgstr "Đã xóa biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_create"
+msgstr "Đã tạo nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_update"
+msgstr "Nhãn dán · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_delete"
+msgstr "Đã xóa nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.guild_update"
+msgstr "Cộng đồng · Cài đặt · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_join"
+msgstr "Thoại · Tham gia"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_leave"
+msgstr "Thoại · Rời đi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_move"
+msgstr "Thoại · Di chuyển"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_mute"
+msgstr "Trạng thái tự tắt mic thay đổi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_deaf"
+msgstr "Trạng thái tự tắt âm thanh thay đổi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_video"
+msgstr "Video · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_stream"
+msgstr "Chia sẻ màn hình · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_suppress"
+msgstr "Đã thay đổi hạn chế phát biểu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.entrance_sound_play"
+msgstr "Âm thanh vào phòng · Phát"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_status"
+msgstr "Trạng thái trực tuyến hiển thị thay đổi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_custom_status"
+msgstr "Trạng thái tùy chỉnh · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_members"
+msgstr "Thành viên · Hồ sơ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_moderation"
+msgstr "Kiểm duyệt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_messages"
+msgstr "Tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_reactions"
+msgstr "Cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_channels"
+msgstr "Kênh · Danh mục"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_permissions"
+msgstr "Quyền của kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_roles"
+msgstr "Vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_invites"
+msgstr "Lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_integrations"
+msgstr "Webhook · Biểu tượng cảm xúc · Nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_guild"
+msgstr "Cộng đồng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_voice"
+msgstr "Thoại · Trạng thái"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.search"
+msgstr "Tìm kiếm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.selectAll"
+msgstr "Chọn tất cả"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.clear"
+msgstr "Bỏ chọn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.inherit"
+msgstr "Kế thừa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.defaultChannel"
+msgstr "Mặc định · Kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.capture"
+msgstr "Ghi lại nội dung tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.preview"
+msgstr "Xem trước"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.test"
+msgstr "Gửi tin nhắn thử nghiệm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.time"
+msgstr "Thời gian"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.actor"
+msgstr "Người thực hiện"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.target"
+msgstr "Đối tượng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.source"
+msgstr "Kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reason"
+msgstr "Lý do"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unknown"
+msgstr "Không rõ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.before"
+msgstr "Trước"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.after"
+msgstr "Sau"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changes"
+msgstr "Cài đặt · Chỉnh sửa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.attachments"
+msgstr "Tệp đính kèm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.count"
+msgstr "Tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.fileType"
+msgstr "Tệp"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.size"
+msgstr "Kích thước"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.enabled"
+msgstr "Đã bật"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.disabled"
+msgstr "Đã tắt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.system"
+msgstr "Hệ thống"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.testMark"
+msgstr "Tin nhắn thử nghiệm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.logTitle"
+msgstr "Event logs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.none"
+msgstr "Không"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message"
+msgstr "Tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_text"
+msgstr "Kênh văn bản"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_voice"
+msgstr "Kênh thoại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_category"
+msgstr "Danh mục"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_announcement"
+msgstr "Kênh thông báo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_link"
+msgstr "Kênh · Liên kết"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADMINISTRATOR"
+msgstr "Quản trị viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_AUDIT_LOG"
+msgstr "Xem nhật ký hoạt động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_GUILD"
+msgstr "Quản lý cộng đồng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_ROLES"
+msgstr "Quản lý vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_CHANNELS"
+msgstr "Quản lý kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_KICK_MEMBERS"
+msgstr "Đuổi thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BAN_MEMBERS"
+msgstr "Cấm thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_INSTANT_INVITE"
+msgstr "Tạo liên kết mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CHANGE_NICKNAME"
+msgstr "Đổi biệt danh của mình"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_NICKNAMES"
+msgstr "Quản lý biệt danh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_EXPRESSIONS"
+msgstr "Tạo biểu tượng cảm xúc và nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_EXPRESSIONS"
+msgstr "Quản lý biểu tượng cảm xúc và nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_WEBHOOKS"
+msgstr "Quản lý webhook"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_MESSAGES"
+msgstr "Gửi tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_TTS_MESSAGES"
+msgstr "Gửi tin nhắn TTS"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_MESSAGES"
+msgstr "Quản lý tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PIN_MESSAGES"
+msgstr "Ghim tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_EMBED_LINKS"
+msgstr "Nhúng liên kết"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ATTACH_FILES"
+msgstr "Đính kèm tệp"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_READ_MESSAGE_HISTORY"
+msgstr "Đọc lịch sử tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_EMOJIS"
+msgstr "Sử dụng biểu tượng cảm xúc bên ngoài"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_STICKERS"
+msgstr "Sử dụng nhãn dán bên ngoài"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADD_REACTIONS"
+msgstr "Thêm cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BYPASS_SLOWMODE"
+msgstr "Bỏ qua chế độ chậm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MODERATE_MEMBERS"
+msgstr "Tạm dừng thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL"
+msgstr "Xem kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL_MEMBERS"
+msgstr "Xem thành viên kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CONNECT"
+msgstr "Kết nối với kênh thoại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SPEAK"
+msgstr "Nói"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_STREAM"
+msgstr "Truyền phát video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_VAD"
+msgstr "Sử dụng tính năng kích hoạt bằng giọng nói"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PRIORITY_SPEAKER"
+msgstr "Người nói ưu tiên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MUTE_MEMBERS"
+msgstr "Tắt tiếng thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_DEAFEN_MEMBERS"
+msgstr "Tắt tiếng nghe thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MOVE_MEMBERS"
+msgstr "Di chuyển thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_UPDATE_RTC_REGION"
+msgstr "Đặt vùng thoại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MENTION_EVERYONE"
+msgstr "Sử dụng {everyoneMention}/{hereMention} và {rolesMention}"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.destination"
+msgstr "Kênh nhật ký"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_online"
+msgstr "Trực tuyến"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_idle"
+msgstr "Không hoạt động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_dnd"
+msgstr "Không làm phiền"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_offline"
+msgstr "Ngoại tuyến"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_name"
+msgstr "Tên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nick"
+msgstr "Biệt danh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_username"
+msgstr "Tên người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_discriminator"
+msgstr "Mã phân biệt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_global_name"
+msgstr "Tên hiển thị"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_avatar_hash"
+msgstr "Ảnh đại diện"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_hash"
+msgstr "Ảnh bìa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bio"
+msgstr "Tiểu sử"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_pronouns"
+msgstr "Đại từ nhân xưng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_accent_color"
+msgstr "Màu nhấn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_roles"
+msgstr "Vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$add"
+msgstr "Thêm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$remove"
+msgstr "Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permissions"
+msgstr "Quyền"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_color"
+msgstr "Màu sắc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist"
+msgstr "Hiển thị vai trò này riêng biệt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mentionable"
+msgstr "Cho phép nhắc đến vai trò này"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_position"
+msgstr "Vị trí"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist_position"
+msgstr "Vị trí"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon"
+msgstr "Biểu tượng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon_hash"
+msgstr "Biểu tượng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_unicode_emoji"
+msgstr "Biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_topic"
+msgstr "Chủ đề"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_type"
+msgstr "Loại kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_parent_id"
+msgstr "Danh mục"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw"
+msgstr "Nội dung người lớn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rate_limit_per_user"
+msgstr "Chế độ chậm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bitrate"
+msgstr "Tốc độ bit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_limit"
+msgstr "Giới hạn kết nối"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_voice_connection_limit"
+msgstr "Giới hạn kết nối"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rtc_region"
+msgstr "Vùng thoại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permission_overwrites"
+msgstr "Quyền"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_allow"
+msgstr "Cho phép"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deny"
+msgstr "Từ chối"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_id"
+msgstr "ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_owner_id"
+msgstr "Chủ sở hữu cộng đồng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_verification_level"
+msgstr "Xác minh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_default_message_notifications"
+msgstr "Cài đặt thông báo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_explicit_content_filter"
+msgstr "Bộ lọc nội dung"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_channel_id"
+msgstr "Kênh AFK / không hoạt động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_timeout"
+msgstr "Thời gian chờ AFK"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_id"
+msgstr "Hệ thống & chào mừng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_flags"
+msgstr "Hệ thống & chào mừng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_hash"
+msgstr "Ảnh nền lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_hash"
+msgstr "Ảnh nền lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_description"
+msgstr "Mô tả"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_features"
+msgstr "Tính năng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_vanity_url_code"
+msgstr "Lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_disabled_operations"
+msgstr "Đã tắt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_age"
+msgstr "Hết hạn sau"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_uses"
+msgstr "Lượt dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_uses"
+msgstr "Lượt dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_temporary"
+msgstr "Tư cách thành viên tạm thời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel_id"
+msgstr "Kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_inviter_id"
+msgstr "Người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_creator_id"
+msgstr "Người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_guild_id"
+msgstr "Cộng đồng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_available"
+msgstr "Khả dụng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mute"
+msgstr "Tắt micrô"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deaf"
+msgstr "Tắt tiếng nghe"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_communication_disabled_until"
+msgstr "Tạm dừng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_url"
+msgstr "URL"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_format_type"
+msgstr "Tệp"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_tags"
+msgstr "Thẻ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_flags"
+msgstr "Cờ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_animated"
+msgstr "Biểu tượng cảm xúc động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content"
+msgstr "Tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_attachments"
+msgstr "Tệp đính kèm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embeds"
+msgstr "Nội dung nhúng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_items"
+msgstr "Nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_status"
+msgstr "Trạng thái"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_custom_status"
+msgstr "Trạng thái tùy chỉnh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_mute"
+msgstr "Tắt micrô"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_deaf"
+msgstr "Tắt tiếng nghe"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_video"
+msgstr "Video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_stream"
+msgstr "Chia sẻ màn hình"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_suppress"
+msgstr "Bị hạn chế phát biểu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_count"
+msgstr "Tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel"
+msgstr "Kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_author_id"
+msgstr "Tác giả"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_id"
+msgstr "Người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji"
+msgstr "Biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_code"
+msgstr "Mã"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_duration_ms"
+msgstr "Thời gian"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_type"
+msgstr "Tệp"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_test"
+msgstr "Tin nhắn thử nghiệm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_width"
+msgstr "Chiều rộng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_height"
+msgstr "Chiều cao"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_width"
+msgstr "Chiều rộng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_height"
+msgstr "Chiều cao"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_card_alignment"
+msgstr "Căn chỉnh thẻ lời mời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_width"
+msgstr "Chiều rộng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_height"
+msgstr "Chiều cao"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mfa_level"
+msgstr "Xác thực hai yếu tố"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw_level"
+msgstr "Nội dung người lớn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_level"
+msgstr "Nội dung người lớn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_text"
+msgstr "Nội dung người lớn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rules_channel_id"
+msgstr "Kênh nội quy"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_member_count"
+msgstr "Thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_message_history_cutoff"
+msgstr "Mốc giới hạn lịch sử tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji_id"
+msgstr "Biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_id"
+msgstr "Nhãn dán"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_previous_attachments"
+msgstr "Tệp đính kèm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unavailable"
+msgstr "Fluxer chưa tạo sự kiện này."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.scope"
+msgstr "Bao gồm bot và các kênh riêng tư của cộng đồng."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.privacy"
+msgstr "Văn bản được sao chép hiển thị với mọi người có quyền đọc kênh nhật ký. Tệp gốc không được lưu trữ lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changed"
+msgstr "Đã thay đổi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.bad_words"
+msgstr "Từ bị cấm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeated_text"
+msgstr "Văn bản lặp lại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.server_invites"
+msgstr "Lời mời máy chủ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.external_links"
+msgstr "Liên kết bên ngoài"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_caps"
+msgstr "Quá nhiều chữ hoa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_emojis"
+msgstr "Quá nhiều biểu tượng cảm xúc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_spoilers"
+msgstr "Quá nhiều nội dung ẩn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_mentions"
+msgstr "Quá nhiều lượt nhắc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.zalgo"
+msgstr "Văn bản Zalgo"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_spam"
+msgstr "Chống spam"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.character_limit"
+msgstr "Giới hạn ký tự"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.media_spam"
+msgstr "Spam phương tiện"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_raid"
+msgstr "Chống đột kích"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_nuke"
+msgstr "Chống phá hủy máy chủ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.observe"
+msgstr "Chỉ ghi nhật ký"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.warn"
+msgstr "Cảnh báo thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.lockdown"
+msgstr "Khóa tạm thời"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.ignoreBots"
+msgstr "Bỏ qua bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.window"
+msgstr "Khoảng thời gian (giây)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.minimumLength"
+msgstr "Số chữ cái tối thiểu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.domains"
+msgstr "Tên miền được phép"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.loadError"
+msgstr "Không thể tải AutoMod. Hãy thử lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveError"
+msgstr "Kiểm tra các quy tắc rồi thử lưu lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exemptChannels"
+msgstr "Kênh được miễn kiểm tra"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.configUpdated"
+msgstr "Đã cập nhật cài đặt AutoMod"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.scope"
+msgstr "Tin nhắn được kiểm tra sau khi gửi. Chủ sở hữu và tin nhắn hệ thống được miễn kiểm tra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.sharedPermissions"
+msgstr "Quyền dùng chung"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.inherited"
+msgstr "Quy tắc này dùng phạm vi người dùng, vai trò, kênh và danh mục đã đặt trên trang AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.separate"
+msgstr "Dùng quyền riêng cho quy tắc này"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.allExcept"
+msgstr "Áp dụng cho tất cả trừ mục đã chọn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.onlySelected"
+msgstr "Chỉ áp dụng cho mục đã chọn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userPriority"
+msgstr "Lựa chọn người dùng cụ thể được ưu tiên hơn vai trò. Giới hạn kênh và danh mục vẫn áp dụng."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userId"
+msgstr "ID người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.discard"
+msgstr "Bỏ thay đổi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveClose"
+msgstr "Lưu và đóng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.additional"
+msgstr "Cài đặt bổ sung"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.wordHint"
+msgstr "Nhấn Enter hoặc nhập dấu phẩy sau mỗi từ. Tối đa 200 mục mỗi danh sách, 100 ký tự mỗi mục."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exactWords"
+msgstr "Từ cấm (khớp chính xác)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.partialWords"
+msgstr "Từ cấm (khớp một phần)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.addWord"
+msgstr "Thêm một từ…"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.howWorks"
+msgstr "Hoạt động như thế nào?"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.matchingHint"
+msgstr "Không phân biệt chữ hoa và chữ thường. Khớp chính xác kiểm tra cả từ; khớp một phần còn tìm văn bản bên trong từ."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatThreshold"
+msgstr "Số tin nhắn lặp lại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatCountHint"
+msgstr "Quy tắc được kích hoạt khi cùng một thành viên gửi văn bản giống nhau đủ số lần này trong khoảng thời gian đã đặt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatWindowHint"
+msgstr "Tin nhắn được tính chung trên các kênh thuộc phạm vi quy tắc. Chữ hoa, chữ thường, khoảng trắng và ký tự vô hình được chuẩn hóa. Chỉnh sửa không được tính là tin nhắn mới."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkWhitelist"
+msgstr "Danh sách liên kết được phép"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkHint"
+msgstr "Nhập tiền tố URL rồi nhấn Enter hoặc dấu phẩy. Liên kết khớp được miễn cả bộ lọc lời mời và liên kết bên ngoài. Việc so khớp phân biệt chữ hoa, chữ thường và bao gồm giao thức cùng đường dẫn."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkInvalid"
+msgstr "Nhập tiền tố URL HTTP hoặc HTTPS không có khoảng trắng hay thông tin đăng nhập. Tối đa 100 mục, mỗi mục tối đa 2048 ký tự."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMinimumCharacters"
+msgstr "Số ký tự tối thiểu"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMaximumPercentage"
+msgstr "Tỷ lệ chữ hoa tối đa (%)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsHint"
+msgstr "Chỉ các chữ cái có cả dạng viết hoa và viết thường được tính vào số tối thiểu và tỷ lệ. Quy tắc chỉ được kích hoạt khi tỷ lệ vượt quá giới hạn."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimit"
+msgstr "Giới hạn emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimitHint"
+msgstr "Quy tắc được kích hoạt khi số emoji vượt quá giới hạn này. Emoji Unicode và emoji tùy chỉnh đều được tính; chuỗi emoji kết hợp được tính là một emoji."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimit"
+msgstr "Giới hạn thẻ spoiler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimitHint"
+msgstr "Mỗi đoạn được bao quanh bởi dấu || được tính là một, kể cả khi trải dài trên nhiều dòng. Quy tắc chỉ được kích hoạt khi số lượng vượt quá giới hạn này."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimit"
+msgstr "Giới hạn lượt nhắc"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimitHint"
+msgstr "Đếm các thẻ nhắc người dùng và vai trò khác nhau, @everyone và @here. Lặp lại cùng một thẻ chỉ được tính một lần. Quy tắc chỉ được kích hoạt khi số lượng vượt quá giới hạn này."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.messageLimit"
+msgstr "Giới hạn tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spamHint"
+msgstr "Đếm tin nhắn mới của cùng một thành viên trong các kênh thuộc phạm vi quy tắc này. Quy tắc được kích hoạt khi đạt giới hạn trong khoảng thời gian đã đặt; chỉnh sửa không được tính."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.maximumCharacters"
+msgstr "Số ký tự tối đa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.characterLimitHint"
+msgstr "Đếm nội dung tin nhắn, bao gồm dấu cách và xuống dòng. Emoji kết hợp hoặc chữ có dấu có thể được tính là nhiều ký tự. Quy tắc chỉ được kích hoạt khi vượt quá giới hạn này."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaLimit"
+msgstr "Giới hạn nội dung đa phương tiện"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaSpamHint"
+msgstr "Đếm tệp đính kèm và nhãn dán do cùng một thành viên gửi trong các kênh thuộc quy tắc này. Quy tắc được kích hoạt khi tổng số đạt giới hạn trong khoảng thời gian; chỉnh sửa, liên kết và emoji không được tính."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.joinLimit"
+msgstr "Giới hạn lượt tham gia"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.actionLimit"
+msgstr "Giới hạn hành động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.newAccountDays"
+msgstr "Tuổi tài khoản mới (ngày)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.raidHint"
+msgstr "Đếm lượt tham gia của tài khoản có tuổi nhỏ hơn số ngày này. 0 đếm mọi tài khoản. Đạt giới hạn trong khoảng thời gian sẽ kích hoạt hành động đã chọn."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.nukeHint"
+msgstr "Đếm các hành động quản trị có thể gây phá hoại của cùng một thành viên: cộng đồng, kênh, vai trò, cấm, đuổi, bot và webhook."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnly"
+msgstr "Bắt đầu ở chế độ chỉ ghi nhật ký"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnlyHint"
+msgstr "Ghi nhận phát hiện mà không hạn chế thành viên. Tắt để dùng hành động đã chọn trên trang AutoMod. Quy tắc đã tắt vẫn tắt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.protectionHint"
+msgstr "Các quy tắc này hoạt động độc lập với mô-đun Bảo mật khi AutoMod và quy tắc được bật và lưu. Khóa sử dụng thời lượng trên trang AutoMod."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.permissions"
+msgstr "Quyền"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.users"
+msgstr "Người dùng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.roles"
+msgstr "Vai trò"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.channels"
+msgstr "Kênh"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.categories"
+msgstr "Danh mục"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.add"
+msgstr "Thêm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.remove"
+msgstr "Xóa"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.back"
+msgstr "Quay lại"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.disabled"
+msgstr "Đã tắt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete"
+msgstr "Xóa tin nhắn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.timeout"
+msgstr "Tạm dừng"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_warn"
+msgstr "Xóa tin nhắn + Cảnh báo thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_timeout"
+msgstr "Xóa tin nhắn + Tạm dừng"

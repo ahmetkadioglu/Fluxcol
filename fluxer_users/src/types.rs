@@ -136,7 +136,7 @@ pub struct ApiUserPartial {
 }
 
 const FLUXER_SYSTEM_USER_ID: i64 = 0;
-const FLUXER_SYSTEM_USERNAME: &str = "Fluxer";
+pub(crate) const SYSTEM_USERNAME: &str = "Netrcol";
 const FLUXER_SYSTEM_DISCRIMINATOR: &str = "0000";
 
 impl User {
@@ -182,7 +182,7 @@ impl UserPartial {
 fn fluxer_system_user() -> ApiUserPartial {
     ApiUserPartial {
         id: FLUXER_SYSTEM_USER_ID.to_string(),
-        username: FLUXER_SYSTEM_USERNAME.to_owned(),
+        username: SYSTEM_USERNAME.to_owned(),
         discriminator: FLUXER_SYSTEM_DISCRIMINATOR.to_owned(),
         global_name: None,
         avatar: None,
@@ -404,7 +404,7 @@ mod tests {
     fn api_partial_maps_system_user_like_the_api_mapper() {
         let system = partial_with_flags(FLUXER_SYSTEM_USER_ID, USER_FLAG_STAFF).to_api_partial();
 
-        assert_eq!(system.username, FLUXER_SYSTEM_USERNAME);
+        assert_eq!(system.username, "Netrcol");
         assert_eq!(system.bot, Some(true));
         assert_eq!(system.system, Some(true));
         assert_eq!(

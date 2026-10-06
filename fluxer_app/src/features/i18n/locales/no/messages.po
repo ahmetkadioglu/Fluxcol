@@ -40603,3 +40603,2395 @@ msgstr "Zoom inn"
 #: src/features/user/components/settings_utils/search_index/KeybindsIndex.ts:86
 msgid "Zoom out"
 msgstr "Zoom ut"
+
+#. Built-in community application settings.
+msgid "Application settings"
+msgstr "Applikasjonsinnstillinger"
+
+#. Built-in community application settings.
+msgid "Welcome and automatic roles"
+msgstr "Welcome and automatic roles"
+
+#. Built-in community application settings.
+msgid "Welcome new members with a message and assign their starting roles."
+msgstr "Welcome new members with a message and assign their starting roles."
+
+#. Built-in community application settings.
+msgid "Event logs"
+msgstr "Event logs"
+
+#. Built-in community application settings.
+msgid "Keep track of important events in your community."
+msgstr "Keep track of important events in your community."
+
+#. Built-in community application settings.
+msgid "AutoMod"
+msgstr "AutoMod"
+
+#. Built-in community application settings.
+msgid "Manage automatic moderation rules for your community."
+msgstr "Manage automatic moderation rules for your community."
+
+#. Built-in community application settings.
+msgid "Back to community"
+msgstr "Tilbake til fellesskapet"
+
+#. Built-in community application settings.
+msgid "Built-in community features for {communityName}."
+msgstr "Innebygde fellesskapsfunksjoner for {communityName}."
+
+#. Built-in community application settings.
+msgid "Not available yet"
+msgstr "Ikke tilgjengelig ennå"
+
+#. Built-in community application settings.
+msgid "Application settings are only available to the community owner on a self-hosted instance."
+msgstr "Applikasjonsinnstillinger er bare tilgjengelige for fellesskapets eier på en selvdriftet installasjon."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.overview"
+msgstr "Oversikt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.previewNotice"
+msgstr "Utforsk de planlagte modulskjermene. Modulene er ikke aktive ennå, og disse innstillingene lagres ikke."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configuration"
+msgstr "Konfigurasjon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.configurationDescription"
+msgstr "Forhåndsvisning av alternativene som er planlagt for denne modulen."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enable"
+msgstr "Aktiver modul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.copy.enableDescription"
+msgstr "Denne modulen blir tilgjengelig når utviklingen er fullført."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.general"
+msgstr "Generelt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.essentials"
+msgstr "Grunnfunksjoner"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.management"
+msgstr "Serveradministrasjon"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.games"
+msgstr "Spill og moro"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.utilities"
+msgstr "Verktøy"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.group.social"
+msgstr "Varsler fra sosiale medier"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.channel"
+msgstr "Meldingskanal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.channel"
+msgstr "Ingen kanal valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.role"
+msgstr "Medlemsrolle"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.role"
+msgstr "Ingen rolle valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.roles"
+msgstr "Tillatte roller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.roles"
+msgstr "Ingen roller valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.message"
+msgstr "Meldingsmal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.message"
+msgstr "Velkommen, {member}!"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.goodbye"
+msgstr "Avskjedsmelding"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.goodbye"
+msgstr "På gjensyn, {member}."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.response"
+msgstr "Svarmal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.response"
+msgstr "Fellesskapets melding vises her."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.period"
+msgstr "Rangeringsperiode"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.period"
+msgstr "Ukentlig"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.members"
+msgstr "Synlige medlemmer"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.members"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.scope"
+msgstr "Statistikkomfang"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.scope"
+msgstr "Meldinger og medlemsaktivitet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.frequency"
+msgstr "Oppdateringsintervall"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.frequency"
+msgstr "Hvert 15. minutt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.limit"
+msgstr "Bruksgrense"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.limit"
+msgstr "10"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.language"
+msgstr "Fellesskapets språk"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.language"
+msgstr "Tyrkisk"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.timezone"
+msgstr "Tidssone"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.timezone"
+msgstr "Europe/Istanbul"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.reaction"
+msgstr "Regler for reaksjonsroller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.reaction"
+msgstr "Emoji → rolle"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.selection"
+msgstr "Rollevalg"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.selection"
+msgstr "Flere roller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.xp"
+msgstr "XP per melding"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.xp"
+msgstr "15"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rewards"
+msgstr "Rollebelønninger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rewards"
+msgstr "Ingen belønninger satt opp"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.rules"
+msgstr "Modereringsregler"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.rules"
+msgstr "Ingen regler satt opp"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.exempt"
+msgstr "Unntatte roller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.exempt"
+msgstr "Ingen roller valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.joinlimit"
+msgstr "Grense for innmeldinger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.joinlimit"
+msgstr "10 medlemmer / minutt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.delay"
+msgstr "Tildelingsforsinkelse"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.delay"
+msgstr "Umiddelbart"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.threshold"
+msgstr "Reaksjonsterskel"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.threshold"
+msgstr "5"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.emoji"
+msgstr "Reaksjons-emoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.emoji"
+msgstr "⭐"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.words"
+msgstr "Blokkerte ord"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.words"
+msgstr "Ingen ord angitt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.links"
+msgstr "Lenkeregler"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.links"
+msgstr "Tillat godkjente domener"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.spam"
+msgstr "Spamterskel"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.spam"
+msgstr "5 meldinger / 10 sekunder"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.events"
+msgstr "Registrerte hendelser"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.events"
+msgstr "Endringer i medlemmer, meldinger og roller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.invites"
+msgstr "Eksisterende invitasjoner"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.invites"
+msgstr "Ta med eksisterende invitasjoner"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.category"
+msgstr "Kanalkategori"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.category"
+msgstr "Ingen kategori valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.support"
+msgstr "Støtteroller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.support"
+msgstr "Ingen roller valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.questions"
+msgstr "Registreringsspørsmål"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.questions"
+msgstr "Presenter deg for fellesskapet."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.trigger"
+msgstr "Kommandoutløser"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.trigger"
+msgstr "/community"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.duration"
+msgstr "Varighet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.duration"
+msgstr "24 timer"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.winners"
+msgstr "Antall vinnere"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.winners"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.wordlength"
+msgstr "Minste ordlengde"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.wordlength"
+msgstr "3"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.repeated"
+msgstr "Gjentatte ord"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.repeated"
+msgstr "Ikke tillat gjentakelser"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.start"
+msgstr "Starttall"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.start"
+msgstr "1"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.mistake"
+msgstr "Ved feil tall"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.mistake"
+msgstr "Start tellingen på nytt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.statname"
+msgstr "Mal for kanalnavn"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.statname"
+msgstr "Medlemmer: {count}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.feed"
+msgstr "Feed-URL"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.feed"
+msgstr "https://example.com/feed.xml"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.choices"
+msgstr "Alternativer i avstemningen"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.choices"
+msgstr "Valg A / Valg B"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.voice"
+msgstr "Opprinnelig talekanal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.voice"
+msgstr "Ingen talekanal valgt"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.birthday"
+msgstr "Tidspunkt for feiring"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.birthday"
+msgstr "09:00"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.account"
+msgstr "Konto- eller kanal-URL"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.account"
+msgstr "Ingen konto tilkoblet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.announcement"
+msgstr "Kunngjøringsmal"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.announcement"
+msgstr "{creator} har delt en oppdatering: {url}"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.actor"
+msgstr "Den som utførte handlingen"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.actor"
+msgstr "Alle medlemmer"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.field.daterange"
+msgstr "Datoperiode"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.example.daterange"
+msgstr "Siste 7 dager"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.title"
+msgstr "Toppliste"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.leaderboard.description"
+msgstr "Vis de mest aktive medlemmene og rangeringen deres."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.title"
+msgstr "Statistikk"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics.description"
+msgstr "Følg meldingsaktivitet, medlemsvekst og trender."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.title"
+msgstr "Emoji"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.emoji.description"
+msgstr "Organiser emoji-verktøy og reglene for bruk."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.title"
+msgstr "Modulinnstillinger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.settings.description"
+msgstr "Angi felles innstillinger for innebygde moduler."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.title"
+msgstr "Velkomst og avskjed"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.welcome.description"
+msgstr "Ønsk nye medlemmer velkommen og tilpass avskjedsmeldinger."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.title"
+msgstr "Reaksjonsroller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.reaction-roles.description"
+msgstr "La medlemmer velge roller gjennom reaksjoner og menyer."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.title"
+msgstr "Nivåer"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.levels.description"
+msgstr "Belønn deltakelse med XP, nivåer og roller."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.title"
+msgstr "Moderering"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.moderation.description"
+msgstr "Samle advarsler og modereringshandlinger på ett sted."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.title"
+msgstr "Sikkerhet"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.security.description"
+msgstr "Planlegg beskyttelse mot raid og uvanlig aktivitet."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.title"
+msgstr "Automatiske roller"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.autorole.description"
+msgstr "Tildel startroller til nye medlemmer automatisk."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.title"
+msgstr "Stjernetavle"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.starboard.description"
+msgstr "Samle meldinger som får reaksjoner i en egen kanal."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.title"
+msgstr "AutoMod"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.automod.description"
+msgstr "Administrer automatiske regler for spam, lenker og uønsket innhold."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.title"
+msgstr "Hendelseslogger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.logs.description"
+msgstr "Følg viktige hendelser for medlemmer, meldinger og kanaler."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.title"
+msgstr "Invitasjonssporing"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.invite-tracking.description"
+msgstr "Finn ut hvilke invitasjoner som gir nye medlemmer."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.title"
+msgstr "Støttesaker"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.tickets.description"
+msgstr "Gi medlemmer et privat sted å kontakte støtteapparatet."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.title"
+msgstr "Registrering"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.register.description"
+msgstr "Utform registrering og bekreftelse av nye medlemmer."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.title"
+msgstr "Egne kommandoer"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.custom-commands.description"
+msgstr "Lag egne kommandoer og svarmaler for fellesskapet."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.title"
+msgstr "Premietrekninger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.giveaways.description"
+msgstr "Organiser trekninger med deltakelsesregler og valg av vinnere."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.title"
+msgstr "Ordspill"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.word-game.description"
+msgstr "Lag en felles kanal for ordspill."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.title"
+msgstr "Telling"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.counting.description"
+msgstr "La medlemmer bygge en felles tellerekke."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.title"
+msgstr "Statistikkanaler"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.statistics-channels.description"
+msgstr "Vis oppdaterte fellesskapstall i kanalnavn."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.title"
+msgstr "RSS-feeder"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.rss.description"
+msgstr "Del oppdateringer fra valgte feeder i kanalene."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.title"
+msgstr "Avstemninger"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.polls.description"
+msgstr "Samle medlemmenes meninger gjennom avstemninger."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.title"
+msgstr "Midlertidige kanaler"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.temporary-channels.description"
+msgstr "Opprett talerom ved behov og fjern dem når de er tomme."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.title"
+msgstr "Fødselsdager"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.birthdays.description"
+msgstr "Feir fødselsdager med meldinger og roller."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.title"
+msgstr "YouTube"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.youtube.description"
+msgstr "Del nye videoer og direktesendinger fra valgte YouTube-kanaler."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.title"
+msgstr "Twitch"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.twitch.description"
+msgstr "Varsle når valgte Twitch-skapere går direkte."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.title"
+msgstr "Bluesky"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.bluesky.description"
+msgstr "Del oppdateringer fra valgte Bluesky-kontoer."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.title"
+msgstr "Kick"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.kick.description"
+msgstr "Varsle medlemmer når valgte Kick-skapere begynner å strømme."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.title"
+msgstr "X"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.x.description"
+msgstr "Del innlegg fra valgte X-kontoer med fellesskapet."
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.title"
+msgstr "Handlingshistorikk"
+
+#. Netrcol application settings design preview
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.module.audit.description"
+msgstr "Gjennomgå endringer i modulinnstillinger og automatiske handlinger."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.available"
+msgstr "Hendelseslogger er tilgjengelige. Andre moduler er designforhåndsvisninger."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.scope"
+msgstr "Loggfør medlemmers innmelding og utmelding i valgt tekstkanal. Boter og meldingsinnhold er utelatt."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberJoin"
+msgstr "Medlem ble med"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.memberLeave"
+msgstr "Medlem forlot"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.test"
+msgstr "Send testmelding"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.testQueued"
+msgstr "Test lagt i kø. Sjekk valgt kanal og handlingshistorikken."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.loadError"
+msgstr "Kunne ikke laste logger. Sjekk tilgangen din og prøv igjen."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saveError"
+msgstr "Kunne ikke lagre. Velg en gyldig kanal og minst én hendelse og prøv igjen."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.conflict"
+msgstr "Innstillingene ble endret et annet sted. Last inn på nytt før lagring."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ownerChanged"
+msgstr "Satt på pause etter eierskifte. Lagre for å godkjenne innstillingene."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.channelMissing"
+msgstr "Den lagrede kanalen er utilgjengelig. Velg en annen kanal og lagre."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.stopped"
+msgstr "Automatiseringer er stoppet av instansens administrator."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.emptyHistory"
+msgstr "Ingen modulhandlinger ennå."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.historyInfo"
+msgstr "De siste 50 handlingene. Leveringslogger beholdes i 30 dager og innstillingsendringer i 90 dager."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.policyChanged"
+msgstr "Hoppet over fordi modulens innstillinger eller eier ble endret."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.deliveryFailed"
+msgstr "Levering mislyktes. Sjekk kanalen og worker-tjenesten og send en test."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.botSkipped"
+msgstr "Bot- eller systemkonto utelatt."
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.enabled"
+msgstr "Aktivert"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.disabled"
+msgstr "Deaktivert"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.pending"
+msgstr "Ventende"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.running"
+msgstr "Pågår"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.sent"
+msgstr "Sendt"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.skipped"
+msgstr "Hoppet over"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.failed"
+msgstr "Mislyktes"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.saved"
+msgstr "Lagret"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.configUpdated"
+msgstr "Innstillinger for hendelseslogg oppdatert"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.save"
+msgstr "Lagre endringer"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.reset"
+msgstr "Tilbakestill"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.refresh"
+msgstr "Oppdater"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.system"
+msgstr "System"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.user"
+msgstr "Bruker"
+
+#. Built-in community modules
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logs.ready"
+msgstr "Tilgjengelig"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_join"
+msgstr "Medlem ble med"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_leave"
+msgstr "Medlem forlot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.bot_add"
+msgstr "Bot lagt til"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_update"
+msgstr "Fellesskap · Profil · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.user_profile_update"
+msgstr "Bruker · Profil · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_kick"
+msgstr "Medlem fjernet fra fellesskapet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_prune"
+msgstr "Massefjerning av medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_add"
+msgstr "Medlem utestengt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_ban_remove"
+msgstr "Utestengelse av medlem opphevet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_timeout"
+msgstr "Medlemmer · Gi timeout · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_mute"
+msgstr "Fellesskap · Demp mikrofonen · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_server_deaf"
+msgstr "Fellesskap · Slå av lyden · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_move"
+msgstr "Medlem flyttet av en moderator"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_disconnect"
+msgstr "Medlem koblet fra av en moderator"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_create"
+msgstr "Send melding · Opprett"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_update"
+msgstr "Send melding · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_delete"
+msgstr "Melding slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_bulk_delete"
+msgstr "Meldinger slettet samlet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_pin"
+msgstr "Melding festet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_unpin"
+msgstr "Melding løsnet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message_publish"
+msgstr "Meldinger · Publiser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_add"
+msgstr "Reaksjoner · Legg til"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_remove"
+msgstr "Reaksjoner · Fjern"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear"
+msgstr "Reaksjoner · Tøm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reaction_clear_emoji"
+msgstr "Emoji · Reaksjoner · Tøm"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_create"
+msgstr "Kanal opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_update"
+msgstr "Kanal · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_delete"
+msgstr "Kanalen er slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_create"
+msgstr "Kanal · Tillatelser · Legg til"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_update"
+msgstr "Kanal · Tillatelser · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_overwrite_delete"
+msgstr "Kanal · Tillatelser · Fjern"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_create"
+msgstr "Rolle opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_update"
+msgstr "Roller · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.role_delete"
+msgstr "Rolle slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.member_role_update"
+msgstr "Medlemmer · Roller · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_create"
+msgstr "Invitasjon opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_update"
+msgstr "Invitasjoner · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_delete"
+msgstr "Invitasjon slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.invite_use"
+msgstr "Invitasjoner · Bli med"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_create"
+msgstr "Webhook opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_update"
+msgstr "Webhooker · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.webhook_delete"
+msgstr "Webhook slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_create"
+msgstr "Emoji opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_update"
+msgstr "Emoji · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.emoji_delete"
+msgstr "Emoji slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_create"
+msgstr "Klistremerke opprettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_update"
+msgstr "Klistremerker · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.sticker_delete"
+msgstr "Klistremerke slettet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.guild_update"
+msgstr "Fellesskap · Innstillinger · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_join"
+msgstr "Tale · Bli med"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_leave"
+msgstr "Tale · Forlat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_move"
+msgstr "Tale · Flytt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_mute"
+msgstr "Egen mikrofondemping endret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_self_deaf"
+msgstr "Egen lyddemping endret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_video"
+msgstr "Video · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_stream"
+msgstr "Skjermdeling · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.voice_suppress"
+msgstr "Talebegrensning endret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.entrance_sound_play"
+msgstr "Ankomstlyder · Spill av"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_status"
+msgstr "Synlig nettstatus endret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.presence_custom_status"
+msgstr "Egendefinert status · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_members"
+msgstr "Medlemmer · Profil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_moderation"
+msgstr "Moderering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_messages"
+msgstr "Meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_reactions"
+msgstr "Reaksjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_channels"
+msgstr "Kanaler · Kategorier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_permissions"
+msgstr "Kanaltillatelser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_roles"
+msgstr "Roller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_invites"
+msgstr "Invitasjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_integrations"
+msgstr "Webhooker · Emoji · Klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_guild"
+msgstr "Fellesskap"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.category_voice"
+msgstr "Tale · Status"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.search"
+msgstr "Søk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.selectAll"
+msgstr "Merk alt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.clear"
+msgstr "Fjern markering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.inherit"
+msgstr "Følg overordnet innstilling"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.defaultChannel"
+msgstr "Standard · Kanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.capture"
+msgstr "Logg meldingstekst"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.preview"
+msgstr "Forhåndsvisning"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.test"
+msgstr "Send testmelding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.time"
+msgstr "Tid"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.actor"
+msgstr "Utført av"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.target"
+msgstr "Mål"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.source"
+msgstr "Kanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.reason"
+msgstr "Årsak"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unknown"
+msgstr "Ukjent"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.before"
+msgstr "Før"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.after"
+msgstr "Etter"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changes"
+msgstr "Innstillinger · Rediger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.attachments"
+msgstr "Vedlegg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.count"
+msgstr "Meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.fileType"
+msgstr "Fil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.size"
+msgstr "Størrelse"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.enabled"
+msgstr "Aktivert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.disabled"
+msgstr "Deaktivert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.system"
+msgstr "System"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.testMark"
+msgstr "Testmelding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.logTitle"
+msgstr "Event logs"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.none"
+msgstr "Ingen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.message"
+msgstr "Melding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_text"
+msgstr "Tekstkanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_voice"
+msgstr "Talekanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_category"
+msgstr "Kategori"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_announcement"
+msgstr "Kunngjøringskanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.channel_link"
+msgstr "Kanal · Lenke"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADMINISTRATOR"
+msgstr "Administrator"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_AUDIT_LOG"
+msgstr "Se aktivitetslogg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_GUILD"
+msgstr "Administrer fellesskap"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_ROLES"
+msgstr "Administrer roller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_CHANNELS"
+msgstr "Administrer kanaler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_KICK_MEMBERS"
+msgstr "Fjern medlemmer fra fellesskapet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BAN_MEMBERS"
+msgstr "Utesteng medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_INSTANT_INVITE"
+msgstr "Opprett invitasjonslenker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CHANGE_NICKNAME"
+msgstr "Endre eget kallenavn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_NICKNAMES"
+msgstr "Administrer kallenavn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CREATE_EXPRESSIONS"
+msgstr "Opprett emojier og klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_EXPRESSIONS"
+msgstr "Administrer emojier og klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_WEBHOOKS"
+msgstr "Administrer webhooker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_MESSAGES"
+msgstr "Send meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SEND_TTS_MESSAGES"
+msgstr "Send tekst-til-tale-meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MANAGE_MESSAGES"
+msgstr "Administrer meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PIN_MESSAGES"
+msgstr "Fest meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_EMBED_LINKS"
+msgstr "Bygg inn lenker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ATTACH_FILES"
+msgstr "Legg ved filer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_READ_MESSAGE_HISTORY"
+msgstr "Les meldingshistorikk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_EMOJIS"
+msgstr "Bruk eksterne emojier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_EXTERNAL_STICKERS"
+msgstr "Bruk eksterne klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_ADD_REACTIONS"
+msgstr "Legg til reaksjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_BYPASS_SLOWMODE"
+msgstr "Omgå sakte modus"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MODERATE_MEMBERS"
+msgstr "Gi medlemmer timeout"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL"
+msgstr "Se kanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_VIEW_CHANNEL_MEMBERS"
+msgstr "Se kanalmedlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_CONNECT"
+msgstr "Koble til tale"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_SPEAK"
+msgstr "Snakk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_STREAM"
+msgstr "Strøm video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_USE_VAD"
+msgstr "Bruk stemmeaktivering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_PRIORITY_SPEAKER"
+msgstr "Prioritert taler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MUTE_MEMBERS"
+msgstr "Demp medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_DEAFEN_MEMBERS"
+msgstr "Slå av lyden for medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MOVE_MEMBERS"
+msgstr "Flytt medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_UPDATE_RTC_REGION"
+msgstr "Angi taleregion"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.permission_MENTION_EVERYONE"
+msgstr "Bruk {everyoneMention}/{hereMention} og {rolesMention}"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.destination"
+msgstr "Loggkanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_online"
+msgstr "Pålogget"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_idle"
+msgstr "Inaktiv"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_dnd"
+msgstr "Ikke forstyrr"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.status_offline"
+msgstr "Frakoblet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_name"
+msgstr "Navn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nick"
+msgstr "Kallenavn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_username"
+msgstr "Brukernavn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_discriminator"
+msgstr "Diskriminator"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_global_name"
+msgstr "Visningsnavn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_avatar_hash"
+msgstr "Avatar"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_hash"
+msgstr "Banner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bio"
+msgstr "Bio"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_pronouns"
+msgstr "Pronomen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_accent_color"
+msgstr "Aksentfarge"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_roles"
+msgstr "Roller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$add"
+msgstr "Legg til"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_$remove"
+msgstr "Fjern"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permissions"
+msgstr "Tillatelser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_color"
+msgstr "Farge"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist"
+msgstr "Vis denne rollen separat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mentionable"
+msgstr "Tillat omtaler for denne rollen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_position"
+msgstr "Plassering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_hoist_position"
+msgstr "Plassering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon"
+msgstr "Ikon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_icon_hash"
+msgstr "Ikon"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_unicode_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_topic"
+msgstr "Tema"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_type"
+msgstr "Kanaltype"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_parent_id"
+msgstr "Kategori"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw"
+msgstr "Voksent innhold"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rate_limit_per_user"
+msgstr "Sakte modus"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_bitrate"
+msgstr "Bithastighet"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_limit"
+msgstr "Tilkoblingsgrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_voice_connection_limit"
+msgstr "Tilkoblingsgrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rtc_region"
+msgstr "Taleregion"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_permission_overwrites"
+msgstr "Tillatelser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_allow"
+msgstr "Tillat"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deny"
+msgstr "Nekt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_id"
+msgstr "ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_owner_id"
+msgstr "Fellesskapets eier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_verification_level"
+msgstr "Verifisering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_default_message_notifications"
+msgstr "Varslingsinnstillinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_explicit_content_filter"
+msgstr "Innholdsfilter"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_channel_id"
+msgstr "Kanal for AFK/inaktive brukere"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_afk_timeout"
+msgstr "AFK-tidsavbrudd"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_id"
+msgstr "System og velkomst"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_system_channel_flags"
+msgstr "System og velkomst"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_hash"
+msgstr "Invitasjonsbakgrunn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_hash"
+msgstr "Invitasjonsbakgrunn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_description"
+msgstr "Beskrivelse"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_features"
+msgstr "Funksjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_vanity_url_code"
+msgstr "Invitasjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_disabled_operations"
+msgstr "Deaktivert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_age"
+msgstr "Utløper etter"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_max_uses"
+msgstr "Antall bruk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_uses"
+msgstr "Antall bruk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_temporary"
+msgstr "Midlertidig medlemskap"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel_id"
+msgstr "Kanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_inviter_id"
+msgstr "Bruker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_creator_id"
+msgstr "Bruker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_guild_id"
+msgstr "Fellesskap"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_available"
+msgstr "Tilgjengelig"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mute"
+msgstr "Demp mikrofonen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_deaf"
+msgstr "Slå av lyden"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_communication_disabled_until"
+msgstr "Gi timeout"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_url"
+msgstr "URL"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_format_type"
+msgstr "Fil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_tags"
+msgstr "Tagger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_flags"
+msgstr "Flagg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_animated"
+msgstr "Animerte emojier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content"
+msgstr "Melding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_attachments"
+msgstr "Vedlegg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embeds"
+msgstr "Innebygd innhold"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_items"
+msgstr "Klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_status"
+msgstr "Status"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_custom_status"
+msgstr "Egendefinert status"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_mute"
+msgstr "Demp mikrofonen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_deaf"
+msgstr "Slå av lyden"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_video"
+msgstr "Video"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_self_stream"
+msgstr "Skjermdeling"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_suppress"
+msgstr "Tale begrenset"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_count"
+msgstr "Meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_channel"
+msgstr "Kanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_author_id"
+msgstr "Forfatter"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_user_id"
+msgstr "Bruker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_code"
+msgstr "Kode"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_duration_ms"
+msgstr "Tid"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_type"
+msgstr "Fil"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_test"
+msgstr "Testmelding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_width"
+msgstr "Bredde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_banner_height"
+msgstr "Høyde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_width"
+msgstr "Bredde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_height"
+msgstr "Høyde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_splash_card_alignment"
+msgstr "Justering av invitasjonskort"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_width"
+msgstr "Bredde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_embed_splash_height"
+msgstr "Høyde"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_mfa_level"
+msgstr "Tofaktorautentisering"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_nsfw_level"
+msgstr "Voksent innhold"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_level"
+msgstr "Voksent innhold"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_content_warning_text"
+msgstr "Voksent innhold"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_rules_channel_id"
+msgstr "Regelkanal"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_member_count"
+msgstr "Medlemmer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_message_history_cutoff"
+msgstr "Grense for meldingshistorikk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_emoji_id"
+msgstr "Emoji"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_sticker_id"
+msgstr "Klistremerker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.field_previous_attachments"
+msgstr "Vedlegg"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.unavailable"
+msgstr "Fluxer produserer ikke denne hendelsen ennå."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.scope"
+msgstr "Omfatter roboter og private fellesskapskanaler."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.privacy"
+msgstr "Kopiert meldingstekst er synlig for alle som kan lese loggkanalen. Kildefiler arkiveres ikke."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.logCatalog.changed"
+msgstr "Endret"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.bad_words"
+msgstr "Forbudte ord"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeated_text"
+msgstr "Gjentatt tekst"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.server_invites"
+msgstr "Serverinvitasjoner"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.external_links"
+msgstr "Eksterne lenker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_caps"
+msgstr "For mange store bokstaver"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_emojis"
+msgstr "For mange emojier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_spoilers"
+msgstr "For mange spoilere"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.excessive_mentions"
+msgstr "For mange omtaler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.zalgo"
+msgstr "Zalgo-tekst"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_spam"
+msgstr "Spambeskyttelse"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.character_limit"
+msgstr "Tegngrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.media_spam"
+msgstr "Mediespam"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_raid"
+msgstr "Beskyttelse mot raid"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.anti_nuke"
+msgstr "Beskyttelse mot serverødeleggelse"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.observe"
+msgstr "Bare loggfør"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.warn"
+msgstr "Advar medlem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.lockdown"
+msgstr "Midlertidig låsing"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.ignoreBots"
+msgstr "Ignorer boter"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.window"
+msgstr "Tidsvindu (s)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.minimumLength"
+msgstr "Minste antall bokstaver"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.domains"
+msgstr "Tillatte domener"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.loadError"
+msgstr "Kunne ikke laste AutoMod. Prøv igjen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveError"
+msgstr "Kontroller reglene og prøv å lagre igjen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exemptChannels"
+msgstr "Unntatte kanaler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.configUpdated"
+msgstr "AutoMod-innstillinger oppdatert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.scope"
+msgstr "Meldinger kontrolleres etter sending. Eieren og systemmeldinger er unntatt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.sharedPermissions"
+msgstr "Felles tillatelser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.inherited"
+msgstr "Denne regelen bruker bruker-, rolle-, kanal- og kategoriomfanget fra AutoMod-siden."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.separate"
+msgstr "Bruk separate tillatelser for denne regelen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.allExcept"
+msgstr "Bruk på alle unntatt de valgte"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.onlySelected"
+msgstr "Bruk bare på de valgte"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userPriority"
+msgstr "Et uttrykkelig brukervalg har forrang over roller. Kanal- og kategoribegrensninger gjelder fortsatt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.userId"
+msgstr "Bruker-ID"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.discard"
+msgstr "Forkast endringer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.saveClose"
+msgstr "Lagre og lukk"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.additional"
+msgstr "Flere innstillinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.wordHint"
+msgstr "Trykk Enter eller skriv et komma etter hvert ord. Opptil 200 oppføringer per liste, 100 tegn i hver."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.exactWords"
+msgstr "Forbudte ord (nøyaktig treff)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.partialWords"
+msgstr "Forbudte ord (delvis treff)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.addWord"
+msgstr "Legg til et ord…"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.howWorks"
+msgstr "Hvordan fungerer det?"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.matchingHint"
+msgstr "Store og små bokstaver behandles likt. Nøyaktige treff sjekker hele ord; delvise treff finner også tekst inne i et ord."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatThreshold"
+msgstr "Antall gjentatte meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatCountHint"
+msgstr "Regelen utløses når samme medlem sender identisk tekst så mange ganger innenfor tidsvinduet."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.repeatWindowHint"
+msgstr "Meldinger telles samlet på tvers av kanalene som omfattes av regelen. Store og små bokstaver, mellomrom og usynlige tegn normaliseres. Redigeringer teller ikke som nye meldinger."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkWhitelist"
+msgstr "Liste over tillatte lenker"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkHint"
+msgstr "Skriv et URL-prefiks og trykk Enter eller komma. Samsvarende lenker unntas fra både invitasjons- og eksterne lenkefiltre. Samsvar skiller mellom store og små bokstaver og omfatter protokoll og sti."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.linkInvalid"
+msgstr "Skriv et HTTP- eller HTTPS-URL-prefiks uten mellomrom eller innloggingsopplysninger. Opptil 100 oppføringer, hver med opptil 2048 tegn."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMinimumCharacters"
+msgstr "Minste antall tegn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsMaximumPercentage"
+msgstr "Høyeste andel store bokstaver (%)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.capsHint"
+msgstr "Bare bokstaver med både stor og liten form teller med i minimum og prosent. Regelen utløses bare når prosentandelen overstiger grensen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimit"
+msgstr "Emojigrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.emojiLimitHint"
+msgstr "Regelen utløses når antallet emojier overstiger denne grensen. Unicode-emojier og egendefinerte emojier telles med; sammenkoblede emojisekvenser teller som én emoji."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimit"
+msgstr "Grense for spoilermarkeringer"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spoilerLimitHint"
+msgstr "Hver del omgitt av || teller som én, også når den går over flere linjer. Regelen utløses bare når antallet overstiger denne grensen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimit"
+msgstr "Grense for omtaler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mentionLimitHint"
+msgstr "Teller forskjellige omtaletagger for brukere og roller samt @everyone og @here. Gjentakelser av samme tagg teller bare én gang. Regelen utløses bare når antallet overstiger denne grensen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.messageLimit"
+msgstr "Meldingsgrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.spamHint"
+msgstr "Teller nye meldinger fra samme medlem i kanalene som omfattes av regelen. Regelen utløses når grensen nås innenfor tidsintervallet; redigeringer teller ikke."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.maximumCharacters"
+msgstr "Maksimalt antall tegn"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.characterLimitHint"
+msgstr "Teller meldingsteksten, inkludert mellomrom og linjeskift. Sammensatte emojier eller bokstaver med aksenter kan telle som flere tegn. Regelen utløses bare når denne grensen overskrides."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaLimit"
+msgstr "Mediegrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.mediaSpamHint"
+msgstr "Teller vedlegg og klistremerker sendt av samme medlem i kanalene som regelen omfatter. Regelen utløses når totalen når grensen innenfor tidsintervallet; redigeringer, lenker og emojier teller ikke."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.joinLimit"
+msgstr "Grense for innmeldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.actionLimit"
+msgstr "Handlingsgrense"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.newAccountDays"
+msgstr "Alder på nye kontoer (dager)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.raidHint"
+msgstr "Teller innmeldinger fra kontoer yngre enn dette antallet dager. 0 teller alle kontoer. Når grensen nås innenfor tidsvinduet, utløses valgt handling."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.nukeHint"
+msgstr "Teller potensielt skadelige administrasjonshandlinger fra samme medlem: fellesskap, kanaler, roller, utestengelser, utkastelser, boter og webhooks."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnly"
+msgstr "Start i modus for bare logging"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.logOnlyHint"
+msgstr "Logger treff uten å begrense medlemmet. Slå av for å bruke handlingen valgt på AutoMod-siden. Deaktiverte regler forblir deaktivert."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.protectionHint"
+msgstr "Disse reglene fungerer uavhengig av sikkerhetsmodulen når AutoMod og regelen er aktivert og lagret. Nedlåsing bruker varigheten på AutoMod-siden."
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.permissions"
+msgstr "Tillatelser"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.users"
+msgstr "Brukere"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.roles"
+msgstr "Roller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.channels"
+msgstr "Kanaler"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.categories"
+msgstr "Kategorier"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.add"
+msgstr "Legg til"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.remove"
+msgstr "Fjern"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.back"
+msgstr "Tilbake"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.disabled"
+msgstr "Deaktivert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete"
+msgstr "Slett melding"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.timeout"
+msgstr "Gi timeout"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_warn"
+msgstr "Slett melding + Advar medlem"
+
+#. js-lingui-explicit-id
+msgid "netrcol.application_settings.automod.delete_timeout"
+msgstr "Slett melding + Gi timeout"

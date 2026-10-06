@@ -204,7 +204,7 @@ export class InMemoryCassandraQueryExecutor implements CassandraQueryExecutorFor
 			case 'count':
 				return [{count: this.select(meta, query.params).length}] as Array<T>;
 			case 'upsert':
-				if (meta.ifNotExists) {
+				if (meta.ifNotExists || meta.ignoreConflict) {
 					return [{'[applied]': this.upsert(meta, query.params, true)}] as Array<T>;
 				}
 				this.upsert(meta, query.params);

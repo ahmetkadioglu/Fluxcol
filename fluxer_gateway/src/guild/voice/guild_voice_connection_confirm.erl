@@ -98,6 +98,7 @@ activate_pending(ConnectionId, PendingData, PendingConnections, State) ->
         undefined ->
             {reply, #{success => true}, StateWithoutPending};
         _ ->
+            guild_event_log:voice(maps:get(event_log_before, PendingData, maps:get(ConnectionId, VoiceStates, null)), VoiceState, State),
             finalize_activation(ConnectionId, VoiceState, VoiceStates, StateWithoutPending)
     end.
 

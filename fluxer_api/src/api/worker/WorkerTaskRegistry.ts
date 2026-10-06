@@ -14,6 +14,7 @@ import bulkDeleteUserMessagesScoped from '@app/api/worker/tasks/BulkDeleteUserMe
 import crosspostMessage from '@app/api/worker/tasks/CrosspostMessage';
 import crosspostMessageChunk from '@app/api/worker/tasks/CrosspostMessageChunk';
 import deleteUserMessagesInGuildByTime from '@app/api/worker/tasks/DeleteUserMessagesInGuildByTime';
+import deliverEventLogs from '@app/api/worker/tasks/DeliverEventLogs';
 import drainActivitySpool from '@app/api/worker/tasks/DrainActivitySpool';
 import expireAttachments from '@app/api/worker/tasks/ExpireAttachments';
 import expireStaleJobs from '@app/api/worker/tasks/ExpireStaleJobs';
@@ -31,6 +32,7 @@ import pollAppStoreNotificationHistory from '@app/api/worker/tasks/PollAppStoreN
 import pollGooglePlayVoidedPurchases from '@app/api/worker/tasks/PollGooglePlayVoidedPurchases';
 import processAppStoreNotification from '@app/api/worker/tasks/ProcessAppStoreNotification';
 import processAssetDeletionQueue from '@app/api/worker/tasks/ProcessAssetDeletionQueue';
+import processAutoMod from '@app/api/worker/tasks/ProcessAutoMod';
 import processCachePurgeQueue from '@app/api/worker/tasks/ProcessCachePurgeQueue';
 import processExpiredPremiumSweep from '@app/api/worker/tasks/ProcessExpiredPremiumSweep';
 import processGooglePlayNotification from '@app/api/worker/tasks/ProcessGooglePlayNotification';
@@ -56,6 +58,7 @@ import type {WorkerTaskName} from '@app/api/worker/WorkerLaneConfig';
 import type {WorkerTaskHandler} from '@pkgs/worker/src/contracts/WorkerTask';
 
 export const workerTasks: Record<WorkerTaskName, WorkerTaskHandler> = {
+	processAutoMod,
 	applicationProcessDeletion,
 	batchGuildAuditLogMessageDeletes,
 	bulkAddGuildMembers: bulkAddGuildMembers,
@@ -71,6 +74,7 @@ export const workerTasks: Record<WorkerTaskName, WorkerTaskHandler> = {
 	crosspostMessageChunk,
 	deleteUserMessagesInGuildByTime,
 	drainActivitySpool,
+	deliverEventLogs,
 	expireAttachments,
 	expireStaleJobs,
 	extractEmbeds,

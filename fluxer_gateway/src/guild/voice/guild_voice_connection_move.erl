@@ -117,7 +117,7 @@ build_move_result(Build) ->
         voice_state => VoiceState
     }),
     State2 = guild_voice_connection_pending:store_pending(
-        NewConnectionId, PendingMetadata, State1Cleaned
+        NewConnectionId, PendingMetadata#{event_log_before => maps:get(existing_voice_state, Build)}, State1Cleaned
     ),
     {State3, E2EEKeyForReply} = guild_voice_e2ee:maybe_room_key_for_reply_guild(
         Context, ChannelIdValue, State2

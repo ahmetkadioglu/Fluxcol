@@ -8,6 +8,7 @@ import type {ChannelService} from '@app/api/channel/services/ChannelService';
 import type {GuildService} from '@app/api/guild/services/GuildService';
 import {Logger} from '@app/api/Logger';
 import type {RequestCache} from '@app/api/middleware/RequestCacheMiddleware';
+import {checkAutoModHold} from '@app/api/netrcol/AutoModSources';
 import type {ApplicationService} from '@app/api/oauth/ApplicationService';
 import {ApplicationNotOwnedError} from '@app/api/oauth/ApplicationService';
 import type {BotAuthService} from '@app/api/oauth/BotAuthService';
@@ -225,6 +226,8 @@ export class OAuth2RequestService {
 		if (!isBotOnly && !params.body.redirect_uri) {
 			throw new RedirectUriRequiredForNonBotError();
 		}
+		// Consent carries its community in the body, outside LoginRequired's route-parameter guard.
+		if (scopeSet.has('bot') && guildId) await checkAutoModHold(guildId, params.userId);
 		const {redirectTo} = await this.oauth2Service.authorizeAndConsent({
 			clientId: params.body.client_id.toString(),
 			redirectUri: params.body.redirect_uri,

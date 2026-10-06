@@ -2,6 +2,7 @@
 
 import {channelIdToUserId} from '@app/api/BrandedTypes';
 import {SYSTEM_USER_ID} from '@app/api/constants/Core';
+import {captureReactionEvent} from '@app/api/netrcol/EventLogSources';
 import type {GatewayDispatchEvent} from '@app/api/constants/Gateway';
 import type {IGatewayService} from '@app/api/infrastructure/IGatewayService';
 import type {Channel} from '@app/api/models/Channel';
@@ -32,6 +33,7 @@ export async function dispatchChannelEvent({
 		});
 	}
 	if (channel.guildId) {
+		await captureReactionEvent(channel, event, data);
 		return gatewayService.dispatchGuild({guildId: channel.guildId, event, data});
 	}
 	await Promise.all(

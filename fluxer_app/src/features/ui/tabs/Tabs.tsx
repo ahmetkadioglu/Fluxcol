@@ -20,9 +20,11 @@ export interface TabsProps<T extends string> {
 	activeTab: T;
 	onTabChange: (tab: T) => void;
 	className?: string;
+	ariaLabel?: string;
+	idPrefix?: string;
 }
 
-export function Tabs<T extends string>({tabs, activeTab, onTabChange, className}: TabsProps<T>) {
+export function Tabs<T extends string>({tabs, activeTab, onTabChange, className, ariaLabel, idPrefix}: TabsProps<T>) {
 	const tabRefs = useRef<Map<T, HTMLButtonElement>>(new Map());
 	const focusTab = (key: T) => {
 		tabRefs.current.get(key)?.focus();
@@ -46,6 +48,7 @@ export function Tabs<T extends string>({tabs, activeTab, onTabChange, className}
 			<div
 				role="tablist"
 				aria-orientation="horizontal"
+				aria-label={ariaLabel}
 				className={clsx(styles.container, className)}
 				data-flx="ui.tabs.container"
 			>
@@ -63,6 +66,8 @@ export function Tabs<T extends string>({tabs, activeTab, onTabChange, className}
 							}}
 							type="button"
 							role="tab"
+							id={idPrefix ? `${idPrefix}-tab-${key}` : undefined}
+							aria-controls={idPrefix ? `${idPrefix}-panel-${key}` : undefined}
 							aria-selected={isSelected}
 							tabIndex={isSelected ? 0 : -1}
 							className={clsx(styles.tab, isSelected && styles.selected)}

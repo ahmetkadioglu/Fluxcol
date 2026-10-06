@@ -159,6 +159,7 @@ maybe_clear_self_stream(ChId, VoiceState, #{can_stream := false}, State) ->
                 <<"self_stream">> => false,
                 <<"self_video">> => false
             },
+            guild_event_log:voice(VoiceState, Cleared, State),
             guild_voice_broadcast:broadcast_voice_state_update(
                 Cleared, State, integer_to_binary(ChId)
             )

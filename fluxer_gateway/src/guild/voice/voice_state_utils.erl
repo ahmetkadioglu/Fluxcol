@@ -168,6 +168,7 @@ broadcast_disconnect(ConnId, VoiceState, State) ->
         <<"channel_id">> => null,
         <<"connection_id">> => ConnId
     },
+    guild_event_log:voice(VoiceState, DisconnectVoiceState, State),
     guild_voice_broadcast:broadcast_voice_state_update(
         DisconnectVoiceState, State, OldChannelIdBin
     ).

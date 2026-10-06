@@ -105,6 +105,10 @@ broadcast_disconnects(ConnectionsToMove, NewState) ->
         fun(_ConnId, VoiceState) ->
             OldChannelIdBin = maps:get(<<"channel_id">>, VoiceState, null),
             DisconnectVS = VoiceState#{<<"channel_id">> => null},
+            case maps:get(event_log_move, NewState, false) of
+                false -> guild_event_log:voice(VoiceState, DisconnectVS, NewState);
+                true -> ok
+            end,
             guild_voice_broadcast:broadcast_voice_state_update(
                 DisconnectVS, NewState, OldChannelIdBin
             )
@@ -180,7 +184,7 @@ execute_move(ConnectionsToMove, ChannelIdValue, UserId, VoiceStates, State) ->
     StateAfterDisconnect = StatePending#{voice_states => NewVoiceStates},
     StateWithVA = maybe_add_virtual_access(UserId, ChannelIdValue, StateAfterDisconnect),
     StateCleaned = cleanup_stale_virtual_access(UserId, StateWithVA),
-    BroadcastSnapshot = build_broadcast_snapshot(StateCleaned),
+    BroadcastSnapshot = (build_broadcast_snapshot(StateCleaned))#{event_log_move => true},
     spawn(fun() -> broadcast_disconnects(ConnectionsToMove, BroadcastSnapshot) end),
     SessionData = extract_session_data(ConnectionsToMove),
     Reply = #{
@@ -356,6 +360,7 @@ build_pending_metadata(
     Now = erlang:system_time(millisecond),
     #{
         user_id => UserId,
+        event_log_before => maps:get(event_log_before, SI, null),
         guild_id => GuildId,
         channel_id => ChannelId,
         session_id => SessionId,

@@ -6,6 +6,8 @@ import {BatchBuilder, deleteOneOrMany, fetchMany, fetchOne, upsertOne} from '@ap
 import {Db} from '@app/api/database/CassandraTypes';
 import type {ChannelMessageBucketRow, ChannelStateRow} from '@app/api/database/types/MessageTypes';
 import type {Message} from '@app/api/models/Message';
+import {prepareMessageLogs} from '@app/api/netrcol/EventLogSources';
+import {eventLogSupported} from '@app/api/netrcol/EventLogRepository';
 import {
 	AttachmentLookup,
 	ChannelEmptyBuckets,
@@ -215,6 +217,7 @@ export class MessageDeletionRepository {
 		const message = await this.messageDataRepo.getMessage(channelId, messageId);
 		const batch = new BatchBuilder();
 		this.addMessageDeletionBatchQueries(batch, channelId, messageId, bucket, message, authorId, pinnedTimestamp);
+		if (message) for (const statement of await prepareMessageLogs([message.toRow()], 'message_delete')) batch.addPrepared(statement);
 		await batch.execute();
 		await this.postDeleteMaintenance(channelId, new Set([bucket]), [messageId]);
 	}
@@ -233,7 +236,9 @@ export class MessageDeletionRepository {
 				affectedBuckets.add(bucket);
 				this.addMessageDeletionBatchQueries(batch, channelId, messageId, bucket, message);
 			}
-			await batch.executeChunked(BULK_DELETE_BATCH_QUERY_LIMIT, false);
+			for (const statement of await prepareMessageLogs(messages.filter((message): message is Message => !!message).map((message) => message.toRow()), 'message_bulk_delete')) batch.addPrepared(statement);
+			if (eventLogSupported()) await batch.execute();
+			else await batch.executeChunked(BULK_DELETE_BATCH_QUERY_LIMIT, false);
 			await this.postDeleteMaintenance(channelId, affectedBuckets, chunk);
 		}
 	}
@@ -267,7 +272,9 @@ export class MessageDeletionRepository {
 						message.pinnedTimestamp || undefined,
 					);
 				}
-				await batch.executeChunked(BULK_DELETE_BATCH_QUERY_LIMIT, false);
+				for (const statement of await prepareMessageLogs(messageBatch.map((message) => message.toRow()), 'message_bulk_delete')) batch.addPrepared(statement);
+				if (eventLogSupported()) await batch.execute();
+				else await batch.executeChunked(BULK_DELETE_BATCH_QUERY_LIMIT, false);
 			}
 			if (messages.length < 100) {
 				hasMore = false;

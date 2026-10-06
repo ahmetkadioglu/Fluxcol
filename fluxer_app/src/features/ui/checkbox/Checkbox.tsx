@@ -6,7 +6,7 @@ import styles from '@app/features/ui/checkbox/Checkbox.module.css';
 import FocusRing from '@app/features/ui/focus_ring/FocusRing';
 import KeyboardMode from '@app/features/ui/state/KeyboardMode';
 import type {ValueOf} from '@fluxer/constants/src/ValueOf';
-import {CheckIcon} from '@phosphor-icons/react';
+import {CheckIcon, MinusIcon} from '@phosphor-icons/react';
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import {clsx} from 'clsx';
 import {observer} from 'mobx-react-lite';
@@ -32,6 +32,7 @@ interface CheckboxLinkShortcut {
 
 interface CheckboxBaseProps {
 	checked?: boolean;
+	indeterminate?: boolean;
 	disabled?: boolean;
 	readOnly?: boolean;
 	inverted?: boolean;
@@ -65,6 +66,7 @@ type CheckboxProps = CheckboxWithLabelProps | CheckboxAccessibleProps | Checkbox
 export const Checkbox: React.FC<CheckboxProps> = observer(
 	({
 		checked = false,
+		indeterminate = false,
 		disabled = false,
 		readOnly = false,
 		inverted = false,
@@ -229,7 +231,7 @@ export const Checkbox: React.FC<CheckboxProps> = observer(
 				>
 					<CheckboxPrimitive.Root
 						ref={rootRef}
-						checked={checked}
+						checked={indeterminate ? 'indeterminate' : checked}
 						disabled={disabled}
 						onCheckedChange={handleChange}
 						onFocus={handleFocus}
@@ -238,7 +240,7 @@ export const Checkbox: React.FC<CheckboxProps> = observer(
 						className={clsx(
 							styles.checkbox,
 							type === CheckboxTypes.ROUND ? styles.round : styles.box,
-							checked && styles.checked,
+							(checked || indeterminate) && styles.checked,
 							inverted && !checked && styles.inverted,
 							checked && inverted && styles.checkedInverted,
 							variant === 'menu' && checked && styles.menuChecked,
@@ -254,6 +256,7 @@ export const Checkbox: React.FC<CheckboxProps> = observer(
 							className={styles.checkboxIndicator}
 							data-flx="ui.checkbox.checkbox.checkbox-indicator--2"
 						>
+							{indeterminate && <MinusIcon size={checkIconSizeRem} weight="bold" color="#ffffff" />}
 							{checked && (
 								<CheckIcon
 									size={checkIconSizeRem}
@@ -281,7 +284,7 @@ export const Checkbox: React.FC<CheckboxProps> = observer(
 								onClick={handleLabelClick}
 								onKeyDown={labelHandlesFocus ? handleLabelKeyDown : undefined}
 								role="checkbox"
-								aria-checked={checked}
+								aria-checked={indeterminate ? 'mixed' : checked}
 								aria-disabled={disabled || readOnly}
 								data-flx="ui.checkbox.checkbox.label"
 							>

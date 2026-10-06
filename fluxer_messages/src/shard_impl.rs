@@ -80,7 +80,7 @@ const EMBED_MEDIA_OWNED_ATTACHMENT_FLAG: i32 = 1 << 30;
 #[cfg(test)]
 const USER_FLAG_DELETED: i64 = 1_i64 << 34;
 const FLUXER_SYSTEM_USER_ID: i64 = 0;
-const FLUXER_SYSTEM_USERNAME: &str = "Fluxer";
+const FLUXER_SYSTEM_USERNAME: &str = "Netrcol";
 const FLUXER_SYSTEM_DISCRIMINATOR: &str = "0000";
 const DELETED_USER_USERNAME: &str = "DeletedUser";
 const DELETED_USER_GLOBAL_NAME: &str = "Deleted User";
@@ -3284,7 +3284,7 @@ mod tests {
         });
 
         assert_eq!(mapped.id, "0");
-        assert_eq!(mapped.username, "Fluxer");
+        assert_eq!(mapped.username, "Netrcol");
         assert_eq!(mapped.discriminator, "0000");
         assert_eq!(mapped.global_name, None);
         assert_eq!(mapped.bot, Some(true));
@@ -3297,7 +3297,7 @@ mod tests {
         let mapped = deleted_user(0);
 
         assert_eq!(mapped.id, "0");
-        assert_eq!(mapped.username, "Fluxer");
+        assert_eq!(mapped.username, "Netrcol");
         assert_eq!(mapped.global_name, None);
         assert_eq!(mapped.bot, Some(true));
         assert_eq!(mapped.system, Some(true));

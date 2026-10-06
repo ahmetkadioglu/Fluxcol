@@ -15,6 +15,9 @@ import {IGuildModerationRepository} from '@app/api/guild/repositories/IGuildMode
 import type {RequestCache} from '@app/api/middleware/RequestCacheMiddleware';
 import {GuildAuditLog} from '@app/api/models/GuildAuditLog';
 import {GuildBan} from '@app/api/models/GuildBan';
+import {prepareAutoModAudit} from '@app/api/netrcol/AutoModSources';
+import {eventLogSupported} from '@app/api/netrcol/EventLogRepository';
+import {prepareAuditLogs} from '@app/api/netrcol/EventLogSources';
 import {
 	GuildAuditLogs,
 	GuildAuditLogsByAction,
@@ -138,7 +141,9 @@ export class GuildModerationRepository extends IGuildModerationRepository {
 		batch.addPrepared(GuildAuditLogsByUser.insertWithTtl(payload, AUDIT_LOG_TTL_SECONDS));
 		batch.addPrepared(GuildAuditLogsByAction.insertWithTtl(payload, AUDIT_LOG_TTL_SECONDS));
 		batch.addPrepared(GuildAuditLogsByUserAction.insertWithTtl(payload, AUDIT_LOG_TTL_SECONDS));
-		await batch.execute(false);
+		for (const statement of await prepareAuditLogs(data)) batch.addPrepared(statement);
+		for (const statement of await prepareAutoModAudit(data)) batch.addPrepared(statement);
+		await batch.execute(eventLogSupported());
 		return this.mapRowToGuildAuditLog(data);
 	}
 

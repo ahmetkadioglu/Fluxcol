@@ -96,6 +96,10 @@ function registerCronJobs(cron: CronScheduler, jobsStreamMaxAgeMs: number): void
 	}
 	cron.upsert('flushUserActivityBuffer', 'flushUserActivityBuffer', {}, '*/10 * * * * *', {ledger: false});
 	cron.upsert('drainActivitySpool', 'drainActivitySpool', {}, '*/5 * * * * *', {ledger: false});
+	if (Config.instance.selfHosted && Config.database.backend === 'postgres') {
+		cron.upsert('deliverEventLogs', 'deliverEventLogs', {}, '*/5 * * * * *', {ledger: false});
+		cron.upsert('processAutoMod', 'processAutoMod', {}, '*/5 * * * * *', {ledger: false});
+	}
 	Logger.info(
 		{
 			blocklistFeeds: Config.blocklistFeeds.enabled,

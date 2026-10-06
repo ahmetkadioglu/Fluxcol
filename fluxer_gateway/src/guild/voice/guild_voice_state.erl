@@ -123,6 +123,7 @@ apply_voice_state_change(
 ) ->
     OldChannelIdBin = maps:get(<<"channel_id">>, ExistingVoiceState, null),
     UpdatedVoiceState = build_updated_voice_state(ExistingVoiceState, ChannelIdBin, R),
+    guild_event_log:voice(ExistingVoiceState, UpdatedVoiceState, State, maps:get(<<"user_id">>, ExistingVoiceState, null)),
     NewVoiceStates = VoiceStates#{ConnectionId => UpdatedVoiceState},
     NewState = State#{voice_states => NewVoiceStates},
     broadcast_voice_change(
@@ -354,6 +355,7 @@ apply_voice_flags(State, Flags) ->
 extract_session_info_from_voice_state(ConnId, VoiceState) ->
     #{
         connection_id => ConnId,
+        event_log_before => VoiceState,
         session_id => maps:get(<<"session_id">>, VoiceState, undefined),
         self_mute => maps:get(<<"self_mute">>, VoiceState, false),
         self_deaf => maps:get(<<"self_deaf">>, VoiceState, false),

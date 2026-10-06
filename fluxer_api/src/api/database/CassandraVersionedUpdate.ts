@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import {upsertOne} from '@app/api/database/CassandraQueryExecution';
-import type {ColumnName, DbOp, PatchObject, RowValue, Table} from '@app/api/database/CassandraTypes';
+import {BatchBuilder, upsertOne} from '@app/api/database/CassandraQueryExecution';
+import type {ColumnName, DbOp, PatchObject, PreparedQuery, RowValue, Table} from '@app/api/database/CassandraTypes';
 import {Db, nextVersion} from '@app/api/database/CassandraTypes';
 
 export async function executeVersionedUpdate<
@@ -19,6 +19,7 @@ export async function executeVersionedUpdate<
 	table: Table<Row, PK>,
 	opts?: {
 		initialData?: Row | null;
+		additionalStatements?: (current: Row | null) => Promise<ReadonlyArray<PreparedQuery>>;
 	},
 ): Promise<{
 	finalVersion: number | null;
@@ -28,14 +29,19 @@ export async function executeVersionedUpdate<
 	const currentVersion = current?.version ?? null;
 	const newVersion = nextVersion(currentVersion);
 	const {pk, patch} = buildPatch(current);
-	await upsertOne(
-		table.patchByPk(
-			pk as Pick<Row, PK>,
-			{...patch, version: Db.set(newVersion)} as Partial<{
-				[K in Exclude<ColumnName<Row>, PK>]: DbOp<RowValue<Row, K>>;
-			}>,
-		),
+	const write = table.patchByPk(
+		pk as Pick<Row, PK>,
+		{...patch, version: Db.set(newVersion)} as Partial<{
+			[K in Exclude<ColumnName<Row>, PK>]: DbOp<RowValue<Row, K>>;
+		}>,
 	);
+	if (opts?.additionalStatements) {
+		const batch = new BatchBuilder().addPrepared(write);
+		for (const statement of await opts.additionalStatements(current)) batch.addPrepared(statement);
+		await batch.execute();
+	} else {
+		await upsertOne(write);
+	}
 	return {finalVersion: newVersion, previousData: current};
 }
 

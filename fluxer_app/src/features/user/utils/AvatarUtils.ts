@@ -16,6 +16,7 @@ import {
 	normalizeEndpoint,
 	parseAvatarHash,
 } from '@app/features/user/utils/AvatarMediaUtils';
+import netrcolSystemLogo from '@app/media/images/netrcol-system-logo.jpg';
 import {
 	MEDIA_PROXY_AVATAR_SIZE_DEFAULT,
 	MEDIA_PROXY_ICON_SIZE_DEFAULT,
@@ -82,6 +83,9 @@ export function getDefaultAvatarPrimaryColor(id: string) {
 }
 
 export function getDefaultAvatarURL(id: string) {
+	if (id === '0') {
+		return typeof window === 'undefined' ? netrcolSystemLogo : new URL(netrcolSystemLogo, window.location.origin).href;
+	}
 	return getDefaultAvatarURLForIndex(getDefaultAvatarIndex(id));
 }
 
@@ -161,7 +165,7 @@ export function getUserAvatarURL(
 	size: MediaProxyImageSize = MEDIA_PROXY_AVATAR_SIZE_DEFAULT,
 ) {
 	if (!avatar) {
-		return getDefaultAvatarURLForIndex(getDefaultAvatarIndex(id));
+		return getDefaultAvatarURL(id);
 	}
 	const {hash, animated: shouldAnimate} = parseMediaHashForRequest(avatar, animated);
 	return buildWebpMediaUrl({
@@ -178,7 +182,7 @@ export function getUserNotificationAvatarURL(
 	size: MediaProxyImageSize = MEDIA_PROXY_AVATAR_SIZE_DEFAULT,
 ) {
 	if (!avatar) {
-		return getDefaultAvatarURLForIndex(getDefaultAvatarIndex(id));
+		return getDefaultAvatarURL(id);
 	}
 	const {hash, animated} = parseMediaHashForRequest(avatar, false);
 	return buildPngMediaUrl({
@@ -336,7 +340,7 @@ export function getGuildMemberAvatarURL({
 			animated: shouldAnimate,
 		});
 	}
-	return getDefaultAvatarURLForIndex(getDefaultAvatarIndex(userId));
+	return getDefaultAvatarURL(userId);
 }
 
 export function getGuildMemberDisplayAvatarURL({
@@ -417,7 +421,7 @@ export function getUserAvatarURLWithProxy(
 	}
 	const {id, avatar} = options;
 	if (!avatar) {
-		return getDefaultAvatarURLForIndex(getDefaultAvatarIndex(id));
+		return getDefaultAvatarURL(id);
 	}
 	const {hash, animated: shouldAnimate} = parseMediaHashForRequest(avatar, animated);
 	return buildWebpMediaUrl({

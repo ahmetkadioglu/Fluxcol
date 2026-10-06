@@ -1208,6 +1208,7 @@ export class PostgresKvQueryExecutor {
 	}
 
 	private async upsert(meta: KvQueryMeta, params: CassandraParams, db: PostgresQueryable): Promise<Array<Row>> {
+		if (meta.ignoreConflict) meta = {...meta, ifNotExists: true};
 		const incoming = rowFromParams(meta, params);
 		const key = rowKey(meta, incoming);
 		if (meta.ifNotExists) {

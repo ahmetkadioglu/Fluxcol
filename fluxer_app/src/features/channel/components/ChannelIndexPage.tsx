@@ -13,17 +13,18 @@ import {ChannelTypes} from '@fluxer/constants/src/ChannelConstants';
 import {observer} from 'mobx-react-lite';
 import {useEffect} from 'react';
 
-export const ChannelIndexPage = observer(() => {
+export const ChannelIndexPage = observer(({channelId: channelIdOverride}: {channelId?: string}) => {
 	const location = useLocation();
 	const {
 		guildId: routeGuildId,
-		channelId,
+		channelId: routeChannelId,
 		messageId,
 	} = useParams() as {
 		guildId?: string;
 		channelId?: string;
 		messageId?: string;
 	};
+	const channelId = channelIdOverride ?? routeChannelId;
 	const channel = channelId ? Channels.getChannel(channelId) : undefined;
 	const isInFavorites = location.pathname.startsWith('/channels/@favorites');
 	const derivedGuildId = isInFavorites ? channel?.guildId : routeGuildId || channel?.guildId;

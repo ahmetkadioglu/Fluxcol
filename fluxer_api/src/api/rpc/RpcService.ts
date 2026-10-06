@@ -37,6 +37,7 @@ import type {PremiumStateReconciliationQueueService} from '@app/api/infrastructu
 import type {UserCacheService} from '@app/api/infrastructure/UserCacheService';
 import type {InstanceConfigRepository} from '@app/api/instance/InstanceConfigRepository';
 import type {IInviteRepository} from '@app/api/invite/IInviteRepository';
+import {captureGatewayTransition} from '@app/api/netrcol/EventLogGateway';
 import {Logger} from '@app/api/Logger';
 import type {LimitConfigService} from '@app/api/limits/LimitConfigService';
 import {resolveLimitSafe} from '@app/api/limits/LimitConfigUtils';
@@ -359,6 +360,9 @@ export class RpcService {
 						limit: request.limit,
 					}),
 				};
+			case 'event_log_transition':
+				await captureGatewayTransition(createGuildID(request.guild_id), request);
+				return {type: 'event_log_transition', data: {success: true}};
 			case 'voice_state_upsert':
 				await this.persistGuildVoiceState({
 					guildId: createGuildID(request.guild_id),

@@ -1,0 +1,51 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+.rules {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+	gap: 24px;
+}
+.rule {
+	min-width: 0;
+}
+.ruleHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+.ruleHeader h3,
+.ruleDetails h3 {
+	margin: 0;
+	color: var(--text-primary);
+	font-size: 14px;
+	font-weight: 600;
+}
+.ruleHeader button {
+	padding: 4px 8px;
+	min-height: 28px;
+}
+.ruleDetails {
+	grid-column: 1 / -1;
+	padding: 16px 0;
+	border-top: 1px solid var(--background-modifier-accent);
+	border-bottom: 1px solid var(--background-modifier-accent);
+}
+.ruleDetails:not([hidden]) {
+	display: grid;
+	gap: 16px;
+}
+.actions {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+.error {
+	color: var(--text-danger);
+	margin: 12px 0;
+}
+@media (max-width: 640px) {
+	.rules {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

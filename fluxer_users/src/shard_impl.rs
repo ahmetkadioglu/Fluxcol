@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-use crate::types::{ApiUserPartial, User, UserPartial, UserRequest, UserResponse};
+use crate::types::{ApiUserPartial, SYSTEM_USERNAME, User, UserPartial, UserRequest, UserResponse};
 #[cfg(feature = "scylla")]
 use chrono::{DateTime, NaiveDate, Utc};
 use fluxer_svc::shard::ShardService;
@@ -66,7 +66,6 @@ const USER_BATCH_CONCURRENCY: usize = 8;
 const USER_CACHE_MIN_GENERATION_STRIPES: usize = 4096;
 const USER_CACHE_MAX_GENERATION_STRIPES: usize = 1 << 20;
 const FLUXER_SYSTEM_USER_ID: i64 = 0;
-const FLUXER_SYSTEM_USERNAME: &str = "Fluxer";
 const FLUXER_SYSTEM_DISCRIMINATOR: i32 = 0;
 const USER_FLAG_STAFF: i64 = 1;
 
@@ -620,7 +619,7 @@ fn decode_postgres_user_partial(row: serde_json::Value) -> anyhow::Result<UserPa
 fn fluxer_system_user() -> User {
     User {
         user_id: FLUXER_SYSTEM_USER_ID,
-        username: FLUXER_SYSTEM_USERNAME.to_owned(),
+        username: SYSTEM_USERNAME.to_owned(),
         discriminator: FLUXER_SYSTEM_DISCRIMINATOR,
         bot: Some(true),
         system: Some(true),
@@ -1109,7 +1108,7 @@ mod tests {
         let partial = fluxer_system_user().to_partial();
 
         assert_eq!(partial.user_id, 0);
-        assert_eq!(partial.username, "Fluxer");
+        assert_eq!(partial.username, "Netrcol");
         assert_eq!(partial.discriminator, 0);
         assert_eq!(partial.global_name, None);
         assert_eq!(partial.bot, Some(true));

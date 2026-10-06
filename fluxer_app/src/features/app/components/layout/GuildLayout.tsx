@@ -334,6 +334,7 @@ const GuildUnavailable = observer(function GuildUnavailable({
 export const GuildLayout = observer(({children}: {children: React.ReactNode}) => {
 	const {i18n} = useLingui();
 	const {guildId, channelId} = useParams() as {guildId: string; channelId?: string};
+	const hasMobileContent = !!channelId || Navigation.pathname === Routes.guildApplicationSettings(guildId);
 	const mobileLayout = MobileLayout;
 	const guild = Guilds.getGuild(guildId);
 	const unavailableGuilds = GuildAvailability.unavailableGuilds;
@@ -543,13 +544,13 @@ export const GuildLayout = observer(({children}: {children: React.ReactNode}) =>
 			<TopNagbarContext.Provider value={nagbarContextValue}>
 				{guild && (
 					<div
-						className={channelId ? styles.mobileNavbarHidden : styles.mobileNavbarSlot}
+						className={hasMobileContent ? styles.mobileNavbarHidden : styles.mobileNavbarSlot}
 						data-flx="app.guild-layout.mobile-navbar"
 					>
 						<GuildNavbar guild={guild} data-flx="app.guild-layout.guild-navbar" />
 					</div>
 				)}
-				{channelId && (
+				{hasMobileContent && (
 					<div
 						className={hasGuildNagbars ? styles.guildLayoutContainerWithNagbar : styles.guildLayoutContainer}
 						data-flx="app.guild-layout.guild-layout-container--2"

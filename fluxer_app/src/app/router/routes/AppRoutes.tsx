@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import {Routes} from '@app/app/Routes';
+import {ChannelRouteLayout} from '@app/app/router/components/ChannelRouteLayout';
 import {GuildChannelRouter} from '@app/app/router/components/GuildChannelRouter';
 import {rootRoute} from '@app/app/router/routes/RootRoutes';
 import {AppBadge} from '@app/features/app/components/AppNotificationBadge';
@@ -45,6 +46,11 @@ const MatureContentCheckCallbackPage = createDefaultLoadableComponent<AppRouteCo
 const GuildMembersPage = createNamedLoadableComponent<AppRouteComponentProps>({
 	displayName: 'GuildMembersPage',
 	load: async () => (await import('@app/features/channel/components/GuildMembersPage')).GuildMembersPage,
+});
+const ApplicationSettingsPage = createNamedLoadableComponent<{guildId: string}>({
+	displayName: 'ApplicationSettingsPage',
+	load: async () =>
+		(await import('@app/features/application_settings/ApplicationSettingsPage')).ApplicationSettingsPage,
 });
 const BookmarksBottomSheet = createNamedLoadableComponent<AppRouteComponentProps>({
 	displayName: 'BookmarksBottomSheet',
@@ -289,8 +295,23 @@ const membersRoute = createRoute({
 		return <GuildMembersPage guildId={guildId} data-flx="app.router.app-routes.guild-members-page" />;
 	},
 });
-const channelRoute = createRoute({
+const channelContentRoute = createRoute({
 	getParentRoute: () => channelsRoute,
+	id: 'channelContent',
+	layout: ChannelRouteLayout,
+});
+const applicationSettingsRoute = createRoute({
+	getParentRoute: () => channelContentRoute,
+	id: 'guildApplicationSettings',
+	path: '/channels/:guildId/application-settings',
+	preload: ApplicationSettingsPage.preload,
+	component: () => {
+		const {guildId} = useParams() as {guildId: string};
+		return <ApplicationSettingsPage guildId={guildId} data-flx="app.router.application-settings-page" />;
+	},
+});
+const channelRoute = createRoute({
+	getParentRoute: () => channelContentRoute,
 	id: 'channel',
 	path: '/channels/:guildId/:channelId',
 	onEnter: (ctx) => {
@@ -304,11 +325,6 @@ const channelRoute = createRoute({
 		}
 		return undefined;
 	},
-	component: () => (
-		<ChannelLayout data-flx="app.router.app-routes.channel-layout--2">
-			<ChannelIndexPage data-flx="app.router.app-routes.channel-index-page--2" />
-		</ChannelLayout>
-	),
 });
 const messageRoute = createRoute({
 	getParentRoute: () => channelRoute,
@@ -325,11 +341,6 @@ const messageRoute = createRoute({
 		}
 		return undefined;
 	},
-	component: () => (
-		<ChannelLayout data-flx="app.router.app-routes.channel-layout--3">
-			<ChannelIndexPage data-flx="app.router.app-routes.channel-index-page--3" />
-		</ChannelLayout>
-	),
 });
 export const appRouteTree = appLayoutRoute.addChildren([
 	notificationsRoute,
@@ -343,6 +354,9 @@ export const appRouteTree = appLayoutRoute.addChildren([
 		plutoniumRoute,
 		legacyPlutoniumRoute,
 		favoritesRoute.addChildren([favoritesChannelRoute]),
-		channelsRoute.addChildren([membersRoute, channelRoute.addChildren([messageRoute])]),
+		channelsRoute.addChildren([
+			membersRoute,
+			channelContentRoute.addChildren([applicationSettingsRoute, channelRoute.addChildren([messageRoute])]),
+		]),
 	]),
 ]);

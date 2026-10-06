@@ -98,6 +98,7 @@ process_presence(UserId, Payload, Member, ListSync, State) ->
 process_presence_change(UserId, PresenceMap, PresenceMap, Status, _ListSync, State) ->
     {noreply, maybe_handle_unchanged_presence(Status, UserId, State)};
 process_presence_change(UserId, OldPresence, PresenceMap, Status, ListSync, State) ->
+    case ListSync of immediate -> guild_event_log:presence(UserId, OldPresence, PresenceMap, State); deferred -> ok end,
     StateWithPresence = store_member_presence(UserId, PresenceMap, State),
     ok = guild_presence_sync:sync_online_status(UserId, StateWithPresence),
     StateAfterBroadcast = spawn_presence_broadcast(

@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 
 RUN npm install -g pnpm@11.27.0
 
-FROM base AS deploy
+FROM base AS build
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		build-essential \
@@ -23,6 +23,8 @@ COPY . .
 
 RUN pnpm install --frozen-lockfile
 RUN pnpm --filter fluxer_api run build
+
+FROM build AS deploy
 RUN pnpm deploy --legacy --filter=fluxer_api --prod --config.allow-unused-patches=true /out
 
 FROM node:26-trixie-slim

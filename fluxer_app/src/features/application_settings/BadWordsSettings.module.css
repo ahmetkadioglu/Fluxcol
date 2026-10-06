@@ -1,0 +1,139 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+.page,
+.sectionContent,
+.permissions,
+.permission,
+.examples,
+.entryList {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-4);
+	min-width: 0;
+}
+.page {
+	gap: var(--spacing-6);
+}
+.header,
+.heading,
+.actions {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-3);
+}
+.header {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.heading h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--text-primary);
+}
+.heading h2:focus {
+	outline: none;
+}
+.actions {
+	flex-wrap: wrap;
+}
+.sectionToggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacing-4);
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font: inherit;
+	text-align: start;
+	cursor: pointer;
+}
+.permissions {
+	gap: var(--spacing-6);
+}
+.permission h3,
+.examples h3,
+.examples h4 {
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: var(--text-primary);
+}
+.userInput {
+	display: flex;
+	align-items: end;
+	gap: var(--spacing-3);
+}
+.userInput > :first-child {
+	flex: 1;
+	min-width: 0;
+}
+.entries {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-2);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.entries li {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+}
+.entries button {
+	max-width: 100%;
+	height: auto;
+}
+.entryList {
+	gap: var(--spacing-2);
+}
+.entryHint,
+.entryCount {
+	color: var(--text-secondary);
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin: 0;
+}
+.entryCount {
+	text-align: end;
+}
+.examples {
+	border-top: 1px solid var(--background-modifier-accent);
+	padding-top: var(--spacing-5);
+}
+.example {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-accent);
+	border-radius: var(--radius-md);
+	margin: var(--spacing-2) 0 0;
+	padding: var(--spacing-4);
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: var(--text-primary);
+}
+.example mark {
+	background: var(--background-modifier-selected);
+	color: var(--text-primary);
+	font-weight: 600;
+	border-radius: var(--radius-sm);
+}
+.error {
+	color: var(--text-danger);
+	margin: 0;
+}
+@media (max-width: 640px) {
+	.header {
+		align-items: stretch;
+	}
+	.actions {
+		width: 100%;
+	}
+	.actions > * {
+		flex: 1;
+	}
+	.userInput {
+		flex-wrap: wrap;
+	}
+}

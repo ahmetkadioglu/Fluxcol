@@ -7,6 +7,8 @@ import type {GuildMemberRow, GuildMembershipMetadataRow} from '@app/api/database
 import {GUILD_MEMBER_COLUMNS} from '@app/api/database/types/GuildTypes';
 import {IGuildMemberRepository} from '@app/api/guild/repositories/IGuildMemberRepository';
 import {GuildMember} from '@app/api/models/GuildMember';
+import {prepareAutoModJoin} from '@app/api/netrcol/AutoModSources';
+import {eventLogSupported, prepareMembershipLog} from '@app/api/netrcol/EventLogRepository';
 import {GuildMembers, GuildMembersByUserId, GuildMembershipMetadata} from '@app/api/Tables';
 
 const FETCH_GUILD_MEMBER_BY_GUILD_AND_USER_ID_QUERY = GuildMembers.selectCql({
@@ -77,14 +79,26 @@ export class GuildMemberRepository extends IGuildMemberRepository {
 				patch: buildPatchFromData(data, current, GUILD_MEMBER_COLUMNS, ['guild_id', 'user_id']),
 			}),
 			GuildMembers,
-			{initialData: oldData},
+			{
+				initialData: oldData,
+				...(eventLogSupported()
+					? {
+							additionalStatements: async (current: GuildMemberRow | null) => [
+								GuildMembersByUserId.insert({user_id: userId, guild_id: guildId}),
+								...(!current ? await prepareMembershipLog(guildId, userId, 'member_join') : []),
+								...(!current ? await prepareAutoModJoin(guildId, userId) : []),
+							],
+						}
+					: {}),
+			},
 		);
-		await upsertOne(
-			GuildMembersByUserId.insert({
-				user_id: userId,
-				guild_id: guildId,
-			}),
-		);
+		if (!eventLogSupported())
+			await upsertOne(
+				GuildMembersByUserId.insert({
+					user_id: userId,
+					guild_id: guildId,
+				}),
+			);
 		return new GuildMember({...data, version: result.finalVersion ?? 1});
 	}
 
@@ -109,6 +123,9 @@ export class GuildMemberRepository extends IGuildMemberRepository {
 
 	async deleteMember(guildId: GuildID, userId: UserID): Promise<void> {
 		const batch = new BatchBuilder();
+		if (eventLogSupported() && (await this.getMember(guildId, userId))) {
+			for (const statement of await prepareMembershipLog(guildId, userId, 'member_leave')) batch.addPrepared(statement);
+		}
 		batch.addPrepared(
 			GuildMembers.deleteByPk({
 				guild_id: guildId,

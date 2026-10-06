@@ -101,12 +101,16 @@ export interface KvQueryMeta<Row extends object = Record<string, unknown>> {
 	conditions?: ReadonlyArray<KvQueryCondition<Row>>;
 	batchEntries?: ReadonlyArray<KvConditionalBatchEntry<Row>>;
 	ifNotExists?: boolean;
+	/** PostgreSQL-only idempotent insert: a conflicting row is preserved, with no conditional result. */
+	ignoreConflict?: boolean;
 }
 
 export interface PreparedQuery<P extends CassandraParams = CassandraParams> {
 	cql: string;
 	params: P;
 	kvMeta?: KvQueryMeta;
+	/** Best-effort notification after this write (or its containing batch) commits successfully. */
+	afterCommit?: () => void;
 }
 
 export function prepared<P extends CassandraParams>(cql: string, params: P, kvMeta?: KvQueryMeta): PreparedQuery<P> {

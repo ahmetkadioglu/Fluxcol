@@ -278,6 +278,7 @@ export class MessageReactionService extends MessageInteractionBase {
 			await this.assertCanModerateMessageReactions({channel, hasPermission});
 		}
 		const emojiId = parsedEmoji.id ? createEmojiID(BigInt(parsedEmoji.id)) : undefined;
+		if (!(await this.channelRepository.messageInteractions.checkUserReactionExists(channel.id, messageId, targetId, parsedEmoji.name, emojiId))) return;
 		await this.channelRepository.messageInteractions.removeReaction(
 			channel.id,
 			messageId,
@@ -315,6 +316,7 @@ export class MessageReactionService extends MessageInteractionBase {
 		if (!message) return;
 		await this.assertCanModerateMessageReactions({channel, hasPermission});
 		const emojiId = parsedEmoji.id ? createEmojiID(BigInt(parsedEmoji.id)) : undefined;
+		if ((await this.channelRepository.messageInteractions.countReactionUsers(channel.id, messageId, parsedEmoji.name, emojiId)) === 0) return;
 		await this.channelRepository.messageInteractions.removeAllReactionsForEmoji(
 			channel.id,
 			messageId,
@@ -345,6 +347,7 @@ export class MessageReactionService extends MessageInteractionBase {
 		const message = await this.channelRepository.messages.getMessage(channel.id, messageId);
 		if (!message) return;
 		await this.assertCanModerateMessageReactions({channel, hasPermission});
+		if ((await this.channelRepository.messageInteractions.countUniqueReactions(channel.id, messageId)) === 0) return;
 		await this.channelRepository.messageInteractions.removeAllReactions(channel.id, messageId);
 		await this.dispatchMessageReactionRemoveAll({channel, messageId});
 	}

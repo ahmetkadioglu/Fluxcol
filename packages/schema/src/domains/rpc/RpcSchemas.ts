@@ -25,6 +25,7 @@ import {
 	SnowflakeType,
 	UnsignedInt64StringType,
 } from '@fluxer/schema/src/primitives/SchemaPrimitives';
+import {schemaMetadata} from '@fluxer/schema/src/SchemaMetadata';
 import {z} from 'zod';
 
 const RPC_USER_BATCH_MAX = 1000;
@@ -50,6 +51,24 @@ const ReadStateResponse = z.object({
 });
 
 export const RpcRequest = z.discriminatedUnion('type', [
+	z
+		.object({
+			type: z.literal('event_log_transition'),
+			guild_id: SnowflakeType,
+			user_id: SnowflakeStringType,
+			actor_id: SnowflakeStringType.nullable().optional(),
+			source_id: z.string().min(1).max(255),
+			occurred_at: z.number().int().nonnegative(),
+			family: z.enum(['voice', 'presence']),
+			before: z
+				.record(z.string(), z.union([z.string().max(4096), z.boolean(), z.null()]))
+				.register(schemaMetadata, {preserveEmptyValues: true})
+				.nullable(),
+			after: z
+				.record(z.string(), z.union([z.string().max(4096), z.boolean(), z.null()]))
+				.register(schemaMetadata, {preserveEmptyValues: true}),
+		})
+		.strict(),
 	z.object({
 		type: z.literal('session').describe('Request type for session initialization'),
 		token: createStringType().describe('Authentication token for the session'),
@@ -336,6 +355,7 @@ const RpcResponseValidateCustomStatus = z.object({
 });
 
 export const RpcResponse = z.discriminatedUnion('type', [
+	z.object({type: z.literal('event_log_transition'), data: z.object({success: z.boolean()})}),
 	z.object({
 		type: z.literal('session').describe('Response type for session initialization'),
 		data: RpcResponseSessionData.describe('Session initialization data'),

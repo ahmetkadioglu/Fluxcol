@@ -1,0 +1,74 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Overlay on deploy/self-hosting/docker-compose.yml. Local access only.
+services:
+  users:
+    image: netrcol/fluxer-users:local
+    pull_policy: never
+    build:
+      context: ../..
+      dockerfile: netrcol/local/SystemServices.Dockerfile
+      target: users
+      args:
+        BUILD_VERSION: netrcol-local
+  users-shard:
+    image: netrcol/fluxer-users:local
+    pull_policy: never
+  messages:
+    image: netrcol/fluxer-messages:local
+    pull_policy: never
+    build:
+      context: ../..
+      dockerfile: netrcol/local/SystemServices.Dockerfile
+      target: messages
+      args:
+        BUILD_VERSION: netrcol-local
+  messages-shard:
+    image: netrcol/fluxer-messages:local
+    pull_policy: never
+  gateway:
+    image: netrcol/fluxer-gateway:local
+    pull_policy: never
+    build:
+      context: ../..
+      dockerfile: fluxer_gateway/Dockerfile
+    environment:
+      NETRCOL_AUTOMATIONS_ENABLED: "${NETRCOL_AUTOMATIONS_ENABLED:-true}"
+  api:
+    image: netrcol/fluxer-api:local
+    pull_policy: never
+    build:
+      context: ../..
+      dockerfile: fluxer_api/Dockerfile
+      args:
+        BUILD_VERSION: netrcol-local
+    environment:
+      NETRCOL_AUTOMATIONS_ENABLED: "${NETRCOL_AUTOMATIONS_ENABLED:-true}"
+  worker:
+    image: netrcol/fluxer-api:local
+    pull_policy: never
+    environment:
+      NETRCOL_AUTOMATIONS_ENABLED: "${NETRCOL_AUTOMATIONS_ENABLED:-true}"
+  app-proxy:
+    image: netrcol/fluxer-app-proxy:local
+    pull_policy: never
+    build:
+      # Compose resolves paths relative to deploy/self-hosting/docker-compose.yml.
+      context: ../..
+      dockerfile: fluxer_app_proxy/Dockerfile
+      args:
+        BUILD_VERSION: netrcol-local
+        PUBLIC_ASSET_BASE_URL: ""
+        BUNDLE_LOCAL_ASSETS: "true"
+    environment:
+      # Empty selects assets bundled in the self-hosted image. The public CDN
+      # URL used by API discovery must not become this container's upstream.
+      FLUXER_STATIC_CDN_ENDPOINT: ""
+  edge:
+    ports: !override
+      - "127.0.0.1:8088:8080"
+    environment:
+      FLUXER_EDGE_SITE_ADDRESS: ":8080"
+  livekit:
+    ports: !override
+      - "127.0.0.1:7881:7881/tcp"
+      - "127.0.0.1:7882:7882/udp"

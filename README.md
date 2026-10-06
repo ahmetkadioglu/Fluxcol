@@ -1,177 +1,72 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./fluxer_static/marketing/branding/logo-white.svg">
-    <img src="./fluxer_static/marketing/branding/logo-color.svg" alt="Fluxer logo" width="400">
-  </picture>
-</p>
+# Fluxcol
 
-<p align="center">
-  <a href="https://fluxer.app/download">
-    <img src="https://img.shields.io/badge/Download-fluxer.app-4641D9" alt="Download" /></a>
-  <a href="https://docs.fluxer.app">
-    <img src="https://img.shields.io/badge/Docs-docs.fluxer.app-blue" alt="Documentation" /></a>
-  <a href="https://fluxer.app/donate">
-    <img src="https://img.shields.io/badge/Donate-fluxer.app%2Fdonate-brightgreen" alt="Donate" /></a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/License-AGPLv3-purple" alt="AGPLv3 License" /></a>
-</p>
+**Community moderation and activity tracking, built into Fluxer.**
 
-<p align="center">
-  <a href="https://flathub.org/apps/app.fluxer.Fluxer">
-    <img src="https://dl.flathub.org/assets/badges/flathub-badge-en.svg" alt="Get it on Flathub" height="60" /></a>
-</p>
+Fluxcol is a self-hosted community platform built on [Fluxer](https://github.com/fluxerapp/fluxer). It brings AutoMod, event logging, and their configuration into the chat application, so community owners can manage these tools in one place without hosting separate moderation bots or switching between dashboards.
 
-# Fluxer
+The aim is to keep Fluxer's familiar interface while making day-to-day community management easier: configure rules, choose where activity is logged, and review what the system has done from the same community settings panel.
 
-Fluxer is a free and open source instant messaging and VoIP chat app built for friends, groups, and communities.
+## What works in this version
 
-<p align="center">
-  <img src="https://fluxer.app/static/img/screenshots-desktop-readme-1920w.70cb6ce340007e0a.png" alt="Fluxer running side by side on a desktop monitor and a phone" width="640">
-</p>
+- **AutoMod with 14 rules:** bad words, repeated text, server invites, external links, excessive caps, emojis, spoilers and mentions, Zalgo, anti-spam, character limits, media spam, Anti Raid, and Anti Nuke.
+- **Configurable moderation:** warnings, message deletion, timeouts, and temporary lockdowns, with shared or per-rule user, role, channel, and category scopes. Rules start disabled.
+- **Community event logs:** membership, moderation, messages, reactions, channels, permissions, roles, invites, webhooks, emojis, stickers, community settings, voice activity, and visible presence changes. Events can use their own destination channel or inherit the category/default channel.
+- **Readable system embeds:** notifications use the Netrcol SYSTEM identity and logo. Message-content logging is optional and starts disabled.
+- **Action history:** review automation results and delivery status inside the application.
+- **34-language support:** translated settings, labels, and automation messages, with keyboard navigation and responsive layouts using Fluxer's existing UI components.
+- **Local source builds:** PowerShell helpers build and run the customized web app, API/worker, gateway, user service, and message service with Docker Compose.
 
-## Download
+Event logging and AutoMod are functional. The other modules shown in Application settings are design previews and do not perform automation yet. Two event types without upstream producers are visibly disabled.
 
-| Windows | macOS | Linux | Android | iOS |
-| --- | --- | --- | --- | --- |
-| [Installer (x64)][win-setup-x64] | [Disk image][mac-dmg] | [Flathub][flathub] | [Google Play (beta)][android-play] | [TestFlight][ios-testflight] |
-| [Installer (ARM64)][win-setup-arm64] | | [deb (x64)][linux-deb-x64] | [APK (beta)][android-apk] | |
-| [Portable (x64)][win-portable-x64] | | [deb (ARM64)][linux-deb-arm64] | [Obtainium (beta)][obtainium] | |
-| [Portable (ARM64)][win-portable-arm64] | | [rpm (x64)][linux-rpm-x64] | | |
-| | | [rpm (ARM64)][linux-rpm-arm64] | | |
-| | | [AppImage (x64)][linux-appimage-x64] | | |
-| | | [AppImage (ARM64)][linux-appimage-arm64] | | |
-| | | [tar.gz (x64)][linux-targz-x64] | | |
-| | | [tar.gz (ARM64)][linux-targz-arm64] | | |
+## Run locally on Windows
 
-The macOS disk image runs on both Apple silicon and Intel. Windows and Linux need the build matching your processor.
+Requirements: Git, Node.js, and Docker Desktop with its Linux container engine running. Source builds run inside Docker.
 
-On Linux, prefer a repository over a single file so Fluxer updates with the rest of your system.
-
-## Linux package repositories
-
-The package is `fluxer` for stable and `fluxer-canary` for canary. apt and dnf subscribe to one channel per entry file. pacman and Flatpak serve both from one repository.
-
-### Flatpak
-
-Stable is on [Flathub][flathub], the easiest route on most desktops:
-
-```sh
-flatpak install flathub app.fluxer.Fluxer
+```powershell
+git clone -c core.autocrlf=false -c core.eol=lf https://github.com/ahmetkadioglu/Fluxcol.git
+cd Fluxcol
+git remote add upstream https://github.com/fluxerapp/fluxer.git
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Local.ps1 -Build
 ```
 
-Flathub has stable only. To use Fluxer's own repository, open [the stable][flatpak-ref] or [the canary][flatpak-canary-ref] reference file and your software manager takes over. Some desktops also accept `flatpak+https://pkgs.fluxer.com/flatpak/fluxer.flatpakref` in the address bar.
+The launcher generates local configuration and random secrets, builds the source images, starts the services, checks their health and entry-point assets, and opens **http://localhost:8088**. Create your local account and complete the instance setup. Community owners can then open **Community menu → Application settings → AutoMod / Event logs**.
 
-From a terminal:
+Later starts can reuse the built images:
 
-```sh
-flatpak install https://pkgs.fluxer.com/flatpak/fluxer.flatpakref
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Local.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Stop-Local.ps1
 ```
 
-### Debian and Ubuntu
+Stopping the stack preserves its Docker volumes, accounts, messages, and uploaded files. Local secrets live in `.fluxer/local/.env`, which is ignored by Git.
 
-```sh
-sudo install -d -m 0755 /etc/apt/keyrings
-sudo curl -fsSL -o /etc/apt/keyrings/fluxer-archive-keyring.gpg https://pkgs.fluxer.com/keys/fluxer-archive-keyring.gpg
-sudo curl -fsSL -o /etc/apt/sources.list.d/fluxer.sources https://pkgs.fluxer.com/deb/fluxer.sources
-sudo apt update && sudo apt install fluxer
+This launcher is a loopback-only development setup. It does not deploy an internet-facing instance or configure a production domain, TLS, or email. See the [local setup notes](docs/netrcol/LOCAL.md) for details.
+
+## Verification
+
+The current AutoMod verification includes **255 API tests**, **80 panel/settings tests**, and **16 additional live scenarios** using the local HTTP API, PostgreSQL, JetStream worker, WebSocket gateway, and file uploads. The live scenarios cover all 14 rules and a bounded 20-message concurrent run. These results describe the tested local environment, not a production capacity guarantee.
+
+See the [test report](docs/netrcol/AUTOMOD_TEST_REPORT.md) for scenarios, fixes, measurements, and limitations. A basic running-instance check is available with:
+
+```powershell
+node netrcol/scripts/verify-local.mjs
 ```
-
-For canary, use the canary entry file and package.
-
-```sh
-sudo curl -fsSL -o /etc/apt/sources.list.d/fluxer-canary.sources https://pkgs.fluxer.com/deb/fluxer-canary.sources
-sudo apt update && sudo apt install fluxer-canary
-```
-
-A `.deb` installed from a download only updates once its channel's entry is added.
-
-### Fedora and RHEL
-
-```sh
-sudo curl -fsSL -o /etc/yum.repos.d/fluxer.repo https://pkgs.fluxer.com/rpm/fluxer.repo
-sudo dnf install fluxer
-```
-
-For canary, use the canary entry file and package.
-
-```sh
-sudo curl -fsSL -o /etc/yum.repos.d/fluxer-canary.repo https://pkgs.fluxer.com/rpm/fluxer-canary.repo
-sudo dnf install fluxer-canary
-```
-
-RHEL, Rocky, Alma and CentOS Stream need `sudo dnf install epel-release` first, because their base repositories lack `libXScrnSaver`. Fedora does not.
-
-### Arch Linux
-
-The repository is signed, so pacman needs the key once:
-
-```sh
-sudo pacman-key --init
-curl -fsSL -o /tmp/fluxer-archive-keyring.asc https://pkgs.fluxer.com/keys/fluxer-archive-keyring.asc
-sudo pacman-key --add /tmp/fluxer-archive-keyring.asc
-sudo pacman-key --lsign-key 09D01339EE128925F75E675C855C5BDE34D205D2
-```
-
-`--lsign-key` is what makes pacman trust it. Then add the repository:
-
-```sh
-sudo tee -a /etc/pacman.conf >/dev/null <<'REPO'
-
-[fluxer]
-SigLevel = Required TrustedOnly
-Server = https://pkgs.fluxer.com/arch/$repo/os/$arch
-REPO
-sudo pacman -Syu fluxer
-```
-
-Write `$repo` and `$arch` literally. Both are pacman variables, not shell ones, hence the quoted heredoc.
-
-Full setup notes, including canary, are in the [Linux repositories documentation][docs-linux].
-
-## Other ways to run it
-
-- [Open Fluxer in a browser](https://web.fluxer.app), no install needed.
-- [Host your own instance][docs-selfhost] from this repository.
 
 ## Documentation
 
-- [Documentation home][docs]
-- [Downloads][docs-downloads]
-- [Self-hosting][docs-selfhost]
+The main README is in English; the detailed implementation and verification notes below are currently in Turkish.
 
-## License
+- [Local setup and operation](docs/netrcol/LOCAL.md)
+- [AutoMod behavior and configuration](docs/netrcol/AUTOMOD.md)
+- [AutoMod functional test report](docs/netrcol/AUTOMOD_TEST_REPORT.md)
+- [Event logging](docs/netrcol/EVENT_LOGS.md)
+- [System message identity](docs/netrcol/SYSTEM_IDENTITY.md)
+- [Implementation plan and remaining modules](NETRCOLFLXR_PLAN.md)
 
-The source is licensed under the [AGPL-3.0-or-later](./LICENSE) license.
+Some source directories and internal identifiers still use `netrcol` or `NetrcolFLXR`; they belong to this project. User-facing system messages intentionally use the Netrcol identity.
 
-Fluxer artwork, such as the logo, icons, badges and default avatars, is
-licensed under [CC BY-SA 4.0](./fluxer_static/LICENSE). Third-party material
-keeps its own terms, listed in
-[fluxer_static/THIRD_PARTY_LICENSES.md](./fluxer_static/THIRD_PARTY_LICENSES.md).
+## Upstream and license
 
-Use of the Fluxer name and logo is covered by the
-[name and marks policy](./.github/GOVERNANCE.md#name-and-marks).
+Fluxcol is an independent downstream project based on Fluxer. The recorded upstream baseline is [`532e828fe697ad65caae475a4a8baa32c3a66b0e`](https://github.com/fluxerapp/fluxer/commit/532e828fe697ad65caae475a4a8baa32c3a66b0e); metadata is kept in [netrcol/upstream.json](netrcol/upstream.json). The original Fluxer README is preserved in [UPSTREAM_README.md](UPSTREAM_README.md).
 
-[win-setup-x64]: https://pkgs.fluxer.com/desktop/stable/win32/x64/latest/setup
-[win-setup-arm64]: https://pkgs.fluxer.com/desktop/stable/win32/arm64/latest/setup
-[win-portable-x64]: https://pkgs.fluxer.com/desktop/stable/win32/x64/latest/portable
-[win-portable-arm64]: https://pkgs.fluxer.com/desktop/stable/win32/arm64/latest/portable
-[mac-dmg]: https://pkgs.fluxer.com/desktop/stable/darwin/arm64/latest/dmg
-[linux-deb-x64]: https://pkgs.fluxer.com/desktop/stable/linux/x64/latest/deb
-[linux-deb-arm64]: https://pkgs.fluxer.com/desktop/stable/linux/arm64/latest/deb
-[linux-rpm-x64]: https://pkgs.fluxer.com/desktop/stable/linux/x64/latest/rpm
-[linux-rpm-arm64]: https://pkgs.fluxer.com/desktop/stable/linux/arm64/latest/rpm
-[linux-appimage-x64]: https://pkgs.fluxer.com/desktop/stable/linux/x64/latest/appimage
-[linux-appimage-arm64]: https://pkgs.fluxer.com/desktop/stable/linux/arm64/latest/appimage
-[linux-targz-x64]: https://pkgs.fluxer.com/desktop/stable/linux/x64/latest/tar_gz
-[linux-targz-arm64]: https://pkgs.fluxer.com/desktop/stable/linux/arm64/latest/tar_gz
-[flatpak-ref]: https://pkgs.fluxer.com/flatpak/fluxer.flatpakref
-[flatpak-canary-ref]: https://pkgs.fluxer.com/flatpak/fluxer-canary.flatpakref
-[flathub]: https://flathub.org/apps/app.fluxer.Fluxer
-[android-play]: https://play.google.com/store/apps/details?id=com.fluxer
-[android-apk]: https://github.com/fluxerapp/flutter_client/releases
-[obtainium]: https://obtainium.imranr.dev/
-[ios-testflight]: https://testflight.apple.com/join/PKZR6pK9
-[docs]: https://docs.fluxer.app
-[docs-downloads]: https://docs.fluxer.app/downloads/overview/
-[docs-linux]: https://docs.fluxer.app/downloads/linux-repositories/
-[docs-selfhost]: https://docs.fluxer.app/operator/get-started/
+The source retains the existing [AGPL-3.0-or-later license](LICENSE). Fluxer artwork retains its [CC BY-SA 4.0 license](fluxer_static/LICENSE), and third-party material retains its [upstream terms and attribution](fluxer_static/THIRD_PARTY_LICENSES.md). The upstream [name and marks policy](.github/GOVERNANCE.md#name-and-marks) remains included.

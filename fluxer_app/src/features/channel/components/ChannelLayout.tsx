@@ -21,12 +21,14 @@ const CHANNEL_2_DESCRIPTOR = msg({
 
 interface ChannelLayoutProps {
 	children: ReactNode;
+	channelId?: string;
 }
 
-export const ChannelLayout = observer(({children}: ChannelLayoutProps) => {
+export const ChannelLayout = observer(({children, channelId: channelIdOverride}: ChannelLayoutProps) => {
 	const {i18n} = useLingui();
-	const {guildId: routeGuildId, channelId} = useParams() as {guildId?: string; channelId: string};
-	const channel = Channels.getChannel(channelId);
+	const {guildId: routeGuildId, channelId: routeChannelId} = useParams() as {guildId?: string; channelId?: string};
+	const channelId = channelIdOverride ?? routeChannelId;
+	const channel = channelId ? Channels.getChannel(channelId) : undefined;
 	const guildId = routeGuildId || channel?.guildId;
 	const guild = guildId ? Guilds.getGuild(guildId) : null;
 	if (guild && !channel) {

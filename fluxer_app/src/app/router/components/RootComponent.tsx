@@ -225,7 +225,7 @@ export const RootComponent: React.FC<{children?: React.ReactNode}> = observer(({
 		} else if (mobileLayoutState.enabled) {
 			const p = location.pathname;
 			if ((Routes.isDMRoute(p) && p !== Routes.ME) || (Routes.isGuildChannelRoute(p) && p.split('/').length === 4)) {
-				navigateToWithMobileHistory(p, true);
+				navigateToWithMobileHistory(p + location.search + location.hash, true);
 				setHasHandledNotificationNav(true);
 			}
 		}
@@ -236,6 +236,8 @@ export const RootComponent: React.FC<{children?: React.ReactNode}> = observer(({
 		isLocationStateHydrated,
 		canNavigateToProtectedRoutes,
 		location.pathname,
+		location.search,
+		location.hash,
 	]);
 	useEffect(() => {
 		const shouldSaveLocation = Routes.isChannelRoute(location.pathname) || Routes.isSpecialPage(location.pathname);
@@ -250,6 +252,7 @@ export const RootComponent: React.FC<{children?: React.ReactNode}> = observer(({
 		previousMobileLayoutStateRef.current = mobileLayoutState.enabled;
 		if (mobileLayoutState.enabled) {
 			const currentPath = location.pathname;
+			const currentUrl = currentPath + location.search + location.hash;
 			const now = Date.now();
 			const last = lastMobileHistoryBuildRef.current;
 			if (last && last.path === currentPath && now - last.ts < 1500) {
@@ -262,17 +265,24 @@ export const RootComponent: React.FC<{children?: React.ReactNode}> = observer(({
 			) {
 				if (Routes.isDMRoute(currentPath) && currentPath !== Routes.ME) {
 					RouterUtils.replaceWith(Routes.ME);
-					setTimeout(() => RouterUtils.transitionTo(currentPath), 0);
+					setTimeout(() => RouterUtils.transitionTo(currentUrl), 0);
 				} else if (Routes.isGuildChannelRoute(currentPath) && currentPath.split('/').length === 4) {
 					const parts = currentPath.split('/');
 					const guildId = parts[2];
 					const guildPath = Routes.guildChannel(guildId);
 					RouterUtils.replaceWith(guildPath);
-					setTimeout(() => RouterUtils.transitionTo(currentPath), 0);
+					setTimeout(() => RouterUtils.transitionTo(currentUrl), 0);
 				}
 			}
 		}
-	}, [isAuthenticated, hasRestoredLocation, mobileLayoutState.enabled, location.pathname]);
+	}, [
+		isAuthenticated,
+		hasRestoredLocation,
+		mobileLayoutState.enabled,
+		location.pathname,
+		location.search,
+		location.hash,
+	]);
 	const navigateWithHistoryStack = useCallback(
 		(url: string) => {
 			navigateToWithMobileHistory(url, mobileLayoutState.enabled);

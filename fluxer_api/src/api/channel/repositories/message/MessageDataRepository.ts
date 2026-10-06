@@ -10,6 +10,9 @@ import type {ChannelMessageBucketRow, ChannelStateRow, MessageRow} from '@app/ap
 import {MESSAGE_COLUMNS} from '@app/api/database/types/MessageTypes';
 import {Logger} from '@app/api/Logger';
 import {Message} from '@app/api/models/Message';
+import {prepareAutoModMessage} from '@app/api/netrcol/AutoModSources';
+import {eventLogSupported} from '@app/api/netrcol/EventLogRepository';
+import {prepareMessageWrite} from '@app/api/netrcol/EventLogSources';
 import {
 	AttachmentLookup,
 	ChannelEmptyBuckets,
@@ -686,7 +689,17 @@ export class MessageDataRepository {
 				patch: buildPatchFromData(data, current, MESSAGE_COLUMNS, ['channel_id', 'bucket', 'message_id']),
 			}),
 			Messages,
-			{initialData: oldData},
+			{
+				initialData: oldData,
+				...(eventLogSupported()
+					? {
+							additionalStatements: async (current: MessageRow | null) => [
+								...(await prepareMessageWrite(data, current)),
+								...(await prepareAutoModMessage(data, current)),
+							],
+						}
+					: {}),
+			},
 		);
 		const finalVersion = result.finalVersion ?? 1;
 		if (data.author_id != null) {

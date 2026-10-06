@@ -4,6 +4,8 @@ import {type ChannelID, createUserID, type EntranceSoundID, type UserID} from '@
 import type {IChannelRepository} from '@app/api/channel/IChannelRepository';
 import type {IGatewayService} from '@app/api/infrastructure/IGatewayService';
 import {Logger} from '@app/api/Logger';
+import {eventLogContext} from '@app/api/netrcol/EventLogContext';
+import {enqueueEventLog} from '@app/api/netrcol/EventLogRepository';
 import type {EntranceSoundService} from '@app/api/user/entrance_sound/EntranceSoundService';
 import {ValidationErrorCodes} from '@fluxer/constants/src/ValidationErrorCodes';
 import {InputValidationError} from '@fluxer/errors/src/domains/core/InputValidationError';
@@ -47,6 +49,7 @@ export class EntranceSoundPlayService {
 			content_type: library.sound.contentType,
 		};
 		const senderIdString = userId.toString();
+		if (guildId) await enqueueEventLog(guildId, 'entrance_sound_play', `entrance:${userId}:${soundId}:${eventLogContext.getStore()?.request_id ?? crypto.randomUUID()}`, {actor_id: userId.toString(), subject_id: soundId.toString(), subject_type: 'sound', source_channel_id: channelId.toString(), details: {duration_ms: String(library.sound.durationMs), content_type: library.sound.contentType}});
 		const deliveredTo = new Set<string>();
 		for (const state of voiceStates) {
 			if (state.userId === senderIdString) continue;

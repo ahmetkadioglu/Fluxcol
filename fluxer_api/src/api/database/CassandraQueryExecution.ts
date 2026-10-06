@@ -115,11 +115,13 @@ export async function executeQuery<T = Record<string, unknown>, P extends Cassan
 	assertNoUndefinedParams(bound as Record<string, unknown>);
 	const executor = activeExecutor();
 	if (executor) {
-		return executor.executeQuery<T, P>({
+		const rows = await executor.executeQuery<T, P>({
 			cql,
 			params: bound as P,
 			kvMeta: typeof queryOrPrepared === 'string' ? undefined : queryOrPrepared.kvMeta,
 		});
+		notifyCommittedQuery(queryOrPrepared, rows);
+		return rows;
 	}
 	const isDev = getIsDev();
 	const startTime = isDev ? performance.now() : 0;
@@ -133,6 +135,7 @@ export async function executeQuery<T = Record<string, unknown>, P extends Cassan
 			const durationMs = performance.now() - startTime;
 			logQuery(meta.type, cql, bound as Record<string, unknown>, durationMs, rows.length);
 		}
+		notifyCommittedQuery(queryOrPrepared, rows);
 		return rows;
 	} catch (err: unknown) {
 		const paramSummary: Record<string, unknown> = {};
@@ -285,6 +288,25 @@ interface BatchQuery {
 	query: string;
 	params: object;
 	meta?: KvQueryMeta;
+	afterCommit?: () => void;
+}
+
+function notifyAfterCommit(callbacks: Iterable<(() => void) | undefined>): void {
+	for (const callback of new Set(callbacks)) {
+		if (!callback) continue;
+		try {
+			callback();
+		} catch (error) {
+			// A notification failure must not turn an already committed write into an API error.
+			Logger.warn({err: error}, 'Database post-commit notification failed');
+		}
+	}
+}
+
+function notifyCommittedQuery(query: string | PreparedQuery, rows: Array<unknown>): void {
+	if (typeof query === 'string' || !query.afterCommit || getStatementMeta(query.cql).type === 'SELECT') return;
+	if (isConditionalQuery(query) && (rows[0] as Record<string, unknown> | undefined)?.['[applied]'] !== true) return;
+	notifyAfterCommit([query.afterCommit]);
 }
 
 async function executeBatch(queries: Array<BatchQuery>, atomic = true): Promise<void> {
@@ -301,6 +323,7 @@ async function executeBatch(queries: Array<BatchQuery>, atomic = true): Promise<
 	const executor = activeExecutor();
 	if (executor) {
 		await executor.executeBatch(queries, atomic);
+		notifyAfterCommit(queries.map((query) => query.afterCommit));
 		return;
 	}
 	const options = {
@@ -325,6 +348,7 @@ async function executeBatch(queries: Array<BatchQuery>, atomic = true): Promise<
 		const durationMs = performance.now() - startTime;
 		logBatch(queries, durationMs);
 	}
+	notifyAfterCommit(queries.map((query) => query.afterCommit));
 }
 
 export class BatchBuilder {
@@ -336,7 +360,7 @@ export class BatchBuilder {
 	}
 
 	addPrepared(q: PreparedQuery): this {
-		this.queries.push({query: q.cql, params: q.params, meta: q.kvMeta});
+		this.queries.push({query: q.cql, params: q.params, meta: q.kvMeta, afterCommit: q.afterCommit});
 		return this;
 	}
 
@@ -346,7 +370,7 @@ export class BatchBuilder {
 	}
 
 	addPreparedIf(condition: boolean, q: PreparedQuery): this {
-		if (condition) this.queries.push({query: q.cql, params: q.params, meta: q.kvMeta});
+		if (condition) this.addPrepared(q);
 		return this;
 	}
 

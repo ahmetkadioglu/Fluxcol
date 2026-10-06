@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import {Routes} from '@app/app/Routes';
+import {canAccessApplicationSettings} from '@app/features/application_settings/ApplicationSettingsAccess';
+import {APPLICATION_SETTINGS_DESCRIPTOR} from '@app/features/application_settings/ApplicationSettingsMessages';
 import Authentication from '@app/features/auth/state/Authentication';
 import {CategoryCreateModal} from '@app/features/channel/components/modals/CategoryCreateModal';
 import {ChannelCreateModal} from '@app/features/channel/components/modals/ChannelCreateModal';
@@ -43,6 +45,7 @@ import {
 	DebugChannelIcon,
 	DeleteIcon,
 	EditProfileIcon,
+	GridViewIcon,
 	InviteIcon,
 	LeaveIcon,
 	MarkAsReadIcon,
@@ -104,6 +107,7 @@ export interface GuildMenuHandlers {
 	handleMarkAsRead: () => void;
 	handleInviteMembers: () => void;
 	handleCommunitySettings: () => void;
+	handleApplicationSettings: () => void;
 	handleCreateChannel: () => void;
 	handleCreateCategory: () => void;
 	handleNotificationSettings: () => void;
@@ -162,6 +166,7 @@ export function useGuildMenuData(guild: Guild, options: UseGuildMenuDataOptions)
 		canCreateExpressions ||
 		canBanMembers;
 	const isOwner = guild.isOwner(Authentication.currentUserId);
+	const canAccessApplications = canAccessApplicationSettings(guild);
 	const developerMode = UserSettings.developerMode;
 	const canEditCommunityProfile = Users.getCurrentUser()?.isClaimed() ?? true;
 	const settings = UserGuildSettings.getSettingsForScope(guild.id);
@@ -210,6 +215,11 @@ export function useGuildMenuData(guild: Guild, options: UseGuildMenuDataOptions)
 							data-flx="ui.action-menu.items.guild-menu-data.handle-community-settings.guild-settings-modal"
 						/>
 					)),
+				);
+			},
+			handleApplicationSettings: () => {
+				ModalCommands.runAfterBottomSheetClose(onClose, () =>
+					RouterUtils.transitionTo(Routes.guildApplicationSettings(guild.id)),
 				);
 			},
 			handleCreateChannel: () => {
@@ -380,6 +390,13 @@ export function useGuildMenuData(guild: Guild, options: UseGuildMenuDataOptions)
 				onTriggerSelect: handlers.handleCommunitySettings,
 			});
 		}
+		if (canAccessApplications) {
+			quickActions.push({
+				icon: <GridViewIcon size={20} data-flx="ui.action-menu.application-settings-icon" />,
+				label: i18n._(APPLICATION_SETTINGS_DESCRIPTOR),
+				onClick: handlers.handleApplicationSettings,
+			});
+		}
 		if (canManageChannels) {
 			quickActions.push({
 				icon: (
@@ -501,6 +518,7 @@ export function useGuildMenuData(guild: Guild, options: UseGuildMenuDataOptions)
 		canInvite,
 		canAccessGuildSettings,
 		canManageChannels,
+		canAccessApplications,
 		canEditCommunityProfile,
 		availableSettingsTabs,
 		guild.id,

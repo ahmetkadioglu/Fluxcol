@@ -16,6 +16,7 @@ import {
 	type core,
 	type input,
 	type output,
+	ZodDiscriminatedUnion,
 	ZodNullable,
 	ZodObject,
 	ZodOptional,
@@ -56,6 +57,14 @@ function extractVariablesFromIssue(issue: core.$ZodIssue): Record<string, unknow
 
 function convertEmptyValuesToNull(obj: unknown, schema?: core.$ZodType, isRoot = true): unknown {
 	while (schema instanceof ZodOptional || schema instanceof ZodNullable) schema = schema.unwrap();
+	// Resolve tagged RPC objects before traversing them so per-field metadata applies.
+	if (schema instanceof ZodDiscriminatedUnion && obj !== null && typeof obj === 'object') {
+		const tag = (obj as Record<string, unknown>)[schema.def.discriminator];
+		const option = schema.options.find(
+			(item) => item instanceof ZodObject && item.shape[schema.def.discriminator]?.safeParse(tag).success,
+		);
+		if (option) return convertEmptyValuesToNull(obj, option, isRoot);
+	}
 	const metadata = schema ? schemaMetadata.get(schema) : undefined;
 	if (metadata?.preserveEmptyValues) return obj;
 	if (typeof obj === 'string' && obj === '') return null;

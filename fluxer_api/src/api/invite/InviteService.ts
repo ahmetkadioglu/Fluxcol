@@ -8,6 +8,7 @@ import type {GuildAuditLogService} from '@app/api/guild/GuildAuditLogService';
 import type {GuildService} from '@app/api/guild/services/GuildService';
 import type {IInviteRepository} from '@app/api/invite/IInviteRepository';
 import {Logger} from '@app/api/Logger';
+import {eventLogContext} from '@app/api/netrcol/EventLogContext';
 import type {LimitConfigService} from '@app/api/limits/LimitConfigService';
 import {resolveLimitSafe} from '@app/api/limits/LimitConfigUtils';
 import {createLimitMatchContext} from '@app/api/limits/LimitMatchContextBuilder';
@@ -352,7 +353,7 @@ export class InviteService {
 
 	private async withReservedInviteUse(reservedInvite: Invite, join: () => Promise<unknown>): Promise<void> {
 		try {
-			await join();
+			await eventLogContext.run({...eventLogContext.getStore(), invite: {code: reservedInvite.code, inviter_id: reservedInvite.inviterId?.toString()}}, join);
 		} catch (error) {
 			await this.releaseInviteUse(reservedInvite);
 			throw error;

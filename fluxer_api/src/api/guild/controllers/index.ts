@@ -9,9 +9,13 @@ import {GuildMemberController} from '@app/api/guild/controllers/GuildMemberContr
 import {GuildMemberSearchController} from '@app/api/guild/controllers/GuildMemberSearchController';
 import {GuildRoleController} from '@app/api/guild/controllers/GuildRoleController';
 import {GuildStickerController} from '@app/api/guild/controllers/GuildStickerController';
+import {AutoModController} from '@app/api/netrcol/AutoModController';
+import {EventLogController} from '@app/api/netrcol/EventLogController';
 import type {HonoApp} from '@app/api/types/HonoEnv';
 
 export function registerGuildControllers(app: HonoApp) {
+	EventLogController(app);
+	AutoModController(app);
 	GuildBaseController(app);
 	GuildMemberController(app);
 	GuildMemberSearchController(app);

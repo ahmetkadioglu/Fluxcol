@@ -59,6 +59,8 @@ const LANE_CONFIG = {
 			'bulkBanFileShas',
 			'bulkDeleteMessagesForUsers',
 			'drainActivitySpool',
+			'deliverEventLogs',
+			'processAutoMod',
 		] as const,
 		retiredTasks: ['sendScheduledMessage'],
 		concurrency: 8,

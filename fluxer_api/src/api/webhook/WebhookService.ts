@@ -29,6 +29,7 @@ import type {RequestCache} from '@app/api/middleware/RequestCacheMiddleware';
 import type {Channel} from '@app/api/models/Channel';
 import type {Message} from '@app/api/models/Message';
 import type {Webhook} from '@app/api/models/Webhook';
+import {checkAutoModHold} from '@app/api/netrcol/AutoModSources';
 import * as RandomUtils from '@app/api/utils/RandomUtils';
 import type {IWebhookRepository} from '@app/api/webhook/IWebhookRepository';
 import {transform as GitHubTransform} from '@app/api/webhook/transformers/GitHubTransformer';
@@ -245,6 +246,7 @@ export class WebhookService {
 	): Promise<Webhook> {
 		const {userId, webhookId, data} = params;
 		const webhook = await this.getAuthenticatedWebhook({userId, webhookId});
+		if (webhook.guildId) await checkAutoModHold(webhook.guildId, userId);
 		const {checkPermission, guildData} = await this.guildService.getGuildAuthenticated({
 			userId,
 			guildId: webhook.guildId ? webhook.guildId : createGuildID(0n),
@@ -364,6 +366,7 @@ export class WebhookService {
 		auditLogReason?: string | null,
 	): Promise<void> {
 		const webhook = await this.getAuthenticatedWebhook({userId, webhookId});
+		if (webhook.guildId) await checkAutoModHold(webhook.guildId, userId);
 		const {checkPermission} = await this.guildService.getGuildAuthenticated({userId, guildId: webhook.guildId!});
 		await checkPermission(Permissions.MANAGE_WEBHOOKS);
 		await this.repository.delete(webhookId);

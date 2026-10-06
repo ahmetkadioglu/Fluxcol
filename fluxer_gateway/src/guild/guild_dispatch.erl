@@ -165,6 +165,73 @@ should_skip_dispatch_no_features_test() ->
     State = #{data => #{<<"guild">> => #{}}},
     ?assertEqual(false, should_skip_dispatch(message_create, State)).
 
+system_message_dispatch_test_() ->
+    [
+        {lists:flatten(io_lib:format("~p system author ~p", [Event, AuthorId])), fun() ->
+            assert_system_message_dispatch(Event, AuthorId)
+        end}
+     || Event <- [message_create, message_update], AuthorId <- [<<"0">>, 0]
+    ].
+
+assert_system_message_dispatch(Event, AuthorId) ->
+    VisiblePid = start_dispatch_capture(visible, self()),
+    HiddenPid = start_dispatch_capture(hidden, self()),
+    try
+        State0 = build_channel_delete_dispatch_state(VisiblePid, HiddenPid),
+        Data0 = maps:get(data, State0),
+        [EveryoneRole | OtherRoles] = guild_data_index:role_list(Data0),
+        Permissions =
+            constants:view_channel_permission() bor constants:read_message_history_permission(),
+        Data = guild_data_index:put_roles(
+            [EveryoneRole#{<<"permissions">> => integer_to_binary(Permissions)} | OtherRoles],
+            Data0
+        ),
+        State = State0#{data => guild_data_index:normalize_map(Data)},
+        Author = #{<<"id">> => AuthorId, <<"username">> => <<"Fluxer">>, <<"system">> => true},
+        Message = #{
+            <<"id">> => <<"700">>,
+            <<"channel_id">> => <<"10">>,
+            <<"author">> => Author,
+            <<"content">> => <<"Event log">>,
+            <<"mentions">> => [],
+            <<"mention_roles">> => [],
+            <<"mention_everyone">> => false
+        },
+        {noreply, UpdatedState} = handle_dispatch(Event, Message, State),
+        ?assertEqual(
+            guild_data_index:member_map(maps:get(data, State)),
+            guild_data_index:member_map(maps:get(data, UpdatedState))
+        ),
+        ?assertEqual(false, should_skip_dispatch(message_create, UpdatedState)),
+        case Event of
+            message_create ->
+                Channel = maps:get(
+                    10, guild_data_index:channel_index(maps:get(data, UpdatedState))
+                ),
+                ?assertEqual(700, maps:get(<<"last_message_id">>, Channel));
+            message_update ->
+                ok
+        end,
+        receive
+            {visible, {dispatch, Event, Payload0}} ->
+                Payload = decode_dispatch_payload(Payload0),
+                ?assertEqual(Author#{<<"id">> => <<"0">>}, maps:get(<<"author">>, Payload)),
+                ?assertEqual(<<"1">>, maps:get(<<"guild_id">>, Payload)),
+                ?assertNot(maps:is_key(<<"member">>, Payload))
+        after 1000 ->
+            ?assert(false, system_message_not_dispatched)
+        end,
+        receive
+            {hidden, {dispatch, Event, _}} ->
+                ?assert(false, hidden_user_received_system_message)
+        after 100 ->
+            ok
+        end
+    after
+        VisiblePid ! stop,
+        HiddenPid ! stop
+    end.
+
 channel_delete_dispatch_filters_by_pre_delete_visibility_test() ->
     Parent = self(),
     VisiblePid = start_dispatch_capture(visible, Parent),
