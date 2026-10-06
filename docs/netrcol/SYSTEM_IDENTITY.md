@@ -15,4 +15,4 @@ Kaynak değişikliğinden sonra `Start-Local.ps1 -Build`, web, API/worker, gatew
 - Web, API/worker, kullanıcı ve mesaj servislerinin kaynak imajları oluşturulup mevcut volume'larla başlatıldı. HTTP, sağlık, giriş JS/CSS kontrolleri geçti.
 - `localhost:8088 → Fluxcol → Uygulama ayarları → Olay kayıtları` üzerinden kaydedilmiş `Üye katıldı` türünün Türkçe test kaydı `#general` kanalına gönderildi. Yeni mesaj ve eski loglar **Netrcol SYSTEM** olarak göründü. Sohbet ve sistem profilindeki avatar, aynı yerel JPEG dosyasından 512 × 512 olarak yüklendi. Kayıt ayarları değiştirilmedi.
 
-![Netrcol sistem mesajları](system-message-identity.png)
+![Netrcol sistem mesajları](../screenshots/event-logs-messages.jpg)

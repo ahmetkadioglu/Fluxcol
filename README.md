@@ -28,17 +28,23 @@ Choose an action for each of the 14 moderation rules and open its settings from 
 
 ### Rule configuration
 
-The bad-word filter supports separate lists for whole-word and partial matches, with examples explaining the difference. Each rule can inherit shared permissions or use its own user, role, channel, and category scope.
+The bad-word filter supports separate lists for whole-word and partial matches, with examples explaining the difference. Each rule can inherit shared permissions or use its own user, role, channel, and category scope. The example word below is an unsaved demonstration.
 
 ![Bad-word filter settings with exact and partial word lists and matching examples](docs/screenshots/bad-words-settings.jpg)
 
+### Event log configuration
+
+Choose the events to record, then route them to a default, category, or event-specific channel. Category tabs keep the configuration easy to navigate. Message-content logging is optional.
+
+![Event log settings showing category tabs, channel inheritance, and optional message-content logging](docs/screenshots/event-logs-settings.jpg)
+
 ### Event logs in chat
 
-Community activity is delivered to the configured channel as readable embeds from **Netrcol SYSTEM**, with its own logo. This example shows presence changes and a member-join test message.
+Community activity is delivered to the configured channel as readable embeds from **Netrcol SYSTEM**, with its own logo. This example shows voice-channel activity and an explicitly marked member-join test message.
 
-![Netrcol SYSTEM event-log embeds with the Netrcol logo in a Fluxcol channel](docs/netrcol/system-message-identity.png)
+![Netrcol SYSTEM event-log embeds with the Netrcol logo in a Fluxcol channel](docs/screenshots/event-logs-messages.jpg)
 
-The settings screenshots are in English; the event messages are in Turkish, one of the 34 supported languages.
+These screenshots come directly from the running application, with tighter framing for readability. Settings and example messages are shown in English, one of the 34 supported languages.
 
 ## Run locally on Windows
 
