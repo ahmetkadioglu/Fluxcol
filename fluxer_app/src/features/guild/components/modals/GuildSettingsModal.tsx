@@ -6,6 +6,7 @@ import {MobileGuildSettingsView} from '@app/features/app/components/dialogs/comp
 import * as Modal from '@app/features/app/components/dialogs/Modal';
 import {SettingsModalContainer} from '@app/features/app/components/dialogs/shared/SettingsModalLayout';
 import GatewayConnection from '@app/features/gateway/transport/GatewayConnection';
+import {GuildRoleCreationContext} from '@app/features/guild/components/modals/GuildRoleCreationContext';
 import GuildSettingsModalState from '@app/features/guild/state/GuildSettingsModal';
 import Guilds from '@app/features/guild/state/Guilds';
 import * as RouterUtils from '@app/features/navigation/utils/RouterUtils';
@@ -30,10 +31,11 @@ interface GuildSettingsModalProps {
 	guildId: string;
 	initialTab?: GuildSettingsTabType;
 	initialMobileTab?: GuildSettingsTabType;
+	onRoleCreated?: (roleId: string) => void;
 }
 
 export const GuildSettingsModal: React.FC<GuildSettingsModalProps> = observer(
-	({guildId, initialTab: initialTabProp, initialMobileTab}) => {
+	({guildId, initialTab: initialTabProp, initialMobileTab, onRoleCreated}) => {
 		const {i18n} = useLingui();
 		const guild = Guilds.getGuild(guildId);
 		const [selectedTab, setSelectedTab] = useState<GuildSettingsTabType>(initialTabProp ?? 'overview');
@@ -152,7 +154,10 @@ export const GuildSettingsModal: React.FC<GuildSettingsModalProps> = observer(
 			[availableTabs, isMobile, mobileIsRootView, mobileNavigateTo, mobileResetToRoot],
 		);
 		useEffect(() => {
-			GuildSettingsModalState.register({guildId, navigate: handleExternalNavigate});
+			GuildSettingsModalState.register({
+				guildId,
+				navigate: handleExternalNavigate,
+			});
 			return () => {
 				GuildSettingsModalState.unregister(guildId);
 			};
@@ -166,28 +171,30 @@ export const GuildSettingsModal: React.FC<GuildSettingsModalProps> = observer(
 					text={i18n._(GUILD_SETTINGS_LABEL_DESCRIPTOR)}
 					data-flx="guild.guild-settings-modal.modal-screen-reader-label"
 				/>
-				<SettingsModalContainer fullscreen={true} data-flx="guild.guild-settings-modal.settings-modal-container">
-					{isMobile ? (
-						<MobileGuildSettingsView
-							guild={guild}
-							groupedSettingsTabs={groupedSettingsTabs}
-							currentTab={currentTab}
-							mobileNav={mobileNav}
-							onBack={handleMobileBack}
-							onTabSelect={handleTabSelect}
-							data-flx="guild.guild-settings-modal.mobile-guild-settings-view"
-						/>
-					) : (
-						<DesktopGuildSettingsView
-							guild={guild}
-							groupedSettingsTabs={groupedSettingsTabs}
-							currentTab={currentTab}
-							selectedTab={selectedTab}
-							onTabSelect={handleDesktopTabSelect}
-							data-flx="guild.guild-settings-modal.desktop-guild-settings-view"
-						/>
-					)}
-				</SettingsModalContainer>
+				<GuildRoleCreationContext.Provider value={onRoleCreated}>
+					<SettingsModalContainer fullscreen={true} data-flx="guild.guild-settings-modal.settings-modal-container">
+						{isMobile ? (
+							<MobileGuildSettingsView
+								guild={guild}
+								groupedSettingsTabs={groupedSettingsTabs}
+								currentTab={currentTab}
+								mobileNav={mobileNav}
+								onBack={handleMobileBack}
+								onTabSelect={handleTabSelect}
+								data-flx="guild.guild-settings-modal.mobile-guild-settings-view"
+							/>
+						) : (
+							<DesktopGuildSettingsView
+								guild={guild}
+								groupedSettingsTabs={groupedSettingsTabs}
+								currentTab={currentTab}
+								selectedTab={selectedTab}
+								onTabSelect={handleDesktopTabSelect}
+								data-flx="guild.guild-settings-modal.desktop-guild-settings-view"
+							/>
+						)}
+					</SettingsModalContainer>
+				</GuildRoleCreationContext.Provider>
 			</Modal.Root>
 		);
 	},

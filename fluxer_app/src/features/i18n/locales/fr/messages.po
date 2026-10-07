@@ -42995,3 +42995,69 @@ msgstr "Supprimer le message + Avertir le membre"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Supprimer le message + Appliquer une restriction temporaire"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Langue des messages Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Choisissez la langue utilisée par Netrcol pour les journaux d’événements et les messages AutoMod de cette communauté. La langue de votre interface reste inchangée."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Impossible de charger les paramètres des modules. Vérifiez votre accès et réessayez."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Impossible d’enregistrer la langue des messages. Réessayez."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Langue des messages Netrcol mise à jour"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Rôles des membres"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Rôles des bots"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Délai d’attribution (secondes)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Seuls les rôles de départ ordinaires peuvent être attribués. Les rôles existants sont conservés."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Laissez vide pour ignorer les bots."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Attribution automatique de rôles"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Un rôle sélectionné manque ou dispose de droits de gestion. Retirez-le avant d’enregistrer."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Aucun rôle sélectionné pour ce type de compte."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Rôles automatiques mis à jour"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Impossible de charger les paramètres des rôles. Vérifiez votre accès et réessayez."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Enregistrement impossible. Choisissez des rôles valides et un délai de 0 à 3600 secondes."

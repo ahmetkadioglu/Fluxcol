@@ -37,6 +37,15 @@ vi.mock('@app/features/application_settings/EventLogHistory', () => ({
 vi.mock('@app/features/application_settings/AutoModSettings', () => ({
 	AutoModSettings: () => <div>AutoMod settings</div>,
 }));
+vi.mock('@app/features/application_settings/ModuleSettings', () => ({
+	ModuleSettings: () => <div>Shared module settings</div>,
+}));
+vi.mock('@app/features/application_settings/AutomaticRoleSettings', () => ({
+	AutomaticRoleSettings: () => <div>Automatic role settings</div>,
+}));
+vi.mock('@app/features/application_settings/AutomaticRoleHistory', () => ({
+	AutomaticRoleHistory: () => <div>Automatic role history</div>,
+}));
 vi.mock('@app/features/application_settings/AutoModHistory', () => ({
 	AutoModHistory: () => <div>AutoMod history</div>,
 }));
@@ -327,7 +336,6 @@ describe('application settings access and panel', () => {
 	});
 	it.each([
 		['welcome', ['Message channel']],
-		['autorole', ['Member role', 'Allowed roles']],
 		['tickets', ['Channel category', 'Support roles']],
 	] as const)('uses disabled native selection controls for %s without saving settings', async (module, labels) => {
 		state.location = new URL(`http://localhost/channels/guild/application-settings?module=${module}`);
@@ -340,6 +348,12 @@ describe('application settings access and panel', () => {
 		}
 		expect(state.navigate).not.toHaveBeenCalled();
 		expect(container.querySelector('form')).toBeNull();
+	});
+	it('opens automatic roles as a working module instead of a preview', async () => {
+		state.location = new URL('http://localhost/channels/guild/application-settings?module=autorole');
+		await renderPage();
+		expect(container.textContent).toContain('Automatic role settings');
+		expect(container.querySelector('[data-flx="application-settings.preview-fields"]')).toBeNull();
 	});
 	it.each(['unknown', 'ai-assistant'])('falls back to overview for unavailable module %s', async (module) => {
 		state.location = new URL(`http://localhost/channels/guild/application-settings?module=${module}`);

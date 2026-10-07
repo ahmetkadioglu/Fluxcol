@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import type {GuildID, UserID} from '@app/api/BrandedTypes';
+import type {GuildID, RoleID, UserID} from '@app/api/BrandedTypes';
 import type {GuildMemberRow, GuildMembershipMetadataRow} from '@app/api/database/types/GuildTypes';
 import type {GuildMember} from '@app/api/models/GuildMember';
 
@@ -12,6 +12,12 @@ export abstract class IGuildMemberRepository {
 	abstract countMembers(guildId: GuildID): Promise<number>;
 
 	abstract upsertMember(data: GuildMemberRow): Promise<GuildMember>;
+	abstract addSystemMemberRole(
+		guildId: GuildID,
+		userId: UserID,
+		roleId: RoleID,
+		joinedAt: number,
+	): Promise<GuildMember>;
 
 	abstract deleteMember(guildId: GuildID, userId: UserID): Promise<void>;
 

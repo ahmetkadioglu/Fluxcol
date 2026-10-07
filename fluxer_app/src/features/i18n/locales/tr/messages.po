@@ -42995,3 +42995,69 @@ msgstr "Mesajı sil + Üyeyi uyar"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Mesajı sil + Zaman aşımı uygula"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol mesaj dili"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Netrcol’un bu toplulukta olay kayıtları ve AutoMod mesajları için kullanacağı dili seçin. Arayüz diliniz değişmez."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Modül ayarları yüklenemedi. Erişim yetkinizi kontrol edip tekrar deneyin."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Mesaj dili kaydedilemedi. Tekrar deneyin."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol mesaj dili güncellendi"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Üye rolleri"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Bot rolleri"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Atama gecikmesi (saniye)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Yalnızca yönetim yetkisi olmayan başlangıç rolleri atanabilir. Üyenin mevcut rolleri korunur."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Botları atlamak için boş bırakın."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Otomatik rol ataması"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Seçilen bir rol silinmiş veya yönetim yetkisine sahip. Kaydetmeden önce kaldırın."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Bu hesap türü için rol seçilmedi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Otomatik rol ayarları güncellendi"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Rol ayarları yüklenemedi. Erişiminizi kontrol edip tekrar deneyin."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Kaydedilemedi. Geçerli roller ve 0–3600 saniye arasında bir gecikme seçin."

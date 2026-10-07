@@ -42996,3 +42996,69 @@ msgstr "Ištrinti žinutę + Įspėti narį"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Ištrinti žinutę + Laikinai apriboti"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol pranešimų kalba"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Pasirinkite kalbą, kurią Netrcol naudos šios bendruomenės įvykių žurnaluose ir AutoMod pranešimuose. Jūsų sąsajos kalba nesikeis."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Nepavyko įkelti modulių nustatymų. Patikrinkite prieigą ir bandykite dar kartą."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Nepavyko išsaugoti pranešimų kalbos. Bandykite dar kartą."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol pranešimų kalba atnaujinta"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Narių vaidmenys"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Botų vaidmenys"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Priskyrimo delsa (sekundės)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Galima priskirti tik įprastus pradinius vaidmenis. Esami vaidmenys išsaugomi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Palikite tuščią, kad botai būtų praleisti."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatinis vaidmenų priskyrimas"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Pasirinkto vaidmens nėra arba jis turi valdymo teises. Pašalinkite jį prieš išsaugodami."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Šiam paskyros tipui vaidmenų nepasirinkta."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatiniai vaidmenys atnaujinti"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Nepavyko įkelti vaidmenų nustatymų. Patikrinkite prieigą ir bandykite dar kartą."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Nepavyko išsaugoti. Pasirinkite tinkamus vaidmenis ir delsą nuo 0 iki 3600 sekundžių."

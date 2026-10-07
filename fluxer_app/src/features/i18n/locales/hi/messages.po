@@ -42995,3 +42995,69 @@ msgstr "मैसेज मिटाएँ + सदस्य को चेता
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "मैसेज मिटाएँ + टाइमआउट"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol संदेशों की भाषा"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "इस समुदाय में इवेंट लॉग और AutoMod संदेशों के लिए Netrcol की भाषा चुनें। आपके इंटरफ़ेस की भाषा नहीं बदलेगी।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "मॉड्यूल सेटिंग लोड नहीं हो सकीं। अपनी पहुँच जाँचें और फिर से प्रयास करें।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "संदेशों की भाषा सहेजी नहीं जा सकी। फिर से प्रयास करें।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol संदेशों की भाषा अपडेट की गई"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "सदस्यों की भूमिकाएँ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "बॉट की भूमिकाएँ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "भूमिका देने में देरी (सेकंड)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "केवल सामान्य शुरुआती भूमिकाएँ दी जा सकती हैं। मौजूदा भूमिकाएँ बनी रहती हैं।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "बॉट को छोड़ने के लिए इसे खाली रखें।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "स्वचालित भूमिका आवंटन"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "चुनी गई भूमिका मौजूद नहीं है या उसमें प्रबंधन अनुमतियाँ हैं। सहेजने से पहले उसे हटाएँ।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "इस खाते के प्रकार के लिए कोई भूमिका नहीं चुनी गई।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "स्वचालित भूमिका सेटिंग अपडेट की गई"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "भूमिका सेटिंग लोड नहीं हुई। अपनी पहुँच जाँचें और फिर कोशिश करें।"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "सहेजा नहीं जा सका। मान्य भूमिकाएँ और 0 से 3600 सेकंड की देरी चुनें।"

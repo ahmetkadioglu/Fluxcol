@@ -11,9 +11,12 @@ import {APPLICATION_SETTINGS_DESCRIPTOR} from '@app/features/application_setting
 import styles from '@app/features/application_settings/ApplicationSettingsPage.module.css';
 import {AutoModHistory} from '@app/features/application_settings/AutoModHistory';
 import {AutoModSettings} from '@app/features/application_settings/AutoModSettings';
+import {AutomaticRoleHistory} from '@app/features/application_settings/AutomaticRoleHistory';
+import {AutomaticRoleSettings} from '@app/features/application_settings/AutomaticRoleSettings';
 import {EVENT_LOG_COPY} from '@app/features/application_settings/EventLogCopy';
 import {EventLogHistory} from '@app/features/application_settings/EventLogHistory';
 import {EventLogSettings} from '@app/features/application_settings/EventLogSettings';
+import {ModuleSettings} from '@app/features/application_settings/ModuleSettings';
 import {SettingsSection} from '@app/features/guild/components/modals/guild_tabs/guild_overview_tab/components/GuildOverviewTabSettingsSection';
 import overviewStyles from '@app/features/guild/components/modals/guild_tabs/guild_overview_tab/GuildOverviewTab.module.css';
 import {remFromPx} from '@app/features/theme/layout/RemFromPx';
@@ -58,17 +61,28 @@ export function ApplicationSettingsContent({
 	guildId: string;
 }) {
 	const {i18n, t} = useLingui();
-	if (module?.id === 'logs' || module?.id === 'audit' || module?.id === 'automod') {
+	if (
+		module?.id === 'logs' ||
+		module?.id === 'audit' ||
+		module?.id === 'automod' ||
+		module?.id === 'settings' ||
+		module?.id === 'autorole'
+	) {
 		return (
 			<div className={overviewStyles.container} data-flx="application-settings.content">
 				{module.id === 'logs' ? (
 					<EventLogSettings guildId={guildId} />
 				) : module.id === 'automod' ? (
 					<AutoModSettings guildId={guildId} />
+				) : module.id === 'autorole' ? (
+					<AutomaticRoleSettings guildId={guildId} />
+				) : module.id === 'settings' ? (
+					<ModuleSettings guildId={guildId} />
 				) : (
 					<>
 						<EventLogHistory guildId={guildId} />
 						<AutoModHistory guildId={guildId} />
+						<AutomaticRoleHistory guildId={guildId} />
 					</>
 				)}
 			</div>
@@ -133,7 +147,10 @@ export function ApplicationSettingsContent({
 						description={t`Built-in community features for ${communityName}.`}
 					>
 						<p className={overviewStyles.sectionDescription} data-flx="application-settings.preview-notice">
-							{i18n._(MODULES.find((item) => item.id === 'logs')!.title)} · AutoMod: {i18n._(EVENT_LOG_COPY.ready)}
+							{['logs', 'automod', 'autorole', 'settings']
+								.map((id) => i18n._(MODULES.find((item) => item.id === id)!.title))
+								.join(' · ')}
+							: {i18n._(EVENT_LOG_COPY.ready)}
 						</p>
 					</SettingsSection>
 					{GROUPS.map((group) => (
@@ -159,7 +176,11 @@ export function ApplicationSettingsContent({
 												</span>
 											</span>
 											<span className={styles.moduleStatus} data-flx="application-settings.module-status">
-												{item.id === 'logs' || item.id === 'audit' || item.id === 'automod'
+												{item.id === 'logs' ||
+												item.id === 'audit' ||
+												item.id === 'automod' ||
+												item.id === 'settings' ||
+												item.id === 'autorole'
 													? i18n._(EVENT_LOG_COPY.ready)
 													: t`Not available yet`}
 											</span>

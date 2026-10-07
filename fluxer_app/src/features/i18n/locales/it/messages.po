@@ -42995,3 +42995,69 @@ msgstr "Elimina messaggio + Avvisa il membro"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Elimina messaggio + Metti in timeout"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Lingua dei messaggi Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Scegli la lingua che Netrcol usa per i registri eventi e i messaggi AutoMod in questa comunità. La lingua della tua interfaccia resta invariata."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Impossibile caricare le impostazioni dei moduli. Verifica il tuo accesso e riprova."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Impossibile salvare la lingua dei messaggi. Riprova."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Lingua dei messaggi Netrcol aggiornata"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Ruoli dei membri"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Ruoli dei bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Ritardo di assegnazione (secondi)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Si possono assegnare solo ruoli iniziali senza permessi di gestione. I ruoli esistenti vengono mantenuti."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Lascia vuoto per ignorare i bot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Assegnazione automatica dei ruoli"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Un ruolo selezionato non esiste o ha permessi di gestione. Rimuovilo prima di salvare."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Nessun ruolo selezionato per questo tipo di account."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Ruoli automatici aggiornati"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Impossibile caricare le impostazioni dei ruoli. Verifica l’accesso e riprova."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Impossibile salvare. Scegli ruoli validi e un ritardo da 0 a 3600 secondi."

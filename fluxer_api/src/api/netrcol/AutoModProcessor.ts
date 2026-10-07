@@ -13,6 +13,7 @@ import {
 import {type AutoModJob, AutoModRepository} from '@app/api/netrcol/AutoModRepository';
 import {eventLogContext} from '@app/api/netrcol/EventLogContext';
 import {eventLogStopped} from '@app/api/netrcol/EventLogRepository';
+import {ModuleSettingsRepository} from '@app/api/netrcol/ModuleSettingsRepository';
 import type {WorkerDependencies} from '@app/api/worker/WorkerDependencies';
 import {AUTO_MOD_RULE_IDS} from '@fluxer/constants/src/AutoModConstants';
 import {AUTO_MOD_TRANSLATIONS} from '@fluxer/constants/src/AutoModTranslations';
@@ -230,8 +231,9 @@ export class AutoModProcessor {
 						job.warning_id = String(await this.deps.snowflakeService.generateForChannel(channelId));
 						if (!(await this.repository.update(row, job))) return;
 					}
-					const copy = AUTO_MOD_TRANSLATIONS[user.locale ?? 'en-US'] ?? AUTO_MOD_TRANSLATIONS['en-US']!;
-					const labels = EVENT_LOG_TRANSLATIONS[user.locale ?? 'en-US'] ?? EVENT_LOG_TRANSLATIONS['en-US']!;
+					const {settings: shared} = await new ModuleSettingsRepository().read(guildId);
+					const copy = AUTO_MOD_TRANSLATIONS[shared.message_language]!;
+					const labels = EVENT_LOG_TRANSLATIONS[shared.message_language]!;
 					const messageId = createMessageID(BigInt(job.warning_id));
 					await this.deps.channelService.messages.writeLock.withFreshMessage(channelId, messageId, async (existing) => {
 						const message =

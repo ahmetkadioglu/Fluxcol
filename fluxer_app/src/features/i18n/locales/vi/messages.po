@@ -42995,3 +42995,69 @@ msgstr "Xóa tin nhắn + Cảnh báo thành viên"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Xóa tin nhắn + Tạm dừng"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Ngôn ngữ tin nhắn Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Chọn ngôn ngữ Netrcol dùng cho nhật ký sự kiện và tin nhắn AutoMod trong cộng đồng này. Ngôn ngữ giao diện của bạn không thay đổi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Không thể tải cài đặt mô-đun. Hãy kiểm tra quyền truy cập và thử lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Không thể lưu ngôn ngữ tin nhắn. Hãy thử lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Đã cập nhật ngôn ngữ tin nhắn Netrcol"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Vai trò thành viên"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Vai trò bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Độ trễ cấp vai trò (giây)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Chỉ cấp các vai trò ban đầu thông thường. Các vai trò hiện có được giữ nguyên."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Để trống để bỏ qua bot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Cấp vai trò tự động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Vai trò đã chọn không tồn tại hoặc có quyền quản lý. Hãy xóa trước khi lưu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Chưa chọn vai trò cho loại tài khoản này."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Đã cập nhật cài đặt vai trò tự động"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Không thể tải cài đặt vai trò. Kiểm tra quyền truy cập rồi thử lại."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Không thể lưu. Chọn vai trò hợp lệ và độ trễ từ 0 đến 3600 giây."

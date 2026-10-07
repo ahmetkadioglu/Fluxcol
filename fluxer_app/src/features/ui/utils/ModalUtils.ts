@@ -214,12 +214,17 @@ export function useModalLogic({
 		},
 		[onClose, popOwningModal],
 	);
+	const handleCloseRef = useRef(handleClose);
+	useLayoutEffect(() => {
+		handleCloseRef.current = handleClose;
+	}, [handleClose]);
 	useEffect(() => {
-		LayerManager.addLayer('modal', modalKey, handleClose);
+		// Updating a close guard must not move the modal above its open popouts.
+		LayerManager.addLayer('modal', modalKey, () => handleCloseRef.current());
 		return () => {
 			LayerManager.removeLayer('modal', modalKey);
 		};
-	}, [handleClose, modalKey]);
+	}, [modalKey]);
 	const handleBackdropClick = useCallback(
 		(customOnClose?: () => void) => {
 			if (isBackdropActivationLeftOver(ownerDocument)) {

@@ -42995,3 +42995,69 @@ msgstr "Usuń wiadomość + Ostrzeż członka"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Usuń wiadomość + Czasowe ograniczenie"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Język wiadomości Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Wybierz język, którego Netrcol używa do dzienników zdarzeń i wiadomości AutoMod w tej społeczności. Język Twojego interfejsu się nie zmieni."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Nie można wczytać ustawień modułów. Sprawdź swój dostęp i spróbuj ponownie."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Nie można zapisać języka wiadomości. Spróbuj ponownie."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Zaktualizowano język wiadomości Netrcol"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Role członków"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Role botów"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Opóźnienie przypisania (sekundy)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Można przypisywać tylko zwykłe role początkowe. Istniejące role zostają zachowane."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Pozostaw puste, aby pomijać boty."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatyczne przypisanie ról"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Wybrana rola nie istnieje lub ma uprawnienia zarządzania. Usuń ją przed zapisaniem."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Nie wybrano ról dla tego typu konta."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Zaktualizowano role automatyczne"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Nie można wczytać ustawień ról. Sprawdź dostęp i spróbuj ponownie."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Nie można zapisać. Wybierz prawidłowe role i opóźnienie od 0 do 3600 sekund."

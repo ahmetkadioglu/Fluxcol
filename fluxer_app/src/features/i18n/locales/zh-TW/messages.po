@@ -42995,3 +42995,69 @@ msgstr "刪除訊息 + 警告成員"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "刪除訊息 + 暫時禁言"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol 訊息語言"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "選擇 Netrcol 在此社群中用於事件記錄和 AutoMod 訊息的語言。您的介面語言保持不變。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "無法載入模組設定。請檢查存取權限後再試一次。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "無法儲存訊息語言。請再試一次。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol 訊息語言已更新"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "成員角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "機器人角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "指派延遲（秒）"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "只能指派一般初始角色。成員現有角色會保留。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "留空即可略過機器人。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "自動指派角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "所選角色不存在或擁有管理權限。請在儲存前移除。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "尚未為此帳戶類型選擇角色。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "已更新自動角色設定"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "無法載入角色設定。請檢查存取權限後重試。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "無法儲存。請選擇有效角色以及0至3600秒的延遲。"

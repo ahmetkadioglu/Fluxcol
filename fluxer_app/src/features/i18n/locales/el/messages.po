@@ -42995,3 +42995,69 @@ msgstr "Διαγραφή μηνύματος + Προειδοποίηση μέλ�
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Διαγραφή μηνύματος + Προσωρινός περιορισμός"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Γλώσσα μηνυμάτων Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Επιλέξτε τη γλώσσα που χρησιμοποιεί το Netrcol για τις καταγραφές συμβάντων και τα μηνύματα AutoMod σε αυτή την κοινότητα. Η γλώσσα του περιβάλλοντός σας δεν αλλάζει."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων μονάδων. Ελέγξτε την πρόσβασή σας και δοκιμάστε ξανά."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Δεν ήταν δυνατή η αποθήκευση της γλώσσας μηνυμάτων. Δοκιμάστε ξανά."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Η γλώσσα μηνυμάτων Netrcol ενημερώθηκε"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Ρόλοι μελών"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Ρόλοι bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Καθυστέρηση ανάθεσης (δευτερόλεπτα)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Ανατίθενται μόνο απλοί αρχικοί ρόλοι. Οι υπάρχοντες ρόλοι διατηρούνται."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Αφήστε κενό για παράλειψη των bot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Αυτόματη ανάθεση ρόλων"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Ένας επιλεγμένος ρόλος λείπει ή έχει δικαιώματα διαχείρισης. Αφαιρέστε τον πριν την αποθήκευση."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Δεν επιλέχθηκαν ρόλοι για αυτόν τον τύπο λογαριασμού."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Οι αυτόματοι ρόλοι ενημερώθηκαν"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων ρόλων. Ελέγξτε την πρόσβαση και δοκιμάστε ξανά."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Η αποθήκευση απέτυχε. Επιλέξτε έγκυρους ρόλους και καθυστέρηση από 0 έως 3600 δευτερόλεπτα."

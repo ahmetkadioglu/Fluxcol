@@ -42995,3 +42995,69 @@ msgstr "Eliminar mensaje + Advertir al miembro"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Eliminar mensaje + Aislamiento temporal"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Idioma de los mensajes de Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Elige el idioma que Netrcol usa para los registros de eventos y los mensajes de AutoMod en esta comunidad. El idioma de tu interfaz no cambia."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "No se pudo cargar la configuración de los módulos. Verifica tu acceso e inténtalo de nuevo."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "No se pudo guardar el idioma de los mensajes. Inténtalo de nuevo."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Idioma de los mensajes de Netrcol actualizado"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Roles de miembros"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Roles de bots"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Retraso de asignación (segundos)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Solo se asignan roles iniciales sin permisos de gestión. Se conservan los roles existentes."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Déjalo vacío para omitir los bots."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Asignación automática de roles"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Un rol seleccionado no existe o tiene permisos de gestión. Elimínalo antes de guardar."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "No hay roles seleccionados para este tipo de cuenta."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Roles automáticos actualizados"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "No se pudieron cargar los ajustes de roles. Comprueba tu acceso e inténtalo de nuevo."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "No se pudo guardar. Elige roles válidos y un retraso de 0 a 3600 segundos."

@@ -15,8 +15,13 @@ import {defineTable} from '@app/api/database/CassandraTableDsl';
 import {Db, type PreparedQuery} from '@app/api/database/CassandraTypes';
 import type {ISnowflakeService} from '@app/api/infrastructure/ISnowflakeService';
 import {getSnowflakeService} from '@app/api/middleware/ServiceRegistry';
+import {
+	ApplicationSettingsRecords as EventLogRecords,
+	type GuildRecord,
+} from '@app/api/netrcol/ApplicationSettingsRecords';
 import {eventLogContext} from '@app/api/netrcol/EventLogContext';
 import {eventLogWakeup} from '@app/api/netrcol/EventLogWakeup';
+import {ModuleSettingsRepository} from '@app/api/netrcol/ModuleSettingsRepository';
 import {APIErrorCodes} from '@fluxer/constants/src/ApiErrorCodes';
 import {eventLogAvailable, eventLogChannel} from '@fluxer/constants/src/EventLogConstants';
 import {ConflictError} from '@fluxer/errors/src/domains/core/ConflictError';
@@ -27,18 +32,7 @@ import {
 	EventLogSettings,
 } from '@fluxer/schema/src/domains/guild/GuildEventLogSchemas';
 
-interface GuildRecord {
-	guild_id: GuildID;
-	key: string;
-	value: string;
-	version: number;
-}
-export const EventLogRecords = defineTable<GuildRecord, 'guild_id' | 'key', 'guild_id'>({
-	name: 'netrcol_event_log_records',
-	columns: ['guild_id', 'key', 'value', 'version'],
-	primaryKey: ['guild_id', 'key'],
-	partitionKey: ['guild_id'],
-});
+export {EventLogRecords};
 export interface EventLogConfig {
 	settings: EventLogSettings;
 	approved_by: string;
@@ -102,13 +96,14 @@ export class EventLogRepository {
 				key: 'config',
 			}),
 		);
+		const language = await new ModuleSettingsRepository().override(guildId);
 		if (!row)
 			return {
 				settings: {
 					enabled: false,
 					channel_id: null,
 					events: ['member_join', 'member_leave'],
-					language: 'en-US',
+					language: language ?? 'en-US',
 					schema_version: 2,
 					category_channels: {},
 					event_channels: {},
@@ -125,6 +120,7 @@ export class EventLogRepository {
 				event_channels: {},
 				capture_message_content: false,
 				...EventLogSettings.parse(stored.settings),
+				...(language ? {language} : {}),
 			},
 			approved_by: stored.approved_by,
 			revision: row.version,

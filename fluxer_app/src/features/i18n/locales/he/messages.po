@@ -42995,3 +42995,69 @@ msgstr "מחיקת הודעה + הזהרת חבר"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "מחיקת הודעה + הטלת פסק זמן"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "שפת הודעות Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "בחרו את השפה שבה Netrcol משתמש ביומני האירועים ובהודעות AutoMod בקהילה הזו. שפת הממשק שלכם לא תשתנה."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "לא ניתן לטעון את הגדרות המודולים. בדקו את הרשאות הגישה ונסו שוב."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "לא ניתן לשמור את שפת ההודעות. נסו שוב."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "שפת הודעות Netrcol עודכנה"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "תפקידי חברים"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "תפקידי בוטים"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "השהיית הקצאה (שניות)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "ניתן להקצות רק תפקידי התחלה רגילים. התפקידים הקיימים נשמרים."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "השאר ריק כדי לדלג על בוטים."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "הקצאת תפקידים אוטומטית"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "תפקיד שנבחר חסר או כולל הרשאות ניהול. הסר אותו לפני השמירה."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "לא נבחרו תפקידים לסוג חשבון זה."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "הגדרות התפקידים האוטומטיים עודכנו"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "לא ניתן לטעון את הגדרות התפקידים. בדוק את הגישה ונסה שוב."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "לא ניתן לשמור. בחר תפקידים תקינים והשהיה בין 0 ל־3600 שניות."

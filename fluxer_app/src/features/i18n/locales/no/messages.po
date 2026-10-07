@@ -42995,3 +42995,69 @@ msgstr "Slett melding + Advar medlem"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Slett melding + Gi timeout"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Språk for Netrcol-meldinger"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Velg språket Netrcol bruker for hendelseslogger og AutoMod-meldinger i dette fellesskapet. Grensesnittspråket ditt forblir det samme."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Kunne ikke laste modulinnstillingene. Sjekk tilgangen din og prøv igjen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Kunne ikke lagre meldingsspråket. Prøv igjen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Språket for Netrcol-meldinger er oppdatert"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Medlemsroller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Botroller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Tildelingsforsinkelse (sekunder)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Bare vanlige startroller kan tildeles. Eksisterende roller beholdes."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "La stå tomt for å hoppe over boter."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatisk rolletildeling"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "En valgt rolle mangler eller har administrasjonsrettigheter. Fjern den før du lagrer."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Ingen roller valgt for denne kontotypen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatiske roller oppdatert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Kunne ikke laste rolleinnstillinger. Sjekk tilgangen din og prøv igjen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Kunne ikke lagre. Velg gyldige roller og en forsinkelse fra 0 til 3600 sekunder."

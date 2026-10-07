@@ -15,6 +15,7 @@ import {eventLogMessage} from '@app/api/netrcol/EventLogMessages';
 import {EventLogOutbox, EventLogRepository} from '@app/api/netrcol/EventLogRepository';
 import {EVENT_LOG_LANGUAGES, EventLogService} from '@app/api/netrcol/EventLogService';
 import {eventLogWakeup} from '@app/api/netrcol/EventLogWakeup';
+import {ModuleSettingsRepository} from '@app/api/netrcol/ModuleSettingsRepository';
 import {InMemoryCassandraQueryExecutor} from '@app/api/test/InMemoryCassandraQueryExecutor';
 import {MockSnowflakeService} from '@app/api/test/mocks/MockSnowflakeService';
 import {NoopWorkerService} from '@app/api/test/NoopWorkerService';
@@ -201,6 +202,17 @@ describe(`Event logs (${postgresUrl ? 'PostgreSQL' : 'memory'})`, () => {
 		await expect(service.save(guildId, ownerId, {...settings, language: 'de', revision: 0})).rejects.toThrow();
 		expect((await repository.getConfig(guildId)).settings.language).toBe('tr');
 		expect(await repository.history(guildId)).toHaveLength(1);
+	});
+	it('uses the shared language for new and already queued deliveries without dropping events', async () => {
+		const row = await queued();
+		expect(row.language).toBe('tr');
+		await new ModuleSettingsRepository().save(guildId, ownerId, {message_language: 'de'}, 0);
+		const {delivery, createMessage} = deliveryService();
+		await delivery.deliver((await repository.claim(row))!);
+		expect(createMessage).toHaveBeenCalledOnce();
+		expect(createMessage.mock.calls[0]![0]).toMatchObject({processedEmbeds: [{title: 'Mitglied beigetreten'}]});
+		await repository.enqueueTest(guildId, ownerId, snowflake, 'member_join');
+		expect((await repository.listPending())[0]!.language).toBe('de');
 	});
 	it('upgrades version-one preferences without enabling any newly introduced events', async () => {
 		await repository.saveConfig(guildId, ownerId, settings, 0);

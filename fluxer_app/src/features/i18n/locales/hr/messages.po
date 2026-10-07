@@ -42995,3 +42995,69 @@ msgstr "Izbriši poruku + Upozori člana"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Izbriši poruku + Vremensko ograničenje"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Jezik poruka Netrcola"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Odaberite jezik koji Netrcol koristi za zapise događaja i poruke AutoModa u ovoj zajednici. Jezik vašeg sučelja ostaje isti."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Postavke modula nije moguće učitati. Provjerite pristup i pokušajte ponovno."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Jezik poruka nije moguće spremiti. Pokušajte ponovno."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Jezik poruka Netrcola ažuriran"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Uloge članova"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Uloge botova"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Odgoda dodjele (sekunde)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Mogu se dodijeliti samo obične početne uloge. Postojeće uloge ostaju sačuvane."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Ostavite prazno za preskakanje botova."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatska dodjela uloga"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Odabrana uloga nedostaje ili ima ovlasti upravljanja. Uklonite je prije spremanja."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Nema odabranih uloga za ovu vrstu računa."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatske uloge ažurirane"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Postavke uloga nije moguće učitati. Provjerite pristup i pokušajte ponovno."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Spremanje nije uspjelo. Odaberite valjane uloge i odgodu od 0 do 3600 sekundi."

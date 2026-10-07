@@ -54,7 +54,7 @@ export const EventLogSettingsResponse = z.object({
 export type EventLogSettingsResponse = z.infer<typeof EventLogSettingsResponse>;
 export const EventLogHistoryEntry = z.object({
 	id: z.string(),
-	kind: z.enum(['config_updated', 'test', ...EVENT_LOG_IDS]),
+	kind: z.enum(['config_updated', 'module_settings_updated', 'test', ...EVENT_LOG_IDS]),
 	status: z.enum(['saved', 'pending', 'running', 'sent', 'skipped', 'failed']),
 	actor_id: Id.nullable(),
 	subject_id: z.string().max(100).nullable(),

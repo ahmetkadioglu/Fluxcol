@@ -4,6 +4,7 @@ import {APPLICATION_SETTINGS_MODULES as MODULES} from '@app/features/application
 import styles from '@app/features/application_settings/ApplicationSettingsPage.module.css';
 import {EVENT_LOG_LABELS as LABELS} from '@app/features/application_settings/EventLogCatalogCopy';
 import {EVENT_LOG_COPY as TEXT} from '@app/features/application_settings/EventLogCopy';
+import {MODULE_SETTINGS_COPY} from '@app/features/application_settings/ModuleSettingsCopy';
 import {SettingsSection} from '@app/features/guild/components/modals/guild_tabs/guild_overview_tab/components/GuildOverviewTabSettingsSection';
 import overviewStyles from '@app/features/guild/components/modals/guild_tabs/guild_overview_tab/GuildOverviewTab.module.css';
 import {Link} from '@app/features/platform/components/router/RouterReact';
@@ -75,9 +76,11 @@ export function EventLogHistory({guildId}: {guildId: string}) {
 									{i18n._(
 										entry.kind === 'config_updated'
 											? TEXT.configUpdated
-											: entry.kind === 'test'
-												? LABELS.testMark
-												: LABELS[entry.kind],
+											: entry.kind === 'module_settings_updated'
+												? MODULE_SETTINGS_COPY.updated
+												: entry.kind === 'test'
+													? LABELS.testMark
+													: LABELS[entry.kind],
 									)}
 								</strong>
 								<span>{i18n._(TEXT[entry.status])}</span>

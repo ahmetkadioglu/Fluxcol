@@ -7,6 +7,7 @@ import {ConfirmModal} from '@app/features/app/components/dialogs/ConfirmModal';
 import {sortRolesByPosition} from '@app/features/app/components/dialogs/shared/PermissionComponents';
 import * as GuildCommands from '@app/features/guild/commands/GuildCommands';
 import {showGuildErrorModal} from '@app/features/guild/components/alerts/GuildErrorModalUtils';
+import {GuildRoleCreationContext} from '@app/features/guild/components/modals/GuildRoleCreationContext';
 import {MobileRoleList} from '@app/features/guild/components/modals/guild_tabs/guild_roles_tab/MobileRoleList';
 import {RoleEditor} from '@app/features/guild/components/modals/guild_tabs/guild_roles_tab/RoleEditor';
 import {RoleSidebar} from '@app/features/guild/components/modals/guild_tabs/guild_roles_tab/RoleSidebar';
@@ -42,7 +43,7 @@ import {Trans, useLingui} from '@lingui/react/macro';
 import {matchSorter} from 'match-sorter';
 import {observer} from 'mobx-react-lite';
 import type React from 'react';
-import {useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
+import {useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
 
 const logger = new Logger('GuildRolesTab');
 const NEW_ROLE_DESCRIPTOR = msg({
@@ -84,6 +85,7 @@ const YOU_CANNOT_REMOVE_THIS_PERMISSION_BECAUSE_IT_WOULD_DESCRIPTOR = msg({
 });
 const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 	const {i18n} = useLingui();
+	const onRoleCreated = useContext(GuildRoleCreationContext);
 	const guild = Guilds.getGuild(guildId);
 	const currentUser = Users.currentUser;
 	const isMobile = MobileLayout.enabled;
@@ -293,7 +295,10 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 			setRoleUpdates(new Map());
 			setPendingRoleOrder(null);
 			setPendingHoistOrder(null);
-			ToastCommands.createToast({type: 'success', children: <Trans>Roles updated successfully</Trans>});
+			ToastCommands.createToast({
+				type: 'success',
+				children: <Trans>Roles updated successfully</Trans>,
+			});
 		} catch (_error) {
 			ModalCommands.push(
 				modal(() => (
@@ -348,8 +353,12 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 		if (!guild) return;
 		pendingRoleCreationRef.current = true;
 		try {
-			await GuildCommands.createRole(guild.id, i18n._(NEW_ROLE_DESCRIPTOR));
-			ToastCommands.createToast({type: 'success', children: <Trans>Role created successfully</Trans>});
+			const createdRole = await GuildCommands.createRole(guild.id, i18n._(NEW_ROLE_DESCRIPTOR));
+			ToastCommands.createToast({
+				type: 'success',
+				children: <Trans>Role created successfully</Trans>,
+			});
+			onRoleCreated?.(createdRole.id);
 		} catch (_error) {
 			pendingRoleCreationRef.current = false;
 			ModalCommands.push(
@@ -358,7 +367,7 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 				)),
 			);
 		}
-	}, [guild]);
+	}, [guild, i18n, onRoleCreated]);
 	const handleDuplicateRole = useCallback(
 		async (sourceRoleId: string) => {
 			if (!guild || !canManageRoles) return;
@@ -399,7 +408,10 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 					logger.error(`Failed to position duplicated role in guild ${guild.id}:`, error);
 					setOptimisticRoleOrder(null);
 				}
-				ToastCommands.createToast({type: 'success', children: <Trans>Role created successfully</Trans>});
+				ToastCommands.createToast({
+					type: 'success',
+					children: <Trans>Role created successfully</Trans>,
+				});
 			} catch (_error) {
 				pendingRoleCreationRef.current = false;
 				setOptimisticRoleOrder(null);
@@ -437,7 +449,10 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 					onPrimary={async () => {
 						try {
 							await GuildCommands.deleteRole(guild.id, selectedRole.id);
-							ToastCommands.createToast({type: 'success', children: <Trans>Role deleted successfully</Trans>});
+							ToastCommands.createToast({
+								type: 'success',
+								children: <Trans>Role deleted successfully</Trans>,
+							});
 							setSelectedRoleId(nextRole?.id ?? null);
 						} catch (_error) {
 							window.setTimeout(() => {
@@ -466,7 +481,10 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 			const nextRole = roles[currentIndex + 1] ?? roles[0];
 			try {
 				await GuildCommands.deleteRole(guild.id, roleId);
-				ToastCommands.createToast({type: 'success', children: <Trans>Role deleted successfully</Trans>});
+				ToastCommands.createToast({
+					type: 'success',
+					children: <Trans>Role deleted successfully</Trans>,
+				});
 				setSelectedRoleId((current) => (current === roleId ? (nextRole?.id ?? null) : current));
 			} catch (_error) {
 				ModalCommands.push(
@@ -519,7 +537,10 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 		if (!guild) return;
 		try {
 			await GuildCommands.resetRoleHoistOrder(guild.id);
-			ToastCommands.createToast({type: 'success', children: <Trans>Hoist order reset to default</Trans>});
+			ToastCommands.createToast({
+				type: 'success',
+				children: <Trans>Hoist order reset to default</Trans>,
+			});
 		} catch (_error) {
 			showGuildErrorModal({
 				title: i18n._(COULDN_T_RESET_HOIST_ORDER_DESCRIPTOR),
@@ -633,7 +654,9 @@ const GuildRolesTab: React.FC<{guildId: string}> = observer(({guildId}) => {
 	useEffect(() => {
 		if (isMobile || !guild || !currentUser) return;
 		if (!SettingsSidebar.hasOverride) {
-			SettingsSidebar.setOverride(overrideOwnerId, sidebarContent, {defaultOn: true});
+			SettingsSidebar.setOverride(overrideOwnerId, sidebarContent, {
+				defaultOn: true,
+			});
 		}
 		return () => {
 			if (SettingsSidebar.ownerId === overrideOwnerId) {

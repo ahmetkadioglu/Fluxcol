@@ -42995,3 +42995,69 @@ msgstr "حذف الرسالة + تحذير العضو"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "حذف الرسالة + مهلة"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "لغة رسائل Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "اختر اللغة التي يستخدمها Netrcol لسجلات الأحداث ورسائل AutoMod في هذا المجتمع. لن تتغير لغة واجهتك."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "تعذر تحميل إعدادات الوحدات. تحقق من صلاحية الوصول وحاول مجددًا."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "تعذر حفظ لغة الرسائل. حاول مجددًا."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "تم تحديث لغة رسائل Netrcol"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "أدوار الأعضاء"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "أدوار البوتات"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "تأخير التعيين (بالثواني)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "يمكن تعيين أدوار البداية العادية فقط. تُحفظ الأدوار الحالية."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "اتركه فارغًا لتجاهل البوتات."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "تعيين الأدوار تلقائيًا"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "أحد الأدوار المحددة مفقود أو لديه صلاحيات إدارية. أزله قبل الحفظ."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "لم تُحدد أدوار لهذا النوع من الحسابات."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "تم تحديث إعدادات الأدوار التلقائية"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "تعذر تحميل إعدادات الأدوار. تحقق من صلاحية الوصول وحاول مجددًا."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "تعذر الحفظ. اختر أدوارًا صالحة وتأخيرًا من 0 إلى 3600 ثانية."

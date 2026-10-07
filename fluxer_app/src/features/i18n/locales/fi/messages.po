@@ -42995,3 +42995,69 @@ msgstr "Poista viesti + Varoita jäsentä"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Poista viesti + Anna jäähy"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol-viestien kieli"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Valitse kieli, jota Netrcol käyttää tämän yhteisön tapahtumalokeissa ja AutoMod-viesteissä. Käyttöliittymäsi kieli ei muutu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Moduulien asetuksia ei voitu ladata. Tarkista käyttöoikeutesi ja yritä uudelleen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Viestien kieltä ei voitu tallentaa. Yritä uudelleen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol-viestien kieli päivitetty"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Jäsenten roolit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Bottien roolit"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Määrityksen viive (sekuntia)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Vain tavallisia aloitusrooleja voidaan määrittää. Nykyiset roolit säilyvät."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Jätä tyhjäksi, jos botit ohitetaan."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automaattinen roolien määritys"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Valittu rooli puuttuu tai sillä on hallintaoikeuksia. Poista se ennen tallennusta."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Tälle tilityypille ei ole valittu rooleja."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automaattiset roolit päivitetty"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Rooliasetuksia ei voitu ladata. Tarkista käyttöoikeutesi ja yritä uudelleen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Tallennus epäonnistui. Valitse kelvolliset roolit ja viive väliltä 0–3600 sekuntia."

@@ -42995,3 +42995,69 @@ msgstr "메시지 삭제 + 멤버에게 경고"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "메시지 삭제 + 타임아웃"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol 메시지 언어"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "이 커뮤니티에서 Netrcol이 이벤트 로그와 AutoMod 메시지에 사용할 언어를 선택하세요. 인터페이스 언어는 변경되지 않습니다."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "모듈 설정을 불러올 수 없습니다. 접근 권한을 확인하고 다시 시도하세요."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "메시지 언어를 저장할 수 없습니다. 다시 시도하세요."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol 메시지 언어가 변경되었습니다"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "멤버 역할"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "봇 역할"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "부여 지연 시간(초)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "일반적인 시작 역할만 부여할 수 있습니다. 기존 역할은 유지됩니다."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "봇을 제외하려면 비워 두세요."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "자동 역할 부여"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "선택한 역할이 없거나 관리 권한이 있습니다. 저장하기 전에 제거하세요."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "이 계정 유형에 선택한 역할이 없습니다."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "자동 역할 설정이 업데이트되었습니다"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "역할 설정을 불러올 수 없습니다. 접근 권한을 확인하고 다시 시도하세요."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "저장할 수 없습니다. 유효한 역할과 0~3600초의 지연 시간을 선택하세요."

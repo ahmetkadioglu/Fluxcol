@@ -42995,3 +42995,69 @@ msgstr "Șterge mesajul + Avertizează membrul"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Șterge mesajul + Timeout"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Limba mesajelor Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Alege limba folosită de Netrcol pentru jurnalele de evenimente și mesajele AutoMod din această comunitate. Limba interfeței tale rămâne aceeași."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Setările modulelor nu au putut fi încărcate. Verifică accesul și încearcă din nou."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Limba mesajelor nu a putut fi salvată. Încearcă din nou."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Limba mesajelor Netrcol a fost actualizată"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Roluri pentru membri"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Roluri pentru boți"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Întârzierea atribuirii (secunde)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Pot fi atribuite doar roluri inițiale obișnuite. Rolurile existente sunt păstrate."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Lasă gol pentru a omite boții."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Atribuire automată de roluri"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Un rol selectat lipsește sau are permisiuni de administrare. Elimină-l înainte de salvare."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Nu sunt selectate roluri pentru acest tip de cont."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Rolurile automate au fost actualizate"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Setările rolurilor nu au putut fi încărcate. Verifică accesul și încearcă din nou."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Salvarea a eșuat. Alege roluri valide și o întârziere între 0 și 3600 de secunde."

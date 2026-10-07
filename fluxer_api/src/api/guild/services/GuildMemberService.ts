@@ -199,13 +199,14 @@ export class GuildMemberService {
 		roleId: RoleID;
 		initiatorId: UserID;
 		requestCache: RequestCache;
+		expectedJoinedAt?: number;
 	}): Promise<void> {
 		const {targetId, guildId, roleId, initiatorId, requestCache} = params;
 		const targetMember = await this.guildRepository.getMember(guildId, targetId);
 		if (!targetMember) throw new UnknownGuildMemberError();
 		const previousSnapshot = this.auditService.serializeMemberForAudit(targetMember);
 		const role = await this.guildRepository.getRole(roleId, guildId);
-		await this.roleService.systemAddMemberRole({targetId, guildId, roleId});
+		await this.roleService.systemAddMemberRole({targetId, guildId, roleId, expectedJoinedAt: params.expectedJoinedAt});
 		const updatedMember = await this.guildRepository.getMember(guildId, targetId);
 		if (updatedMember) {
 			await this.eventService.dispatchGuildMemberUpdate({guildId, member: updatedMember, requestCache});

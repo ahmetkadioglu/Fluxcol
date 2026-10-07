@@ -2,6 +2,8 @@
 
 **Uygulama ayarları → AutoMod**, self-hosted PostgreSQL kurulumlarında topluluk sahibine açıktır. Modül ve 14 kural başlangıçta kapalı, botları yok say seçeneği açıktır. Olay kayıtları ayarları değişmez.
 
+Netrcol bildirimlerinin dili **Uygulama ayarları → Modül ayarları → Netrcol mesaj dili** alanından seçilir. Olay kayıtları ve AutoMod aynı topluluk dilini kullanır; işlemin hedefindeki üyenin kişisel dili bildirim dilini belirlemez. 34 dil desteklenir. Eski kayıt dili yükseltmede korunur; kişisel arayüz dili ve kural etkinliği değişmez. Ayrıntılar [ortak modül ayarlarında](MODULE_SETTINGS.md) bulunur.
+
 14 kuralın işlevleri, yaptırımları, kuyruk kurtarma ve panel davranışları sınandı. 255 API ve 80 panel testi geçti. Gerçek yerel API/JetStream/gateway üzerinde ayrıca 14 kural ve 20 mesajlık eşzamanlı deneme dahil 16 senaryo geçti. Kapsam, beş hata düzeltmesi, ölçümler ve test ortamının sınırları [AutoMod test raporunda](AUTOMOD_TEST_REPORT.md) bulunur.
 
 ## Kontroller

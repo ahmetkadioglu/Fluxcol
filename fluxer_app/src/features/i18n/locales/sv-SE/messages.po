@@ -42995,3 +42995,69 @@ msgstr "Ta bort meddelande + Varna medlem"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Ta bort meddelande + Timeout"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Språk för Netrcol-meddelanden"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Välj det språk Netrcol använder för händelseloggar och AutoMod-meddelanden i den här gemenskapen. Ditt gränssnittsspråk ändras inte."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Det gick inte att läsa in modulinställningarna. Kontrollera din åtkomst och försök igen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Det gick inte att spara meddelandespråket. Försök igen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Språket för Netrcol-meddelanden har uppdaterats"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Medlemsroller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Botroller"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Tilldelningsfördröjning (sekunder)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Endast vanliga startroller kan tilldelas. Befintliga roller behålls."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Lämna tomt för att hoppa över botar."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatisk rolltilldelning"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "En vald roll saknas eller har hanteringsbehörigheter. Ta bort den innan du sparar."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Inga roller valda för denna kontotyp."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatiska roller uppdaterade"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Kunde inte läsa in rollinställningar. Kontrollera din åtkomst och försök igen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Kunde inte spara. Välj giltiga roller och en fördröjning från 0 till 3600 sekunder."

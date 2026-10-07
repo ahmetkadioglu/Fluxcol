@@ -121,6 +121,9 @@ export class GuildRepository implements IGuildRepositoryAggregate {
 	async upsertMember(data: GuildMemberRow): Promise<GuildMember> {
 		return await this.memberRepo.upsertMember(data);
 	}
+	async addSystemMemberRole(guildId: GuildID, userId: UserID, roleId: RoleID, joinedAt: number): Promise<GuildMember> {
+		return this.memberRepo.addSystemMemberRole(guildId, userId, roleId, joinedAt);
+	}
 
 	async listMembersPaginated(guildId: GuildID, limit: number, afterUserId?: UserID): Promise<Array<GuildMember>> {
 		return await this.memberRepo.listMembersPaginated(guildId, limit, afterUserId);

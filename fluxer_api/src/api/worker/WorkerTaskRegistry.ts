@@ -33,6 +33,7 @@ import pollGooglePlayVoidedPurchases from '@app/api/worker/tasks/PollGooglePlayV
 import processAppStoreNotification from '@app/api/worker/tasks/ProcessAppStoreNotification';
 import processAssetDeletionQueue from '@app/api/worker/tasks/ProcessAssetDeletionQueue';
 import processAutoMod from '@app/api/worker/tasks/ProcessAutoMod';
+import processAutomaticRoles from '@app/api/worker/tasks/ProcessAutomaticRoles';
 import processCachePurgeQueue from '@app/api/worker/tasks/ProcessCachePurgeQueue';
 import processExpiredPremiumSweep from '@app/api/worker/tasks/ProcessExpiredPremiumSweep';
 import processGooglePlayNotification from '@app/api/worker/tasks/ProcessGooglePlayNotification';
@@ -59,6 +60,7 @@ import type {WorkerTaskHandler} from '@pkgs/worker/src/contracts/WorkerTask';
 
 export const workerTasks: Record<WorkerTaskName, WorkerTaskHandler> = {
 	processAutoMod,
+	processAutomaticRoles,
 	applicationProcessDeletion,
 	batchGuildAuditLogMessageDeletes,
 	bulkAddGuildMembers: bulkAddGuildMembers,

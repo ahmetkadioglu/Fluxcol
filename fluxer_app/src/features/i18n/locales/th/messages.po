@@ -42995,3 +42995,69 @@ msgstr "ลบข้อความ + เตือนสมาชิก"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "ลบข้อความ + พักการใช้งานชั่วคราว"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "ภาษาข้อความของ Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "เลือกภาษาที่ Netrcol ใช้สำหรับบันทึกเหตุการณ์และข้อความ AutoMod ในชุมชนนี้ ภาษาของหน้าจอคุณจะไม่เปลี่ยน"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "โหลดการตั้งค่าโมดูลไม่ได้ ตรวจสอบสิทธิ์การเข้าถึงแล้วลองอีกครั้ง"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "บันทึกภาษาข้อความไม่ได้ โปรดลองอีกครั้ง"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "อัปเดตภาษาข้อความของ Netrcol แล้ว"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "บทบาทสมาชิก"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "บทบาทบอต"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "เวลาหน่วงการมอบบทบาท (วินาที)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "มอบได้เฉพาะบทบาทเริ่มต้นทั่วไป บทบาทเดิมจะยังคงอยู่"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "เว้นว่างไว้เพื่อข้ามบอต"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "มอบบทบาทอัตโนมัติ"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "บทบาทที่เลือกไม่มีอยู่หรือมีสิทธิ์จัดการ โปรดลบออกก่อนบันทึก"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "ไม่ได้เลือกบทบาทสำหรับบัญชีประเภทนี้"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "อัปเดตการตั้งค่าบทบาทอัตโนมัติแล้ว"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "โหลดการตั้งค่าบทบาทไม่ได้ ตรวจสอบสิทธิ์เข้าถึงแล้วลองอีกครั้ง"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "บันทึกไม่ได้ เลือกบทบาทที่ใช้ได้และเวลาหน่วง 0 ถึง 3600 วินาที"

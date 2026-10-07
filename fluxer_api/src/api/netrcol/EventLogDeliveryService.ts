@@ -92,7 +92,7 @@ export class EventLogDeliveryService {
 						return;
 					}
 					const presentation = await resolveEventLogPresentation(delivery, this.deps, freshGuild.name);
-					const rendered = renderEventLog(delivery, presentation);
+					const rendered = renderEventLog({...delivery, language: freshConfig.settings.language}, presentation);
 					const processedAttachments: Array<MessageAttachment> = [];
 					if (!existing && rendered.attachment) {
 						const attachmentId = createAttachmentID(delivery.event_id);

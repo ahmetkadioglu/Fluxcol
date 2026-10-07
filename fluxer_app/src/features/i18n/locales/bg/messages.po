@@ -42995,3 +42995,69 @@ msgstr "Изтриване на съобщението + Предупрежде�
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Изтриване на съобщението + Време за изчакване"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Език на съобщенията на Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Изберете езика на Netrcol за дневниците на събитията и съобщенията на AutoMod в тази общност. Езикът на интерфейса ви не се променя."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Настройките на модулите не могат да се заредят. Проверете достъпа си и опитайте отново."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Езикът на съобщенията не може да се запази. Опитайте отново."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Езикът на съобщенията на Netrcol е обновен"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Роли на членовете"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Роли на ботовете"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Забавяне на задаването (секунди)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Могат да се задават само обикновени начални роли. Съществуващите роли се запазват."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Оставете празно, за да пропускате ботовете."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Автоматично задаване на роли"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Избрана роля липсва или има права за управление. Премахнете я преди запазване."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Няма избрани роли за този тип акаунт."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Автоматичните роли са обновени"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Настройките на ролите не могат да се заредят. Проверете достъпа и опитайте отново."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Запазването е неуспешно. Изберете валидни роли и забавяне от 0 до 3600 секунди."

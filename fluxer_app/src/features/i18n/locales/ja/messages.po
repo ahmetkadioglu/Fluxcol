@@ -42995,3 +42995,69 @@ msgstr "メッセージを削除 + メンバーに警告"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "メッセージを削除 + タイムアウト"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcolのメッセージ言語"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "このコミュニティでNetrcolがイベントログとAutoModメッセージに使用する言語を選択します。インターフェースの言語は変わりません。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "モジュール設定を読み込めませんでした。アクセス権限を確認して、もう一度お試しください。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "メッセージ言語を保存できませんでした。もう一度お試しください。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcolのメッセージ言語を更新しました"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "メンバーのロール"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "ボットのロール"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "付与までの遅延（秒）"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "管理権限のない通常の初期ロールのみ付与できます。既存のロールは維持されます。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "ボットを除外する場合は空欄にしてください。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "ロールの自動付与"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "選択したロールが存在しないか、管理権限を持っています。保存前に削除してください。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "このアカウント種別のロールは未選択です。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "自動ロールの設定を更新しました"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "ロール設定を読み込めませんでした。アクセス権を確認して再試行してください。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "保存できませんでした。有効なロールと0～3600秒の遅延を選択してください。"

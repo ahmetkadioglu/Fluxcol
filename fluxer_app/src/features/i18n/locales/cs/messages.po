@@ -42995,3 +42995,69 @@ msgstr "Smazat zprávu + Varovat člena"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Smazat zprávu + Dočasné omezení"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Jazyk zpráv Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Vyberte jazyk, který Netrcol používá pro záznamy událostí a zprávy AutoMod v této komunitě. Jazyk vašeho rozhraní se nezmění."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Nastavení modulů se nepodařilo načíst. Zkontrolujte přístup a zkuste to znovu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Jazyk zpráv se nepodařilo uložit. Zkuste to znovu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Jazyk zpráv Netrcol byl aktualizován"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Role členů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Role botů"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Prodleva přiřazení (sekundy)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Lze přiřadit pouze běžné počáteční role. Stávající role zůstávají zachovány."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Ponechte prázdné pro vynechání botů."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatické přiřazení rolí"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Vybraná role chybí nebo má práva správy. Před uložením ji odeberte."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Pro tento typ účtu nejsou vybrány žádné role."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatické role aktualizovány"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Nastavení rolí se nepodařilo načíst. Zkontrolujte přístup a zkuste to znovu."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Uložení selhalo. Vyberte platné role a prodlevu od 0 do 3600 sekund."

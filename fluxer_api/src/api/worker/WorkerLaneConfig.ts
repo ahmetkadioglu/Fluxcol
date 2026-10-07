@@ -61,6 +61,7 @@ const LANE_CONFIG = {
 			'drainActivitySpool',
 			'deliverEventLogs',
 			'processAutoMod',
+			'processAutomaticRoles',
 		] as const,
 		retiredTasks: ['sendScheduledMessage'],
 		concurrency: 8,

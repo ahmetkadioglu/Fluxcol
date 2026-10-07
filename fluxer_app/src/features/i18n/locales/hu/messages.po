@@ -42995,3 +42995,69 @@ msgstr "Üzenet törlése + Tag figyelmeztetése"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Üzenet törlése + Ideiglenes korlátozás"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "A Netrcol üzeneteinek nyelve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Válaszd ki, milyen nyelvet használjon a Netrcol az eseménynaplókhoz és az AutoMod üzeneteihez ebben a közösségben. A felületed nyelve nem változik."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "A modulbeállításokat nem sikerült betölteni. Ellenőrizd a hozzáférésedet, és próbáld újra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Az üzenetek nyelvét nem sikerült menteni. Próbáld újra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "A Netrcol üzeneteinek nyelve frissítve"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Tagok szerepkörei"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Botok szerepkörei"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Kiosztási késleltetés (másodperc)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Csak szokásos kezdő szerepkörök oszthatók ki. A meglévő szerepkörök megmaradnak."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Hagyd üresen a botok kihagyásához."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatikus szerepkörkiosztás"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Egy kiválasztott szerepkör hiányzik vagy kezelési jogokkal rendelkezik. Mentés előtt távolítsd el."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Ehhez a fióktípushoz nincs kiválasztott szerepkör."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatikus szerepkörök frissítve"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "A szerepkörök beállításai nem tölthetők be. Ellenőrizd a hozzáférésed és próbáld újra."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "A mentés sikertelen. Válassz érvényes szerepköröket és 0–3600 másodperces késleltetést."

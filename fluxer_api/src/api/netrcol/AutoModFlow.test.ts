@@ -37,7 +37,9 @@ import {createWebhook, deleteWebhook, updateWebhook} from '@app/api/webhook/test
 import processAutoMod from '@app/api/worker/tasks/ProcessAutoMod';
 import {clearWorkerDependencies, setWorkerDependenciesForTest} from '@app/api/worker/WorkerContext';
 import type {AutoModAction} from '@fluxer/constants/src/AutoModConstants';
+import {AUTO_MOD_TRANSLATIONS} from '@fluxer/constants/src/AutoModTranslations';
 import {MessageTypes} from '@fluxer/constants/src/ChannelConstants';
+import {EVENT_LOG_TRANSLATIONS} from '@fluxer/constants/src/EventLogTranslations';
 import type {ChannelResponse} from '@fluxer/schema/src/domains/channel/ChannelSchemas';
 import type {GuildAuditLogListResponse} from '@fluxer/schema/src/domains/guild/GuildAuditLogSchemas';
 import type {AutoModSettings, AutoModSettingsResponse} from '@fluxer/schema/src/domains/guild/GuildAutoModSchemas';
@@ -1343,6 +1345,48 @@ describe('Actual Fluxer operations → AutoMod → moderation', () => {
 			}
 		},
 	);
+	it('validates shared language access and uses it for AutoMod instead of the affected account language', async () => {
+		const sharedPath = `/guilds/${guild.id}/application-settings/modules`;
+		await createBuilderWithoutAuth(harness).get(sharedPath).expect(401).execute();
+		await createBuilder(harness, member.token).get(sharedPath).expect(403).execute();
+		await createBuilder(harness, member.token)
+			.put(sharedPath)
+			.body({message_language: 'tr', revision: 0})
+			.expect(403)
+			.execute();
+		await createBuilder(harness, owner.token)
+			.put(sharedPath)
+			.body({message_language: 'zz', revision: 0})
+			.expect(400)
+			.execute();
+		await createBuilder(harness, owner.token).put(sharedPath).body({message_language: 'tr', revision: 0}).execute();
+		await createBuilder(harness, owner.token)
+			.put(sharedPath)
+			.body({message_language: 'de', revision: 0})
+			.expect(409)
+			.execute();
+		await configure((s) => {
+			s.rules.character_limit.action = 'warn';
+			s.rules.character_limit.threshold = 1;
+		});
+		await sendMessage(harness, member.token, source.id, 'shared language');
+		await flush();
+		const messages = await getMessages(harness, owner.token, logs.id);
+		expect(messages).toHaveLength(1);
+		expect(messages[0]!.embeds![0]!.description).toContain(AUTO_MOD_TRANSLATIONS.tr!.character_limit);
+		expect(messages[0]!.embeds![0]!.fields![0]).toMatchObject({
+			name: EVENT_LOG_TRANSLATIONS.tr!.field_status,
+			value: AUTO_MOD_TRANSLATIONS.tr!.warn,
+		});
+		await createBuilder(harness, owner.token).put(sharedPath).body({message_language: 'ja', revision: 1}).execute();
+		await sendMessage(harness, member.token, source.id, 'updated language');
+		await flush();
+		const updated = await getMessages(harness, owner.token, logs.id);
+		expect(updated).toHaveLength(2);
+		expect(
+			updated.some((message) => message.embeds?.[0]?.description?.includes(AUTO_MOD_TRANSLATIONS.ja!.character_limit!)),
+		).toBe(true);
+	});
 	it('pauses moderation after ownership transfer and the operator stop switch', async () => {
 		await configure((s) => {
 			s.rules.character_limit.action = 'delete';

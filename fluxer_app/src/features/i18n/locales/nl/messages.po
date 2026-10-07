@@ -42995,3 +42995,69 @@ msgstr "Bericht verwijderen + Lid waarschuwen"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Bericht verwijderen + Time-out"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Taal van Netrcol-berichten"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Kies de taal die Netrcol gebruikt voor gebeurtenislogboeken en AutoMod-berichten in deze community. Je interfacetaal blijft hetzelfde."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "De module-instellingen konden niet worden geladen. Controleer je toegang en probeer het opnieuw."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "De berichtentaal kon niet worden opgeslagen. Probeer het opnieuw."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Taal van Netrcol-berichten bijgewerkt"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Ledenrollen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Botrollen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Vertraging bij toewijzing (seconden)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Alleen gewone startrollen kunnen worden toegewezen. Bestaande rollen blijven behouden."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Laat leeg om bots over te slaan."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatische roltoewijzing"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Een gekozen rol ontbreekt of heeft beheerrechten. Verwijder deze voordat je opslaat."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Geen rollen gekozen voor dit accounttype."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatische rollen bijgewerkt"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Rolinstellingen konden niet worden geladen. Controleer je toegang en probeer opnieuw."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Opslaan mislukt. Kies geldige rollen en een vertraging van 0 tot 3600 seconden."

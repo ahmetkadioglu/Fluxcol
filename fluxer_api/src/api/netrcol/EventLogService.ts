@@ -9,6 +9,7 @@ import {EventLogRepository, eventLogStopped, eventLogSupported} from '@app/api/n
 import {APIErrorCodes} from '@fluxer/constants/src/ApiErrorCodes';
 import {ChannelTypes} from '@fluxer/constants/src/ChannelConstants';
 import {eventLogAvailable, eventLogChannel} from '@fluxer/constants/src/EventLogConstants';
+import {NETRCOL_MESSAGE_LANGUAGES} from '@fluxer/constants/src/ModuleSettingsConstants';
 import {InputValidationError} from '@fluxer/errors/src/domains/core/InputValidationError';
 import {MissingAccessError} from '@fluxer/errors/src/domains/core/MissingAccessError';
 import {MissingPermissionsError} from '@fluxer/errors/src/domains/core/MissingPermissionsError';
@@ -19,42 +20,7 @@ import type {
 	EventLogUpdateRequest,
 } from '@fluxer/schema/src/domains/guild/GuildEventLogSchemas';
 
-export const EVENT_LOG_LANGUAGES = new Set([
-	'ar',
-	'bg',
-	'cs',
-	'da',
-	'de',
-	'el',
-	'en-US',
-	'en-GB',
-	'es-ES',
-	'es-419',
-	'fi',
-	'fr',
-	'he',
-	'hi',
-	'hr',
-	'hu',
-	'id',
-	'it',
-	'ja',
-	'ko',
-	'lt',
-	'nl',
-	'no',
-	'pl',
-	'pt-BR',
-	'ro',
-	'ru',
-	'sv-SE',
-	'th',
-	'tr',
-	'uk',
-	'vi',
-	'zh-CN',
-	'zh-TW',
-]);
+export const EVENT_LOG_LANGUAGES = new Set<string>(NETRCOL_MESSAGE_LANGUAGES);
 
 export class EventLogService {
 	constructor(

@@ -42995,3 +42995,69 @@ msgstr "Excluir mensagem + Avisar membro"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Excluir mensagem + Suspensão temporária"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Idioma das mensagens do Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Escolha o idioma que o Netrcol usa nos registros de eventos e nas mensagens do AutoMod desta comunidade. O idioma da sua interface permanece o mesmo."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Não foi possível carregar as configurações dos módulos. Verifique seu acesso e tente novamente."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Não foi possível salvar o idioma das mensagens. Tente novamente."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Idioma das mensagens do Netrcol atualizado"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Cargos de membros"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Cargos de bots"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Atraso na atribuição (segundos)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Somente cargos iniciais sem permissões de gestão podem ser atribuídos. Os cargos existentes são mantidos."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Deixe vazio para ignorar bots."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Atribuição automática de cargos"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Um cargo selecionado não existe ou tem permissões de gestão. Remova-o antes de salvar."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Nenhum cargo selecionado para este tipo de conta."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Cargos automáticos atualizados"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Não foi possível carregar os cargos. Verifique seu acesso e tente novamente."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Não foi possível salvar. Escolha cargos válidos e um atraso de 0 a 3600 segundos."

@@ -6,6 +6,8 @@ import type {GuildMemberAuthService} from '@app/api/guild/services/member/GuildM
 import type {GuildMemberValidationService} from '@app/api/guild/services/member/GuildMemberValidationService';
 import type {IGatewayService} from '@app/api/infrastructure/IGatewayService';
 import type {RequestCache} from '@app/api/middleware/RequestCacheMiddleware';
+import {automaticRoleEligible} from '@app/api/netrcol/AutomaticRolePolicy';
+import {MissingPermissionsError} from '@fluxer/errors/src/domains/core/MissingPermissionsError';
 import {UnknownGuildMemberError} from '@fluxer/errors/src/domains/guild/UnknownGuildMemberError';
 
 export class GuildMemberRoleService {
@@ -16,10 +18,22 @@ export class GuildMemberRoleService {
 		private readonly validationService: GuildMemberValidationService,
 	) {}
 
-	async systemAddMemberRole(params: {targetId: UserID; guildId: GuildID; roleId: RoleID}): Promise<void> {
+	async systemAddMemberRole(params: {
+		targetId: UserID;
+		guildId: GuildID;
+		roleId: RoleID;
+		expectedJoinedAt?: number;
+	}): Promise<void> {
 		const {targetId, guildId, roleId} = params;
 		const targetMember = await this.guildRepository.getMember(guildId, targetId);
 		if (!targetMember) throw new UnknownGuildMemberError();
+		if (params.expectedJoinedAt !== undefined) {
+			const role = await this.guildRepository.getRole(roleId, guildId);
+			if (!role || !automaticRoleEligible(role, guildId)) throw new MissingPermissionsError();
+			await this.guildRepository.addSystemMemberRole(guildId, targetId, roleId, params.expectedJoinedAt);
+			if (targetMember.isTemporary) await this.gatewayService.removeTemporaryGuild({userId: targetId, guildId});
+			return;
+		}
 		if (targetMember.roleIds.has(roleId)) return;
 		const updatedRoleIds = new Set(targetMember.roleIds);
 		updatedRoleIds.add(roleId);

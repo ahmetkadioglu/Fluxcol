@@ -42995,3 +42995,69 @@ msgstr "Nachricht löschen + Mitglied verwarnen"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Nachricht löschen + Timeout"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Sprache der Netrcol-Nachrichten"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Wähle die Sprache, die Netrcol für Ereignisprotokolle und AutoMod-Nachrichten in dieser Community verwendet. Deine Oberflächensprache bleibt unverändert."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Die Moduleinstellungen konnten nicht geladen werden. Prüfe deinen Zugriff und versuche es erneut."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Die Nachrichtensprache konnte nicht gespeichert werden. Versuche es erneut."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Sprache der Netrcol-Nachrichten aktualisiert"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Mitgliederrollen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Bot-Rollen"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Zuweisungsverzögerung (Sekunden)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Nur gewöhnliche Startrollen können zugewiesen werden. Vorhandene Rollen bleiben erhalten."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Leer lassen, um Bots zu überspringen."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Automatische Rollenzuweisung"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Eine gewählte Rolle fehlt oder hat Verwaltungsrechte. Entferne sie vor dem Speichern."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Für diesen Kontotyp sind keine Rollen ausgewählt."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Automatische Rollen aktualisiert"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Rolleneinstellungen konnten nicht geladen werden. Prüfe deinen Zugriff und versuche es erneut."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Speichern fehlgeschlagen. Wähle gültige Rollen und eine Verzögerung von 0 bis 3600 Sekunden."

@@ -99,6 +99,7 @@ function registerCronJobs(cron: CronScheduler, jobsStreamMaxAgeMs: number): void
 	if (Config.instance.selfHosted && Config.database.backend === 'postgres') {
 		cron.upsert('deliverEventLogs', 'deliverEventLogs', {}, '*/5 * * * * *', {ledger: false});
 		cron.upsert('processAutoMod', 'processAutoMod', {}, '*/5 * * * * *', {ledger: false});
+		cron.upsert('processAutomaticRoles', 'processAutomaticRoles', {}, '*/5 * * * * *', {ledger: false});
 	}
 	Logger.info(
 		{

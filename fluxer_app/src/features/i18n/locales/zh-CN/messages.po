@@ -42995,3 +42995,69 @@ msgstr "删除消息 + 警告成员"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "删除消息 + 禁言"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Netrcol 消息语言"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "选择 Netrcol 在此社区中用于事件日志和 AutoMod 消息的语言。您的界面语言保持不变。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "无法加载模块设置。请检查访问权限后重试。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "无法保存消息语言。请重试。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Netrcol 消息语言已更新"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "成员角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "机器人角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "分配延迟（秒）"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "只能分配普通初始角色。成员现有角色将被保留。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "留空可跳过机器人。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "自动分配角色"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "所选角色不存在或拥有管理权限。请在保存前移除。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "尚未为此账户类型选择角色。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "已更新自动角色设置"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "无法加载角色设置。请检查访问权限后重试。"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "无法保存。请选择有效角色以及0至3600秒的延迟。"

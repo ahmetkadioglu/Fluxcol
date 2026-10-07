@@ -2,7 +2,7 @@
 
 **Community moderation and activity tracking, built into Fluxer.**
 
-Fluxcol is a self-hosted community platform built on [Fluxer](https://github.com/fluxerapp/fluxer). It brings AutoMod, event logging, and their configuration into the chat application, so community owners can manage these tools in one place without hosting separate moderation bots or switching between dashboards.
+Fluxcol is a self-hosted community platform built on [Fluxer](https://github.com/fluxerapp/fluxer). It brings AutoMod, event logging, automatic roles, and their configuration into the chat application, so community owners can manage these tools in one place without hosting separate moderation bots or switching between dashboards.
 
 The aim is to keep Fluxer's familiar interface while making day-to-day community management easier: configure rules, choose where activity is logged, and review what the system has done from the same community settings panel.
 
@@ -10,13 +10,15 @@ The aim is to keep Fluxer's familiar interface while making day-to-day community
 
 - **AutoMod with 14 rules:** bad words, repeated text, server invites, external links, excessive caps, emojis, spoilers and mentions, Zalgo, anti-spam, character limits, media spam, Anti Raid, and Anti Nuke.
 - **Configurable moderation:** warnings, message deletion, timeouts, and temporary lockdowns, with shared or per-rule user, role, channel, and category scopes. Rules start disabled.
+- **Automatic starting roles:** assign separate role lists to new members and bots, with a configurable delay, durable retries, and action history. Existing roles are preserved; privileged roles are excluded. The module starts disabled.
 - **Community event logs:** membership, moderation, messages, reactions, channels, permissions, roles, invites, webhooks, emojis, stickers, community settings, voice activity, and visible presence changes. Events can use their own destination channel or inherit the category/default channel.
 - **Readable system embeds:** notifications use the Netrcol SYSTEM identity and logo. Message-content logging is optional and starts disabled.
 - **Action history:** review automation results and delivery status inside the application.
 - **34-language support:** translated settings, labels, and automation messages, with keyboard navigation and responsive layouts using Fluxer's existing UI components.
+- **Shared message language:** choose one of 34 languages in **Application settings → Module settings → Netrcol message language** for event logs and AutoMod notifications. This preserves your personal interface language and existing community log language on upgrade.
 - **Local source builds:** PowerShell helpers build and run the customized web app, API/worker, gateway, user service, and message service with Docker Compose.
 
-Event logging and AutoMod are functional. The other modules shown in Application settings are design previews and do not perform automation yet. Two event types without upstream producers are visibly disabled.
+Event logging, AutoMod, automatic roles, shared module settings, and action history are functional. The other modules shown in Application settings are design previews and do not perform automation yet. Two event types without upstream producers are visibly disabled.
 
 ## Screenshots
 
@@ -44,6 +46,20 @@ Community activity is delivered to the configured channel as readable embeds fro
 
 ![Netrcol SYSTEM event-log embeds with the Netrcol logo in a Fluxcol channel](docs/screenshots/event-logs-messages.jpg)
 
+### Message language
+
+Set the language for event logs and AutoMod notifications in **Application settings → Module settings → Netrcol message language**. This community preference is independent of each member's interface language.
+
+![Shared Netrcol message-language setting](docs/screenshots/module-language-settings.jpg)
+
+### Automatic roles
+
+Choose separate starting roles for new members and bots, optionally delay assignments, and review their action history. Existing roles are preserved; privileged roles cannot be assigned automatically. The example community has no starting roles selected and the module is disabled.
+
+Both role selectors include a **Create role** shortcut to the community's Roles settings. Successful creation returns to Automatic roles and refreshes the choices while keeping unsaved selections and delay settings.
+
+![Automatic roles settings with member and bot role selectors, assignment delay, and action history](docs/screenshots/automatic-roles-settings.jpg)
+
 These screenshots come directly from the running application, with tighter framing for readability. Settings and example messages are shown in English, one of the 34 supported languages.
 
 ## Run locally on Windows
@@ -57,7 +73,7 @@ git remote add upstream https://github.com/fluxerapp/fluxer.git
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Local.ps1 -Build
 ```
 
-The launcher generates local configuration and random secrets, builds the source images, starts the services, checks their health and entry-point assets, and opens **http://localhost:8088**. Create your local account and complete the instance setup. Community owners can then open **Community menu → Application settings → AutoMod / Event logs**.
+The launcher generates local configuration and random secrets, builds the source images, starts the services, checks their health and entry-point assets, and opens **http://localhost:8088**. Create your local account and complete the instance setup. Community owners can then open **Community menu → Application settings → AutoMod / Event logs / Automatic roles**.
 
 Later starts can reuse the built images:
 
@@ -74,6 +90,8 @@ This launcher is a loopback-only development setup. It does not deploy an intern
 
 The current AutoMod verification includes **255 API tests**, **80 panel/settings tests**, and **16 additional live scenarios** using the local HTTP API, PostgreSQL, JetStream worker, WebSocket gateway, and file uploads. The live scenarios cover all 14 rules and a bounded 20-message concurrent run. These results describe the tested local environment, not a production capacity guarantee.
 
+Automatic roles adds **18 integration tests** and **7 live scenarios** covering human and bot assignments, delayed work, preserved roles, cancellation, stale settings, and deleted roles. The combined Netrcol API regression passed **266 tests**; application settings and the shared role selector passed **101 tests**, including role creation shortcuts, return navigation, draft preservation, refresh failures, and Escape after a close guard changes. Source builds, API/app type checks, and all 34 language checks also passed. See [automatic role verification and operation](docs/netrcol/AUTOMATIC_ROLES.md).
+
 See the [test report](docs/netrcol/AUTOMOD_TEST_REPORT.md) for scenarios, fixes, measurements, and limitations. A basic running-instance check is available with:
 
 ```powershell
@@ -87,7 +105,9 @@ The main README is in English; the detailed implementation and verification note
 - [Local setup and operation](docs/netrcol/LOCAL.md)
 - [AutoMod behavior and configuration](docs/netrcol/AUTOMOD.md)
 - [AutoMod functional test report](docs/netrcol/AUTOMOD_TEST_REPORT.md)
+- [Automatic role assignments](docs/netrcol/AUTOMATIC_ROLES.md)
 - [Event logging](docs/netrcol/EVENT_LOGS.md)
+- [Shared module settings and message language](docs/netrcol/MODULE_SETTINGS.md)
 - [System message identity](docs/netrcol/SYSTEM_IDENTITY.md)
 - [Implementation plan and remaining modules](NETRCOLFLXR_PLAN.md)
 

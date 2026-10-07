@@ -1,7 +1,7 @@
 # NetrcolFLXR — Yerleşik Topluluk Platformu
 
-> Durum: Olay kayıtları v2 ve 14 kurallı AutoMod çalışır. Mesaj denetimi, uyarı/silme/zaman aşımı, süreli baskın ve tahribat koruması; ortak işlem geçmişi ve 34 dil desteği. Üreticisi olmayan iki kayıt türü kapalıdır. Diğer modüller tasarım önizlemesidir.\
-> Plan sürümü: 0.23 — 6 Ekim 2026
+> Durum: Olay kayıtları v2, 14 kurallı AutoMod, otomatik roller ve ortak modül ayarları çalışır. Mesaj denetimi, uyarı/silme/zaman aşımı, süreli baskın ve tahribat koruması; ortak işlem geçmişi ve 34 dil desteği. Netrcol mesaj dili topluluk başına Modül ayarlarından seçilir. Üreticisi olmayan iki kayıt türü kapalıdır. Diğer modüller tasarım önizlemesidir.\
+> Plan sürümü: 0.25 — 6 Ekim 2026
 > Hedef: Fluxer deneyimini koruyan, topluluk araçlarını uygulama içinden yöneten bağımsız self-host dağıtımı.
 
 ## 1. Ürün vaadi
@@ -31,7 +31,7 @@ Bu commit, indirme sırasında alınan güncel geliştirme tabanıdır; kararlı
 
 Makine tarafından okunabilir kayıt: [upstream.json](netrcol/upstream.json). Teknik başlangıç notları: [BOOTSTRAP.md](docs/netrcol/BOOTSTRAP.md).
 
-Kaynak ilk indirmede sığ klonlanmıştır (`--depth 1`). Geçmiş veya merge tabanı gerekirse resmî upstream'den derinleştirilir. Kullanıcıya ait uzak repository henüz oluşturulmadı; yayınlama ve push yapılmadı.
+Kaynak ilk indirmede sığ klonlanmıştır (`--depth 1`). Geçmiş veya merge tabanı gerekirse resmî upstream'den derinleştirilir. Kullanıcıya ait public repository [Fluxcol](https://github.com/ahmetkadioglu/Fluxcol) üzerinde yayımlandı. Yeni yerel değişiklikler doğrulandıktan sonra ayrıca yayımlanır.
 
 ## 3. İlk sürüm kapsamı
 
@@ -43,6 +43,7 @@ Kaynak ilk indirmede sığ klonlanmıştır (`--depth 1`). Geçmiş veya merge t
 - Seçilmiş topluluk olaylarının kayıtları.
 - Mesaj yayımlandıktan sonra çalışan 14 kurallı AutoMod; modül ve kurallar başlangıçta kapalıdır.
 - Yapılandırma sürümleme, işlem geçmişi, anlaşılır hata durumları.
+- Topluluk başına ortak Netrcol mesaj dili; kişisel arayüz dilinden bağımsız 34 dil seçimi.
 - Tek paket olarak kurulum, doğrulanmış yedekleme ve belgelenmiş yükseltme.
 
 ### İlk sürüm dışında
@@ -97,6 +98,10 @@ Self-hosted kurulum ve topluluk sahipliği hem menüde hem sayfada kontrol edili
 Panel, ortak `ChannelRouteLayout` üzerinden gerçek kanal görünümünün üzerine açılır. Son seçilen erişilebilir kanalın başlığı, mesaj alanı ve üye listesi arka planda kalır; açma, modül değiştirme ve kapatma sırasında kanal bileşeni yeniden oluşturulmaz. Statik panel bağlantısı korunur. Doğrudan bağlantıda veya yenilemede son erişilebilir kanal kullanılır; silinmiş, başka topluluğa ait ya da erişimi kaybolmuş kanal arka planda gösterilmez.
 
 ## 5. Mimari ve entegrasyon sınırları
+
+### Ortak mesaj dili — 6 Ekim 2026
+
+**Uygulama ayarları → Modül ayarları → Netrcol mesaj dili** işlevseldir. Olay kayıtları ve AutoMod bildirimleri aynı topluluk tercihini kullanır. Ortak tercih ilk kez kaydedilene kadar mevcut olay kayıtlarının dili okunur; Fluxcol'un Türkçesi korunur. Kişisel arayüz dili değişmez. Tercih, mevcut PostgreSQL ayar tablosunda sürüm kontrolü ve atomik işlem geçmişiyle kaydedilir. Dil değişikliği otomasyon politika sürümlerini veya sahip onayını yenilemez; bekleyen olay kayıtları teslim anındaki ortak dilde gönderilir. Form, hatalar ve geçmiş etiketi 34 dilde çevrilmiştir. Kullanım ve API ayrıntıları [Modül ayarları](docs/netrcol/MODULE_SETTINGS.md) belgesindedir.
 
 ```text
 Fluxer web istemcisi + Uygulama ayarları
@@ -182,9 +187,19 @@ Pilot varsayılanı: başarılı/başarısız çalışma ayrıntıları 30 gün,
 
 ## 9. Pilot modüller
 
-### Karşılama ve otomatik rol
+### Otomatik roller — uygulanmış
 
-Üye katılımında seçilmiş kanala önizlenebilir mesaj gönderir ve izin verilen rolü atar. İlk deneme, mevcut bir üyeye elle test gönderirken de aynı politikayı uygular. Rol veya kanal silinirse modül anlaşılır hata verir.
+Yeni üyeler ve botlar için ayrı, en fazla 20 rol seçimi; 0–3600 saniye gecikme ve son 50 işlem geçmişi sunulur. Modül başlangıçta kapalıdır. Mevcut üyelere geriye dönük atama yapılmaz; mevcut roller korunur. `@everyone`, yönetilen ve yüksek yönetim/moderasyon iznine sahip roller seçilemez. Yalnızca topluluk sahibi ayarları yönetir.
+
+İki rol listesinin içindeki **Rol oluştur** düğmesi topluluk ayarlarının mevcut **Roller** ekranını açar. Başarılı oluşturma otomatik roller ekranına dönüp iki listeyi yeniler; kaydedilmemiş seçimler ve gecikme korunur.
+
+Üyelik ve kalıcı kuyruk aynı PostgreSQL işleminde yazılır. Commit sonrası JetStream worker uyanır; 5 saniyelik kurtarma taraması, 60 saniyelik lease, en fazla 6 deneme ve katılım kimliğiyle tekilleştirme kullanılır. Her rol için üyelik, katılım zamanı, ayar sürümü, sahiplik ve rolün uygunluğu yeniden doğrulanır. Üyenin ayrılması, ayarın değişmesi, sahiplik devri veya operatör durdurması bekleyen işi iptal eder. Native rol güncellemesi Netrcol sistem aktörüyle denetim kaydı ve etkin olay kayıtlarına bağlanır. Ayrıntılar [AUTOMATIC_ROLES.md](docs/netrcol/AUTOMATIC_ROLES.md) belgesindedir.
+
+Doğrulama: 18 otomatik rol entegrasyon testi, toplam 266 Netrcol API regresyon testi, 101 panel/seçici testi ve 7 canlı senaryo geçti. Kaynak derlemeleri, tip kontrolleri, 34 dil, masaüstü/mobil ve HTTP/JS/CSS kontrolleri tamamlandı. Açık seçicide Escape'in ayar penceresini kapatması ortak native bileşende düzeltildi; kaydetme koruması güncellendiğinde de popup katman sırası korunur. Rol oluşturma kısayolları, dönüş, taslak koruması ve liste yenileme hataları sınandı. Test topluluğu temizlendi; Fluxcol'un mevcut ayarları ve hesapları korundu.
+
+### Karşılama — planlanan
+
+Üye katılımında seçilmiş kanala önizlenebilir mesaj gönderecek. Karşılama henüz tasarım önizlemesidir.
 
 ### Olay kayıtları
 
@@ -198,7 +213,7 @@ Yeni fiziksel tablo gerekmez: kayıtlar Fluxer'ın mevcut PostgreSQL KV katmanı
 
 Mesaj yazarı mevcut sistem aktörüdür (`0`); kayıt/test mesajları tekrar kayıt üretmez, mention bildirimleri oluşturmaz. Bot işlemleri ve özel kanallar kapsamdadır. Olay, zaman, bilinen aktör, hedef, kaynak kanal, gerekçe ve değişiklikler gösterilir; bilinmeyen aktör tahmin edilmez. Metin kaydı kapalıdır; açılırsa düzenleme öncesi/sonrası ve silinen içerik eklenir. Uzun metin/toplu silme dökümleri UTF-8 eki olur; kaynak dosyalardan yalnızca ad/tür/boyut tutulur. Kanal silinince başka kanal kendiliğinden seçilmez. `NETRCOL_AUTOMATIONS_ENABLED=false` API, worker ve gateway'e uygulanır.
 
-İşlem geçmişi son 50 kaydı gösterir. Ayar değişiklikleri 90 gün, teslimat sonuçları 30 gün, kuyruk kayıtları 7 gün saklanır; bu süreler kanala gönderilmiş mesajları otomatik silmez. Taslak önizleme gönderim yapmaz. Test gönderimi seçilen, kaydedilmiş ve etkin olayın gerçek kanal yönlendirmesini kullanır. Panel, olay/alan adları ve kayıt mesajları 34 dilde yerelleştirilir. Yeni kanal kayıtları yerleşik rich embed biçimindedir: kişi/kanal adları, olay rengi, ilgili değişiklik alanları, önce/sonra metni ve olay zamanı kullanılır; tekrarlanan kimlikler ve boş varsayılan satırlar kaldırılır. Uzun içerik UTF-8 ekte korunur. Önceden gönderilmiş mesajlar değiştirilmez. Ayrıntılar [EVENT_LOGS.md](docs/netrcol/EVENT_LOGS.md) belgesindedir. Karşılama ve otomatik rol henüz önizlemedir.
+İşlem geçmişi son 50 kaydı gösterir. Ayar değişiklikleri 90 gün, teslimat sonuçları 30 gün, kuyruk kayıtları 7 gün saklanır; bu süreler kanala gönderilmiş mesajları otomatik silmez. Taslak önizleme gönderim yapmaz. Test gönderimi seçilen, kaydedilmiş ve etkin olayın gerçek kanal yönlendirmesini kullanır. Panel, olay/alan adları ve kayıt mesajları 34 dilde yerelleştirilir. Yeni kanal kayıtları yerleşik rich embed biçimindedir: kişi/kanal adları, olay rengi, ilgili değişiklik alanları, önce/sonra metni ve olay zamanı kullanılır; tekrarlanan kimlikler ve boş varsayılan satırlar kaldırılır. Uzun içerik UTF-8 ekte korunur. Önceden gönderilmiş mesajlar değiştirilmez. Ayrıntılar [EVENT_LOGS.md](docs/netrcol/EVENT_LOGS.md) belgesindedir. Karşılama henüz önizlemedir; otomatik roller ayrı bir işlevsel modüldür.
 
 ### AutoMod
 

@@ -1,10 +1,10 @@
 # Olay kayıtları — sürüm 2
 
-Self-hosted PostgreSQL kurulumlarında topluluk sahibine açıktır. Yerel kurulum bu backend'i kullanır. Cassandra'da modül kapalıdır. Diğer 29 modül tasarım önizlemesidir.
+Self-hosted PostgreSQL kurulumlarında topluluk sahibine açıktır. Yerel kurulum bu backend'i kullanır. Cassandra'da modül kapalıdır. AutoMod, ortak modül ayarları ve işlem geçmişi de işlevseldir; kalan modüller tasarım önizlemesidir.
 
 ## Kullanım
 
-**Fluxcol → Uygulama ayarları → Olay kayıtları** ekranında modülü ve varsayılan metin kanalını seçin. Dil seçimi bu panelden kaldırılmıştır; kaydedilmiş kayıt dili diğer ayarlar kaydedilirken korunur. Sol menüde tek modül bulunur; 11 olay kategorisi içerik alanında yatay, altı çizili sekmelerle seçilir. Yalnızca etkin sekmenin seçenekleri gösterilir ve sekme değiştirmek taslak seçimlerini değiştirmez. Dar ekranlarda sekme çubuğu yatay kaydırılır.
+**Fluxcol → Uygulama ayarları → Olay kayıtları** ekranında modülü ve varsayılan metin kanalını seçin. Kayıt dili, **Uygulama ayarları → Modül ayarları → Netrcol mesaj dili** alanından değiştirilir ve AutoMod bildirimleriyle ortaktır. Mevcut kayıt dili yükseltmede korunur; kişisel arayüz dili değişmez. Sol menüde tek modül bulunur; 11 olay kategorisi içerik alanında yatay, altı çizili sekmelerle seçilir. Yalnızca etkin sekmenin seçenekleri gösterilir ve sekme değiştirmek taslak seçimlerini değiştirmez. Dar ekranlarda sekme çubuğu yatay kaydırılır.
 
 Arama bütün kategorilerde çalışır; eşleşen kategoriler sekmelerde kalır ve etkin sekmede sonuç yoksa ilk eşleşen kategori gösterilir. Arama temizlenince bütün sekmeler geri gelir. Kısmi kategori seçimi, bütün desteklenen olayları kapsayan **Tümünü seç** ve **Seçimi temizle** kullanılabilir. Sekmelerde Sol/Sağ ok, Home ve End gezinmesi; Tab/Shift+Tab ile içerik alanına geçiş desteklenir.
 

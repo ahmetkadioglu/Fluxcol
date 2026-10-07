@@ -1,15 +1,24 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import type {GuildID, UserID} from '@app/api/BrandedTypes';
-import {BatchBuilder, fetchMany, fetchOne, upsertOne} from '@app/api/database/CassandraQueryExecution';
+import type {GuildID, RoleID, UserID} from '@app/api/BrandedTypes';
+import {
+	BatchBuilder,
+	executeConditional,
+	fetchMany,
+	fetchOne,
+	upsertOne,
+} from '@app/api/database/CassandraQueryExecution';
+import {Db} from '@app/api/database/CassandraTypes';
 import {buildPatchFromData, executeVersionedUpdate} from '@app/api/database/CassandraVersionedUpdate';
 import type {GuildMemberRow, GuildMembershipMetadataRow} from '@app/api/database/types/GuildTypes';
 import {GUILD_MEMBER_COLUMNS} from '@app/api/database/types/GuildTypes';
 import {IGuildMemberRepository} from '@app/api/guild/repositories/IGuildMemberRepository';
 import {GuildMember} from '@app/api/models/GuildMember';
 import {prepareAutoModJoin} from '@app/api/netrcol/AutoModSources';
+import {AutomaticRoleRepository} from '@app/api/netrcol/AutomaticRoleRepository';
 import {eventLogSupported, prepareMembershipLog} from '@app/api/netrcol/EventLogRepository';
 import {GuildMembers, GuildMembersByUserId, GuildMembershipMetadata} from '@app/api/Tables';
+import {UnknownGuildMemberError} from '@fluxer/errors/src/domains/guild/UnknownGuildMemberError';
 
 const FETCH_GUILD_MEMBER_BY_GUILD_AND_USER_ID_QUERY = GuildMembers.selectCql({
 	where: [GuildMembers.where.eq('guild_id'), GuildMembers.where.eq('user_id')],
@@ -87,6 +96,7 @@ export class GuildMemberRepository extends IGuildMemberRepository {
 								GuildMembersByUserId.insert({user_id: userId, guild_id: guildId}),
 								...(!current ? await prepareMembershipLog(guildId, userId, 'member_join') : []),
 								...(!current ? await prepareAutoModJoin(guildId, userId) : []),
+								...(!current ? await new AutomaticRoleRepository().prepare(guildId, userId, data.joined_at) : []),
 							],
 						}
 					: {}),
@@ -100,6 +110,29 @@ export class GuildMemberRepository extends IGuildMemberRepository {
 				}),
 			);
 		return new GuildMember({...data, version: result.finalVersion ?? 1});
+	}
+
+	async addSystemMemberRole(guildId: GuildID, userId: UserID, roleId: RoleID, joinedAt: number): Promise<GuildMember> {
+		// Compare-and-set adds to the current role set. It must never recreate a
+		// departed member or overwrite a role assigned while a delayed job waited.
+		for (let attempt = 0; attempt < 20; attempt++) {
+			const member = await this.getMember(guildId, userId);
+			if (!member || member.joinedAt.getTime() !== joinedAt) throw new UnknownGuildMemberError();
+			if (member.roleIds.has(roleId)) return member;
+			const roles = new Set(member.roleIds);
+			roles.add(roleId);
+			if (
+				await executeConditional(
+					GuildMembers.conditionalPatchByPk(
+						{guild_id: guildId, user_id: userId},
+						{role_ids: Db.set(roles), temporary: Db.set(false), version: Db.set(member.version + 1)},
+						{version: member.version, joined_at: member.joinedAt},
+					),
+				)
+			)
+				return new GuildMember({...member.toRow(), role_ids: roles, temporary: false, version: member.version + 1});
+		}
+		throw new Error('Automatic role assignment contention');
 	}
 
 	async listMembersPaginated(guildId: GuildID, limit: number, afterUserId?: UserID): Promise<Array<GuildMember>> {

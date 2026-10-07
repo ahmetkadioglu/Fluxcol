@@ -1,18 +1,20 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import {PASSWORD_MANAGER_IGNORE_ATTRIBUTES} from '@app/features/platform/utils/PasswordManagerAutocomplete';
+import {Button} from '@app/features/ui/button/Button';
 import styles from '@app/features/ui/components/form/FormCombobox.module.css';
 import {Scroller} from '@app/features/ui/components/Scroller';
 import FocusRing from '@app/features/ui/focus_ring/FocusRing';
 import {usePortalHost} from '@app/features/ui/overlay/PortalHostContext';
+import LayerManager from '@app/features/ui/state/LayerManager';
 import {Combobox as BaseCombobox, type ComboboxPortalProps} from '@base-ui/react/combobox';
 import {msg} from '@lingui/core/macro';
 import {useLingui} from '@lingui/react/macro';
-import {CaretDownIcon, CheckIcon, CircleNotchIcon, XIcon} from '@phosphor-icons/react';
+import {CaretDownIcon, CheckIcon, CircleNotchIcon, PlusIcon, XIcon} from '@phosphor-icons/react';
 import {clsx} from 'clsx';
 import {observer} from 'mobx-react-lite';
 import type React from 'react';
-import {useCallback, useId, useMemo, useRef, useState} from 'react';
+import {useCallback, useEffect, useId, useMemo, useRef, useState} from 'react';
 
 type Primitive = string | number | null;
 type BaseComboboxValue<O, IsMulti extends boolean> = IsMulti extends true ? Array<O> : O;
@@ -68,6 +70,7 @@ export interface ComboboxProps<
 	renderOption?: (option: O, isSelected: boolean) => React.ReactNode;
 	renderValue?: (option: IsMulti extends true ? Array<O> : O | null) => React.ReactNode;
 	portalProps?: ComboboxPortalProps;
+	popupAction?: {label: string; onClick: () => void; disabled?: boolean};
 	density?: 'default' | 'compact' | 'compactOverlay';
 	'aria-label'?: string;
 	'data-flx'?: string;
@@ -168,6 +171,7 @@ export const Combobox = observer(function Combobox<
 	renderOption,
 	renderValue,
 	portalProps,
+	popupAction,
 	density = 'default',
 	'aria-label': ariaLabel,
 	'data-flx': dataFlx,
@@ -179,6 +183,15 @@ export const Combobox = observer(function Combobox<
 	const inputRef = useRef<HTMLInputElement | null>(null);
 	const controlRef = useRef<HTMLDivElement | null>(null);
 	const [open, setOpen] = useState(false);
+	useEffect(() => {
+		if (!open) return;
+		const key = `form-combobox-${generatedId}`;
+		LayerManager.addLayer('popout', key, () => {
+			setOpen(false);
+			inputRef.current?.focus();
+		});
+		return () => LayerManager.removeLayer('popout', key);
+	}, [open, generatedId]);
 	const selectedOptions = useMemo(() => {
 		if (isMulti) {
 			if (!Array.isArray(value)) return [];
@@ -500,6 +513,24 @@ export const Combobox = observer(function Combobox<
 										)}
 									</BaseCombobox.List>
 								</Scroller>
+								{popupAction && (
+									<div className={styles.popupAction} data-flx="ui.form.combobox.popup-action">
+										<Button
+											variant="secondary"
+											fitContainer
+											small
+											leftIcon={<PlusIcon size={16} aria-hidden="true" />}
+											disabled={disabled || popupAction.disabled}
+											onClick={() => {
+												setOpen(false);
+												inputRef.current?.focus();
+												popupAction.onClick();
+											}}
+										>
+											{popupAction.label}
+										</Button>
+									</div>
+								)}
 							</BaseCombobox.Popup>
 						</BaseCombobox.Positioner>
 					</BaseCombobox.Portal>

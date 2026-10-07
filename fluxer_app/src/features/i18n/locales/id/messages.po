@@ -42995,3 +42995,69 @@ msgstr "Hapus pesan + Peringatkan anggota"
 #. js-lingui-explicit-id
 msgid "netrcol.application_settings.automod.delete_timeout"
 msgstr "Hapus pesan + Beri batas waktu"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.language"
+msgstr "Bahasa pesan Netrcol"
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.description"
+msgstr "Pilih bahasa yang digunakan Netrcol untuk log peristiwa dan pesan AutoMod di komunitas ini. Bahasa antarmuka Anda tidak berubah."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.loadError"
+msgstr "Tidak dapat memuat pengaturan modul. Periksa akses Anda dan coba lagi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.saveError"
+msgstr "Tidak dapat menyimpan bahasa pesan. Coba lagi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.module_settings.updated"
+msgstr "Bahasa pesan Netrcol diperbarui"
+
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.memberRoles"
+msgstr "Peran anggota"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botRoles"
+msgstr "Peran bot"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.delay"
+msgstr "Penundaan pemberian (detik)"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleHelp"
+msgstr "Hanya peran awal biasa yang dapat diberikan. Peran yang sudah ada tetap dipertahankan."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.botHelp"
+msgstr "Biarkan kosong untuk melewati bot."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.assigned"
+msgstr "Pemberian peran otomatis"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.roleUnavailable"
+msgstr "Peran yang dipilih tidak ada atau memiliki izin pengelolaan. Hapus sebelum menyimpan."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.noRoles"
+msgstr "Tidak ada peran dipilih untuk jenis akun ini."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.configUpdated"
+msgstr "Pengaturan peran otomatis diperbarui"
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.loadError"
+msgstr "Tidak dapat memuat pengaturan peran. Periksa akses Anda dan coba lagi."
+
+#. js-lingui-explicit-id
+msgid "netrcol.automatic_roles.saveError"
+msgstr "Tidak dapat menyimpan. Pilih peran yang valid dan penundaan 0 hingga 3600 detik."
