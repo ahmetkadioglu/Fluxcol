@@ -1,83 +1,89 @@
-# AutoMod işlev testleri — 6 Ekim 2026
+# AutoMod functional verification
 
-14 kural sınandı. **335 test geçti**: son çalıştırmada 255 API testi ve önceki çalıştırmada 80 panel/ayar testi. Aynı testlerin tekrar çalıştırılması ikinci kez sayılmaz. API kapsamı: 127 AutoMod algılama/yapılandırma/kuyruk testi, 50 gerçek işlem akışı, 7 wake-up ve 71 webhook/OAuth regresyon testi. Panel testlerinin 51'i AutoMod'a aittir.
+This report records the October 6, 2026 verification. All 14 rules passed. The recorded run included **255 API tests** and **80 panel/settings tests**, plus **16 separate live scenarios**. Repeated runs are not counted again.
 
-## Ortam ve kapsam
+The API total consisted of 127 detection/configuration/queue tests, 50 real-operation flow tests, seven wake-up tests, and 71 webhook/OAuth regression tests. Of the 80 panel/settings tests, 51 covered AutoMod. Later shared-settings and automatic-role regression totals in the [README](../../README.md#verification) overlap this coverage and should not be added to these counts.
 
-255 API entegrasyonu geçici PostgreSQL 17 üzerinde, her senaryoda yeni hesaplar ve izole topluluklarla çalıştırıldı. Gerçek Fluxer HTTP yönlendiricileri, mesaj/üyelik/denetim yazımları, PostgreSQL outbox, AutoMod işlemcisi ve ilgili senaryolarda `ProcessAutoMod` worker görevi kullanıldı. Bu testlerin gateway, nesne depolama ve iş uyandırma adaptörleri test harness'inin test karşılıklarıdır. Canlı HTTP/WebSocket/JetStream ölçümleri ayrıca raporlanır; birim/entegrasyon sayısına eklenmez.
+## Environment and boundaries
 
-Canlı panel `localhost:8088 → Fluxcol → Uygulama ayarları → AutoMod` üzerinden ayrıca kontrol edildi. Fluxcol'a test yaptırımı uygulanmadı; geçici panel taslakları atıldı.
+Integration tests used temporary PostgreSQL 17 databases and isolated communities/accounts. They exercised real Fluxer HTTP routers, message/membership/audit writes, PostgreSQL outbox, the AutoMod processor, and worker tasks where applicable. Gateway, object-storage, and wake-up adapters in these harnesses were test doubles.
 
-## Kural sonuçları
+Live scenarios separately used the local HTTP API, JSON WebSocket gateway, PostgreSQL, JetStream worker, and file storage. Panel checks covered desktop and a 390 × 844 mobile viewport. Destructive actions were performed in isolated test communities.
 
-| Kural | Doğrulanan işlev | Sonuç |
-| --- | --- | --- |
-| Yasaklı kelimeler | Tam/kelime içi eşleşme, Unicode/harf normalleştirme, kapsamlar, silme/uyarı, kuyruktayken düzeltilmiş mesajın korunması | Geçti |
-| Tekrarlanan metin | Aynı üyenin aynı normalleştirilmiş metni seçili kanallarda sayılır; diğer üyeler, düzenlemeler ve kapsam dışı kanallar sayılmaz | Geçti |
-| Sunucu davetleri | Fluxer/Discord/davet adresleri, ortak URL öneki izin listesi, harf duyarlılığı ve mesajın silinmesi | Geçti |
-| Dış bağlantılar | Alan/alt alan istisnası, benzer görünen alanların engellenmesi, URL öneki ve düzenlenmiş mesaj kontrolü | Geçti |
-| Aşırı büyük harf | Minimum harf sayısı, yüzdelik eşit sınırın korunması, sınır aşımının silinmesi | Geçti |
-| Aşırı emoji | Eşik; aile, ten rengi, bayrak, tuş ve özel emoji dizilerinin sayımı | Geçti |
-| Aşırı spoiler | Tam/çok satırlı bölümler, kapanmamış bölüm, oluşturma/düzenleme, tek teslimat | Geçti |
-| Aşırı etiketleme | Tekil kullanıcı/rol/@everyone/@here sayımı, aynı kullanıcının iki etiket biçimi, oluşturma/düzenleme | Geçti; yanlış pozitif düzeltildi |
-| Zalgo | Ardışık birleştirme işaretleri, sıradan aksanlar ve çeşitli yazı sistemleri, kapsam, oluşturma/düzenleme | Geçti |
-| Spam koruması | Aynı üyenin yeni mesajları, seçili kanallar, düzenlemelerin sayılmaması, 1–600 saniye ve pencere sınırları | Geçti |
-| Karakter sınırı | Unicode kod noktaları, tam sınır/sınır aşımı, dört kapsam, oluşturma/düzenleme | Geçti |
-| Medya spamı | Gerçek dosya ekleri/çıkartmalar; düzenlemeler, düz bağlantılar ve emojiler sayılmaz | Geçti |
-| Anti Raid | Gerçek katılım dalgası → kalıcı sayaç → lockdown → sonraki katılım/mesajın engellenmesi; yaş sınırları, süre dolumu, sahip erişimi; worker katılım bildiriminden önce çalışınca da başarılı katılım | Geçti; katılım yarışı düzeltildi |
-| Anti Nuke | 17 denetim türünün gerçek üreticileri, kayıt modu/yaptırım, aktör karantinası, sahip erişimi, topluluk sınırı ve süre dolumu | Geçti; üç atlatma yolu düzeltildi |
+Physical microphone/camera operation and LiveKit media transport were outside this verification. Local fixture seeding created fresh test accounts/sessions without exercising signup/CAPTCHA. Subsequent community, message, upload, management, and cleanup operations used the real API. Account deletion followed the normal waiting period; immediate physical deletion was not assumed.
 
-## Düzeltilen hatalar
+## Rule results
 
-1. Karantinadaki yönetici `/webhooks/:webhook_id` üzerinden webhook değiştirebiliyordu. Doğrulanmış webhook topluluğunda işlem öncesi hold kontrolü eklendi; test 403 ve değişmemiş webhook doğruluyor.
-2. Aynı yolun silme isteği karantinayı atlıyordu. Silme öncesi aynı kontrol eklendi; webhook korunuyor.
-3. OAuth bot onayı topluluk kimliğini istek gövdesinde taşıdığı için route-parametre kontrolünü atlıyordu. Bot onayı OAuth yan etkilerinden önce hold kontrolünden geçiyor; test 403 ve botun topluluğa eklenmediğini doğruluyor.
-4. `<@id>` ve `<@!id>` aynı kullanıcı için iki etiket sayılıyordu. Sayımdan önce iki biçim birleştirildi; hem algılama testi hem gerçek mesaj oluşturma/düzenleme akışı sınırdaki mesajı koruyor.
-5. Canlı worker, üyelik yazımından hemen sonra Anti Raid kilidini başlatınca Fluxer'ın katılım bildirimi kullanıcı mesajı sayılıp engelleniyordu. Üyelik oluşmasına rağmen davet kabul isteği 403 dönüyordu. Yerleşik sistem bildirimleri hold kontrolünden ve AutoMod kuyruğundan çıkarıldı. Yarış durumu düzeltmeden önce gerçek API testinde 403 ile yeniden üretildi; düzeltmeden sonra katılım, bildirim, aktif kilit ve sonraki üye mesajının engellenmesi geçti. Ayrı testler katılım bildiriminin spam sayılmadığını ve gerçek yanıt mesajının hâlâ silindiğini doğruluyor.
+| Rule | Verified behavior |
+| --- | --- |
+| Bad words | Whole/partial matches, Unicode/case normalization, scopes, delete/warn, corrected queued messages |
+| Repeated text | Same member and normalized text across selected channels; other members, edits, and excluded channels do not count |
+| Server invites | Fluxer/Discord invite recognition, shared URL-prefix exceptions, case sensitivity, deletion |
+| External links | Exact domains/subdomains, lookalike-domain rejection, URL prefixes, edited messages |
+| Excessive caps | Minimum letter count, equality passing, threshold overflow deleting |
+| Excessive emojis | Limit boundaries, family/skin-tone/flag/keycap/custom sequences |
+| Excessive spoilers | Complete/multiline blocks, unclosed blocks, create/edit, single delivery |
+| Excessive mentions | Unique users/roles/broadcast tags, equivalent user-mention forms, create/edit |
+| Zalgo | Consecutive combining marks, ordinary accents, multiple scripts, scopes, create/edit |
+| Anti-spam | New messages per member, selected channels, ignored edits, time-window boundaries |
+| Character limit | Unicode code points, equality/overflow, four scopes, create/edit |
+| Media spam | Actual attachments/stickers; edits, links, and emojis excluded |
+| Anti Raid | Join burst, persisted counter, lockdown, age boundaries, expiry, owner access, join-notification race |
+| Anti Nuke | All 17 watched audit types, observation/enforcement, actor quarantine, owner access, community isolation, expiry |
 
-Webhook/OAuth testleri süre dolunca işlemlerin yeniden yapılabildiğini, sahibin kurtarma işlemlerini ve başka topluluktaki yetkilerin etkilenmediğini de doğruluyor. Üye aktörü olmayan webhook token uçlarının davranışı değiştirilmedi.
+## Defects fixed during verification
 
-## Ortak yaptırım ve dayanıklılık
+1. Quarantined staff could update a webhook through its ID route. A hold check now uses the verified webhook community before mutation. Regression tests assert 403 and an unchanged webhook.
+2. Webhook deletion had the same bypass. The pre-delete check preserves the webhook while the actor is quarantined.
+3. OAuth bot approval carried its community ID in the request body and bypassed a route-parameter guard. The hold check now runs before OAuth side effects; tests assert 403 and no added bot.
+4. `<@id>` and `<@!id>` counted twice for one user. Normalization before counting fixes the false positive in detection and real create/edit flows.
+5. A fast worker could start an Anti Raid hold after membership committed but before the native join notification. The notification was treated as a user message, causing invite acceptance to return 403 despite an existing membership. Native system notifications are now excluded from hold checks and the AutoMod queue. The regression reproduced the failure before the fix and verifies a successful join, its notification, the active hold, and blocked subsequent member messages after the fix.
 
-- Devre dışı, yalnızca kayıt, uyarı, silme, silme + uyarı, zaman aşımı, silme + zaman aşımı ve lockdown gerçek mesaj/üyelik sonuçlarıyla sınandı.
-- Üç kurala takılan mesaj için tek silme, tek zaman aşımı, tek geçmiş kaydı ve tek Netrcol sistem bildirimi oluştu. Mevcut daha uzun zaman aşımı kısaltılmadı.
-- Sistem aktörü, embed, bildirim oluşturmayan mention ayarları ve ihlal metninin kopyalanmaması kontrol edildi. Sistemin kendi mesajları yeni AutoMod döngüsü başlatmadı.
-- Süresi dolan worker lease'i yeniden alınıp iş tamamlandı. Bildirim kalıcılaştıktan sonra dispatch hatası enjekte edildi; yeniden deneme aynı mesaj kimliğini kullandı, ikinci mesaj oluşturmadı.
-- Silinen bildirim kanalı için başka kanal seçilmedi; altı deneme sonunda geçmişe başarısız sonuç yazıldı. Gerçekleşen moderasyona rağmen teslimat hatası gizlenmedi.
-- İptal edilen worker mesajları değiştirmedi. 55 mesajlık kuyruk birden fazla sayfada boşaldı; ikinci çalıştırma 0 iş yaptı ve 55 farklı sistem mesajı kaldı. Bu bir kapasite ölçümü değildir.
-- PostgreSQL outbox yazım hatasında gerçek mesaj oluşturma ve düzenleme geri alındı; önceki metin korundu.
-- Sahiplik devri, operatör durdurma anahtarı, ayar sürümü değişimi/çakışması, bot/üye/rol/kanal/kategori istisnaları ve eski kayıtlar sınandı.
+Webhook/OAuth regressions also verified expiry, owner recovery, and unaffected permissions in other communities. Webhook-token endpoints without a member actor retained their existing behavior.
 
-## Panel, dil ve tip kontrolleri
+## Actions and recovery
 
-80 panel/ayar testi geçti: alan doğrulaması, kayıt, sürüm çakışması, taslak koruma, kapsam ve paylaşılan listeler. Canlı tarayıcıda 14 ayar ekranı Enter ile açıldı, başlık odağı ve geri dönüşleri doğrulandı. Space ayrı izinleri açtı; alanlar düzenlenebilir oldu. Kelime Enter ile eklendi, Geri taslağı korudu ve Vazgeç değişiklikleri kaldırdı.
+Tests covered disabled, observation, warning, deletion, delete/warn, timeout, delete/timeout, and lockdown outcomes. A message matching three rules produced one deletion, one timeout, one history entry, and one Netrcol notification. An existing longer timeout was not shortened.
 
-14 ekran 390 × 844 mobil görünümde açıldı; sayfa/yatay kaydırma genişliği 390 px idi. Geçici ekran boyutu sıfırlandı. 34 dil için 84 AutoMod metni, 6970 uygulama ayarı çevirisi ve 253 olay/alan/UI etiketi kontrolleri geçti. App/API tip kontrolleri, strict Lingui, Biome ve `git diff --check` geçti.
+System identity, embeds, non-notifying mentions, omission of violating text, and protection against automation loops were checked. An expired lease was recovered. Injected dispatch failure after notification persistence reused the same message ID without creating another message.
 
-## Tekrar çalıştırma ve kanıt
+A deleted notification channel did not cause fallback. After six attempts, history recorded failure even when moderation had already succeeded. Cancelled work did not change messages. A 55-message queue advanced across multiple pages; a second run processed no work and 55 distinct notifications remained. This was a recovery/progress check, not a capacity benchmark.
 
-Mevcut test imajlarıyla `.fluxer/local-bootstrap/check-automod-api.sh` ve `check-automod-app.sh` kullanılır. API konteynerine ayrı PostgreSQL adresi `NETRCOL_TEST_POSTGRES_URL` olarak verilmelidir. `kv_automod_flow` ve `kv_automod_unit` testler tarafından temizlenir; canlı veritabanı kullanılmamalıdır.
+Outbox write failures rolled back real message creation/editing and preserved the previous text. Ownership transfer, operator stop, settings revisions/conflicts, bot/member/role/channel/category scopes, and legacy records were tested.
 
-Günlükler: `.fluxer/local-bootstrap/automod-live-api-final.log` (255 API), `automod-functional-app.log` (80 panel), `automod-live-regression-before.log` (düzeltmeden önce 403).
+## Live measurements
 
-## Canlı HTTP, gateway ve worker — 6 Ekim 2026
+The live run passed **16 scenarios with no failures**: gateway initialization, all 14 rules, and a bounded concurrent-message scenario.
 
-Yeni imajla `localhost:8088` üzerindeki gerçek HTTP API, JSON WebSocket gateway, PostgreSQL, JetStream worker ve dosya depolama kullanıldı. Yeni bir test topluluğu ve iki geçici hesapla **16 senaryo geçti, 0 hata**: gateway başlangıcı, 14 kural ve eşzamanlı mesaj denemesi. Çalıştırma kimliği `3150586de044`, UTC 15:56:40–15:56:59.
+Content/count rules preserved allowed or boundary messages and deleted violations. Netrcol embeds arrived through the gateway and were verified through persisted HTTP messages and action history. Counter rules used repeated messages and real multipart file uploads.
 
-- Dokuz içerik/sayı kuralında sınırdaki veya eşleşmeyen mesaj korundu; ihlal mesajı silindi, Netrcol sistem embed'i gateway üzerinden alınıp HTTP ile kalıcı mesaj ve işlem geçmişi doğrulandı. Tekrarlanan metin, spam ve gerçek multipart dosya yüklemelerinde sayaç eşiği sınandı.
-- Anti Nuke gerçek yönetici kanal değişikliğinden tetiklendi; sonraki yönetici isteği 403 döndü, sahip kurtarma isteği geçti. Anti Raid gerçek çıkış/yeniden katılmada tetiklendi; katılım 200 döndü ve yerleşik katılım bildirimi geldi. Kilit üye mesajını engelledi, sahibin mesajına izin verdi; süre dolunca üye yeniden yazabildi.
-- 14 kuralın tekil denemelerinde HTTP işlem başlangıcından sistem bildiriminin gateway'de alınmasına kadar **41–133 ms** ölçüldü. Bunlar bu yerel testin ölçümleridir; genel gecikme garantisi değildir.
-- 20 mesaj, dörder eşzamanlı istekle beş grupta gönderildi. 20 farklı mesaj için tam 20 silme olayı, 20 farklı Netrcol bildirimi ve 20 başarılı geçmiş kaydı görüldü; tekrar teslimat oluşmadı. Silme olayının gateway'e ulaşma süresi: minimum 55 ms, medyan 98 ms, p95 129 ms, maksimum 135 ms. Gateway yeniden bağlanma/geçersiz oturum/kesinti ve topluluğun `unavailable` olması görülmedi. Bu sınırlandırılmış deneme maksimum kapasite ölçümü değildir.
-- Test topluluğu gerçek silme ucuyla kaldırıldı; iki test hesabı için normal Fluxer silme süreci başlatıldı. Hesapların bekleme süresi nedeniyle anında fiziksel silinmesi iddia edilmez. Önceki başarısız denemelerin test toplulukları da temizlendi ve test hesapları için silme istekleri kabul edildi. Mevcut kullanıcılar, Fluxcol ayarları ve Docker volume'ları değişmedi.
+Anti Nuke triggered on actual staff channel changes, blocked the next staff request with 403, and allowed owner recovery. Anti Raid triggered through an actual leave/rejoin: acceptance returned 200 with its native notification; member messaging was blocked, owner messaging worked, and expiry restored member messaging.
 
-Yerel kayıt CAPTCHA istediğinden, yalnızca iki yeni test hesabı ve oturumunun standart PostgreSQL satırları oluşturuldu. Kayıt/CAPTCHA akışı bu testin kapsamına alınmadı; sonrasındaki tüm topluluk, mesaj, dosya, yönetim ve temizleme işlemleri gerçek API üzerinden yapıldı. Token/parolalar rapora veya günlüğe yazılmaz.
+For individual rule scenarios, HTTP-operation start to notification arrival measured **41–133 ms**. Twenty messages sent in five batches of four concurrent requests produced exactly 20 distinct deletion events, 20 notifications, and 20 successful history entries, without duplicate deliveries. Deletion-event latency was minimum 55 ms, median 98 ms, p95 129 ms, and maximum 135 ms. No gateway reconnect, invalid session, or community-unavailable state occurred in that run.
 
-Yeniden çalıştırma: depo kökünde `node netrcol/scripts/verify-automod-live.mjs --run --seed-local-fixtures`. Betik yalnızca sabit `localhost:8088` kurulumunu kullanır, kendi test topluluğunu oluşturup temizler. Sonuç: `.fluxer/local-bootstrap/automod-live-results.json`; günlük: `automod-live.log`. Düzeltme öncesi canlı hata: `automod-live-results-before-fix.json`.
+These figures describe one local environment and a bounded workload. They are not latency guarantees or maximum-capacity measurements.
 
-## Yerel uygulama ve son doğrulama
+## Panel and build checks
 
-API kaynak imajı başarıyla derlendi ve `api` ile `worker` servislerine uygulandı. İki servis de aynı yeni imajı (`7e586ad56ce3…`) kullanıyor ve Docker sağlık kontrolleri `healthy` döndü. Kaynak derleme/deploy günlükleri: `automod-live-build-final.log`, `automod-live-deploy.log`.
+Checks covered all 14 settings pages, Enter/Space, Tab/Shift+Tab, focus on entry/return, separate permissions, word insertion, Back/Discard, draft protection, and mobile overflow. Translation generators, all 34 languages, strict Lingui compilation, API/app type checks, relevant Biome checks, and source builds passed. Running-instance health, discovery, and entry-point HTTP/JS/CSS checks also passed.
 
-`node netrcol/scripts/verify-local.mjs` geçti: web, API, gateway ve medya sağlık uçları; Fluxer keşif belgesi; giriş HTML'i, CSS ve JavaScript dosyaları doğrulandı. Günlük: `automod-live-health.log`. Canlı gateway teslimatı yukarıdaki 16 senaryoda ayrıca sınandı. Son API tip kontrolü, Biome, betik sözdizimi ve `git diff --check` geçti.
+## Running tests
 
-Yalnızca bu çalışma için oluşturulan, volume kullanmayan geçici PostgreSQL konteyneri ve etiketli test ağı kaldırıldı. Yerel hesaplar ve mevcut Docker volume'ları korundu.
+The test sources are published; local execution logs and machine-specific helper scripts are not required. Use a prepared Fluxer development environment with workspace dependencies installed. From the repository root, run the module suites with pnpm:
+
+```powershell
+$env:NETRCOL_TEST_POSTGRES_URL = '<disposable-test-database-url>'
+pnpm --filter fluxer_api test src/api/netrcol
+pnpm --filter fluxer_app test src/features/application_settings
+```
+
+Supply a real URL for a **disposable PostgreSQL test database**, never the live application database. The suites clear their test tables, including `kv_automod_flow`, `kv_automod_unit`, `kv_automatic_role_flow`, `kv_event_logs_test`, and `kv_event_log_flows`. PostgreSQL-dependent cases can be skipped when the variable is absent; a skipped case is not verification of persistence.
+
+For real services, start an owned loopback development instance and run:
+
+```powershell
+node netrcol/scripts/verify-automod-live.mjs --run --seed-local-fixtures
+node netrcol/scripts/verify-local.mjs
+```
+
+The live verifier uses `localhost:8088`, creates an isolated community and fresh fixture accounts, and cleans up its own fixtures. It does not modify existing accounts. Credentials are not written to reports. Generated results remain under the ignored `.fluxer/` directory. See [local setup](LOCAL.md), [AutoMod configuration](AUTOMOD.md), and [automatic-role verification](AUTOMATIC_ROLES.md#verification).

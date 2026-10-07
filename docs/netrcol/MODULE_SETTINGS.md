@@ -1,21 +1,31 @@
-# Ortak modül ayarları
+# Shared module settings
 
-**Uygulama ayarları → Modül ayarları → Netrcol mesaj dili**, topluluğun Netrcol olay kayıtları ve AutoMod bildirimleri için ortak dilini belirler. 34 dil desteklenir. Alan adları ve açıklamalar kişisel arayüz dilinde görünür; bu tercih kişisel arayüz dilini değiştirmez.
+**Community menu → Application settings → Module settings → Netrcol message language** selects the community's language for event logs and AutoMod notifications. All 34 supported languages are available. Labels follow your personal interface language; this preference does not change that interface language.
 
-Self-hosted PostgreSQL kurulumunda yalnızca mevcut topluluk sahibi okuyabilir ve kaydedebilir. Seçimi değiştirip **Değişiklikleri kaydet** düğmesini kullanın. **Sıfırla** kaydedilen değere döner. Kaydedilmemiş değişiklik koruması, klavye ve mobil düzen mevcut ayar ekranını kullanır.
+Only the current community owner can read or save these settings on a self-hosted PostgreSQL instance. Select a language and choose **Save changes**. **Reset** restores the saved value. On a revision conflict, the draft remains available and **Reload** fetches the current settings.
 
-Yükseltmede ortak ayar henüz kaydedilmemişse mevcut olay kayıtlarının dili okunur. Fluxcol'un Türkçe dili korunur. Önceki kayıt ayarı bulunmayan yeni topluluklar İngilizce (ABD) kullanır. Topluluklar birbirinden bağımsızdır; sayfayı açmak kendiliğinden kayıt veya otomasyon etkinleştirmesi yapmaz.
+## Upgrade and delivery behavior
 
-Kaydetme sürüm kontrolüyle yapılır ve **İşlem geçmişi** içinde görünür. Çakışmada taslak korunur; **Yenile** güncel kaydı alır. Dil değişikliği, olay kayıtları ve AutoMod politikalarının sürümünü/onayını değiştirmez; sahiplik devrinde duraklayan modülleri yeniden etkinleştirmez.
+If no shared preference has been saved, the existing event-log language is used. Upgrades preserve that language; new communities without a previous setting use English (US). Preferences are independent for each community. Opening the page does not save settings or enable automation.
 
-Yeni bildirimler ve henüz teslim edilmemiş olay kayıtları teslim anındaki ortak dili kullanır. Daha önce kanala gönderilmiş mesajlar yeniden yazılmaz. AutoMod bildirim dili hedef üyenin kişisel hesap dilinden bağımsızdır.
+New notifications and pending event logs use the shared language at delivery time. Messages already sent to channels are not rewritten. AutoMod notifications use this community preference regardless of the recipient's account language.
 
-API: `GET/PUT /guilds/:guild_id/application-settings/modules`. PUT gövdesi `message_language` ve `revision` taşır. Ortak ayar mevcut PostgreSQL uygulama ayarları tablosunda saklanır; yeni tablo veya volume sıfırlaması gerekmez. Eski olay kayıtları API'sinin dil alanı geriye uyumluluk için okunabilir; ortak tercih kaydedildikten sonra ortak dil önceliklidir.
+A save appears in Action history. Changing the language does not change event-log or AutoMod policy revisions, renew their ownership approval, or resume modules paused by an ownership transfer. The new owner must save those modules separately.
 
-Çeviri doğrulaması: `node netrcol/scripts/module-settings-i18n.mjs --check`.
+## API and storage
 
-## Doğrulama
+`GET/PUT /guilds/:guild_id/application-settings/modules` reads or saves the preference. The PUT body contains `message_language` and `revision`.
 
-API ve uygulama tip kontrolleri, strict Lingui, Biome ve 34 dil kontrolü geçti. İzole PostgreSQL üzerinde ortak ayarlar, gerçek AutoMod API/mesaj akışı, olay kuyruğu/teslimatı ve mevcut katalog testlerinden 241 test; panelde kaydetme, sıfırlama, sürüm çakışması, erişim kaybı ve kaydedilmemiş değişiklikler dahil 86 test geçti. Mevcut Türkçe ayardan yükseltme, toplulukların ayrı tercihleri, sahiplik devrinde onayın yenilenmemesi, eski panelden kayıt ve bekleyen mesajın yeni dilde teslimatı ayrıca sınandı.
+Settings use the existing PostgreSQL application-settings storage; no new physical table or volume reset is needed. The legacy event-log API language field remains readable for compatibility. A saved shared preference takes priority.
 
-Web/API/worker kaynak imajları yerelde derlenip çalıştırıldı; servis sağlık ve HTTP/JS/CSS kontrolleri geçti. `localhost:8088 → Fluxcol → Uygulama ayarları → Modül ayarları` üzerinden 34 seçenek, klavyeyle dil seçimi/kaydetme, kaydedilmemiş değişiklik uyarısı, yeniden yükleme ve işlem geçmişi doğrulandı. 390 px mobil görünümde yatay taşma oluşmadı. Canlı kaydetme denemesinin ardından dil Türkçeye döndürülüp yeniden yüklemede korunduğu doğrulandı; kişisel arayüz İngilizce kaldı.
+## Verification
+
+The shared-settings verification covered legacy language migration, independent community preferences, delivery of pending messages in the new language, revision conflicts, ownership transfer, draft preservation, and keyboard/mobile interaction. The shared-settings phase passed 241 API regression tests and 86 panel tests; these are historical suite totals, not additional tests to add to later regression totals.
+
+Check all 34 language entries with:
+
+```powershell
+node netrcol/scripts/module-settings-i18n.mjs --check
+```
+
+See the [current README verification summary](../../README.md#verification) and [language-setting screenshot](../screenshots/module-language-settings.jpg).

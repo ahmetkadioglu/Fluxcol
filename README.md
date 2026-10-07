@@ -88,7 +88,7 @@ This launcher is a loopback-only development setup. It does not deploy an intern
 
 ## Verification
 
-The current AutoMod verification includes **255 API tests**, **80 panel/settings tests**, and **16 additional live scenarios** using the local HTTP API, PostgreSQL, JetStream worker, WebSocket gateway, and file uploads. The live scenarios cover all 14 rules and a bounded 20-message concurrent run. These results describe the tested local environment, not a production capacity guarantee.
+Recorded verification on October 6–7, 2026 includes **255 AutoMod API tests**, **80 panel/settings tests**, and **16 additional live scenarios** using the local HTTP API, PostgreSQL, JetStream worker, WebSocket gateway, and file uploads. The live scenarios cover all 14 rules and a bounded 20-message concurrent run. These results describe the tested local environment, not a production capacity guarantee.
 
 Automatic roles adds **18 integration tests** and **7 live scenarios** covering human and bot assignments, delayed work, preserved roles, cancellation, stale settings, and deleted roles. The combined Netrcol API regression passed **266 tests**; application settings and the shared role selector passed **101 tests**, including role creation shortcuts, return navigation, draft preservation, refresh failures, and Escape after a close guard changes. Source builds, API/app type checks, and all 34 language checks also passed. See [automatic role verification and operation](docs/netrcol/AUTOMATIC_ROLES.md).
 
@@ -100,7 +100,7 @@ node netrcol/scripts/verify-local.mjs
 
 ## Documentation
 
-The main README is in English; the detailed implementation and verification notes below are currently in Turkish.
+The setup, module guides, verification report, and roadmap are written in English. The application retains all 34 supported languages.
 
 - [Local setup and operation](docs/netrcol/LOCAL.md)
 - [AutoMod behavior and configuration](docs/netrcol/AUTOMOD.md)
@@ -109,7 +109,7 @@ The main README is in English; the detailed implementation and verification note
 - [Event logging](docs/netrcol/EVENT_LOGS.md)
 - [Shared module settings and message language](docs/netrcol/MODULE_SETTINGS.md)
 - [System message identity](docs/netrcol/SYSTEM_IDENTITY.md)
-- [Implementation plan and remaining modules](NETRCOLFLXR_PLAN.md)
+- [Roadmap and remaining modules](ROADMAP.md)
 
 Some source directories and internal identifiers still use `netrcol` or `NetrcolFLXR`; they belong to this project. User-facing system messages intentionally use the Netrcol identity.
 

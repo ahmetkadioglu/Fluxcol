@@ -1,10 +1,8 @@
 # Application screenshots
 
-Fresh captures from the running local Fluxcol application on October 6, 2026. Each JPEG is a direct browser capture at native resolution, framed around the relevant settings or messages. The UI has not been redrawn or altered with AI.
+Captures from the running Fluxcol application on October 6–7, 2026. Each JPEG is a direct browser capture at native resolution, framed around the relevant settings or messages. The UI has not been redrawn or altered with AI.
 
-Automatic roles was captured on October 7, 2026, after live assignment and keyboard checks. The mobile capture uses a 390 × 844 viewport; the desktop capture uses the browser's normal viewport.
-
-The role-creation shortcuts were captured on the same day after actual desktop and mobile role creation. Both selectors open the native community Roles screen and return after a successful creation while preserving the unsaved configuration.
+Mobile images use a 390 × 844 viewport. The role-creation images show the native Roles shortcut and the return to Automatic roles after successful creation, with unsaved configuration preserved.
 
 | Screenshot | Dimensions | Shows |
 | --- | --- | --- |
@@ -18,8 +16,4 @@ The role-creation shortcuts were captured on the same day after actual desktop a
 | [Create role from Automatic roles](automatic-roles-create-role.jpg) | 1400 × 1150 | The Create role shortcut in the member dropdown, including when the community has no eligible roles |
 | [Create role on mobile](automatic-roles-create-mobile.jpg) | 390 × 844 | The bot dropdown with freshly created test roles and the Create role shortcut |
 
-AutoMod remains disabled in this example community. The example word lists were discarded after capture. Capturing the settings did not change the saved configuration.
-
-Automatic roles also remains disabled with empty lists. Its temporary delay and switch drafts were reset; no assignments were made in Fluxcol. Assignment tests used an isolated test community.
-
-Role-creation tests also used an isolated community. Three ordinary roles were created through the native Roles screen; previous selections and delay drafts survived the automatic return. The test community and device session were cleaned up, and deletion of the temporary account was scheduled. The mobile shortcut screenshot shows these test roles, not changes to Fluxcol.
+Examples include an unsaved word list and temporary ordinary test roles. AutoMod and Automatic roles start disabled; screenshots of drafts do not change those defaults. Functional assignment/moderation and role-creation tests used isolated test communities. See the [verification summary](../../README.md#verification) for test scope and limitations.

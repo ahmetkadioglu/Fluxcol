@@ -1,54 +1,57 @@
-# Otomatik roller
+# Automatic roles
 
-**Topluluk menüsü → Uygulama ayarları → Otomatik roller**, topluluğa yeni katılan üyelere başlangıç rolleri verir. Ayrı bot kurulumu veya bot tokenı gerekmez. Modül self-hosted PostgreSQL kurulumunda yalnızca topluluk sahibine açıktır ve başlangıçta kapalıdır.
+**Community menu → Application settings → Automatic roles** assigns starting roles to new community members. It needs no separate bot or token. The module is available to the community owner on self-hosted PostgreSQL instances and starts disabled.
 
-## Kullanım
+## Configuration
 
-1. **Üye rolleri** veya **Bot rolleri** listesini açıp **Rol oluştur** düğmesine basın. Topluluk ayarlarının mevcut **Roller** ekranı açılır. Rol başarıyla oluşturulunca otomatik roller ekranına dönülür ve iki liste yenilenir. Kaydedilmemiş rol seçimleri, modül anahtarı ve gecikme taslağı korunur. Yeni rolü istediğiniz listeden seçin.
-2. **Üye rolleri** alanında insan üyeler için rol seçin. Birden çok rol seçilebilir; her listede en fazla 20 rol vardır.
-3. Botlara da rol vermek isterseniz **Bot rolleri** alanını ayrıca doldurun. Boş bırakıldığında botlara üye rolleri verilmez.
-4. **Atama gecikmesi (saniye)** alanını 0–3600 arasında ayarlayın. 0 seçimi commit sonrası worker'ı hemen uyandırır; diğer değerler en erken atama zamanını belirtir. Gecikmeli işler 5 saniyelik kurtarma taramasında alınır, dolayısıyla zamanlama kesin bir saniye garantisi değildir.
-5. Modülü etkinleştirin ve **Değişiklikleri kaydet** düğmesini kullanın. **Sıfırla** kaydedilen ayarlara döner. Sürüm çakışmasında taslak korunur; **Yenile** güncel ayarları alır.
+1. Choose roles in **Member roles** for human members. Each list supports up to 20 roles.
+2. Optionally configure **Bot roles** separately. An empty bot list skips bots; it does not use the member list.
+3. Set **Assignment delay (seconds)** from 0 to 3600. Zero wakes the worker immediately after commit. Other values specify the earliest assignment time; delayed work is picked up by the five-second recovery scan, so delivery is not guaranteed at an exact second.
+4. Enable the module and choose **Save changes**. **Reset** restores saved settings. A revision conflict preserves the draft; **Reload** fetches the latest settings.
 
-Etkinleştirme mevcut üyelere geriye dönük rol dağıtmaz. Sonraki katılımlar seçilen listeyi kullanır. Kullanıcı ayrılıp yeniden katılırsa yeni katılım için yeni işlem oluşur. Kullanıcıya elle verilen veya zaten bulunan roller silinmez. Aynı rolün tekrar verilmesi ikinci bir rol değişikliği oluşturmaz.
+Both dropdowns include **Create role**. The shortcut opens the community's native Roles settings. After successful creation, Automatic roles reopens and both role lists refresh. Unsaved role selections, the module switch, and the delay draft are preserved. Select the new role in the appropriate list and save your configuration.
 
-`@everyone`, yönetilen ve `ElevatedPermissions` kapsamındaki yönetim/moderasyon izinlerine sahip roller otomasyon için uygun değildir. Bu sınır rol dağıtımını normal başlangıç rollerine indirger. Geçmişte seçilmiş bir rol sonradan silinirse veya bu izinleri kazanırsa panel eksik/geçersiz seçimi gösterir ve worker o rolü atlamış olarak kaydeder. Başka bir rol otomatik olarak seçilmez; kalan geçerli roller atanabilir.
+Only future joins receive roles; enabling the module does not update existing members. Leaving and rejoining creates a new assignment for the new membership. Existing or manually assigned roles are kept, and adding an already-held role does not produce another role change.
 
-## İşlem geçmişi ve kayıtlar
+`@everyone`, managed roles, and roles with elevated management/moderation permissions are ineligible. If a selected role is deleted or later gains those permissions, the panel shows the invalid selection and the worker skips it. Other eligible roles can still be assigned. No replacement role is chosen automatically.
 
-Modül sayfasındaki ve ortak **İşlem geçmişi** ekranındaki bölüm son 50 yapılandırma/atama sonucunu gösterir. Sonuçlar atanmış, atlanmış veya başarısız durumundadır. Atlanma gerekçesi ayar değişikliği, üyelik sona ermesi, geçersiz rol, seçilmiş rol olmaması veya operatör durdurması olabilir. Kısmi atamada tamamlanan roller geçmişte korunur.
+## Results and event logs
 
-Rol değişiklikleri Fluxer'ın kendi üyelik, gateway ve denetim yolunu kullanır. Sistem aktörü **Netrcol**'dur. Olay kayıtları modülünde **Üyenin rolleri değişti** etkinse normal Netrcol sistem embed'i o modülün kayıt kanalına gider; otomatik roller kendi başına yeni bir bildirim kanalı gerektirmez. Panel ve durum metinleri kişisel arayüz dilinde, kanal kayıtları topluluğun ortak Netrcol mesaj dilinde görünür. 34 dil desteklenir.
+The module page and shared **Action history** show the latest 50 configuration and assignment results. Outcomes include assigned, skipped, and failed, with reasons such as changed settings, ended membership, invalid roles, an empty role list, or operator stop. Partial results retain the roles that were assigned.
 
-## Kalıcılık ve durdurma
+Assignments use Fluxer's native membership, audit, and gateway paths with Netrcol as the system actor. If **Member roles changed** is enabled in [Event logs](EVENT_LOGS.md), its usual Netrcol embed goes to that event's destination. Automatic roles does not need its own notification channel.
 
-Yeni üyelik yazımı ve otomatik rol outbox kaydı aynı PostgreSQL işleminde commit olur. Outbox yazılamazsa üyelik de commit olmaz. Commit sonrası JetStream bildirimi worker'ı uyandırır; bildirim kaybolursa kalıcı kayıt 5 saniyelik taramayla yeniden bulunur. İşler 60 saniyelik lease, en fazla altı deneme ve katılım kimliğinden üretilen sabit kaynak anahtarı kullanır.
+The panel uses your personal interface language. Channel logs use the community's [shared Netrcol message language](MODULE_SETTINGS.md). All 34 languages are supported.
 
-Her rol yazımından önce güncel ayar sürümü, modül anahtarı, sahiplik onayı, üyenin aynı katılıma ait olması ve rolün uygunluğu kontrol edilir. Native rol yazımı sürüm kontrollü birleştirme yapar; ayrılmış üyeyi yeniden oluşturmaz. Kesintiden sonra mevcut rol korunur ve iş uzlaştırılır. Teslimat sonucu kalıcılaştırılmışsa geçmiş yazımı hatasında yeniden rol dağıtımı yerine sonuç uzlaştırılır. Mutlak exactly-once veya her kesintide denetim kaydının eksiksiz geri kurulması garantisi verilmez.
+## Reliability and stopping
 
-Modülü kapatmak ya da ayarı değiştirmek bekleyen eski sürüm işlerini iptal eder; yeni ayar mevcut kuyruğa geriye dönük uygulanmaz. Sahiplik devrinde modül duraklar; yeni sahip ayarları yeniden kaydetmelidir. Operatörün `NETRCOL_AUTOMATIONS_ENABLED=false` anahtarı yeni otomasyonları durdurur. Tamamlanmış rol atamalarını geri almaz.
+The membership and assignment outbox are committed in one PostgreSQL transaction. If the outbox write fails, membership is not committed. A post-commit JetStream notification wakes the worker; a five-second recovery scan finds persisted work if the notification is lost. Jobs use a 60-second lease, up to six attempts, and a stable source key derived from the join identity.
 
-Yapılandırma kalıcıdır; ayar geçmişi 90 gün, atama sonuçları 30 gün, kuyruk ve tamamlanma işaretleri 7 gün saklanır. Rol atamalarının ömrü bu saklama süreleriyle sınırlı değildir. Yeni fiziksel veritabanı tablosu veya volume sıfırlaması gerekmez; kayıtlar mevcut PostgreSQL KV katmanında tutulur.
+Before each role write, the worker checks the current configuration revision, module switch, ownership approval, membership identity, and role eligibility. Versioned native role updates merge with existing roles and do not recreate a departed member. On recovery, existing assignments and persisted results are reconciled. This does not guarantee absolute exactly-once execution or complete reconstruction of every audit record after a crash.
 
-## API ve doğrulama
+Disabling or changing settings cancels pending work from the old revision. New settings do not apply retroactively to that queue. Ownership transfer pauses the module until the new owner saves it. The operator switch `NETRCOL_AUTOMATIONS_ENABLED=false` stops automation without removing roles already assigned.
+
+Configuration persists. Settings history is kept for 90 days, assignment results for 30 days, and queue/completion markers for seven days. These periods do not limit how long a member keeps an assigned role. Storage uses the existing PostgreSQL KV layer; no new physical table or volume reset is required.
+
+## API
 
 - `GET/PUT /guilds/:guild_id/application-settings/automatic-roles`
 - `GET /guilds/:guild_id/application-settings/automatic-roles/history`
 
-PUT gövdesi `enabled`, `member_role_ids`, `bot_role_ids`, `delay_seconds` ve `revision` taşır. Eski sürüm 409, uygunsuz rol veya aralık dışı gecikme 400, sahip olmayan erişim 403 döner.
+The PUT body contains `enabled`, `member_role_ids`, `bot_role_ids`, `delay_seconds`, and `revision`. Stale revisions return 409; invalid roles or delay values return 400; non-owner access returns 403.
 
-Çeviri kontrolü: `node netrcol/scripts/automatic-roles-i18n.mjs --check`. Kaynak imajlarını güncellemek için `Start-Local.ps1 -Build` kullanın; hesaplar ve volume'lar korunur.
+## Verification
 
-Entegrasyon testleri yeni katılım, ayrı bot listeleri, gecikme, mevcut rollerin korunması, tekrar, ayrılma/yeniden katılma, sahiplik devri, rol silinmesi/izin yükselmesi, sürüm çakışması, operatör durdurması, worker kesintisi ve gerçek PostgreSQL hata enjeksiyonunu kapsar. Yerel HTTP/gateway/worker denemesi ayrı hesap ve topluluk oluşturup temizler:
+The October 6–7, 2026 verification passed 18 automatic-role integration tests and seven live scenarios. Coverage included separate human/bot lists, delays, existing-role preservation, duplicates, leaving/rejoining, changed settings, ownership transfer, deleted or newly privileged roles, revision conflicts, operator stop, worker recovery, and PostgreSQL write failures.
+
+The combined Netrcol API regression passed 266 tests. Panel/settings and shared-selector coverage passed 101 tests after the role-creation shortcuts were added, including return navigation, draft preservation, refresh failure, and close-guard behavior. Three actual desktop/mobile role creations also returned correctly. Source builds, API/app type checks, 34-language checks, and HTTP/JS/CSS checks passed. These are recorded verification results, not a new run performed while editing this guide.
+
+Run the live verifier against an owned loopback development instance:
 
 ```powershell
 node netrcol/scripts/verify-automatic-roles-live.mjs --run --seed-local-fixtures
 ```
 
-`--seed-local-fixtures` yalnızca sahip olunan loopback geliştirme kurulumunda yeni test hesapları oluşturur. Mevcut hesapları değiştirmez; kayıt/CAPTCHA akışı bu testin kapsamına girmez. Kimlik doğrulama bilgileri rapora yazılmaz. Sonuçlar `.fluxer/local-bootstrap/automatic-roles-live-results.json` içinde tutulur.
+It creates fresh test accounts and an isolated community, exercises the real HTTP → PostgreSQL → JetStream worker → gateway/channel path, and cleans up its fixtures. Account deletion follows Fluxer's normal waiting period. Fixture seeding does not exercise signup/CAPTCHA or modify existing accounts. Credentials are not written to reports; generated results stay in the ignored `.fluxer/` directory.
 
-6 Ekim 2026 doğrulamasında 18 otomatik rol entegrasyon testi, Netrcol API regresyonunun toplam 266 testi ve panel/ortak seçicinin 95 testi geçti. Yedi canlı senaryo gerçek HTTP → PostgreSQL → JetStream worker → gateway/kanal mesajı zincirinde doğrulandı: sahip kontrolü, insan üye ataması, gecikme ve mevcut rolün korunması, ayar değişikliği, ayrılma, ayrı bot listesi, sürüm çakışması ve silinen rol. Test topluluğu ile OAuth uygulamaları temizlendi, geçici hesapların silme süreci başlatıldı. Kaynak API/worker ve web derlemeleri, tip kontrolleri, 34 dil ve HTTP/JS/CSS kontrolleri geçti.
-
-7 Ekim'deki son panel kontrolünde Tab/Shift+Tab, Space, Enter, taslak koruması ve 390 piksel mobil görünüm doğrulandı. Ortak rol seçicisinde Escape'in tüm ayar penceresini kapatması düzeltildi: ilk Escape listeyi kapatır ve odağı seçiciye döndürür. Kaydedilmiş ayarlar değiştirilmedi. [Masaüstü](../screenshots/automatic-roles-settings.jpg) ve [mobil](../screenshots/automatic-roles-mobile.jpg) görüntüler çalışan uygulamadan alındı.
-
-7 Ekim'de rol oluşturma kısayollarıyla birlikte panel ve ortak seçicinin 101 testi geçti. İzole toplulukta üye ve bot listelerinden mevcut Roller ekranı açılıp üç gerçek rol oluşturuldu; başarılı işlemden sonra otomatik dönüş ve iki listenin yenilenmesi masaüstünde ve 390 × 844 mobil görünümde doğrulandı. Önceki seçimler ile 37 ve 23 saniyelik gecikme taslakları korundu; rol oluşturma ayarları otomatik kaydetmedi. Taslak değiştiğinde modal kapatma korumasının açık listenin Escape önceliğini bozması da giderildi. App tip kontrolü, web derlemesi, 34 dil ve HTTP/JS/CSS kontrolleri geçti. Test topluluğu ve cihazdaki geçici oturum temizlendi; test hesabının silme süreci başlatıldı. Fluxcol ayarları değiştirilmedi. [Rol oluşturma menüsü](../screenshots/automatic-roles-create-role.jpg) ve [mobil menü](../screenshots/automatic-roles-create-mobile.jpg) doğrudan çalışan uygulamadan alındı.
+Check translations with `node netrcol/scripts/automatic-roles-i18n.mjs --check`. Use `Start-Local.ps1 -Build` to update source images while preserving volumes. See the [test setup](AUTOMOD_TEST_REPORT.md#running-tests) and [screenshots](../screenshots/README.md).
